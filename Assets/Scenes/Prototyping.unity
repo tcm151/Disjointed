@@ -14740,6 +14740,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1715512818}
+  followDistance: 100
+  followSpeed: 2
 --- !u!1 &1715512813
 GameObject:
   m_ObjectHideFlags: 0
@@ -14753,7 +14755,7 @@ GameObject:
   - component: {fileID: 1715512816}
   - component: {fileID: 1715512815}
   - component: {fileID: 1715512814}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14772,6 +14774,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3518e166b88e924d9a80f5985adaa5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 64
+  movementSpeed: 4
+  jumpHeight: 2.5
 --- !u!50 &1715512815
 Rigidbody2D:
   serializedVersion: 4
@@ -14886,7 +14893,7 @@ GameObject:
   - component: {fileID: 2114578821}
   - component: {fileID: 2114578820}
   - component: {fileID: 2114578819}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
