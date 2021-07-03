@@ -23,19 +23,16 @@ namespace OGAM
             screenCenter = new Vector2(Screen.width / 2f, Screen.height / 2f);
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             targetScreenPosition = camera.WorldToScreenPoint(target.position);
             distanceFromCenter = screenCenter - targetScreenPosition;
-        }
 
-        private void LateUpdate()
-        {
-            if (distanceFromCenter.magnitude > followDistance)
+            // if (distanceFromCenter.magnitude > followDistance)
             {
-                var targetPosition = target.position;
-                targetPosition.z = -10f;
-                transform.position = Vector3.Lerp(transform.position, targetPosition, followSpeed * Time.deltaTime);
+                var targetPosition = target.position + Vector3.back * 10;
+                var smoothedPosition = Vector3.Lerp(transform.position, targetPosition, followSpeed * Time.deltaTime);
+                transform.position = smoothedPosition;
             }
 
             // camera.transform.position = Vector2.SmoothDamp(camera.transform.position, target.position, ref velocity, followSpeed);
