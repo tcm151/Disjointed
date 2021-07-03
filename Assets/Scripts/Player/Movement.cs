@@ -1,32 +1,35 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 
 namespace OGAM.Player
 {
-    public class Movement : MonoBehaviour, Controls.IPlatformingActions
+    public class Movement : MonoBehaviour
     {
-        private Keyboard keyboard;
-        new private Rigidbody rigidbody;
+        new private Rigidbody2D rigidbody;
+        private bool jumping;
 
-        public Controls controls;
-        
+
         private void Awake()
         {
-            keyboard = Keyboard.current;
-            rigidbody = GetComponent<Rigidbody>();
-            
-            controls.Platforming.Jump.performed += OnJump;
+            rigidbody = GetComponent<Rigidbody2D>();
         }
 
-        public void OnMovement(InputAction.CallbackContext context)
+        private void Update()
         {
-            
-        }
+            jumping |= Input.GetKeyDown(KeyCode.Space);
 
-        public void OnJump(InputAction.CallbackContext context)
-        {
+            if (jumping)
+            {
+                jumping = false;
+                rigidbody.velocity += 5f * Vector2.up;
+            }
             
+            var velocity = rigidbody.velocity;
+            velocity.x = 4f * Input.GetAxis("Horizontal");
+            rigidbody.velocity = velocity;
+
+
+
         }
     }
 }
