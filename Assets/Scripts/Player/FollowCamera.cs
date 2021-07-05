@@ -14,7 +14,7 @@ namespace OGAM
 
         private Vector2 screenCenter;
         private Vector2 targetScreenPosition;
-        private Vector2 distanceFromCenter;
+        private Vector2 distanceFromScreenCenter;
         private Vector2 velocity = Vector2.zero;
 
         private void Awake()
@@ -25,13 +25,14 @@ namespace OGAM
 
         private void FixedUpdate()
         {
-            targetScreenPosition = camera.WorldToScreenPoint(target.position);
-            distanceFromCenter = screenCenter - targetScreenPosition;
+            var targetPosition = target.position;
+            targetScreenPosition = camera.WorldToScreenPoint(targetPosition);
+            distanceFromScreenCenter = screenCenter - targetScreenPosition;
 
-            // if (distanceFromCenter.magnitude > followDistance)
+            // if (distanceFromScreenCenter.magnitude > followDistance)
             {
-                var targetPosition = target.position + Vector3.back * 10;
-                var smoothedPosition = Vector3.Lerp(transform.position, targetPosition, followSpeed * Time.deltaTime);
+                var cameraPosition = targetPosition + Vector3.back * 10;
+                var smoothedPosition = Vector3.Lerp(transform.position, cameraPosition, followSpeed * Time.deltaTime);
                 transform.position = smoothedPosition;
             }
 

@@ -56,9 +56,9 @@ namespace OGAM.Player
             }
             
             // jump if the player is grounded & trying to jump
-            if ((grounded || timeSinceGrounded < 4) && jumping)
+            if ((grounded || timeSinceGrounded < 5) && jumping)
             {
-                jumping = false;
+                jumping = false; // use formula to get exact jump height
                 velocity.y += Mathf.Sqrt(2f * Physics2D.gravity.magnitude * jumpHeight);
             }
 
