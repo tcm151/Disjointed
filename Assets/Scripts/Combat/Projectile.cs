@@ -40,6 +40,9 @@ namespace OGAM.Combat
         {
             var damageable = collision.gameObject.GetComponent<IDamageable>();
             damageable?.TakeDamage(data.damage, data.knockback, data.origin);
+
+            // var contact = collision.GetContact(0);
+            // rigidbody.AddForce(contact.normal * contact.normalImpulse / 2, ForceMode2D.Impulse);
         }
     }
 }
