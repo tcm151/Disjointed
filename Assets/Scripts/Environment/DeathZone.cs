@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using OGAM.Tools;
 using UnityEngine;
 
-namespace OGAM
+namespace OGAM.Environment
 {
     public class DeathZone : MonoBehaviour
     {
