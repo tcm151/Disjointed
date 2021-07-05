@@ -6,44 +6,50 @@ namespace OGAM
 {
     public class MouseFollow : MonoBehaviour
     {
-        public enum MT
+        public enum MoveType
         {
             StayOnMouse,
             LerpToMouse,
-            UsePhysics
+            UsePhysics,
         }
-        public MT MoveType;
+        public MoveType moveType;
 
-        public float lerpToMouseMaxDelta;
-        public float physicsMovementForce;
+        public float lerpToMouseMaxDelta = 5f;
+        public float physicsMovementForce = 100f;
 
-        Rigidbody2D rb;
-        public Camera mainCam;
+        new private Camera camera;
+        new private Rigidbody2D rigidbody;
 
-        void Awake()
+        private void Awake()
         {
-            rb = this.GetComponent<Rigidbody2D>();
+            camera = Camera.main;
+            rigidbody = GetComponent<Rigidbody2D>();
         }
 
-        void Update()
+        private void Update()
         {
-            Vector3 mouseWorldPoint = mainCam.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 mouseWorldPoint = camera.ScreenToWorldPoint(Input.mousePosition);
             mouseWorldPoint.z = 0f;
 
-            switch (MoveType)
+            if (Input.GetMouseButtonDown(1))
             {
-                case MT.StayOnMouse:
-                    rb.position = mouseWorldPoint; break;
+                // toggle the parrot and make sure that it rests on top of the player character
+            }
 
-                case MT.LerpToMouse:
-                    rb.position = Vector2.Lerp(rb.position, mouseWorldPoint, lerpToMouseMaxDelta); break;
+            switch (moveType)
+            {
+                case MoveType.StayOnMouse:
+                    rigidbody.position = mouseWorldPoint; break;
 
-                case MT.UsePhysics:
-                    Vector2 mouseDirection = mouseWorldPoint - this.transform.position;
-                    rb.AddForce(mouseDirection * physicsMovementForce, ForceMode2D.Force); break;
+                case MoveType.LerpToMouse:
+                    rigidbody.position = Vector2.Lerp(rigidbody.position, mouseWorldPoint, lerpToMouseMaxDelta * Time.deltaTime); break;
+
+                case MoveType.UsePhysics:
+                    Vector2 mouseDirection = mouseWorldPoint - transform.position;
+                    rigidbody.AddForce(mouseDirection * (physicsMovementForce * Time.deltaTime), ForceMode2D.Force); break;
 
                 default:
-                    rb.position = mouseWorldPoint; break;
+                    rigidbody.position = mouseWorldPoint; break;
             }
         }
     }
