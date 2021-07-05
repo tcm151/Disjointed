@@ -35,13 +35,13 @@ namespace OGAM.Combat
 
         private void FixedUpdate()
         {
-            if (firing && hasSkull)
-            {
-                firing = false;
-                var origin = transform.position;
-                var projectile = Instantiate(skullPrefab, origin, Quaternion.identity);
-                projectile.Launch(origin, mouseDirection, launchSpeed, projectileData);
-            }
+            if (!hasSkull || !firing) return;
+            
+            firing = false;
+            
+            var origin = transform.position;
+            var projectile = Instantiate(skullPrefab, origin, Quaternion.identity);
+            projectile.Launch(origin, mouseDirection, launchSpeed, projectileData);
         }
     }
     
