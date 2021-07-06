@@ -10,11 +10,9 @@ namespace OGAM.Environment
 
         Button thisButton;
         private void Awake()
-        { thisButton = GetComponent<Button>(); }
-
+        => thisButton = GetComponent<Button>();
+        
         private void OnMouseUpAsButton()
-        {
-            Switcher.SwitchScenes(sceneToLoad);
-        }
+        => Switcher.SwitchScenes(sceneToLoad);
     }
 }
