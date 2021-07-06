@@ -134,6 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55e9304ec45b47ab968f3d28a42806e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionMask:
-    serializedVersion: 2
-    m_Bits: 64
+  data:
+    origin: skull
+    mass: 0.1
+    damage: 1
+    knockback: 1

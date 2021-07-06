@@ -13,33 +13,38 @@ namespace OGAM.Combat
         [Serializable] public class Data
         {
             public string origin = "null";
+            public float mass = 1f;
             public float damage = 1f;
             public float knockback = 1f;
         }
         
+        public Data data;
+        
         new private Rigidbody2D rigidbody;
         // public LayerMask collisionMask;
-        private Data data;
 
         //> INITIALIZATION
         private void Awake()
         {
             rigidbody = GetComponent<Rigidbody2D>();
+            rigidbody.mass = data.mass;
         }
 
         //> FIRE WITH A GIVEN VELOCITY
         public void Launch(Vector3 position, Vector3 direction, float speed, Data data)
         {
             this.data = data;
+            rigidbody.mass = data.mass;
             rigidbody.position = position;
-            rigidbody.AddForce(direction * speed, ForceMode2D.Impulse);
+            rigidbody.AddForce(direction * (speed * data.mass), ForceMode2D.Impulse);
         }
 
         //> DO DAMAGE ON COLLISION
         private void OnCollisionEnter2D(Collision2D collision)
         {
             var damageable = collision.gameObject.GetComponent<IDamageable>();
-            damageable?.TakeDamage(data.damage, data.knockback, data.origin);
+            damageable?.TakeDamage(data.damage, data.origin);
+            // damageable?.TakeKnockback(data.knockback * data.mass, rigidbody.velocity.normalized);
 
             // var contact = collision.GetContact(0);
             // rigidbody.AddForce(contact.normal * contact.normalImpulse / 2, ForceMode2D.Impulse);
