@@ -1,7 +1,11 @@
-﻿namespace OGAM.Combat
+﻿using UnityEngine;
+
+
+namespace OGAM.Combat
 {
     public interface IDamageable
     {
-        public void TakeDamage(float damage, float knockback, string origin);
+        public void TakeDamage(float damage, string origin);
+        public void TakeKnockback(float knockback, Vector2 direction);
     }
 }

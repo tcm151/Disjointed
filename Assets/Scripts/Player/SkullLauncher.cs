@@ -25,7 +25,7 @@ namespace OGAM.Combat
 
         private void Update()
         {
-            firing |= Input.GetMouseButtonDown(0);
+            firing |= Input.GetMouseButtonDown(1);
 
             mousePosition = camera.ScreenToWorldPoint(Input.mousePosition);
             mousePosition.z = 0f;
