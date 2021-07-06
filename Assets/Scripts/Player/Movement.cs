@@ -14,15 +14,21 @@ namespace OGAM.Player
         public LayerMask jumpingMask;
         public float movementSpeed = 4f;
         public float jumpHeight = 2.5f;
+        public float jumpGravity = 1f;
+        public float fallGravity = 2f;
 
         //- LOCAL STATE
+        private Vector2 movementInput;
         private Vector2 desiredVelocity;
         private int timeSinceGrounded;
         private bool jumping;
+        private bool holdingJump;
         private bool grounded;
 
         //- CONSTANTS
         private const float GroundedDistance = 0.60f;
+        private static readonly Vector3 FaceRight = new Vector3( 1, 1, 1);
+        private static readonly Vector3 FaceLeft  = new Vector3(-1, 1, 1);
 
         //> INITIALIZATION
         private void Awake() => rigidbody = GetComponent<Rigidbody2D>();
@@ -35,7 +41,17 @@ namespace OGAM.Player
             
             // get movement input
             jumping |= Input.GetKeyDown(KeyCode.Space);
-            desiredVelocity.x = movementSpeed * Input.GetAxis("Horizontal");
+            holdingJump = Input.GetKey(KeyCode.Space);
+            rigidbody.gravityScale = (holdingJump) ? jumpGravity : fallGravity;
+            
+            movementInput.x = movementSpeed * Input.GetAxis("Horizontal");
+            movementInput.y = movementSpeed * Input.GetAxis("Vertical");
+
+            if (movementInput.x > 0) transform.localScale = FaceRight;
+            if (movementInput.x < 0) transform.localScale = FaceLeft;
+
+            //@ temporary would like to slow down the player instead of stopping immediately 
+            desiredVelocity.x = movementInput.x;
         }
 
         //> HANDLE PHYSICS
@@ -62,6 +78,25 @@ namespace OGAM.Player
             // assign the final velocity
             rigidbody.velocity = desiredVelocity;
         }
+
+        private void OnCollisionStay2D(Collision2D collision) => ManageCollisions(collision);
+        private void OnCollisionExit2D(Collision2D collision) => ManageCollisions(collision);
+
+        //? WORK IN PROGRESS
+        private void ManageCollisions(Collision2D collision)
+        {
+            Vector2 contactNormal = Vector2.zero;
+            
+            foreach (var contact in collision.contacts)
+            {
+                contactNormal += contact.normal;
+            }
+            
+            contactNormal.Normalize();
+            
+            Debug.DrawRay(rigidbody.position, contactNormal, Color.magenta);
+        }
+
 
         //> DRAW HELPFUL GIZMOS
         private void OnDrawGizmos()
