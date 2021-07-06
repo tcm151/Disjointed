@@ -4,24 +4,31 @@ using UnityEngine;
 
 namespace OGAM.Player
 {
+    [RequireComponent(typeof(Rigidbody2D))]
     public class Movement : MonoBehaviour
     {
-        //+ COMPONENTS
+        //- COMPONENTS
         new private Rigidbody2D rigidbody;
 
-        //+ TWEAKABLES
-        public LayerMask groundMask;
+        //- TWEAKABLES
+        public LayerMask jumpingMask;
         public float movementSpeed = 4f;
         public float jumpHeight = 2.5f;
+        public float jumpGravity = 1f;
+        public float fallGravity = 2f;
 
-        //+ LOCAL STATE
-        private Vector2 velocity;
-        public int timeSinceGrounded;
+        //- LOCAL STATE
+        private Vector2 movementInput;
+        private Vector2 desiredVelocity;
+        private int timeSinceGrounded;
         private bool jumping;
+        private bool holdingJump;
         private bool grounded;
 
-        //+ CONSTANTS
+        //- CONSTANTS
         private const float GroundedDistance = 0.60f;
+        private static readonly Vector3 FaceRight = new Vector3( 1, 1, 1);
+        private static readonly Vector3 FaceLeft  = new Vector3(-1, 1, 1);
 
         //> INITIALIZATION
         private void Awake() => rigidbody = GetComponent<Rigidbody2D>();
@@ -29,42 +36,67 @@ namespace OGAM.Player
         //> HANDLE INPUT
         private void Update()
         {
-            // cache velocity for later
-            velocity = rigidbody.velocity;
+            // cache desiredVelocity for later
+            desiredVelocity = rigidbody.velocity;
             
+            // get movement input
             jumping |= Input.GetKeyDown(KeyCode.Space);
-            velocity.x = movementSpeed * Input.GetAxis("Horizontal");
+            holdingJump = Input.GetKey(KeyCode.Space);
+            rigidbody.gravityScale = (holdingJump) ? jumpGravity : fallGravity;
+            
+            movementInput.x = movementSpeed * Input.GetAxis("Horizontal");
+            movementInput.y = movementSpeed * Input.GetAxis("Vertical");
+
+            if (movementInput.x > 0) transform.localScale = FaceRight;
+            if (movementInput.x < 0) transform.localScale = FaceLeft;
+
+            //@ temporary would like to slow down the player instead of stopping immediately 
+            desiredVelocity.x = movementInput.x;
         }
 
         //> HANDLE PHYSICS
         private void FixedUpdate()
         {
-            timeSinceGrounded++;
+            timeSinceGrounded++; // give the player a jump buffer to jump
             
             // check if player is grounded
-            var hit = Physics2D.Raycast(rigidbody.position, Vector2.down, GroundedDistance, groundMask);
+            var hit = Physics2D.Raycast(rigidbody.position, Vector2.down, GroundedDistance, jumpingMask);
             if (hit.collider is { })
             {
                 grounded = true;
                 timeSinceGrounded = 0;
-                // Debug.Log("HIT!", hit.collider.gameObject);
             }
-            else
-            {
-                grounded = false;
-                // Debug.Log("NO HIT!");
-            }
-            
+            else grounded = false;
+
             // jump if the player is grounded & trying to jump
-            if ((grounded || timeSinceGrounded < 4) && jumping)
+            if ((grounded || timeSinceGrounded < 5) && jumping)
             {
-                jumping = false;
-                velocity.y += Mathf.Sqrt(2f * Physics2D.gravity.magnitude * jumpHeight);
+                jumping = false;     // use this formula to get exact jump height
+                desiredVelocity.y += Mathf.Sqrt(2f * Physics2D.gravity.magnitude * jumpHeight);
             }
 
-            // apply the desired velocity to the player
-            rigidbody.velocity = velocity;
+            // assign the final velocity
+            rigidbody.velocity = desiredVelocity;
         }
+
+        private void OnCollisionStay2D(Collision2D collision) => ManageCollisions(collision);
+        private void OnCollisionExit2D(Collision2D collision) => ManageCollisions(collision);
+
+        //? WORK IN PROGRESS
+        private void ManageCollisions(Collision2D collision)
+        {
+            Vector2 contactNormal = Vector2.zero;
+            
+            foreach (var contact in collision.contacts)
+            {
+                contactNormal += contact.normal;
+            }
+            
+            contactNormal.Normalize();
+            
+            Debug.DrawRay(rigidbody.position, contactNormal, Color.magenta);
+        }
+
 
         //> DRAW HELPFUL GIZMOS
         private void OnDrawGizmos()
