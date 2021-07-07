@@ -7,5 +7,11 @@ namespace OGAM.Environment
     {
         public void SwitchScenes(int toThis)
         => SceneManager.LoadScene(toThis); //For other scripts to access
+
+        public void RestartScene()
+        {
+            Scene thisScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(thisScene.name);
+        }
     }
 }
