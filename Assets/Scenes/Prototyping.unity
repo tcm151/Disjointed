@@ -15066,6 +15066,8 @@ MonoBehaviour:
     m_Bits: 0
   movementSpeed: 4
   jumpHeight: 2.5
+  jumpGravity: 1
+  fallGravity: 2
 --- !u!50 &1715512815
 Rigidbody2D:
   serializedVersion: 4
@@ -15184,6 +15186,7 @@ MonoBehaviour:
   launchSpeed: 10
   projectileData:
     origin: player
+    mass: 1
     damage: 1
     knockback: 1
   hasSkull: 1
@@ -15236,6 +15239,7 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 256
+  Switcher: {fileID: 7971439243665192448}
 --- !u!19719996 &1745992815
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -17293,3 +17297,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7971439242990253954, guid: d5da11e78537b8240a8dd0006fc6b767, type: 3}
   m_PrefabInstance: {fileID: 7971439243665192446}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7971439243665192448 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7971439242990253957, guid: d5da11e78537b8240a8dd0006fc6b767, type: 3}
+  m_PrefabInstance: {fileID: 7971439243665192446}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f262e03413f5814cb21d66130f02a79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
