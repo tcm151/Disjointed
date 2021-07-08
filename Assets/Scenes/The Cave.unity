@@ -222,6 +222,10 @@ PrefabInstance:
       propertyPath: GroundedDistance
       value: 1.15
       objectReference: {fileID: 0}
+    - target: {fileID: 6066589626288808377, guid: 584f1591aa624a245b1b7977851e1a60, type: 3}
+      propertyPath: groundedDistance
+      value: 1.15
+      objectReference: {fileID: 0}
     - target: {fileID: 6066589626288808378, guid: 584f1591aa624a245b1b7977851e1a60, type: 3}
       propertyPath: m_Name
       value: Player
