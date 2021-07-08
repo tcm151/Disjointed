@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6066589626288808357}
   - component: {fileID: 6066589626288808358}
-  - component: {fileID: 8866542378305189056}
+  - component: {fileID: 6328640839122750261}
   - component: {fileID: 6066589626288808376}
   - component: {fileID: 6066589626288808377}
   - component: {fileID: 6066589626288808356}
@@ -88,8 +88,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &8866542378305189056
-BoxCollider2D:
+--- !u!70 &6328640839122750261
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -101,19 +101,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1.9375}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.95, y: 1.75}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0, y: -0.075}
+  m_Size: {x: 0.85, y: 1.8}
+  m_Direction: 0
 --- !u!50 &6066589626288808376
 Rigidbody2D:
   serializedVersion: 4
@@ -187,7 +177,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6066589626288808378}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 187b921c50db48a5800a79e8c5d17dfa, type: 3}
   m_Name: 
@@ -195,6 +185,8 @@ MonoBehaviour:
   attackDirection: {x: 1.11, y: 0}
   attackSize: {x: 3.11, y: 1.14}
   attackAngle: 0
+  damage: 1
+  knockback: 10
 --- !u!1001 &8704134258312023968
 PrefabInstance:
   m_ObjectHideFlags: 0
