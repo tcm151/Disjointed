@@ -112,7 +112,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.75}
+  m_Size: {x: 0.95, y: 1.75}
   m_EdgeRadius: 0
 --- !u!50 &6066589626288808376
 Rigidbody2D:
@@ -131,7 +131,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 2
+  m_Interpolate: 1
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -149,11 +149,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 4224
   groundedDistance: 1.15
   maxSpeed: 5
-  maxAcceleration: 18
-  jumpHeight: 3.25
+  maxAcceleration: 20
+  maxDeceleration: 5
+  jumpHeight: 3.5
   jumpGravity: 1
   fallGravity: 2
   grounded: 1
@@ -171,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4012cfc92135f3b4fae6b07f30be7bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skullPrefab: {fileID: 4827806684348181167, guid: bbdaae7a5d2d0d848be56cb5ccf45cec, type: 3}
+  skullPrefab: {fileID: 5100622251938618022, guid: bbdaae7a5d2d0d848be56cb5ccf45cec, type: 3}
   launchSpeed: 12
   projectileData:
     origin: player
@@ -186,7 +187,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6066589626288808378}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 187b921c50db48a5800a79e8c5d17dfa, type: 3}
   m_Name: 

@@ -37,8 +37,6 @@ namespace OGAM.Player
         public int contacts;
 
         //- CONSTANTS
-        private static readonly Vector3 FaceRight = new Vector3( 1, 1, 1);
-        private static readonly Vector3 FaceLeft  = new Vector3(-1, 1, 1);
         private const int PlayerLayer = 8;
         private const int PlatformLayer = 12;
 
@@ -73,6 +71,7 @@ namespace OGAM.Player
             rigidbody.gravityScale = (holdingJump) ? jumpGravity : fallGravity; // apply more gravity on fall
             if (timeSinceContact > 10) jumping = false; // cancel jump if not appropriate
 
+            // allows player to jump thru platforms
             Physics2D.IgnoreLayerCollision(PlayerLayer, PlatformLayer, rigidbody.velocity.y > 0f);
 
             //+ CHECK GROUNDED
@@ -122,20 +121,22 @@ namespace OGAM.Player
          private void OnCollisionStay2D(Collision2D collision) => ManageCollisions(collision);
          private void OnCollisionExit2D(Collision2D collision) => ManageCollisions(collision);
         
-        //? WORK IN PROGRESS
+        //> DETERMINE THE CONTACT NORMAL
          private void ManageCollisions(Collision2D collision)
          {
-             timeSinceContact = 0;
-             contactNormal = Vector2.zero;
-             contacts = collision.contactCount;
+             timeSinceContact = 0; // reset on contact
+             contactNormal = Vector2.zero; // reset normal
+             contacts = collision.contactCount; // count number of contact
+             
+             // if not contacting anything, normal is up
+             if (contacts == 0) contactNormal = Vector2.up;
         
+             // sum all of the contact normals 
              foreach (var contact in collision.contacts) contactNormal += contact.normal;
-
-             contactNormal.Normalize();
+             contactNormal.Normalize(); // normalize to length 1
         
+             // will be true if the player on in a wall
              onWall = (contactNormal == Vector2.left || contactNormal == Vector2.right);
-        
-             Debug.DrawRay(rigidbody.position, contactNormal, Color.magenta);
          }
 
 
@@ -146,6 +147,12 @@ namespace OGAM.Player
 
             Gizmos.color = (grounded) ? Color.green : Color.red;
             Gizmos.DrawRay(rigidbody.position, Vector3.down * groundedDistance);
+            
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawRay(rigidbody.position, contactNormal);
+            
+            Gizmos.color = Color.blue;
+            Gizmos.DrawRay(rigidbody.position, rigidbody.velocity.normalized * 2f);
         }
     }
 }
