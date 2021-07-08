@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace OGAM.Environment
 {
-    public class SSViaTrigger : MonoBehaviour
+    public class LoadSceneTrigger : MonoBehaviour
     {
         public int sceneToLoad;
         public LayerMask playerMask;
@@ -12,7 +12,7 @@ namespace OGAM.Environment
         {
             if (playerMask.Contains(collision.gameObject.layer))
             {
-                GetComponentInParent<SceneSwitch>().SwitchScenes(sceneToLoad);
+                SceneSwitcher.LoadScene(sceneToLoad);
             }
         }
     }

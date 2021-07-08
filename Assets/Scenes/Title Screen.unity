@@ -208,7 +208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7971439242990253957, guid: d5da11e78537b8240a8dd0006fc6b767, type: 3}
         m_TargetAssemblyTypeName: OGAM.Environment.SceneSwitch, Assembly-CSharp
-        m_MethodName: SwitchScenes
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
