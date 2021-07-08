@@ -9,6 +9,7 @@ namespace OGAM.Player
     {
         //- COMPONENTS
         new private Rigidbody2D rigidbody;
+        new private SpriteRenderer renderer;
 
         //- TWEAKABLES
         [Header("Ground Checking")]
@@ -17,6 +18,7 @@ namespace OGAM.Player
         [Header("Movement")]
         public float maxSpeed = 4f;
         public float maxAcceleration = 10f;
+        public float maxDeceleration = 25f;
         [Header("Jumping")]
         public float jumpHeight = 2.5f;
         public float jumpGravity = 1f;
@@ -37,11 +39,14 @@ namespace OGAM.Player
         //- CONSTANTS
         private static readonly Vector3 FaceRight = new Vector3( 1, 1, 1);
         private static readonly Vector3 FaceLeft  = new Vector3(-1, 1, 1);
+        private const int PlayerLayer = 8;
+        private const int PlatformLayer = 12;
 
         //> INITIALIZATION
         private void Awake()
         {
             rigidbody = GetComponent<Rigidbody2D>();
+            renderer = GetComponent<SpriteRenderer>();
         }
 
         //> HANDLE INPUT
@@ -54,25 +59,28 @@ namespace OGAM.Player
             movementInput.y = Input.GetAxisRaw("Vertical");
 
             // update direction of sprite
-            if (rigidbody.velocity.x > 0) transform.localScale = FaceRight;
-            if (rigidbody.velocity.x < 0) transform.localScale = FaceLeft;
+            if (rigidbody.velocity.x >  0.1f) renderer.flipX = false;
+            if (rigidbody.velocity.x < -0.1f) renderer.flipX = true;
         }
 
         //> HANDLE PHYSICS
         private void FixedUpdate()
         {
             //+ UPDATE STATE
-            timeSinceContact++;
+            timeSinceContact++; // wall jump buffer
             timeSinceGrounded++; // jump buffer
             desiredVelocity = rigidbody.velocity; // cache current velocity
             rigidbody.gravityScale = (holdingJump) ? jumpGravity : fallGravity; // apply more gravity on fall
-            if (timeSinceContact > 10) jumping = false;
+            if (timeSinceContact > 10) jumping = false; // cancel jump if not appropriate
+
+            Physics2D.IgnoreLayerCollision(PlayerLayer, PlatformLayer, rigidbody.velocity.y > 0f);
 
             //+ CHECK GROUNDED
             var hit = Physics2D.Raycast(rigidbody.position, Vector2.down, groundedDistance, groundMask);
             if (hit.collider is { })
             {
                 grounded = true;
+                timeSinceContact = 0;
                 timeSinceGrounded = 0;
             }
             else grounded = false;
@@ -83,7 +91,12 @@ namespace OGAM.Player
                 var maxDeltaSpeed = maxAcceleration * Time.deltaTime;
                 desiredVelocity.x = Mathf.MoveTowards(desiredVelocity.x, movementInput.x * maxSpeed, maxDeltaSpeed);
             }
-            
+            if (!grounded && movementInput.x == 0)
+            {
+                var maxDeltaSpeed = maxDeceleration * Time.deltaTime;
+                desiredVelocity.x = Mathf.MoveTowards(desiredVelocity.x, movementInput.x * maxSpeed, maxDeltaSpeed);
+            }
+
             // jump if the player is grounded & trying to jump
             if ((grounded || timeSinceGrounded < 5) && jumping)
             {
