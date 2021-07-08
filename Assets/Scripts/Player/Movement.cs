@@ -14,19 +14,22 @@ namespace OGAM.Player
         public LayerMask jumpingMask;
         public float movementSpeed = 4f;
         public float jumpHeight = 2.5f;
+        public float jumpForce;
         public float jumpGravity = 1f;
         public float fallGravity = 2f;
 
         //- LOCAL STATE
         private Vector2 movementInput;
+        private Vector2 contactNormal;
         private Vector2 desiredVelocity;
         private int timeSinceGrounded;
         private bool jumping;
         private bool holdingJump;
         private bool grounded;
+        private bool onWall;
 
         //- CONSTANTS
-        private const float GroundedDistance = 0.60f;
+        public float GroundedDistance = 0.85f;
         private static readonly Vector3 FaceRight = new Vector3( 1, 1, 1);
         private static readonly Vector3 FaceLeft  = new Vector3(-1, 1, 1);
 
@@ -72,7 +75,16 @@ namespace OGAM.Player
             if ((grounded || timeSinceGrounded < 5) && jumping)
             {
                 jumping = false;     // use this formula to get exact jump height
-                desiredVelocity.y += Mathf.Sqrt(2f * Physics2D.gravity.magnitude * jumpHeight);
+                rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                Debug.Log("JUMPED!");
+            }
+
+            if (onWall && jumping)
+            {
+                jumping = false;
+                var jumpDirection = (contactNormal + Vector2.up).normalized;
+                rigidbody.AddForce(jumpDirection * jumpForce / 2f, ForceMode2D.Impulse);
+                Debug.Log("JUMPED!");
             }
 
             // assign the final velocity
@@ -85,15 +97,17 @@ namespace OGAM.Player
         //? WORK IN PROGRESS
         private void ManageCollisions(Collision2D collision)
         {
-            Vector2 contactNormal = Vector2.zero;
-            
+            contactNormal = Vector2.zero;
+
             foreach (var contact in collision.contacts)
             {
                 contactNormal += contact.normal;
             }
             
             contactNormal.Normalize();
-            
+
+            onWall = (Vector2.Dot(contactNormal, Vector2.up) > -0.1f);
+
             Debug.DrawRay(rigidbody.position, contactNormal, Color.magenta);
         }
 

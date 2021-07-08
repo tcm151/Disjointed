@@ -5,7 +5,7 @@ namespace OGAM.Combat
 {
     public class SkullLauncher : MonoBehaviour
     {
-        public Projectile skullPrefab;
+        public GameObject skullPrefab;
         
         public float launchSpeed = 5f;
         public Projectile.Data projectileData;
@@ -40,7 +40,7 @@ namespace OGAM.Combat
             firing = false;
             
             var origin = transform.position;
-            var projectile = Instantiate(skullPrefab, origin, Quaternion.identity);
+            var projectile = Instantiate(skullPrefab, origin, Quaternion.identity).GetComponent<Projectile>();
             projectile.Launch(origin, mouseDirection, launchSpeed, projectileData);
         }
     }
