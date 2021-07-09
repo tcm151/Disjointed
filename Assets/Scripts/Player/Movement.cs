@@ -8,7 +8,7 @@ namespace OGAM.Player
     public class Movement : MonoBehaviour
     {
         //- COMPONENTS
-        new private Transform transform;
+        // new private Transform transform;
         new private Rigidbody2D rigidbody;
         new private SpriteRenderer renderer;
 
@@ -28,16 +28,20 @@ namespace OGAM.Player
         private Vector2 movementInput;
         private Vector2 desiredVelocity;
         private Vector2 contactNormal;
-        private int timeSinceGrounded;
-        private int timeSinceContact;
+        private Vector2 hitPoint;
+        [Header("Contact Checking")]
+        public int timeSinceGrounded;
+        public int timeSinceContact;
         public int timeSinceOnWall;
-        private int contacts;
-        private bool jumping;
-        private bool holdingJump;
-        private bool wallJumping;
-        private bool onGround;
-        private bool onWall;
-
+        public int contacts;
+        [Header("State")]
+        public bool jumping;
+        public bool holdingJump;
+        // public bool wallJumping;
+        public bool onGround;
+        public bool onWall;
+        public bool overlapCollider;
+        
         //- CONSTANTS
         private const int PlayerLayer = 8;
         private const int PlatformLayer = 12;
@@ -47,9 +51,9 @@ namespace OGAM.Player
         //> INITIALIZATION
         private void Awake()
         {
-            transform = GetComponent<Transform>();
+            // transform = GetComponent<Transform>();
             rigidbody = GetComponent<Rigidbody2D>();
-            renderer  = GetComponent<SpriteRenderer>();
+            renderer  = GetComponentInChildren<SpriteRenderer>();
         }
 
         //> EVERY FRAME
@@ -78,12 +82,16 @@ namespace OGAM.Player
             if (timeSinceContact > 10) jumping = false; // cancel jump if not appropriate
 
             // allow player to jump thru platforms
-            Physics2D.IgnoreLayerCollision(PlayerLayer, PlatformLayer, rigidbody.velocity.y > 0.1f);
+            // Physics2D.IgnoreLayerCollision(PlayerLayer, PlatformLayer, rigidbody.velocity.y > 0.1f);
 
             //+ CHECK GROUNDED
-            var hit = Physics2D.Raycast(rigidbody.position, Vector2.down, groundedDistance, groundMask);
+            var hit = Physics2D.Raycast(transform.position, Vector2.down, groundedDistance, groundMask);
             if (hit.collider is { })
             {
+                overlapCollider = hit.collider.OverlapPoint(transform.position);
+
+                // Debug.Log("Hit object !", hit.collider.gameObject);
+                
                 onGround = true;
                 timeSinceContact = 0;
                 timeSinceGrounded = 0;
@@ -107,14 +115,15 @@ namespace OGAM.Player
             }
 
             //+ WALL JUMPING
-            if ((onWall || timeSinceOnWall < 5) && jumping)
+            if (onWall && jumping)
             {
                 jumping = false;
-                wallJumping = true;
+                // wallJumping = true;
                 var jumpDirection = (contactNormal + Vector2.up).normalized;
                 desiredVelocity = jumpDirection * jumpSpeed;
             }
 
+            // clamp vertical velocity to avoid exploits
             desiredVelocity.y = Mathf.Clamp(desiredVelocity.y, float.MinValue, jumpSpeed);
 
             // assign the final velocity
@@ -132,10 +141,14 @@ namespace OGAM.Player
              contacts = collision.contactCount; // count number of contact
              
              // if not contacting anything, normal is up
-             if (contacts == 0) contactNormal = Vector2.up;
+             if (contacts == 0) contactNormal = Vector2.zero;
         
              // sum all of the contact normals 
-             foreach (var contact in collision.contacts) contactNormal += contact.normal;
+             foreach (var contact in collision.contacts)
+             {
+                 if (contact.collider.usedByEffector) continue;
+                 contactNormal += contact.normal;
+             }
              contactNormal.Normalize(); // normalize to length 1
         
              // will be true if the player on in a wall
@@ -147,9 +160,16 @@ namespace OGAM.Player
         //> DRAW HELPFUL GIZMOS
         private void OnDrawGizmos()
         {
-            if (!Application.isPlaying) return;
-
             var transformPosition = transform.position;
+            
+            // Gizmos.color = Color.white;
+            // Gizmos.DrawSphere(transformPosition, 0.1f);
+
+            if (!Application.isPlaying) return;
+            
+            // Gizmos.color = Color.white;
+            // Gizmos.DrawWireCube(colliderBounds.center, colliderBounds.extents);
+            // Gizmos.DrawSphere(hitPoint, 0.01f);
             
             Gizmos.color = (onGround) ? Color.green : Color.red;
             Gizmos.DrawRay(transformPosition, Vector3.down * groundedDistance);
@@ -157,8 +177,9 @@ namespace OGAM.Player
             Gizmos.color = Color.magenta;
             Gizmos.DrawRay(transformPosition, contactNormal);
             
-            Gizmos.color = Color.blue;
-            Gizmos.DrawRay(transformPosition, rigidbody.velocity.normalized * 2f);
+            // Gizmos.color = Color.blue;
+            // Gizmos.DrawRay(transformPosition, rigidbody.velocity.normalized * 2f);
+            
         }
     }
 }
