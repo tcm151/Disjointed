@@ -12,7 +12,6 @@ namespace OGAM.Player
         new private Rigidbody2D rigidbody;
         new private SpriteRenderer renderer;
 
-        //- TWEAKABLES
         [Header("Ground Checking")]
         public LayerMask groundMask;
         public float groundedDistance = 0.85f;
@@ -27,19 +26,23 @@ namespace OGAM.Player
 
         //- LOCAL STATE
         private Vector2 movementInput;
-        private Vector2 contactNormal;
         private Vector2 desiredVelocity;
+        private Vector2 contactNormal;
         private int timeSinceGrounded;
         private int timeSinceContact;
+        public int timeSinceOnWall;
+        private int contacts;
         private bool jumping;
         private bool holdingJump;
-        public bool grounded;
-        public bool onWall;
-        public int contacts;
+        private bool wallJumping;
+        private bool onGround;
+        private bool onWall;
 
         //- CONSTANTS
         private const int PlayerLayer = 8;
         private const int PlatformLayer = 12;
+
+        private float jumpSpeed => Mathf.Sqrt(2f * Physics2D.gravity.magnitude * jumpHeight);
 
         //> INITIALIZATION
         private void Awake()
@@ -49,10 +52,10 @@ namespace OGAM.Player
             renderer  = GetComponent<SpriteRenderer>();
         }
 
-        //> HANDLE INPUT
+        //> EVERY FRAME
         private void Update()
         {
-            // get input
+            //+ HANDLE INPUT
             jumping |= Input.GetKeyDown(KeyCode.Space);
             holdingJump = Input.GetKey(KeyCode.Space);
             movementInput.x = Input.GetAxisRaw("Horizontal");
@@ -63,58 +66,56 @@ namespace OGAM.Player
             if (rigidbody.velocity.x < -0.1f) renderer.flipX = true;
         }
 
-        //> HANDLE PHYSICS
+        //> EVERY PHYSICS STEP
         private void FixedUpdate()
         {
             //+ UPDATE STATE
-            timeSinceContact++; // wall jump buffer
+            timeSinceOnWall++; // wall separate buffer
+            timeSinceContact++;// wall jump buffer
             timeSinceGrounded++; // jump buffer
             desiredVelocity = rigidbody.velocity; // cache current velocity
-            rigidbody.gravityScale = (holdingJump && desiredVelocity.y > 0f) ? jumpGravity : fallGravity; // apply more gravity on fall
+            rigidbody.gravityScale = ((holdingJump && desiredVelocity.y > 0f) || onWall) ? jumpGravity : fallGravity; // apply more gravity on fall
             if (timeSinceContact > 10) jumping = false; // cancel jump if not appropriate
 
-            // allows player to jump thru platforms
+            // allow player to jump thru platforms
             Physics2D.IgnoreLayerCollision(PlayerLayer, PlatformLayer, rigidbody.velocity.y > 0.1f);
 
             //+ CHECK GROUNDED
             var hit = Physics2D.Raycast(rigidbody.position, Vector2.down, groundedDistance, groundMask);
             if (hit.collider is { })
             {
-                grounded = true;
+                onGround = true;
                 timeSinceContact = 0;
                 timeSinceGrounded = 0;
             }
-            else grounded = false;
+            else onGround = false;
 
             //+ HORIZONTAL MOVEMENT
-            if (grounded || movementInput.x != 0)
+            float maxDeltaSpeed = (onGround, onWall, movementInput.x == 0, timeSinceOnWall > 50) switch
             {
-                var maxDeltaSpeed = maxAcceleration * Time.deltaTime;
-                desiredVelocity.x = Mathf.MoveTowards(desiredVelocity.x, movementInput.x * maxSpeed, maxDeltaSpeed);
-            }
-            if (!grounded && movementInput.x == 0)
-            {
-                var maxDeltaSpeed = maxDeceleration * Time.deltaTime;
-                desiredVelocity.x = Mathf.MoveTowards(desiredVelocity.x, movementInput.x * maxSpeed, maxDeltaSpeed);
-            }
+                (_,     true,  _    , false) => 0f,
+                (false, false, true,  _    ) => maxDeceleration * Time.deltaTime,
+                (_,     _,     _,     _    ) => maxAcceleration * Time.deltaTime,
+            };
+            desiredVelocity.x = Mathf.MoveTowards(desiredVelocity.x, movementInput.x * maxSpeed, maxDeltaSpeed);
 
-            // jump if the player is grounded & trying to jump
-            if ((grounded || timeSinceGrounded < 5) && jumping)
-            {
-                jumping = false;     // use this formula to get exact jump height
-                desiredVelocity.y += Mathf.Sqrt(2f * Physics2D.gravity.magnitude * jumpHeight);
-                // Debug.Log("REGULAR JUMP!");
-            }
-
-            if ((onWall || timeSinceContact < 5) && jumping)
+            //+ REGULAR JUMPING
+            if ((onGround || timeSinceGrounded < 5) && jumping)
             {
                 jumping = false;
-                var jumpDirection = (contactNormal + Vector2.up).normalized;
-                desiredVelocity += jumpDirection * Mathf.Sqrt(2f * Physics2D.gravity.magnitude * jumpHeight);
-                // Debug.Log("WALL JUMP!");
+                desiredVelocity.y += jumpSpeed;
             }
 
-            desiredVelocity.y = Mathf.Clamp(desiredVelocity.y, float.MinValue, Mathf.Sqrt(2f * Physics2D.gravity.magnitude * jumpHeight));
+            //+ WALL JUMPING
+            if ((onWall || timeSinceOnWall < 5) && jumping)
+            {
+                jumping = false;
+                wallJumping = true;
+                var jumpDirection = (contactNormal + Vector2.up).normalized;
+                desiredVelocity = jumpDirection * jumpSpeed;
+            }
+
+            desiredVelocity.y = Mathf.Clamp(desiredVelocity.y, float.MinValue, jumpSpeed);
 
             // assign the final velocity
             rigidbody.velocity = desiredVelocity;
@@ -139,6 +140,7 @@ namespace OGAM.Player
         
              // will be true if the player on in a wall
              onWall = (contactNormal == Vector2.left || contactNormal == Vector2.right);
+             if (!onWall) timeSinceOnWall = 0;
          }
 
 
@@ -149,7 +151,7 @@ namespace OGAM.Player
 
             var transformPosition = transform.position;
             
-            Gizmos.color = (grounded) ? Color.green : Color.red;
+            Gizmos.color = (onGround) ? Color.green : Color.red;
             Gizmos.DrawRay(transformPosition, Vector3.down * groundedDistance);
             
             Gizmos.color = Color.magenta;
