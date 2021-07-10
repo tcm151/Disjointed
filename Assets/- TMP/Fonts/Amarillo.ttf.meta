@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 17867a79a17881646850b1b7e2e2c3da
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Amarillo
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b586718f295834244be036058ac842af, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

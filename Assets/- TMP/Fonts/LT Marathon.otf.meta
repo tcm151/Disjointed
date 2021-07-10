@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: f0045560bd1a0704986d6ad5777d245e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - LT Marathon
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 001ff0aeb8b5f4f4986eaa5da5de624f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
