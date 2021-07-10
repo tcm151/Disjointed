@@ -9,14 +9,16 @@ namespace OGAM
     public class TwoWayPlatforms : MonoBehaviour
     {
         public float timer;
-        public float waitTime = 0.5f;
+        public float waitTime = 0.33f;
+        public float resetTime = 0.1f;
         
         private PlatformEffector2D effector;
         
         private void Awake()
         {
-            timer = 0f;
             effector = GetComponent<PlatformEffector2D>();
+            effector.surfaceArc = 140f;
+            timer = 0f;
         }
 
         private void Update()
@@ -29,21 +31,20 @@ namespace OGAM
             if (Input.GetKey(KeyCode.S))
             {
                 timer += Time.deltaTime;
-                if (timer > waitTime) effector.rotationalOffset = 180f;
+                if (timer > waitTime) effector.surfaceArc = 0f;
             }
             
             if (Input.GetKeyUp(KeyCode.S))
             {
                 timer = waitTime;
-                StartCoroutine(CO_ResetPlatforms());
-                // effector.rotationalOffset = 0f;
+                StartCoroutine(CR_ResetPlatforms());
             }
         }
 
-        private IEnumerator CO_ResetPlatforms()
+        private IEnumerator CR_ResetPlatforms()
         {
-            yield return new WaitForSeconds(0.5f);
-            effector.rotationalOffset = 0f;
+            yield return new WaitForSeconds(resetTime);
+            effector.surfaceArc = 140f;
         }
     }
 }
