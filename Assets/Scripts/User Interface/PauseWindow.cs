@@ -24,7 +24,11 @@ namespace OGAM
             else Pause();
         }
 
-        public void Restart() => SceneSwitcher.ReloadScene();
+        public void Restart()
+        {
+            Resume();
+            SceneSwitcher.ReloadScene();
+        }
 
         public void Quit() => SceneSwitcher.QuitGame();
 
