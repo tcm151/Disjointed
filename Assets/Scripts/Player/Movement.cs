@@ -8,7 +8,6 @@ namespace OGAM.Player
     public class Movement : MonoBehaviour
     {
         //- COMPONENTS
-        // new private Transform transform;
         new private Rigidbody2D rigidbody;
         new private SpriteRenderer renderer;
 
@@ -28,7 +27,6 @@ namespace OGAM.Player
         private Vector2 movementInput;
         private Vector2 desiredVelocity;
         private Vector2 contactNormal;
-        private Vector2 hitPoint;
         [Header("Contact Checking")]
         public int timeSinceGrounded;
         public int timeSinceContact;
@@ -37,21 +35,16 @@ namespace OGAM.Player
         [Header("State")]
         public bool jumping;
         public bool holdingJump;
-        // public bool wallJumping;
         public bool onGround;
         public bool onWall;
-        public bool overlapCollider;
+        // public bool wallJumping;
         
-        //- CONSTANTS
-        private const int PlayerLayer = 8;
-        private const int PlatformLayer = 12;
-
+        //- HELPERS
         private float jumpSpeed => Mathf.Sqrt(2f * Physics2D.gravity.magnitude * jumpHeight);
 
         //> INITIALIZATION
         private void Awake()
         {
-            // transform = GetComponent<Transform>();
             rigidbody = GetComponent<Rigidbody2D>();
             renderer  = GetComponentInChildren<SpriteRenderer>();
         }
@@ -88,10 +81,6 @@ namespace OGAM.Player
             var hit = Physics2D.Raycast(transform.position, Vector2.down, groundedDistance, groundMask);
             if (hit.collider is { })
             {
-                overlapCollider = hit.collider.OverlapPoint(transform.position);
-
-                // Debug.Log("Hit object !", hit.collider.gameObject);
-                
                 onGround = true;
                 timeSinceContact = 0;
                 timeSinceGrounded = 0;
@@ -103,6 +92,7 @@ namespace OGAM.Player
             {
                 (_,     true,  _    , false) => 0f,
                 (false, false, true,  _    ) => maxDeceleration * Time.deltaTime,
+                (true,  true,  _,     _    ) => maxAcceleration * Time.deltaTime,
                 (_,     _,     _,     _    ) => maxAcceleration * Time.deltaTime,
             };
             desiredVelocity.x = Mathf.MoveTowards(desiredVelocity.x, movementInput.x * maxSpeed, maxDeltaSpeed);
@@ -142,13 +132,12 @@ namespace OGAM.Player
              
              // if not contacting anything, normal is up
              if (contacts == 0) contactNormal = Vector2.zero;
-        
+             
+             // fix weird edge case while on platforms
+             contactNormal = (onGround) ? Vector2.up : Vector2.zero;
+             
              // sum all of the contact normals 
-             foreach (var contact in collision.contacts)
-             {
-                 if (contact.collider.usedByEffector) continue;
-                 contactNormal += contact.normal;
-             }
+             foreach (var contact in collision.contacts) contactNormal += contact.normal;
              contactNormal.Normalize(); // normalize to length 1
         
              // will be true if the player on in a wall
