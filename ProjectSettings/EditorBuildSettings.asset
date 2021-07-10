@@ -8,14 +8,17 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Title Screen.unity
     guid: de34404aa3ca15e42ae63c0bfba35176
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Prototyping.unity
     guid: 2bf0393c52522c0468ef18ca10f3b663
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cavefront Beach.unity
     guid: 9adaf6de969dd1a40b588031f706b501
+  - enabled: 1
+    path: Assets/Scenes/The Cave.unity
+    guid: cc71745866472bf4e92ca8ed21ca864f
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b5eac8e81bbbd6c47b9324dc29a23892, type: 2}

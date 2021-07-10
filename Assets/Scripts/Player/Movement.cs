@@ -165,7 +165,9 @@ namespace OGAM.Player
             // Gizmos.color = Color.white;
             // Gizmos.DrawSphere(transformPosition, 0.1f);
 
+            #if UNITY_EDITOR
             if (!Application.isPlaying) return;
+            #endif
             
             // Gizmos.color = Color.white;
             // Gizmos.DrawWireCube(colliderBounds.center, colliderBounds.extents);
