@@ -1,3 +1,4 @@
+using OGAM.Player;
 using UnityEngine;
 using OGAM.Tools;
 using OGAM.SceneManagement;
@@ -14,7 +15,13 @@ namespace OGAM.Environment
 
             //Debug.Log("<color=red>PLAYER DEATH!</color>");
             //collider.transform.position = new Vector3(0, 1, 0);
-            SceneSwitcher.ReloadScene();
+            // SceneSwitcher.ReloadScene();
+
+            var checkpointManager = collider.GetComponent<CheckpointManager>();
+            if (checkpointManager is null) return;
+            
+            checkpointManager.ReturnToCurrentCheckpoint();
         }
+        
     }
 }
