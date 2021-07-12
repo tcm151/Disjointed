@@ -102,9 +102,9 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &1582706522331144125
 CapsuleCollider2D:
@@ -134,4 +134,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0987d9ddd25051c4192a212f610b6139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ESO: {fileID: 11400000, guid: 133994b9587dff142a3a455b98f1bdbd, type: 2}
   health: 2
+  speed: 1
+  knockbackMult: 1
+  target: {fileID: 6066589626288808357, guid: 584f1591aa624a245b1b7977851e1a60, type: 3}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4224
+  groundedDistance: 0.85
+  onGround: 0
+  onWall: 0
