@@ -1,7 +1,8 @@
+using OGAM.Combat;
 using UnityEngine;
 
 
-namespace OGAM.Combat
+namespace OGAM.Player
 {
     public class SkullLauncher : MonoBehaviour
     {

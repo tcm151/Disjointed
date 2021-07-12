@@ -1,8 +1,7 @@
-using System;
-using OGAM.Environment;
 using UnityEngine;
+using OGAM.SceneManagement;
 
-namespace OGAM
+namespace OGAM.UI
 {
     public class PauseWindow : UI_Window
     {

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-namespace OGAM
+namespace OGAM.UI
 {
 
     public class UI_Panel : MonoBehaviour

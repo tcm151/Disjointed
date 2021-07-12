@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace OGAM
+namespace OGAM.Environment
 {
     [RequireComponent(typeof(PlatformEffector2D))]
     public class TwoWayPlatforms : MonoBehaviour

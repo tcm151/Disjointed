@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace OGAM.Environment
+namespace OGAM.SceneManagement
 {
     public class LoadSceneButton : MonoBehaviour
     {

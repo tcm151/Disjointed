@@ -1,8 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using OGAM.Tools;
 using UnityEngine;
+using OGAM.Tools;
+using OGAM.SceneManagement;
 
 namespace OGAM.Environment
 {

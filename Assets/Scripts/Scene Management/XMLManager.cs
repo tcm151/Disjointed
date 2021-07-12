@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace OGAM
+namespace OGAM.SceneManagement
 {
     public class XMLManager : MonoBehaviour
     {   

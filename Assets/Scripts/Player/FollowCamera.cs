@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace OGAM
+namespace OGAM.Player
 {
     public class FollowCamera : MonoBehaviour
     {

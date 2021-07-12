@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace OGAM.Environment
+namespace OGAM.SceneManagement
 {
     public static class SceneSwitcher
     {
