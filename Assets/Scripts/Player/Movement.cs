@@ -37,7 +37,7 @@ namespace OGAM.Player
         public bool holdingJump;
         public bool onGround;
         public bool onWall;
-        // public bool wallJumping;
+        public bool wallJumping;
         
         //- HELPERS
         private float jumpSpeed => Mathf.Sqrt(2f * Physics2D.gravity.magnitude * jumpHeight);
@@ -59,8 +59,8 @@ namespace OGAM.Player
             movementInput.y = Input.GetAxisRaw("Vertical");
 
             // update direction of sprite
-            if (rigidbody.velocity.x >  0.1f) renderer.flipX = false;
-            if (rigidbody.velocity.x < -0.1f) renderer.flipX = true;
+            if (rigidbody.velocity.x >  0.15f) renderer.flipX = false;
+            if (rigidbody.velocity.x < -0.15f) renderer.flipX = true;
         }
 
         //> EVERY PHYSICS STEP
@@ -72,7 +72,9 @@ namespace OGAM.Player
             timeSinceGrounded++; // jump buffer
             desiredVelocity = rigidbody.velocity; // cache current velocity
             rigidbody.gravityScale = ((holdingJump && desiredVelocity.y > 0f) || onWall) ? jumpGravity : fallGravity; // apply more gravity on fall
-            if (timeSinceContact > 10) jumping = false; // cancel jump if not appropriate
+            if (timeSinceContact > 5) jumping = false; // cancel jump if not appropriate
+            if (rigidbody.velocity.y < 2.25f) wallJumping = false;
+
 
             // allow player to jump thru platforms
             // Physics2D.IgnoreLayerCollision(PlayerLayer, PlatformLayer, rigidbody.velocity.y > 0.1f);
@@ -88,12 +90,13 @@ namespace OGAM.Player
             else onGround = false;
 
             //+ HORIZONTAL MOVEMENT
-            float maxDeltaSpeed = (onGround, onWall, movementInput.x == 0, timeSinceOnWall > 50) switch
+            float maxDeltaSpeed = (onGround, onWall, movementInput.x == 0, timeSinceOnWall > 50, wallJumping) switch
             {
-                (_,     true,  _    , false) => 0f,
-                (false, false, true,  _    ) => maxDeceleration * Time.deltaTime,
-                (true,  true,  _,     _    ) => maxAcceleration * Time.deltaTime,
-                (_,     _,     _,     _    ) => maxAcceleration * Time.deltaTime,
+                (_,     true,  _,     false, _   ) => 0f,
+                (false, false, false, _,     true) => 0f,
+                (false, false, true,  _,     _   ) => maxDeceleration * Time.deltaTime,
+                (true,  true,  _,     _,     _   ) => maxAcceleration * Time.deltaTime,
+                (_,     _,     _,     _,     _   ) => maxAcceleration * Time.deltaTime,
             };
             desiredVelocity.x = Mathf.MoveTowards(desiredVelocity.x, movementInput.x * maxSpeed, maxDeltaSpeed);
 
@@ -108,11 +111,11 @@ namespace OGAM.Player
             if (onWall && jumping)
             {
                 jumping = false;
-                // wallJumping = true;
+                wallJumping = true;
                 var jumpDirection = (contactNormal + Vector2.up).normalized;
                 desiredVelocity = jumpDirection * jumpSpeed;
             }
-
+            
             // clamp vertical velocity to avoid exploits
             desiredVelocity.y = Mathf.Clamp(desiredVelocity.y, float.MinValue, jumpSpeed);
 
@@ -141,7 +144,7 @@ namespace OGAM.Player
              contactNormal.Normalize(); // normalize to length 1
         
              // will be true if the player on in a wall
-             onWall = (contactNormal == Vector2.left || contactNormal == Vector2.right);
+             onWall = (Vector2.Dot(contactNormal, Vector2.left) > 0.99f || Vector2.Dot(contactNormal, Vector2.right) > 0.99f);
              if (!onWall) timeSinceOnWall = 0;
          }
 
@@ -158,15 +161,11 @@ namespace OGAM.Player
             if (!Application.isPlaying) return;
             #endif
             
-            // Gizmos.color = Color.white;
-            // Gizmos.DrawWireCube(colliderBounds.center, colliderBounds.extents);
-            // Gizmos.DrawSphere(hitPoint, 0.01f);
-            
-            Gizmos.color = (onGround) ? Color.green : Color.red;
-            Gizmos.DrawRay(transformPosition, Vector3.down * groundedDistance);
+            // Gizmos.color = (onGround) ? Color.green : Color.red;
+            // Gizmos.DrawRay(transformPosition, Vector3.down * groundedDistance);
             
             Gizmos.color = Color.magenta;
-            Gizmos.DrawRay(transformPosition, contactNormal);
+            Gizmos.DrawRay(transformPosition, contactNormal * 2f);
             
             // Gizmos.color = Color.blue;
             // Gizmos.DrawRay(transformPosition, rigidbody.velocity.normalized * 2f);
