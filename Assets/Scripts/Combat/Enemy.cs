@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using OGAM.Combat;
 using UnityEngine;
+using UnityEngine.Serialization;
+
 
 namespace OGAM
 {
@@ -11,7 +13,7 @@ namespace OGAM
     {
         new private Rigidbody2D rigidbody;
 
-        public EnemyStatsObject ESO;
+        [FormerlySerializedAs("stats")][FormerlySerializedAs("ESO")] public EnemyData data;
         public float health;
         public float speed;
         public float knockbackMult;
@@ -26,9 +28,9 @@ namespace OGAM
         private void Awake()
         {
             rigidbody = GetComponent<Rigidbody2D>();
-            health = ESO.health;
-            speed = ESO.speed;
-            knockbackMult = ESO.knockbackMultiplier;
+            health = data.health;
+            speed = data.speed;
+            knockbackMult = data.knockbackMultiplier;
         }
 
         private void FixedUpdate()
@@ -39,11 +41,7 @@ namespace OGAM
         public void Move()
         {
             var hit = Physics2D.Raycast(transform.position, Vector2.down, groundedDistance, groundMask);
-            if (hit.collider is { })
-            {
-                onGround = true;
-            }
-            else onGround = false;
+            onGround = hit.collider is { };
 
             if (Mathf.Approximately(target.position.x, this.transform.position.x)) return;
             if (target.position.x > this.transform.position.x)
@@ -63,7 +61,7 @@ namespace OGAM
 
         public void TakeKnockback(float knockback, Vector2 direction)
         {
-            rigidbody.AddForce(direction * knockback * knockbackMult, ForceMode2D.Impulse);
+            rigidbody.AddForce(direction * (knockback * knockbackMult), ForceMode2D.Impulse);
         }
     }
 }

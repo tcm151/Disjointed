@@ -19,9 +19,7 @@ namespace OGAM.Combat
         }
         
         public Data data;
-        
         new private Rigidbody2D rigidbody;
-        // public LayerMask collisionMask;
 
         //> INITIALIZATION
         private void Awake()
@@ -45,9 +43,6 @@ namespace OGAM.Combat
             var damageable = collision.gameObject.GetComponent<IDamageable>();
             damageable?.TakeDamage(data.damage, data.origin);
             // damageable?.TakeKnockback(data.knockback * data.mass, rigidbody.velocity.normalized);
-
-            // var contact = collision.GetContact(0);
-            // rigidbody.AddForce(contact.normal * contact.normalImpulse / 2, ForceMode2D.Impulse);
         }
     }
 }
