@@ -1,4 +1,5 @@
 using OGAM.Combat;
+using OGAM.Tools;
 using UnityEngine;
 
 
@@ -6,24 +7,21 @@ namespace OGAM.Player
 {
     public class SkullLauncher : MonoBehaviour
     {
-        public GameObject skullPrefab;
-        
-        public float launchSpeed = 5f;
+        public Projectile skullPrefab;
         public Projectile.Data projectileData;
-        
-        [SerializeField] private bool hasSkull;
+        public float launchSpeed = 5f;
+        public bool hasSkull;
+
 
         new private Camera camera;
-
         private Vector3 mousePosition;
         private Vector2 mouseDirection;
         private bool firing;
 
-        private void Awake()
-        {
-            camera = Camera.main;
-        }
+        //> INITIALIZATION
+        private void Awake() => camera = Camera.main;
 
+        //> HANDLE INPUT
         private void Update()
         {
             firing |= Input.GetMouseButtonDown(1);
@@ -34,15 +32,17 @@ namespace OGAM.Player
             mouseDirection = (mousePosition - transform.position).normalized;
         }
 
+        //> FIRE SKULLS
         private void FixedUpdate()
         {
+            // return if no skull or not firing
             if (!hasSkull || !firing) return;
             
-            firing = false;
-            
             var origin = transform.position;
-            var projectile = Instantiate(skullPrefab, origin, Quaternion.identity).GetComponent<Projectile>();
+            var projectile = Factory.Spawn(skullPrefab, origin); // create a new game object
             projectile.Launch(origin, mouseDirection, launchSpeed, projectileData);
+            
+            firing = false;
         }
     }
     

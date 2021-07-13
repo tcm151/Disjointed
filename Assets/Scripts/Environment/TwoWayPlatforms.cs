@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace OGAM.Environment
@@ -14,6 +12,7 @@ namespace OGAM.Environment
         
         private PlatformEffector2D effector;
         
+        //> INITIALIZATION
         private void Awake()
         {
             effector = GetComponent<PlatformEffector2D>();
@@ -21,19 +20,23 @@ namespace OGAM.Environment
             timer = 0f;
         }
 
+        //> HANDLE INPUT
         private void Update()
         {
+            // start timer on key down
             if (Input.GetKeyDown(KeyCode.S))
             {
                 timer = 0f;
             }
             
+            // tick timer while key held
             if (Input.GetKey(KeyCode.S))
             {
                 timer += Time.deltaTime;
                 if (timer > waitTime) effector.surfaceArc = 0f;
             }
             
+            // start reset cycle on key up
             if (Input.GetKeyUp(KeyCode.S))
             {
                 timer = waitTime;
@@ -41,6 +44,7 @@ namespace OGAM.Environment
             }
         }
 
+        //> WAIT FOR RESET
         private IEnumerator CR_ResetPlatforms()
         {
             yield return new WaitForSeconds(resetTime);

@@ -1,7 +1,6 @@
-using System;
+using UnityEngine;  
 using OGAM.Player;
 using OGAM.Tools;
-using UnityEngine;  
 
 namespace OGAM.Environment
 {
@@ -13,12 +12,13 @@ namespace OGAM.Environment
         
         private void OnTriggerEnter2D(Collider2D collider)
         {
+            // ignore anything except the player
             if (!playerMask.Contains(collider.gameObject.layer)) return;
 
-            var checkpointManager = collider.GetComponent<CheckpointManager>();
+            var checkpointManager = collider.GetComponent<PlayerManager>();
             if (checkpointManager is null) return;
             
-            checkpointManager.SetCurrentCheckpoint(this);
+            checkpointManager.SetCheckpoint(this);
                 
         }
     }

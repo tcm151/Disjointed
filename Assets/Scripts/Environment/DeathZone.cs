@@ -1,7 +1,6 @@
 using OGAM.Player;
 using UnityEngine;
 using OGAM.Tools;
-using OGAM.SceneManagement;
 
 namespace OGAM.Environment
 {
@@ -11,16 +10,13 @@ namespace OGAM.Environment
         
         private void OnTriggerEnter2D(Collider2D collider)
         {
+            // ignore anything except the player
             if (!playerMask.Contains(collider.gameObject.layer)) return;
 
-            //Debug.Log("<color=red>PLAYER DEATH!</color>");
-            //collider.transform.position = new Vector3(0, 1, 0);
-            // SceneSwitcher.ReloadScene();
-
-            var checkpointManager = collider.GetComponent<CheckpointManager>();
-            if (checkpointManager is null) return;
+            var player = collider.GetComponent<PlayerManager>();
+            if (player is null) return;
             
-            checkpointManager.ReturnToCurrentCheckpoint();
+            player.Die();
         }
         
     }
