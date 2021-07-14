@@ -117,7 +117,7 @@ namespace OGAM.Player
             }
             
             // clamp vertical velocity to avoid exploits
-            desiredVelocity.y = Mathf.Clamp(desiredVelocity.y, float.MinValue, jumpSpeed);
+            // desiredVelocity.y = Mathf.Clamp(desiredVelocity.y, float.MinValue, jumpSpeed);
 
             // assign the final velocity
             rigidbody.velocity = desiredVelocity;
