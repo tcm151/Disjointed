@@ -13,13 +13,14 @@ namespace OGAM.Player
 
         [Header("Ground Checking")]
         public LayerMask groundMask;
-        public float groundedDistance = 0.85f;
+        public Vector3 groundedOffset;
+        public float groundedDistance = 0.33f;
         [Header("Movement")]
-        public float maxSpeed = 4f;
-        public float maxAcceleration = 10f;
-        public float maxDeceleration = 25f;
+        public float maxSpeed = 6f;
+        public float maxAcceleration = 40f;
+        public float maxDeceleration = 5f;
         [Header("Jumping")]
-        public float jumpHeight = 2.5f;
+        public float jumpHeight = 3.5f;
         public float jumpGravity = 1f;
         public float fallGravity = 2f;
 
@@ -38,7 +39,7 @@ namespace OGAM.Player
         public bool onGround;
         public bool onWall;
         public bool wallJumping;
-        
+
         //- HELPERS
         private float jumpSpeed => Mathf.Sqrt(2f * Physics2D.gravity.magnitude * jumpHeight);
 
@@ -80,7 +81,7 @@ namespace OGAM.Player
             // Physics2D.IgnoreLayerCollision(PlayerLayer, PlatformLayer, rigidbody.velocity.y > 0.1f);
 
             //+ CHECK GROUNDED
-            var hit = Physics2D.Raycast(transform.position, Vector2.down, groundedDistance, groundMask);
+            var hit = Physics2D.Raycast(transform.position + groundedOffset, Vector2.down, groundedDistance, groundMask);
             if (hit.collider is { })
             {
                 onGround = true;
@@ -161,14 +162,14 @@ namespace OGAM.Player
             if (!Application.isPlaying) return;
             #endif
             
-            // Gizmos.color = (onGround) ? Color.green : Color.red;
-            // Gizmos.DrawRay(transformPosition, Vector3.down * groundedDistance);
+            Gizmos.color = (onGround) ? Color.green : Color.red;
+            Gizmos.DrawRay(transformPosition + groundedOffset, Vector3.down * groundedDistance);
             
             Gizmos.color = Color.magenta;
-            Gizmos.DrawRay(transformPosition, contactNormal * 2f);
+            Gizmos.DrawRay(transformPosition, contactNormal);
             
-            // Gizmos.color = Color.blue;
-            // Gizmos.DrawRay(transformPosition, rigidbody.velocity.normalized * 2f);
+            Gizmos.color = Color.blue;
+            Gizmos.DrawRay(transformPosition, rigidbody.velocity.normalized * 1.5f);
             
         }
     }
