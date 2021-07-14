@@ -33,6 +33,8 @@ namespace OGAM.Player
         public int timeSinceContact;
         public int timeSinceOnWall;
         public int contacts;
+        [Header("On Wall")]
+        public float maxWallFallSpeed;
         [Header("State")]
         public bool jumping;
         public bool holdingJump;
@@ -119,6 +121,8 @@ namespace OGAM.Player
             
             // clamp vertical velocity to avoid exploits
             // desiredVelocity.y = Mathf.Clamp(desiredVelocity.y, float.MinValue, jumpSpeed);
+
+            if (onWall) desiredVelocity.y = Mathf.Clamp(desiredVelocity.y, maxWallFallSpeed, float.MaxValue);
 
             // assign the final velocity
             rigidbody.velocity = desiredVelocity;
