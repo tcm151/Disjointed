@@ -206,7 +206,7 @@ MonoBehaviour:
   maxDeceleration: 5
   jumpHeight: 3.5
   jumpGravity: 1
-  fallGravity: 2
+  fallGravity: 2.25
   timeSinceGrounded: 0
   timeSinceContact: 0
   timeSinceOnWall: 0
