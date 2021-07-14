@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using OGAM.Environment;
+using OGAM.SceneManagement;
 
 
 namespace OGAM.Player
@@ -18,7 +19,8 @@ namespace OGAM.Player
             
             //@ revert to old save state and not just teleport 
             
-            transform.position = lastCheckpoint.position;
+            if (lastCheckpoint is { }) transform.position = lastCheckpoint.position;
+            else SceneSwitcher.ReloadScene();
         }
     }
 }
