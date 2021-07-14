@@ -107,7 +107,8 @@ namespace OGAM.Player
             if ((onGround || timeSinceGrounded < 5) && jumping)
             {
                 jumping = false;
-                desiredVelocity.y += jumpSpeed;
+                desiredVelocity.y = jumpSpeed;
+                // desiredVelocity.y = Mathf.Clamp(desiredVelocity.y, float.MinValue, jumpSpeed);
             }
 
             //+ WALL JUMPING
