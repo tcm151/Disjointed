@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1393238928325519281}
   - component: {fileID: 1938548258560532669}
   - component: {fileID: 4827806684348181167}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Skull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    origin: null
+    origin: Skull
     mass: 1
     damage: 1
     knockback: 1
