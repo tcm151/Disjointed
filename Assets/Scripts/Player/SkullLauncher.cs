@@ -7,8 +7,8 @@ namespace OGAM.Player
 {
     public class SkullLauncher : MonoBehaviour
     {
-        public Projectile skullPrefab;
-        public Projectile.Data projectileData;
+        public Skull skullPrefab;
+        public Skull.Data projectileData;
         public float launchSpeed = 5f;
         public bool hasSkull;
 
@@ -43,6 +43,7 @@ namespace OGAM.Player
             projectile.Launch(origin, mouseDirection, launchSpeed, projectileData);
             
             firing = false;
+            hasSkull = false;
         }
     }
     
