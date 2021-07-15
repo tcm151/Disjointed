@@ -6,11 +6,11 @@ namespace OGAM.Environment
     [RequireComponent(typeof(PlatformEffector2D))]
     public class TwoWayPlatforms : MonoBehaviour
     {
-        public float timer;
+        private PlatformEffector2D effector;
+        private float timer;
+        
         public float waitTime = 0.33f;
         public float resetTime = 0.1f;
-        
-        private PlatformEffector2D effector;
         
         //> INITIALIZATION
         private void Awake()
@@ -23,19 +23,19 @@ namespace OGAM.Environment
         //> HANDLE INPUT
         private void Update()
         {
-            // start timer on key down
+            // reset timer on key down
             if (Input.GetKeyDown(KeyCode.S))
             {
                 timer = 0f;
             }
-            
+
             // tick timer while key held
             if (Input.GetKey(KeyCode.S))
             {
                 timer += Time.deltaTime;
                 if (timer > waitTime) effector.surfaceArc = 0f;
             }
-            
+
             // start reset cycle on key up
             if (Input.GetKeyUp(KeyCode.S))
             {
@@ -47,7 +47,10 @@ namespace OGAM.Environment
         //> WAIT FOR RESET
         private IEnumerator CR_ResetPlatforms()
         {
+            // wait for 0.1f seconds
             yield return new WaitForSeconds(resetTime);
+            
+            // then reset the arc
             effector.surfaceArc = 140f;
         }
     }
