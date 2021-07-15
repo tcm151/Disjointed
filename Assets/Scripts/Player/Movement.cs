@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 
@@ -18,29 +17,30 @@ namespace OGAM.Player
         [Header("Movement")]
         public float maxSpeed = 6f;
         public float maxAcceleration = 40f;
-        public float maxDeceleration = 5f;
+        public float maxDeceleration = 30f;
+        public float minDeceleration = 5f;
         [Header("Jumping")]
         public float jumpHeight = 3.5f;
-        public float jumpGravity = 1f;
+        public float regularGravity = 1f;
         public float fallGravity = 2f;
+        public float wallGravity = 1f;
 
         //- LOCAL STATE
         private Vector2 movementInput;
         private Vector2 desiredVelocity;
         private Vector2 contactNormal;
         [Header("Contact Checking")]
-        public int timeSinceGrounded;
-        public int timeSinceContact;
-        public int timeSinceOnWall;
-        public int contacts;
+        private int timeSinceGrounded;
+        private int timeSinceContact;
+        private int timeSinceOnWall;
         [Header("On Wall")]
         public float maxWallFallSpeed;
         [Header("State")]
-        public bool jumping;
-        public bool holdingJump;
         public bool onGround;
         public bool onWall;
-        public bool wallJumping;
+        private bool jumping;
+        private bool holdingJump;
+        private bool wallJumping;
 
         //- HELPERS
         private float jumpSpeed => Mathf.Sqrt(2f * Physics2D.gravity.magnitude * jumpHeight);
@@ -74,10 +74,18 @@ namespace OGAM.Player
             timeSinceContact++;// wall jump buffer
             timeSinceGrounded++; // jump buffer
             desiredVelocity = rigidbody.velocity; // cache current velocity
-            rigidbody.gravityScale = ((holdingJump && desiredVelocity.y > 0f) || onWall) ? jumpGravity : fallGravity; // apply more gravity on fall
             if (timeSinceContact > 5) jumping = false; // cancel jump if not appropriate
             if (rigidbody.velocity.y < 2.25f) wallJumping = false;
 
+            // rigidbody.gravityScale = (onWall, holdingJump, desiredVelocity.y > 0f) switch
+            // {
+            //     (true, _, _) => wallGravity,
+            //     (_, true, true) => regularGravity,
+            //     (_, false, true) => fallGravity,
+            //     (_, _, _) => regularGravity,
+            //     
+            // };
+            rigidbody.gravityScale = ((holdingJump && desiredVelocity.y > 0f) || onWall) ? regularGravity : fallGravity; // apply more gravity on fall
 
             // allow player to jump thru platforms
             // Physics2D.IgnoreLayerCollision(PlayerLayer, PlatformLayer, rigidbody.velocity.y > 0.1f);
@@ -97,8 +105,8 @@ namespace OGAM.Player
             {
                 (_,     true,  _,     false, _   ) => 0f,
                 (false, false, false, _,     true) => 0f,
-                (false, false, true,  _,     _   ) => maxDeceleration * Time.deltaTime,
-                (true,  true,  _,     _,     _   ) => maxAcceleration * Time.deltaTime,
+                (false, false, true,  _,     _   ) => minDeceleration * Time.deltaTime,
+                (true,  _,     true,  _,     _   ) => maxDeceleration * Time.deltaTime,
                 (_,     _,     _,     _,     _   ) => maxAcceleration * Time.deltaTime,
             };
             desiredVelocity.x = Mathf.MoveTowards(desiredVelocity.x, movementInput.x * maxSpeed, maxDeltaSpeed);
@@ -132,14 +140,10 @@ namespace OGAM.Player
          private void OnCollisionExit2D(Collision2D collision) => ManageCollisions(collision);
         
         //> DETERMINE THE CONTACT NORMAL
+        //@ Convert grounding checks into this, can't use raycasts anymore 
          private void ManageCollisions(Collision2D collision)
          {
              timeSinceContact = 0; // reset on contact
-             contactNormal = Vector2.zero; // reset normal
-             contacts = collision.contactCount; // count number of contact
-             
-             // if not contacting anything, normal is up
-             if (contacts == 0) contactNormal = Vector2.zero;
              
              // fix weird edge case while on platforms
              contactNormal = (onGround) ? Vector2.up : Vector2.zero;
