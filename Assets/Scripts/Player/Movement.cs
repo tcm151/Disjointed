@@ -108,7 +108,6 @@ namespace OGAM.Player
             {
                 jumping = false;
                 desiredVelocity.y = jumpSpeed;
-                // desiredVelocity.y = Mathf.Clamp(desiredVelocity.y, float.MinValue, jumpSpeed);
             }
 
             //+ WALL JUMPING
