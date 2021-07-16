@@ -11,12 +11,13 @@ namespace OGAM.Environment
         
         public float waitTime = 0.33f;
         public float resetTime = 0.1f;
+        public float surfaceArc = 140f;
         
         //> INITIALIZATION
         private void Awake()
         {
             effector = GetComponent<PlatformEffector2D>();
-            effector.surfaceArc = 140f;
+            effector.surfaceArc = surfaceArc;
             timer = 0f;
         }
 
@@ -51,7 +52,7 @@ namespace OGAM.Environment
             yield return new WaitForSeconds(resetTime);
             
             // then reset the arc
-            effector.surfaceArc = 140f;
+            effector.surfaceArc = surfaceArc;
         }
     }
 }
