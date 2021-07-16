@@ -26,7 +26,10 @@ namespace OGAM.Tools
             return (direction.y > 0f) ? angle : -angle;
         }
         
-        
-        
+        //> MATHF
+        public static float Clamp(this float value, float min, float max) => Mathf.Clamp(value, min, max);
+
+
+
     }
 }
