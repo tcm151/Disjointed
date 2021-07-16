@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using OGAM.Tools;
 using UnityEngine;
 
 
@@ -30,17 +32,21 @@ namespace OGAM.Player
         private Vector2 desiredVelocity;
         private Vector2 contactNormal;
         [Header("Contact Checking")]
-        private int timeSinceGrounded;
-        private int timeSinceContact;
-        private int timeSinceOnWall;
+        public int timeSinceContact;
+        public int timeSinceGrounded;
+        public int timeSinceOnWall;
+        public int contacts;
+        public List<GameObject> contactObjects = new List<GameObject>();
+        private List<Collision2D> collisionList = new List<Collision2D>();
+        
         [Header("On Wall")]
         public float maxWallFallSpeed;
         [Header("State")]
         public bool onGround;
         public bool onWall;
-        private bool jumping;
-        private bool holdingJump;
-        private bool wallJumping;
+        public bool jumping;
+        public bool holdingJump;
+        public bool wallJumping;
 
         //- HELPERS
         private float jumpSpeed => Mathf.Sqrt(2f * Physics2D.gravity.magnitude * jumpHeight);
@@ -76,6 +82,9 @@ namespace OGAM.Player
             desiredVelocity = rigidbody.velocity; // cache current velocity
             if (timeSinceContact > 5) jumping = false; // cancel jump if not appropriate
             if (rigidbody.velocity.y < 2.25f) wallJumping = false;
+            
+            //? TEMP TESTING SHIT
+            ManageCollisions();
 
             // rigidbody.gravityScale = (onWall, holdingJump, desiredVelocity.y > 0f) switch
             // {
@@ -91,14 +100,14 @@ namespace OGAM.Player
             // Physics2D.IgnoreLayerCollision(PlayerLayer, PlatformLayer, rigidbody.velocity.y > 0.1f);
 
             //+ CHECK GROUNDED
-            var hit = Physics2D.Raycast(transform.position + groundedOffset, Vector2.down, groundedDistance, groundMask);
-            if (hit.collider is { })
-            {
-                onGround = true;
-                timeSinceContact = 0;
-                timeSinceGrounded = 0;
-            }
-            else onGround = false;
+            // var hit = Physics2D.Raycast(transform.position + groundedOffset, Vector2.down, groundedDistance, groundMask);
+            // if (hit.collider is { })
+            // {
+            //     onGround = true;
+            //     timeSinceContact = 0;
+            //     timeSinceGrounded = 0;
+            // }
+            // else onGround = false;
 
             //+ HORIZONTAL MOVEMENT
             float maxDeltaSpeed = (onGround, onWall, movementInput.x == 0, timeSinceOnWall > 50, wallJumping) switch
@@ -126,6 +135,8 @@ namespace OGAM.Player
                 var jumpDirection = (contactNormal + Vector2.up).normalized;
                 desiredVelocity = jumpDirection * jumpSpeed;
             }
+
+            if (holdingJump) desiredVelocity.y = Mathf.Clamp(desiredVelocity.y, float.MinValue, jumpSpeed);
             
             // clamp vertical velocity to avoid exploits
             // desiredVelocity.y = Mathf.Clamp(desiredVelocity.y, float.MinValue, jumpSpeed);
@@ -136,25 +147,67 @@ namespace OGAM.Player
             rigidbody.velocity = desiredVelocity;
         }
 
-         private void OnCollisionStay2D(Collision2D collision) => ManageCollisions(collision);
-         private void OnCollisionExit2D(Collision2D collision) => ManageCollisions(collision);
-        
+         // private void OnCollisionEnter2D(Collision2D collision) => ManageCollisions(collision);
+         private void OnCollisionStay2D(Collision2D collision) => collisionList.Add(collision);
+         private void OnCollisionExit2D(Collision2D collision) => collisionList.Remove(collision);
+
         //> DETERMINE THE CONTACT NORMAL
         //@ Convert grounding checks into this, can't use raycasts anymore 
-         private void ManageCollisions(Collision2D collision)
+         private void ManageCollisions()
          {
+             contactObjects.Clear();
+             
              timeSinceContact = 0; // reset on contact
+             contactNormal = Vector2.zero; // reset contact normal
+
+             List<ContactPoint2D> contactList = new List<ContactPoint2D>();
+             foreach (var collision in collisionList)
+             {
+                 contactList.AddRange(collision.contacts);
+             }
              
-             // fix weird edge case while on platforms
-             contactNormal = (onGround) ? Vector2.up : Vector2.zero;
-             
-             // sum all of the contact normals 
-             foreach (var contact in collision.contacts) contactNormal += contact.normal;
-             contactNormal.Normalize(); // normalize to length 1
-        
-             // will be true if the player on in a wall
-             onWall = (Vector2.Dot(contactNormal, Vector2.left) > 0.99f || Vector2.Dot(contactNormal, Vector2.right) > 0.99f);
-             if (!onWall) timeSinceOnWall = 0;
+             // only calculate if touching something
+             if ((contacts = contactList.Count) > 0)
+             {
+                 // sum all of the contact normals 
+                 foreach (var contact in contactList)
+                 {
+                     contactObjects.Add(contact.collider.gameObject);
+                     contactNormal += contact.normal;
+                 }
+                 contactNormal.Normalize(); // normalize to length 1
+
+                 // project the contact normal onto the up direction
+                 float dot = Vector2.Dot(contactNormal, Vector2.up);
+
+                 // ground case
+                 if (dot >= 0.55f)
+                 {
+                     onGround = true;
+                     timeSinceGrounded = 0;
+                 }
+                 else onGround = false;
+
+                 // wall case
+                 if (dot < 0.55f && dot > -0.55f)
+                 {
+                     onWall = true;
+                     timeSinceOnWall = 0;
+                 }
+                 else onWall = false;
+             }
+             else
+             {
+                 onGround = onWall = false;
+             }
+
+             contactList.Clear();
+             collisionList.Clear();
+             // contactObjects.Clear();
+
+             // // will be true if the player on in a wall
+             // onWall = (Vector2.Dot(contactNormal, Vector2.left) > 0.99f || Vector2.Dot(contactNormal, Vector2.right) > 0.99f);
+             // if (!onWall) timeSinceOnWall = 0;
          }
 
 
@@ -163,9 +216,6 @@ namespace OGAM.Player
         {
             var transformPosition = transform.position;
             
-            // Gizmos.color = Color.white;
-            // Gizmos.DrawSphere(transformPosition, 0.1f);
-
             #if UNITY_EDITOR
             if (!Application.isPlaying) return;
             #endif
