@@ -34,10 +34,11 @@ namespace OGAM.Player
         [Header("Contact Checking")]
         public int timeSinceContact;
         public int timeSinceGrounded;
+        public int timeSinceJumping;
         public int timeSinceOnWall;
         public int contacts;
-        public List<GameObject> contactObjects = new List<GameObject>();
-        private List<Collision2D> collisionList = new List<Collision2D>();
+        
+        private readonly List<Collision2D> collisionList = new List<Collision2D>();
         
         [Header("On Wall")]
         public float maxWallFallSpeed;
@@ -67,6 +68,8 @@ namespace OGAM.Player
             movementInput.x = Input.GetAxisRaw("Horizontal");
             movementInput.y = Input.GetAxisRaw("Vertical");
 
+            if (Input.GetKeyDown(KeyCode.Space)) timeSinceJumping = 0;
+
             // update direction of sprite
             if (rigidbody.velocity.x >  0.15f) renderer.flipX = false;
             if (rigidbody.velocity.x < -0.15f) renderer.flipX = true;
@@ -77,14 +80,14 @@ namespace OGAM.Player
         {
             //+ UPDATE STATE
             timeSinceOnWall++; // wall separate buffer
-            timeSinceContact++;// wall jump buffer
+            timeSinceContact++; // wall jump buffer
+            timeSinceJumping++;
             timeSinceGrounded++; // jump buffer
             desiredVelocity = rigidbody.velocity; // cache current velocity
-            if (timeSinceContact > 5) jumping = false; // cancel jump if not appropriate
+            if (timeSinceJumping > 5) jumping = false; // cancel jump if not appropriate
             if (rigidbody.velocity.y < 2.25f) wallJumping = false;
             
-            //? TEMP TESTING SHIT
-            ManageCollisions();
+            
 
             // rigidbody.gravityScale = (onWall, holdingJump, desiredVelocity.y > 0f) switch
             // {
@@ -96,29 +99,29 @@ namespace OGAM.Player
             // };
             rigidbody.gravityScale = ((holdingJump && desiredVelocity.y > 0f) || onWall) ? regularGravity : fallGravity; // apply more gravity on fall
 
-            // allow player to jump thru platforms
-            // Physics2D.IgnoreLayerCollision(PlayerLayer, PlatformLayer, rigidbody.velocity.y > 0.1f);
+            //? TEMP TESTING SHIT
+            ManageCollisions();
 
             //+ CHECK GROUNDED
-            // var hit = Physics2D.Raycast(transform.position + groundedOffset, Vector2.down, groundedDistance, groundMask);
-            // if (hit.collider is { })
-            // {
-            //     onGround = true;
-            //     timeSinceContact = 0;
-            //     timeSinceGrounded = 0;
-            // }
-            // else onGround = false;
+            var hit = Physics2D.CircleCast(transform.position + groundedOffset, 0.4f, Vector2.down, groundedDistance, groundMask);
+            if (hit.collider is { })
+            {
+                onGround = true;
+                timeSinceContact = 0;
+                timeSinceGrounded = 0;
+            }
+            else onGround = false;
 
             //+ HORIZONTAL MOVEMENT
-            float maxDeltaSpeed = (onGround, onWall, movementInput.x == 0, timeSinceOnWall > 50, wallJumping) switch
+            float acceleration = (onGround, onWall, movementInput.x == 0, timeSinceOnWall > 50, wallJumping) switch
             {
-                (_,     true,  _,     false, _   ) => 0f,
+                (false, true,  _,     false, _   ) => 0f,
                 (false, false, false, _,     true) => 0f,
                 (false, false, true,  _,     _   ) => minDeceleration * Time.deltaTime,
                 (true,  _,     true,  _,     _   ) => maxDeceleration * Time.deltaTime,
                 (_,     _,     _,     _,     _   ) => maxAcceleration * Time.deltaTime,
             };
-            desiredVelocity.x = Mathf.MoveTowards(desiredVelocity.x, movementInput.x * maxSpeed, maxDeltaSpeed);
+            desiredVelocity.x = Mathf.MoveTowards(desiredVelocity.x, movementInput.x * maxSpeed, acceleration);
 
             //+ REGULAR JUMPING
             if ((onGround || timeSinceGrounded < 5) && jumping)
@@ -155,26 +158,16 @@ namespace OGAM.Player
         //@ Convert grounding checks into this, can't use raycasts anymore 
          private void ManageCollisions()
          {
-             contactObjects.Clear();
-             
-             timeSinceContact = 0; // reset on contact
              contactNormal = Vector2.zero; // reset contact normal
+             List<ContactPoint2D> contactList = new List<ContactPoint2D>(); // create new list
 
-             List<ContactPoint2D> contactList = new List<ContactPoint2D>();
-             foreach (var collision in collisionList)
-             {
-                 contactList.AddRange(collision.contacts);
-             }
-             
+             foreach (var collision in collisionList) contactList.AddRange(collision.contacts);
+
              // only calculate if touching something
              if ((contacts = contactList.Count) > 0)
              {
                  // sum all of the contact normals 
-                 foreach (var contact in contactList)
-                 {
-                     contactObjects.Add(contact.collider.gameObject);
-                     contactNormal += contact.normal;
-                 }
+                 foreach (var contact in contactList) contactNormal += contact.normal;
                  contactNormal.Normalize(); // normalize to length 1
 
                  // project the contact normal onto the up direction
@@ -201,13 +194,7 @@ namespace OGAM.Player
                  onGround = onWall = false;
              }
 
-             contactList.Clear();
              collisionList.Clear();
-             // contactObjects.Clear();
-
-             // // will be true if the player on in a wall
-             // onWall = (Vector2.Dot(contactNormal, Vector2.left) > 0.99f || Vector2.Dot(contactNormal, Vector2.right) > 0.99f);
-             // if (!onWall) timeSinceOnWall = 0;
          }
 
 
