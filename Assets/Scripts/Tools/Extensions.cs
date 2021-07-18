@@ -27,8 +27,8 @@ namespace OGAM.Tools
         }
         
         //> MATHF
-        public static float Clamp(this float value, float min = float.MinValue, float max = float.MaxValue)
-            => Mathf.Clamp(value, min, max);
+        public static float Clamp(this ref float value, float min, float max)
+            => value = Mathf.Clamp(value, min, max);
 
 
 
