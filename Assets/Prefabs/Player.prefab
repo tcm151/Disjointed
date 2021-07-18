@@ -161,12 +161,11 @@ MonoBehaviour:
   regularGravity: 1
   fallGravity: 2.25
   wallGravity: 1
-  timeSinceContact: 0
   timeSinceGrounded: 0
   timeSinceJumping: 0
   timeSinceOnWall: 0
   contacts: 1
-  maxWallFallSpeed: -15
+  maxWallFallSpeed: -12
   onGround: 0
   onWall: 0
   jumping: 0
