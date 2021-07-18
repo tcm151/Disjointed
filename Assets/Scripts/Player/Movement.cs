@@ -37,8 +37,6 @@ namespace OGAM.Player
         public int timeSinceOnWall;
         public int contacts;
         
-        private readonly List<Collision2D> collisionList = new List<Collision2D>();
-        
         [Header("On Wall")]
         public float maxWallFallSpeed;
         [Header("State")]
@@ -97,10 +95,7 @@ namespace OGAM.Player
             //     (_, _, _) => regularGravity,
             //     
             // };
-            rigidbody.gravityScale = ((holdingJump && desiredVelocity.y > 0f) || onWall) ? regularGravity : fallGravity; // apply more gravity on fall
-
-            //? TEMP TESTING SHIT
-            ManageCollisions();
+            rigidbody.gravityScale = ((holdingJump && desiredVelocity.y > 0f) || (onWall && desiredVelocity.y < 0f)) ? regularGravity : fallGravity; // apply more gravity on fall
 
             //+ CHECK GROUNDED
             var hit = Physics2D.CircleCast(transform.position + groundedOffset, 0.4f, Vector2.down, groundedDistance, groundMask);
@@ -112,7 +107,7 @@ namespace OGAM.Player
             else onGround = false;
 
             //+ HORIZONTAL MOVEMENT
-            float acceleration = (onGround, onWall, movementInput.x == 0, timeSinceOnWall > 25, wallJumping) switch
+            float acceleration = (onGround, onWall, movementInput.x == 0, timeSinceOnWall > 50, wallJumping) switch
             {
                 (false, true,  _,     false, _   ) => 0f,
                 (false, false, false, _,     true) => 0f,
@@ -148,24 +143,21 @@ namespace OGAM.Player
             rigidbody.velocity = desiredVelocity;
         }
 
-         // private void OnCollisionEnter2D(Collision2D collision) => ManageCollisions(collision);
-         private void OnCollisionStay2D(Collision2D collision) => collisionList.Add(collision);
-         private void OnCollisionExit2D(Collision2D collision) => collisionList.Remove(collision);
+         private void OnCollisionEnter2D(Collision2D collision) => ManageCollisions(collision);
+         private void OnCollisionStay2D(Collision2D collision)  => ManageCollisions(collision);
+         private void OnCollisionExit2D(Collision2D collision)  => ManageCollisions(collision);
 
         //> DETERMINE THE CONTACT NORMAL
         //@ Convert grounding checks into this, can't use raycasts anymore 
-         private void ManageCollisions()
+         private void ManageCollisions(Collision2D collision)
          {
              contactNormal = Vector2.zero; // reset contact normal
-             List<ContactPoint2D> contactList = new List<ContactPoint2D>(); // create new list
-
-             foreach (var collision in collisionList) contactList.AddRange(collision.contacts);
 
              // only calculate if touching something
-             if ((contacts = contactList.Count) > 0)
+             if ((contacts = collision.contactCount) > 0)
              {
                  // sum all of the contact normals 
-                 foreach (var contact in contactList) contactNormal += contact.normal;
+                 foreach (var contact in collision.contacts) contactNormal += contact.normal;
                  contactNormal.Normalize(); // normalize to length 1
 
                  // project the contact normal onto the up direction
@@ -190,9 +182,8 @@ namespace OGAM.Player
              else
              {
                  onGround = onWall = false;
+                 timeSinceOnWall = 0;
              }
-
-             collisionList.Clear();
          }
 
 
