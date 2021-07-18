@@ -151,7 +151,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 192
-  groundedOffset: {x: 0, y: -0.95, z: 0}
+  groundedOffset: {x: 0, y: -0.55, z: 0}
   groundedDistance: 0.33
   maxSpeed: 6
   maxAcceleration: 40
@@ -163,9 +163,9 @@ MonoBehaviour:
   wallGravity: 1
   timeSinceContact: 0
   timeSinceGrounded: 0
+  timeSinceJumping: 0
   timeSinceOnWall: 0
   contacts: 1
-  contactObjects: []
   maxWallFallSpeed: -15
   onGround: 0
   onWall: 0
