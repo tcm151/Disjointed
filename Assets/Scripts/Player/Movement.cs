@@ -32,7 +32,6 @@ namespace OGAM.Player
         private Vector2 desiredVelocity;
         private Vector2 contactNormal;
         [Header("Contact Checking")]
-        public int timeSinceContact;
         public int timeSinceGrounded;
         public int timeSinceJumping;
         public int timeSinceOnWall;
@@ -56,7 +55,7 @@ namespace OGAM.Player
         private void Awake()
         {
             rigidbody = GetComponent<Rigidbody2D>();
-            renderer  = GetComponentInChildren<SpriteRenderer>();
+            renderer  = GetComponent<SpriteRenderer>();
         }
 
         //> EVERY FRAME
@@ -80,10 +79,11 @@ namespace OGAM.Player
         {
             //+ UPDATE STATE
             timeSinceOnWall++; // wall separate buffer
-            timeSinceContact++; // wall jump buffer
-            timeSinceJumping++;
-            timeSinceGrounded++; // jump buffer
+            timeSinceJumping++; // allow for delayed jump
+            timeSinceGrounded++; // jump buffer of ledges
             desiredVelocity = rigidbody.velocity; // cache current velocity
+            
+            //+ REVERT CONDITIONS
             if (timeSinceJumping > 5) jumping = false; // cancel jump if not appropriate
             if (rigidbody.velocity.y < 2.25f) wallJumping = false;
             
@@ -107,13 +107,12 @@ namespace OGAM.Player
             if (hit.collider is { })
             {
                 onGround = true;
-                timeSinceContact = 0;
                 timeSinceGrounded = 0;
             }
             else onGround = false;
 
             //+ HORIZONTAL MOVEMENT
-            float acceleration = (onGround, onWall, movementInput.x == 0, timeSinceOnWall > 50, wallJumping) switch
+            float acceleration = (onGround, onWall, movementInput.x == 0, timeSinceOnWall > 25, wallJumping) switch
             {
                 (false, true,  _,     false, _   ) => 0f,
                 (false, false, false, _,     true) => 0f,
@@ -139,12 +138,11 @@ namespace OGAM.Player
                 desiredVelocity = jumpDirection * jumpSpeed;
             }
 
+            // avoid jumping exploits
             if (holdingJump) desiredVelocity.y = Mathf.Clamp(desiredVelocity.y, float.MinValue, jumpSpeed);
             
-            // clamp vertical velocity to avoid exploits
-            // desiredVelocity.y = Mathf.Clamp(desiredVelocity.y, float.MinValue, jumpSpeed);
-
-            if (onWall) desiredVelocity.y = Mathf.Clamp(desiredVelocity.y, maxWallFallSpeed, float.MaxValue);
+            // limit fall speed on wall
+            if (onWall) desiredVelocity.y.Clamp(maxWallFallSpeed, float.MaxValue);
 
             // assign the final velocity
             rigidbody.velocity = desiredVelocity;
@@ -182,12 +180,12 @@ namespace OGAM.Player
                  else onGround = false;
 
                  // wall case
-                 if (dot < 0.55f && dot > -0.55f)
+                 if (dot < 0.55f && dot > -0.55f) onWall = true;
+                 else
                  {
-                     onWall = true;
+                     onWall = false;
                      timeSinceOnWall = 0;
-                 }
-                 else onWall = false;
+                 } 
              }
              else
              {
