@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 
 
-namespace OGAM.Combat
+namespace Disjointed.Combat
 {
     [SelectionBase]
     [RequireComponent(typeof(Rigidbody2D))]

@@ -1,8 +1,8 @@
-using UnityEngine;  
-using OGAM.Player;
-using OGAM.Tools;
+using Disjointed.Player;
+using UnityEngine;
+using Disjointed.Tools;
 
-namespace OGAM.Environment
+namespace Disjointed.Environment
 {
     public class Checkpoint : MonoBehaviour
     {

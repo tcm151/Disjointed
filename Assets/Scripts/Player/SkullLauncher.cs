@@ -1,9 +1,9 @@
-using OGAM.Combat;
-using OGAM.Tools;
+using Disjointed.Tools;
+using Disjointed.Combat;
 using UnityEngine;
 
 
-namespace OGAM.Player
+namespace Disjointed.Player
 {
     public class SkullLauncher : MonoBehaviour
     {

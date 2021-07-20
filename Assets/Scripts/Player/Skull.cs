@@ -1,10 +1,10 @@
 ﻿using System;
+using Disjointed.Combat;
 using UnityEngine;
-using OGAM.Combat;
-using OGAM.Tools;
+using Disjointed.Tools;
 
 
-namespace OGAM.Player
+namespace Disjointed.Player
 {
     [RequireComponent(typeof(Collider2D))]
     [RequireComponent(typeof(Rigidbody2D))]

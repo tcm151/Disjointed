@@ -1,12 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using OGAM.Combat;
+using Disjointed.Combat;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 
-namespace OGAM
+namespace Disjointed
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public class Enemy : MonoBehaviour, IDamageable

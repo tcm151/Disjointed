@@ -1,9 +1,9 @@
-﻿using UnityEngine;
-using OGAM.Environment;
-using OGAM.SceneManagement;
+﻿using Disjointed.Environment;
+using Disjointed.SceneManagement;
+using UnityEngine;
 
 
-namespace OGAM.Player
+namespace Disjointed.Player
 {
     public class PlayerManager : MonoBehaviour
     {

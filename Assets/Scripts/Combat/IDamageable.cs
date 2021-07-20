@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-namespace OGAM.Combat
+namespace Disjointed.Combat
 {
     public interface IDamageable
     {

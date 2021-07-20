@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace OGAM
+namespace Disjointed
 {
     public class SaveGame : MonoBehaviour
     {

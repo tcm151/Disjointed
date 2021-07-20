@@ -1,10 +1,10 @@
 ﻿using System;
-using OGAM.Combat;
-using OGAM.Tools;
+using Disjointed.Combat;
+using Disjointed.Tools;
 using UnityEngine;
 
 
-namespace OGAM.Player
+namespace Disjointed.Player
 {
     public class Combat : MonoBehaviour
     {

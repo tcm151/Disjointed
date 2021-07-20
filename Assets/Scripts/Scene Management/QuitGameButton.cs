@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace OGAM.SceneManagement
+namespace Disjointed.SceneManagement
 {
     public class QuitGameButton : MonoBehaviour
     {

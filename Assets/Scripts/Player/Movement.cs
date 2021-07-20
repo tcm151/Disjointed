@@ -1,8 +1,8 @@
 using UnityEngine;
-using OGAM.Tools;
+using Disjointed.Tools;
 
 
-namespace OGAM.Player
+namespace Disjointed.Player
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public class Movement : MonoBehaviour

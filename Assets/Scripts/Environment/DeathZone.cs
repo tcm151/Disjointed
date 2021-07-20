@@ -1,8 +1,8 @@
-using OGAM.Player;
+using Disjointed.Player;
 using UnityEngine;
-using OGAM.Tools;
+using Disjointed.Tools;
 
-namespace OGAM.Environment
+namespace Disjointed.Environment
 {
     public class DeathZone : MonoBehaviour
     {

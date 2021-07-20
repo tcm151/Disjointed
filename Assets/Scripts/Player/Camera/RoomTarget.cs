@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-namespace OGAM.Player
+namespace Disjointed.Player
 {
     public class RoomTarget : MonoBehaviour
     {

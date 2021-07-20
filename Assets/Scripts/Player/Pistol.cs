@@ -1,11 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using OGAM.Combat;
-using OGAM.Tools;
+using Disjointed.Combat;
+using Disjointed.Tools;
 using UnityEngine;
 
-namespace OGAM
+namespace Disjointed
 {
     public class Pistol : MonoBehaviour
     {
