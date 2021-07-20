@@ -158,9 +158,12 @@ MonoBehaviour:
   maxDeceleration: 35
   minDeceleration: 5
   jumpHeight: 3.5
-  regularGravity: 1
+  regularGravity: 1.5
   fallGravity: 2.25
   wallGravity: 1
+  ladderMask:
+    serializedVersion: 2
+    m_Bits: 256
   timeSinceGrounded: 0
   timeSinceJumping: 0
   timeSinceOnWall: 0
@@ -171,6 +174,7 @@ MonoBehaviour:
   jumping: 0
   holdingJump: 0
   wallJumping: 0
+  onLadder: 0
 --- !u!114 &6066589626288808355
 MonoBehaviour:
   m_ObjectHideFlags: 0

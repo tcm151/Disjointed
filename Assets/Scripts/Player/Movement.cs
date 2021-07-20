@@ -1,6 +1,5 @@
-using System.Collections.Generic;
-using OGAM.Tools;
 using UnityEngine;
+using OGAM.Tools;
 
 
 namespace OGAM.Player
@@ -26,7 +25,9 @@ namespace OGAM.Player
         public float regularGravity = 1f;
         public float fallGravity = 2f;
         public float wallGravity = 1f;
-
+        [Header("Ladders")]
+        public LayerMask ladderMask;
+        
         //- LOCAL STATE
         private Vector2 movementInput;
         private Vector2 desiredVelocity;
@@ -45,9 +46,10 @@ namespace OGAM.Player
         public bool jumping;
         public bool holdingJump;
         public bool wallJumping;
+        public bool onLadder;
 
         //- HELPERS
-        private float jumpSpeed => Mathf.Sqrt(2f * Physics2D.gravity.magnitude * jumpHeight);
+        private float jumpSpeed => Mathf.Sqrt(2f * Physics2D.gravity.magnitude * rigidbody.gravityScale * jumpHeight);
 
         //> INITIALIZATION
         private void Awake()
@@ -82,20 +84,19 @@ namespace OGAM.Player
             desiredVelocity = rigidbody.velocity; // cache current velocity
             
             //+ REVERT CONDITIONS
+            // if (onGround) timeSinceJumping = 0;
             if (timeSinceJumping > 5) jumping = false; // cancel jump if not appropriate
             if (rigidbody.velocity.y < 2.25f) wallJumping = false;
             
-            
-
-            // rigidbody.gravityScale = (onWall, holdingJump, desiredVelocity.y > 0f) switch
-            // {
-            //     (true, _, _) => wallGravity,
-            //     (_, true, true) => regularGravity,
-            //     (_, false, true) => fallGravity,
-            //     (_, _, _) => regularGravity,
-            //     
-            // };
-            rigidbody.gravityScale = ((holdingJump && desiredVelocity.y > 0f) || (onWall && desiredVelocity.y < 0f)) ? regularGravity : fallGravity; // apply more gravity on fall
+            rigidbody.gravityScale = (holdingJump, onWall, onLadder, desiredVelocity.y > 0f) switch
+            {
+                (true, _,   _,    true ) => regularGravity,
+                (_,   true, _,    false) => wallGravity,
+                (_,   _,    true, _    ) => 0f,
+                (_, _, _, _) => fallGravity,
+                
+            };
+            // rigidbody.gravityScale = ((holdingJump && desiredVelocity.y > 0f) || (onWall && desiredVelocity.y < 0f)) ? regularGravity : fallGravity; // apply more gravity on fall
 
             //+ CHECK GROUNDED
             var hit = Physics2D.CircleCast(transform.position + groundedOffset, 0.4f, Vector2.down, groundedDistance, groundMask);
@@ -117,35 +118,74 @@ namespace OGAM.Player
             };
             desiredVelocity.x = Mathf.MoveTowards(desiredVelocity.x, movementInput.x * maxSpeed, acceleration);
 
+            //+ VERTICAL MOVEMENT
+            if (onLadder && timeSinceJumping > 25)
+            {
+                acceleration = maxDeceleration * Time.deltaTime;
+                desiredVelocity.x = Mathf.MoveTowards(desiredVelocity.x, movementInput.x * maxSpeed, acceleration);
+                desiredVelocity.y = Mathf.MoveTowards(desiredVelocity.y, movementInput.y * maxSpeed, acceleration);
+            }
+
             //+ REGULAR JUMPING
             if ((onGround || timeSinceGrounded < 5) && jumping)
             {
+                Debug.Log("REGULAR JUMP!");
                 jumping = false;
+                rigidbody.gravityScale = regularGravity;
                 desiredVelocity.y = jumpSpeed;
             }
 
             //+ WALL JUMPING
             if (onWall && jumping)
             {
+                Debug.Log("WALL JUMP!");
                 jumping = false;
                 wallJumping = true;
+                rigidbody.gravityScale = regularGravity;
                 var jumpDirection = (contactNormal + Vector2.up).normalized;
                 desiredVelocity = jumpDirection * jumpSpeed;
             }
+            
+            //+ LADDER JUMPING
+            if (onLadder && jumping)
+            {
+                Debug.Log("LADDER JUMP!");
+                jumping = false;
+                onLadder = false;
+                rigidbody.gravityScale = regularGravity;
+                desiredVelocity.y = jumpSpeed;
+            }
+            
+            // if (timeSinceJumping < 25) onLadder = false;
 
+            
             // avoid jumping exploits
             if (holdingJump) desiredVelocity.y = Mathf.Clamp(desiredVelocity.y, float.MinValue, jumpSpeed);
             
             // limit fall speed on wall
             if (onWall) desiredVelocity.y.Clamp(maxWallFallSpeed, float.MaxValue);
-
+            
             // assign the final velocity
             rigidbody.velocity = desiredVelocity;
         }
 
-         private void OnCollisionEnter2D(Collision2D collision) => ManageCollisions(collision);
-         private void OnCollisionStay2D(Collision2D collision)  => ManageCollisions(collision);
-         private void OnCollisionExit2D(Collision2D collision)  => ManageCollisions(collision);
+        private void OnTriggerStay2D(Collider2D collider)
+        {
+            onLadder = ladderMask.Contains(collider.gameObject.layer) && timeSinceJumping > 25;
+        }
+
+        private void OnTriggerExit2D(Collider2D collider)
+        {
+            if (ladderMask.Contains(collider.gameObject.layer))
+            {
+                onLadder = false;
+            }
+        }
+
+
+        private void OnCollisionEnter2D(Collision2D collision) => ManageCollisions(collision);
+        private void OnCollisionStay2D(Collision2D collision)  => ManageCollisions(collision);
+        private void OnCollisionExit2D(Collision2D collision)  => ManageCollisions(collision);
 
         //> DETERMINE THE CONTACT NORMAL
         //@ Convert grounding checks into this, can't use raycasts anymore 
@@ -163,27 +203,13 @@ namespace OGAM.Player
                  // project the contact normal onto the up direction
                  float dot = Vector2.Dot(contactNormal, Vector2.up);
 
-                 // ground case
-                 if (dot >= 0.55f)
-                 {
-                     onGround = true;
-                     timeSinceGrounded = 0;
-                 }
-                 else onGround = false;
-
-                 // wall case
-                 if (dot < 0.55f && dot > -0.55f) onWall = true;
-                 else
-                 {
-                     onWall = false;
-                     timeSinceOnWall = 0;
-                 } 
+                 // player is on the wall if conditions met
+                 onWall = (dot < 0.55f && dot > -0.55f);
              }
-             else
-             {
-                 onGround = onWall = false;
-                 timeSinceOnWall = 0;
-             }
+             else onWall = false;
+             
+             // reset timer if not on wall
+             if (!onWall) timeSinceOnWall = 0;
          }
 
 
