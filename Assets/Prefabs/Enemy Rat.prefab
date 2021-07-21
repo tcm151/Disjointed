@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1582706522331144125}
   - component: {fileID: 1582706522331144121}
   m_Layer: 10
-  m_Name: Enemy
+  m_Name: Enemy Rat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -4826027066112582536, guid: 4b5e1126141e73a449f2d4b85eebf760, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.518, g: 0.358656, b: 0.27195, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -135,10 +135,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 133994b9587dff142a3a455b98f1bdbd, type: 2}
-  health: 2
+  health: 1
   acceleration: 8
   topSpeed: 2
-  knockbackMult: 1
+  knockbackMult: 3
   target: {fileID: 6066589626288808357, guid: 584f1591aa624a245b1b7977851e1a60, type: 3}
   groundMask:
     serializedVersion: 2

@@ -15,7 +15,8 @@ namespace Disjointed
 
         [FormerlySerializedAs("stats")][FormerlySerializedAs("ESO")] public EnemyData data;
         public float health;
-        public float speed;
+        public float acceleration;
+        public float topSpeed;
         public float knockbackMult;
         public Transform target;
 
@@ -29,7 +30,8 @@ namespace Disjointed
         {
             rigidbody = GetComponent<Rigidbody2D>();
             health = data.health;
-            speed = data.speed;
+            acceleration = data.acceleration;
+            topSpeed = data.topSpeed;
             knockbackMult = data.knockbackMultiplier;
         }
 
@@ -46,9 +48,27 @@ namespace Disjointed
             if (Mathf.Approximately(target.position.x, this.transform.position.x)) return;
             if (target.position.x > this.transform.position.x)
             {
-                rigidbody.AddForce(Vector2.right * speed);
+                if (rigidbody.velocity.magnitude > topSpeed)
+                {
+                    rigidbody.AddForce(Vector2.right);
+                }
+                else
+                {
+                    rigidbody.AddForce(Vector2.right * acceleration);
+                }
             }
-            else rigidbody.AddForce(Vector2.right * -speed);
+            else
+            {
+                if (rigidbody.velocity.magnitude > topSpeed)
+                {
+                    rigidbody.AddForce(Vector2.right * -1);
+                }
+                else
+                {
+                    rigidbody.AddForce(Vector2.right * -acceleration);
+                }
+            }
+
         }
 
         public void TakeDamage(float damage, string origin)
