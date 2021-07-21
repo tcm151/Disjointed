@@ -1,7 +1,8 @@
+using Disjointed.SceneManagement;
 using UnityEngine;
-using OGAM.SceneManagement;
 
-namespace OGAM.UI
+
+namespace Disjointed.UI
 {
     public class PauseWindow : UI_Window
     {

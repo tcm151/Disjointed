@@ -1,8 +1,10 @@
-using OGAM.Player;
+using Disjointed.Player;
 using UnityEngine;
-using OGAM.Tools;
+using Disjointed.Tools;
+using PlayerData = Disjointed.Player.PlayerData;
 
-namespace OGAM.Environment
+
+namespace Disjointed.Environment
 {
     public class DeathZone : MonoBehaviour
     {
@@ -13,7 +15,7 @@ namespace OGAM.Environment
             // ignore anything except the player
             if (!playerMask.Contains(collider.gameObject.layer)) return;
 
-            var player = collider.GetComponent<PlayerManager>();
+            var player = collider.GetComponent<PlayerData>();
             if (player is null) return;
             
             player.Die();

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-namespace OGAM.Tools
+namespace Disjointed.Tools
 {
     public static class Extensions
     {
@@ -26,7 +26,14 @@ namespace OGAM.Tools
             return (direction.y > 0f) ? angle : -angle;
         }
         
-        
-        
+        //> MATHF
+        public static float Clamp(this ref float value, float min, float max)
+            => value = Mathf.Clamp(value, min, max);
+
+        public static float MoveTowards(this ref float value, float target, float maxDelta)
+            => value = Mathf.MoveTowards(value, target, maxDelta);
+
+
+
     }
 }

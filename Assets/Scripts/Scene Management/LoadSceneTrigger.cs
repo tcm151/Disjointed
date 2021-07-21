@@ -1,7 +1,7 @@
-using OGAM.Tools;
+using Disjointed.Tools;
 using UnityEngine;
 
-namespace OGAM.SceneManagement
+namespace Disjointed.SceneManagement
 {
     public class LoadSceneTrigger : MonoBehaviour
     {

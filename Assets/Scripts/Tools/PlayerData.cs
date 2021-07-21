@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace OGAM.Tools
+namespace Disjointed.Tools
 {
     [System.Serializable]
     public class PlayerData

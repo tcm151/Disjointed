@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-namespace OGAM.Tools
+namespace Disjointed.Tools
 {
     public class Factory : ScriptableObject
     {

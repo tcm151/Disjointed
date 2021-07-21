@@ -1,8 +1,10 @@
-using UnityEngine;  
-using OGAM.Player;
-using OGAM.Tools;
+using Disjointed.Player;
+using UnityEngine;
+using Disjointed.Tools;
+using PlayerData = Disjointed.Player.PlayerData;
 
-namespace OGAM.Environment
+
+namespace Disjointed.Environment
 {
     public class Checkpoint : MonoBehaviour
     {
@@ -15,7 +17,7 @@ namespace OGAM.Environment
             // ignore anything except the player
             if (!playerMask.Contains(collider.gameObject.layer)) return;
 
-            var checkpointManager = collider.GetComponent<PlayerManager>();
+            var checkpointManager = collider.GetComponent<PlayerData>();
             if (checkpointManager is null) return;
             
             checkpointManager.SetCheckpoint(this);

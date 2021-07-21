@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 
 
-namespace OGAM.Combat
+namespace Disjointed.Combat
 {
     [SelectionBase]
     [RequireComponent(typeof(Rigidbody2D))]
@@ -13,52 +13,47 @@ namespace OGAM.Combat
         [Serializable] public class Data
         {
             public string origin = "null";
-            public float mass = 1f;
             public float damage = 1f;
             public float knockback = 1f;
         }
         
-        public Data data;
+        private Data data;
         
         new private Rigidbody2D rigidbody;
-        // private Vector3 previousPosition; 
+        private Vector3 previousPosition;
+
+        public LayerMask collisionMask;
 
         //> INITIALIZATION
         private void Awake()
         {
             rigidbody = GetComponent<Rigidbody2D>();
-            // rigidbody.mass = data.mass;
+            previousPosition = transform.position;
         }
 
         //> FIRE WITH A GIVEN VELOCITY
         public void Launch(Vector3 position, Vector3 direction, float speed, Data data)
         {
             this.data = data;
-            // rigidbody.mass = data.mass;
             rigidbody.position = position;
             rigidbody.AddForce(direction * (speed * rigidbody.mass), ForceMode2D.Impulse);
         }
-        
-        // //> CHECK IMPACT FOR BALLISTIC PROJECTILES
-        // virtual protected void CheckImpact()
-        // {
-        //     if (Physics.Linecast(previousPosition, rigidbody.position, out RaycastHit hit))
-        //     {
-        //         IDamageable damageable = hit.collider.GetComponent<IDamageable>();
-        //         damageable?.TakeDamage(data.damage, data.origin);
-        //         damageable?.TakeKnockback(data.knockback, rigidbody.velocity.normalized);
-        //
-        //         Destroy(this.gameObject);
-        //     }
-        //     else previousPosition = rigidbody.position;
-        // }
 
-        //> DO DAMAGE ON COLLISION
-        private void OnCollisionEnter2D(Collision2D collision)
+        //> HANDLE PHYSICS & COLLISION DETECTION
+        private void FixedUpdate()
         {
-            var damageable = collision.gameObject.GetComponent<IDamageable>();
-            damageable?.TakeDamage(data.damage, data.origin);
-            damageable?.TakeKnockback(data.knockback, rigidbody.velocity.normalized);
+            if (rigidbody.velocity.magnitude > 0f) transform.right = rigidbody.velocity.normalized;
+
+            var hit = Physics2D.Linecast(previousPosition, rigidbody.position, collisionMask);
+            if (hit.collider is { })
+            {
+                IDamageable damageable = hit.collider.GetComponent<IDamageable>();
+                damageable?.TakeDamage(data.damage, data.origin);
+                damageable?.TakeKnockback(data.knockback, rigidbody.velocity.normalized);
+        
+                Destroy(this.gameObject);
+            }
+            else previousPosition = rigidbody.position;
         }
     }
 }

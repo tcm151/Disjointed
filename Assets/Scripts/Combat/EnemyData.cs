@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace OGAM
+namespace Disjointed
 {
     [CreateAssetMenu(fileName = "EnemyData", menuName = "EnemyData")]
     public class EnemyData : ScriptableObject

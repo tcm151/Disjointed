@@ -61,16 +61,22 @@ TextureImporter:
     second: SkeletonPirate_8
   - first:
       213: -6925828003421693084
-    second: SkeletonPirate_4
+    second: SkeletonPirate_9
   - first:
       213: -8680488166431043371
     second: SkeletonPirate_10
   - first:
       213: -5989513935072249068
-    second: SkeletonPirate_Sword
+    second: SkeletonPirate_11
   - first:
       213: -7916399095814748823
-    second: SkeletonPirate
+    second: SkeletonPirate_12
+  - first:
+      213: -8294913626521335368
+    second: SkeletonPirate_9
+  - first:
+      213: 7595259977665546701
+    second: SkeletonPirate_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -328,10 +334,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkeletonPirate_4
+      name: SkeletonPirate_9
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 64
         width: 23
         height: 29
@@ -370,13 +376,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkeletonPirate_Sword
+      name: SkeletonPirate_11
       rect:
         serializedVersion: 2
-        x: 100
-        y: 47
-        width: 24
-        height: 33
+        x: 99
+        y: 46
+        width: 25
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,7 +397,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkeletonPirate
+      name: SkeletonPirate_12
       rect:
         serializedVersion: 2
         x: 16
@@ -407,6 +413,48 @@ TextureImporter:
       bones: []
       spriteID: 9650db917fc432290800000000000000
       internalID: -7916399095814748823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonPirate_4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b906a8410c82ec80800000000000000
+      internalID: -8294913626521335368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonPirate_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc90f7155b8c76960800000000000000
+      internalID: 7595259977665546701
       vertices: []
       indices: 
       edges: []
