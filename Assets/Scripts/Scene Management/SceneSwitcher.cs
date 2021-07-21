@@ -5,7 +5,7 @@ namespace Disjointed.SceneManagement
 {
     public static class SceneSwitcher
     {
-        public static void LoadScene(int toThis) => SceneManager.LoadScene(toThis);
+        public static void LoadScene(int newScene) => SceneManager.LoadScene(newScene);
 
         public static void QuitGame()
         {

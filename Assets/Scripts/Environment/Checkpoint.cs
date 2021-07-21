@@ -1,6 +1,8 @@
 using Disjointed.Player;
 using UnityEngine;
 using Disjointed.Tools;
+using PlayerData = Disjointed.Player.PlayerData;
+
 
 namespace Disjointed.Environment
 {
@@ -15,7 +17,7 @@ namespace Disjointed.Environment
             // ignore anything except the player
             if (!playerMask.Contains(collider.gameObject.layer)) return;
 
-            var checkpointManager = collider.GetComponent<PlayerManager>();
+            var checkpointManager = collider.GetComponent<PlayerData>();
             if (checkpointManager is null) return;
             
             checkpointManager.SetCheckpoint(this);

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 592869241}
   - component: {fileID: 592869240}
   - component: {fileID: 592869242}
+  - component: {fileID: 592869243}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -115,6 +116,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d2364b0b2a4288ab03b8dcd1d66b32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &592869243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592869238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 187b921c50db48a5800a79e8c5d17dfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  knockback: 10
+  attackCooldown: 0.25
+  attackSize: {x: 2, y: 1.25}
 --- !u!1 &6066589626288808378
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,14 +141,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6066589626288808357}
+  - component: {fileID: 2572863616114994629}
   - component: {fileID: 7833198962583551773}
+  - component: {fileID: 611941136069112424}
   - component: {fileID: 2593643125581834760}
   - component: {fileID: 6066589626288808376}
   - component: {fileID: 6066589626288808377}
-  - component: {fileID: 6066589626288808355}
+  - component: {fileID: 867011723}
   - component: {fileID: 6066589626288808356}
   - component: {fileID: 538123089}
-  - component: {fileID: 867011723}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -154,6 +172,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2572863616114994629
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6066589626288808378}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &7833198962583551773
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -205,6 +242,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &611941136069112424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6066589626288808378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07d2364b0b2a4288ab03b8dcd1d66b32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &2593643125581834760
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -291,22 +340,27 @@ MonoBehaviour:
   holdingJump: 0
   wallJumping: 0
   onLadder: 0
---- !u!114 &6066589626288808355
+--- !u!114 &867011723
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6066589626288808378}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 187b921c50db48a5800a79e8c5d17dfa, type: 3}
+  m_Script: {fileID: 11500000, guid: eb9ac805ccf5f7544a07f92080d68d89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
-  knockback: 10
-  attackCooldown: 0.25
-  attackSize: {x: 2, y: 1.25}
+  bulletPrefab: {fileID: 1890039108616904149, guid: b03790c86c84cdd4a8d29a2620973f00, type: 3}
+  projectileData:
+    origin: Pistol
+    damage: 5
+    knockback: 5
+  launchSpeed: 25
+  reloadTime: 1
+  ammoQuantity: 1
+  recoilForce: 5
 --- !u!114 &6066589626288808356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,24 +393,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lastCheckpoint: {fileID: 0}
---- !u!114 &867011723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6066589626288808378}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb9ac805ccf5f7544a07f92080d68d89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1890039108616904149, guid: b03790c86c84cdd4a8d29a2620973f00, type: 3}
-  projectileData:
-    origin: Pistol
-    damage: 5
-    knockback: 5
-  launchSpeed: 25
-  reloadTime: 1
-  ammoQuantity: 1
-  recoilForce: 5

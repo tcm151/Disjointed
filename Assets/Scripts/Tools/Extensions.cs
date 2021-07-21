@@ -30,6 +30,9 @@ namespace Disjointed.Tools
         public static float Clamp(this ref float value, float min, float max)
             => value = Mathf.Clamp(value, min, max);
 
+        public static float MoveTowards(this ref float value, float target, float maxDelta)
+            => value = Mathf.MoveTowards(value, target, maxDelta);
+
 
 
     }
