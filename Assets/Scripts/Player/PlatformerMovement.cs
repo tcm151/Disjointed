@@ -1,5 +1,4 @@
 using UnityEngine;
-
 using Disjointed.Tools;
 using Sprite = Disjointed.Sprites.Sprite;
 
@@ -11,37 +10,32 @@ namespace Disjointed.Player
     {
         //- COMPONENTS
         private Sprite sprite;
+        new private Collider2D collider;
         new private Rigidbody2D rigidbody;
 
-        [Header("Ground Checking")]
-        public LayerMask groundMask;
-        public Vector3 groundedOffset;
-        public float groundedDistance = 0.33f;
         [Header("Movement")]
         public float maxSpeed = 6f;
         public float maxAcceleration = 40f;
         public float maxDeceleration = 30f;
         public float minDeceleration = 5f;
-        [Header("Jumping")]
+        public float maxWallFallSpeed = -12f;
+        private Vector2 movementInput;
+        private Vector2 desiredVelocity;
+        [Header("Contact Checking")]
+        public LayerMask groundMask;
+        public LayerMask ladderMask;
+        public Vector3 groundedOffset;
+        public float groundedDistance = 0.33f;
+        public float circleCastRadius = 0.4f;
+        public int timeSinceGrounded;
+        public int timeSinceJumping;
+        public int timeSinceOnWall;
+        private Vector2 contactNormal;
+        [Header("Jumping & Gravity")]
         public float jumpHeight = 3.5f;
         public float regularGravity = 1f;
         public float fallGravity = 2f;
         public float wallGravity = 1f;
-        [Header("Ladders")]
-        public LayerMask ladderMask;
-        
-        //- LOCAL STATE
-        private Vector2 movementInput;
-        private Vector2 desiredVelocity;
-        private Vector2 contactNormal;
-        [Header("Contact Checking")]
-        public int timeSinceGrounded;
-        public int timeSinceJumping;
-        public int timeSinceOnWall;
-        public int contacts;
-        
-        [Header("On Wall")]
-        public float maxWallFallSpeed;
         [Header("State")]
         public bool onGround;
         public bool onWall;
@@ -49,6 +43,11 @@ namespace Disjointed.Player
         public bool holdingJump;
         public bool wallJumping;
         public bool onLadder;
+        public bool onPlatform;
+        [Header("Two-Way Platforms")]
+        public LayerMask platformMask;
+        public float fallThruWaitTime;
+        public float fallThruTimer;
 
         //- HELPERS
         private float jumpSpeed => Mathf.Sqrt(2f * Physics2D.gravity.magnitude * rigidbody.gravityScale * jumpHeight);
@@ -57,6 +56,7 @@ namespace Disjointed.Player
         private void Awake()
         {
             sprite = GetComponent<Sprite>();
+            collider = GetComponent<Collider2D>();
             rigidbody = GetComponent<Rigidbody2D>();
         }
 
@@ -74,6 +74,15 @@ namespace Disjointed.Player
             // update direction of sprite
             if (rigidbody.velocity.x > 0.15f) sprite.FaceRight();
             if (rigidbody.velocity.x < -0.15f) sprite.FaceLeft();
+
+            if (Input.GetKeyDown(KeyCode.S)) fallThruTimer = 0f;
+            
+            if (Input.GetKey(KeyCode.S))
+            {
+                fallThruTimer += Time.deltaTime;
+                if (fallThruTimer > fallThruWaitTime && onPlatform) collider.isTrigger = true;
+            }
+            
         }
 
         //> EVERY PHYSICS STEP
@@ -86,10 +95,10 @@ namespace Disjointed.Player
             desiredVelocity = rigidbody.velocity; // cache current velocity
             
             //+ REVERT CONDITIONS
-            // if (onGround) timeSinceJumping = 0;
             if (timeSinceJumping > 5) jumping = false; // cancel jump if not appropriate
             if (rigidbody.velocity.y < 2.25f) wallJumping = false;
             
+            //+ GRAVITY SCALE
             rigidbody.gravityScale = (holdingJump, onWall, onLadder, desiredVelocity.y > 0f) switch
             {
                 (true, _,   _,    true ) => regularGravity,
@@ -98,10 +107,9 @@ namespace Disjointed.Player
                 (_, _, _, _) => fallGravity,
                 
             };
-            // rigidbody.gravityScale = ((holdingJump && desiredVelocity.y > 0f) || (onWall && desiredVelocity.y < 0f)) ? regularGravity : fallGravity; // apply more gravity on fall
 
-            //+ CHECK GROUNDED
-            var hit = Physics2D.CircleCast(transform.position + groundedOffset, 0.4f, Vector2.down, groundedDistance, groundMask);
+            //+ GROUNDED CHECK
+            var hit = Physics2D.CircleCast(transform.position + groundedOffset, circleCastRadius, Vector2.down, groundedDistance, groundMask);
             if (hit.collider is { })
             {
                 onGround = true;
@@ -131,7 +139,7 @@ namespace Disjointed.Player
             //+ REGULAR JUMPING
             if ((onGround || timeSinceGrounded < 5) && jumping)
             {
-                Debug.Log("REGULAR JUMP!");
+                // Debug.Log("REGULAR JUMP!");
                 jumping = false;
                 rigidbody.gravityScale = regularGravity;
                 desiredVelocity.y = jumpSpeed;
@@ -140,7 +148,7 @@ namespace Disjointed.Player
             //+ WALL JUMPING
             if (onWall && jumping)
             {
-                Debug.Log("WALL JUMP!");
+                // Debug.Log("WALL JUMP!");
                 jumping = false;
                 wallJumping = true;
                 rigidbody.gravityScale = regularGravity;
@@ -151,37 +159,37 @@ namespace Disjointed.Player
             //+ LADDER JUMPING
             if (onLadder && jumping)
             {
-                Debug.Log("LADDER JUMP!");
+                // Debug.Log("LADDER JUMP!");
                 jumping = false;
                 onLadder = false;
                 rigidbody.gravityScale = regularGravity;
                 desiredVelocity.y = jumpSpeed;
             }
             
-            // if (timeSinceJumping < 25) onLadder = false;
-
-            
-            // avoid jumping exploits
+            // limit vertical velocity when jumping
             if (holdingJump) desiredVelocity.y.Clamp(float.MinValue, jumpSpeed);
             
-            // limit fall speed on wall
+            // limit fall speed when on walls
             if (onWall) desiredVelocity.y.Clamp(maxWallFallSpeed, float.MaxValue);
             
             // assign the final velocity
             rigidbody.velocity = desiredVelocity;
         }
 
+        //> CHECK IF ON LADDER
         private void OnTriggerStay2D(Collider2D collider)
         {
-            onLadder = ladderMask.Contains(collider.gameObject.layer) && timeSinceJumping > 25;
+            onLadder = (ladderMask.Contains(collider.gameObject.layer) && timeSinceJumping > 25);
         }
 
+        //> RESET STATE ON TRIGGER EXIT
         private void OnTriggerExit2D(Collider2D collider)
         {
-            if (ladderMask.Contains(collider.gameObject.layer))
-            {
-                onLadder = false;
-            }
+            // Debug.Log("EXIT TRIGGER!");
+            // onPlatform = false;
+            this.collider.isTrigger = false;
+            
+            if (ladderMask.Contains(collider.gameObject.layer)) onLadder = false;
         }
 
 
@@ -189,14 +197,15 @@ namespace Disjointed.Player
         private void OnCollisionStay2D(Collision2D collision)  => ManageCollisions(collision);
         private void OnCollisionExit2D(Collision2D collision)  => ManageCollisions(collision);
 
-        //> DETERMINE THE CONTACT NORMAL
-        //@ Convert grounding checks into this, can't use raycasts anymore 
+        //> DETERMINE THE CONTACT NORMAL OF THE CURRENT SURFACE
          private void ManageCollisions(Collision2D collision)
          {
+             onPlatform = platformMask.Contains(collision.gameObject.layer);
+             
              contactNormal = Vector2.zero; // reset contact normal
 
              // only calculate if touching something
-             if ((contacts = collision.contactCount) > 0)
+             if (collision.contactCount > 0)
              {
                  // sum all of the contact normals 
                  foreach (var contact in collision.contacts) contactNormal += contact.normal;
@@ -205,10 +214,12 @@ namespace Disjointed.Player
                  // project the contact normal onto the up direction
                  float dot = Vector2.Dot(contactNormal, Vector2.up);
 
+                 onGround = (dot > 0.55f);
+
                  // player is on the wall if conditions met
                  onWall = (dot < 0.55f && dot > -0.55f);
              }
-             else onWall = false;
+             else onWall = onPlatform = false;
              
              // reset timer if not on wall
              if (!onWall) timeSinceOnWall = 0;
@@ -223,6 +234,9 @@ namespace Disjointed.Player
             #if UNITY_EDITOR
             if (!Application.isPlaying) return;
             #endif
+            
+            Gizmos.color = Color.white;
+            Gizmos.DrawWireSphere(transformPosition + groundedOffset, circleCastRadius);
             
             Gizmos.color = (onGround) ? Color.green : Color.red;
             Gizmos.DrawRay(transformPosition + groundedOffset, Vector3.down * groundedDistance);
