@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using Disjointed.Combat;
+using Disjointed.Sprites;
 using Disjointed.Tools;
 using UnityEngine;
 
@@ -10,25 +12,42 @@ namespace Disjointed.Player
     {
         public float damage = 1f;
         public float knockback = 10f;
+        public float attackCooldown;
         public Vector2 attackSize;
-        
+
+        private Camera camera;
+        private SpriteAnimation sprite;
         private Vector3 lastAttackDirection;
         private Vector3 attackDirection;
         private float attackAngle;
         private bool attacking;
+        private bool canAttack;
+
+        //> INITIALIZATION
+        private void Awake()
+        {
+            camera = Camera.main;
+            sprite = GetComponentInChildren<SpriteAnimation>();
+
+            canAttack = true;
+        }
 
         //> HANDLE INPUT
         private void Update()
         {
-            attacking |= Input.GetMouseButtonDown(0);
+            attacking |= (canAttack && Input.GetMouseButtonDown(0));
             
-            attackDirection.x = Input.GetAxisRaw("Horizontal");
-            attackDirection.y = Input.GetAxisRaw("Vertical");
-            attackDirection.Normalize();
+            // attackDirection.x = Input.GetAxisRaw("Horizontal");
+            // attackDirection.y = Input.GetAxisRaw("Vertical");
+            // attackDirection.Normalize();
 
+            var mousePosition = camera.ScreenToWorldPoint(Input.mousePosition);
+            mousePosition.z = 0f;
+            attackDirection = (mousePosition - transform.position).normalized;
+            
             if (attackDirection == Vector3.zero) attackDirection = lastAttackDirection;
             else lastAttackDirection = attackDirection;
-
+            
             attackAngle = (attackDirection == Vector3.zero) ? attackAngle : attackDirection.Angle();
         }
 
@@ -37,6 +56,12 @@ namespace Disjointed.Player
         {
             // ignore if not attacking
             if (!attacking) return;
+
+            canAttack = attacking = false;
+            Debug.Log("MELEE ATTACK!");
+
+            sprite.transform.rotation = Quaternion.AngleAxis(attackAngle, Vector3.forward);
+            sprite.TriggerAnimation("attacked");
 
             // cycle all overlap colliders
             var colliders = Physics2D.OverlapBoxAll(transform.position + (attackDirection * attackSize.x/2f), attackSize, attackAngle);
@@ -50,8 +75,14 @@ namespace Disjointed.Player
                 var direction = (collider.transform.position - transform.position).normalized;
                 damageable.TakeKnockback(knockback, direction);
             }
-            
-            attacking = false;
+
+            StartCoroutine(CR_AttackCooldown());
+        }
+
+        private IEnumerator CR_AttackCooldown()
+        {
+            yield return new WaitForSeconds(attackCooldown);
+            canAttack = true;
         }
 
         private void OnDrawGizmos()
