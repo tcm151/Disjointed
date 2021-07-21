@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Disjointed.Tools
+namespace Disjointed.Tools.Serialization
 {
     [System.Serializable]
     public class PlayerData

@@ -1,9 +1,8 @@
-using Disjointed.Tools;
-using Disjointed.Combat;
 using UnityEngine;
+using Disjointed.Tools.ObjectCreation;
 
 
-namespace Disjointed.Player
+namespace Disjointed.Player.Combat
 {
     public class SkullLauncher : MonoBehaviour
     {

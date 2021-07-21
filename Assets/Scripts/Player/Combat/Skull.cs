@@ -1,10 +1,10 @@
 ﻿using System;
-using Disjointed.Combat;
 using UnityEngine;
-using Disjointed.Tools;
+using Disjointed.Combat;
+using Disjointed.Tools.Extensions;
 
 
-namespace Disjointed.Player
+namespace Disjointed.Player.Combat
 {
     [RequireComponent(typeof(Collider2D))]
     [RequireComponent(typeof(Rigidbody2D))]

@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections;
-using Disjointed.Combat;
-using Disjointed.Sprites;
-using Disjointed.Tools;
+﻿using System.Collections;
 using UnityEngine;
+using Disjointed.Combat;
+using Disjointed.Tools.Extensions;
 using Sprite = Disjointed.Sprites.Sprite;
 
 
-namespace Disjointed.Player
+namespace Disjointed.Player.Combat
 {
     public class Melee : MonoBehaviour
     {

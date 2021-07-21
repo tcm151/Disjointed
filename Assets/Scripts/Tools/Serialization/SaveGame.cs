@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace Disjointed
+namespace Disjointed.Tools.Serialization
 {
     public class SaveGame : MonoBehaviour
     {

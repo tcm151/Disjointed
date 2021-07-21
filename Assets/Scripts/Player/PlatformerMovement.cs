@@ -1,5 +1,5 @@
 using UnityEngine;
-using Disjointed.Tools;
+using Disjointed.Tools.Extensions;
 using Sprite = Disjointed.Sprites.Sprite;
 
 

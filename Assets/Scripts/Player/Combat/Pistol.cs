@@ -1,11 +1,9 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using Disjointed.Combat;
-using Disjointed.Tools;
 using UnityEngine;
+using Disjointed.Combat;
+using Disjointed.Tools.ObjectCreation;
 
-namespace Disjointed
+namespace Disjointed.Player.Combat
 {
     public class Pistol : MonoBehaviour
     {

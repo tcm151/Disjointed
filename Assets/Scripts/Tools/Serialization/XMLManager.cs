@@ -1,10 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System.Xml;
-using System.Xml.Serialization;
 
-namespace Disjointed.SceneManagement
+
+namespace Disjointed.Tools.Serialization
 {
     public class XMLManager : MonoBehaviour
     {   

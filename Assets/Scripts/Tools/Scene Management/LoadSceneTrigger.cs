@@ -1,7 +1,7 @@
-using Disjointed.Tools;
 using UnityEngine;
+using Disjointed.Tools.Extensions;
 
-namespace Disjointed.SceneManagement
+namespace Disjointed.Tools.SceneManagement
 {
     public class LoadSceneTrigger : MonoBehaviour
     {

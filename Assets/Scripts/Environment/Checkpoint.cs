@@ -1,7 +1,6 @@
-using Disjointed.Player;
 using UnityEngine;
-using Disjointed.Tools;
-using PlayerData = Disjointed.Player.PlayerData;
+using Disjointed.Player;
+using Disjointed.Tools.Extensions;
 
 
 namespace Disjointed.Environment

@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
 
-namespace Disjointed.Tools
+namespace Disjointed.Tools.Extensions
 {
-    public static class Extensions
+    public static class UnityExtensions
     {
         //> LAYER MAKS
         public static bool Contains(this LayerMask layerMask, int layer) => (layerMask == (layerMask | (1 << layer)));

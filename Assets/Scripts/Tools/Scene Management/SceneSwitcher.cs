@@ -1,7 +1,6 @@
-using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Disjointed.SceneManagement
+namespace Disjointed.Tools.SceneManagement
 {
     public static class SceneSwitcher
     {

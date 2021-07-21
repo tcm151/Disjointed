@@ -1,6 +1,5 @@
-using Disjointed.Player;
 using UnityEngine;
-using Disjointed.Tools;
+using Disjointed.Tools.Extensions;
 using PlayerData = Disjointed.Player.PlayerData;
 
 

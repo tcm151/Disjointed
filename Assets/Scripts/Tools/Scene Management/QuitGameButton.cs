@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Disjointed.SceneManagement
+namespace Disjointed.Tools.SceneManagement
 {
     public class QuitGameButton : MonoBehaviour
     {

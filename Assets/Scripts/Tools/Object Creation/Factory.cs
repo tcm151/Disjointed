@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-namespace Disjointed.Tools
+namespace Disjointed.Tools.ObjectCreation
 {
     public class Factory : ScriptableObject
     {
