@@ -47,7 +47,12 @@ namespace Disjointed.Player.Combat
             
             if (attackDirection == Vector3.zero) attackDirection = lastAttackDirection;
             else lastAttackDirection = attackDirection;
+
+            var dot = Vector2.Dot(attackDirection, Vector2.right);
             
+            if (dot >= 0) sprite.FaceUp();
+            else sprite.FaceDown();
+
             attackAngle = (attackDirection == Vector3.zero) ? attackAngle : attackDirection.Angle();
         }
 
@@ -72,7 +77,7 @@ namespace Disjointed.Player.Combat
                 damageable.TakeDamage(damage, "Player Melee");
 
                 var direction = (collider.transform.position - transform.position).normalized;
-                damageable.TakeKnockback(knockback, direction);
+                damageable.TakeKnockback(direction, knockback);
             }
 
             StartCoroutine(CR_AttackCooldown());

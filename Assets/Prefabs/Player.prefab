@@ -129,9 +129,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  knockback: 10
+  knockback: 20
   attackCooldown: 0.25
-  attackSize: {x: 2, y: 1.25}
+  attackSize: {x: 1.8, y: 1.2}
 --- !u!1 &6066589626288808378
 GameObject:
   m_ObjectHideFlags: 0

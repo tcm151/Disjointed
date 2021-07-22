@@ -49,7 +49,7 @@ namespace Disjointed.Combat
             {
                 IDamageable damageable = hit.collider.GetComponent<IDamageable>();
                 damageable?.TakeDamage(data.damage, data.origin);
-                damageable?.TakeKnockback(data.knockback, rigidbody.velocity.normalized);
+                damageable?.TakeKnockback(rigidbody.velocity.normalized, data.knockback);
         
                 Destroy(this.gameObject);
             }

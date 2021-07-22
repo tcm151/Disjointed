@@ -18,8 +18,10 @@ namespace Disjointed.Sprites
             renderer = GetComponent<SpriteRenderer>();
         }
 
-        public void FaceRight() => renderer.flipX = false;
+        public void FaceUp() => renderer.flipY = false;
+        public void FaceDown() => renderer.flipY = true;
         public void FaceLeft() => renderer.flipX = true;
+        public void FaceRight() => renderer.flipX = false;
 
         public void TriggerAnimation(string name)
         {

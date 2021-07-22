@@ -7,7 +7,7 @@ namespace Disjointed
     {
         public float health = 3f;
         public float acceleration = 10f;
-        public float topSpeed = 2f;
+        public float movementSpeed = 2f;
         public float knockbackMultiplier = 1f;
         
         public enum MovementType
