@@ -64,7 +64,7 @@ namespace Disjointed.Player.Combat
             
             var damageable = collision.gameObject.GetComponent<IDamageable>();
             damageable?.TakeDamage(data.damage, data.origin);
-            damageable?.TakeKnockback(data.knockback, rigidbody.velocity.normalized);
+            damageable?.TakeKnockback(rigidbody.velocity.normalized, data.knockback);
         }
     }
 }
