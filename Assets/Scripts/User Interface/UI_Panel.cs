@@ -1,9 +1,7 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 
-namespace OGAM.UI
+namespace Disjointed.UI
 {
 
     public class UI_Panel : MonoBehaviour

@@ -6,7 +6,7 @@ EditorSettings:
   serializedVersion: 11
   m_SerializationMode: 2
   m_LineEndingsForNewScripts: 0
-  m_DefaultBehaviorMode: 0
+  m_DefaultBehaviorMode: 1
   m_PrefabRegularEnvironment: {fileID: 102900000, guid: dbf68878bb209694db1de594283cacb7, type: 3}
   m_PrefabUIEnvironment: {fileID: 102900000, guid: 7bbe2f8e67f46944786e3c86dc5ca0c8, type: 3}
   m_SpritePackerMode: 5
@@ -15,8 +15,8 @@ EditorSettings:
   m_EtcTextureFastCompressor: 1
   m_EtcTextureNormalCompressor: 2
   m_EtcTextureBestCompressor: 4
-  m_ProjectGenerationIncludedExtensions: txt;xml;fnt;cd;asmdef;asmref;rsp
-  m_ProjectGenerationRootNamespace: OGAM
+  m_ProjectGenerationIncludedExtensions: txt;xml;fnt;cd;asmdef;asmref;rsp;ase;aseprite;png
+  m_ProjectGenerationRootNamespace: Disjointed
   m_EnableTextureStreamingInEditMode: 1
   m_EnableTextureStreamingInPlayMode: 1
   m_AsyncShaderCompilation: 1

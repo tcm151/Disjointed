@@ -1,14 +1,19 @@
-﻿using System;
-using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 
 
-namespace OGAM.Environment
+namespace Disjointed.Environment
 {
     public class BouncySlime : MonoBehaviour
     {
         public float bounceMultiplier = 0.8f;
         
+        private bool holdingShift;
+
+        private void Update()
+        {
+            holdingShift = Input.GetKey(KeyCode.LeftShift);
+        }
+
         private void OnCollisionEnter2D(Collision2D collision)
         {
             // find rigidbodies

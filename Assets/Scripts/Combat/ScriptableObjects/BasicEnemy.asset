@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4003f80db713e91478d6cfb7d83fecc9, type: 3}
   m_Name: BasicEnemy
   m_EditorClassIdentifier: 
-  health: 3
-  speed: 2
+  health: 5
+  acceleration: 20
+  movementSpeed: 4
   knockbackMultiplier: 1
-  target: {fileID: 0}

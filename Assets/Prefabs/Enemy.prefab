@@ -136,7 +136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 133994b9587dff142a3a455b98f1bdbd, type: 2}
   health: 2
-  speed: 1
+  acceleration: 8
+  topSpeed: 2
   knockbackMult: 1
   target: {fileID: 6066589626288808357, guid: 584f1591aa624a245b1b7977851e1a60, type: 3}
   groundMask:

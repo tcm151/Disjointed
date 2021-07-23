@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace OGAM.UI
+namespace Disjointed.UI
 {
     [RequireComponent(typeof(Canvas))]
     [RequireComponent(typeof(CanvasGroup))]
@@ -13,12 +13,14 @@ namespace OGAM.UI
         {
             //@ add tweening animation
             group.alpha = 1;
+            group.interactable = true;
         }
 
         public void Hide()
         {
             //@ add tweening animation
             group.alpha = 0;
+            group.interactable = false;
         }
 
         abstract public void GoBack();

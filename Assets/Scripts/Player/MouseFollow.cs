@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace OGAM.Player
+namespace Disjointed.Player
 {
     public class MouseFollow : MonoBehaviour
     {

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4631138057317100802}
   - component: {fileID: 1393238928325519281}
   - component: {fileID: 1938548258560532669}
-  - component: {fileID: 4827806684348181167}
+  - component: {fileID: 1327123860087165815}
   m_Layer: 12
   m_Name: Skull
   m_TagString: Untagged
@@ -98,7 +98,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06, y: 0}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.32
 --- !u!50 &1938548258560532669
@@ -113,7 +113,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 1
+  m_Mass: 0.32169908
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -122,7 +122,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4827806684348181167
+--- !u!114 &1327123860087165815
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,11 +131,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5100622251938618022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e69319163577bd246a799eeae6ea04c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 141bb10d5bae428ebee055a638586df4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   data:
     origin: Skull
-    mass: 1
     damage: 1
     knockback: 1
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 512

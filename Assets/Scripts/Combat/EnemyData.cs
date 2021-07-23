@@ -1,12 +1,13 @@
 using UnityEngine;
 
-namespace OGAM
+namespace Disjointed
 {
     [CreateAssetMenu(fileName = "EnemyData", menuName = "EnemyData")]
     public class EnemyData : ScriptableObject
     {
         public float health = 3f;
-        public float speed = 2f;
+        public float acceleration = 10f;
+        public float movementSpeed = 2f;
         public float knockbackMultiplier = 1f;
         
         public enum MovementType
