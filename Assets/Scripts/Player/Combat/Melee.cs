@@ -67,6 +67,13 @@ namespace Disjointed.Player.Combat
             sprite.transform.rotation = Quaternion.AngleAxis(attackAngle, Vector3.forward);
             sprite.TriggerAnimation("attacked");
 
+            StartCoroutine(CR_Attack());
+        }
+
+        private IEnumerator CR_Attack()
+        {
+            yield return new WaitForSeconds(0.1f);
+            
             // cycle all overlap colliders
             var colliders = Physics2D.OverlapBoxAll(transform.position + (attackDirection * attackSize.x/2f), attackSize, attackAngle);
             foreach (var collider in colliders)
@@ -82,7 +89,7 @@ namespace Disjointed.Player.Combat
 
             StartCoroutine(CR_AttackCooldown());
         }
-
+        
         private IEnumerator CR_AttackCooldown()
         {
             yield return new WaitForSeconds(attackCooldown);

@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4003f80db713e91478d6cfb7d83fecc9, type: 3}
-  m_Name: BasicEnemy
+  m_Name: Rat
   m_EditorClassIdentifier: 
-  health: 5
-  acceleration: 20
-  movementSpeed: 4
-  knockbackMultiplier: 1
+  health: 4
+  acceleration: 40
+  movementSpeed: 3
+  detectionRadius: 5
+  aggro: 1
+  movementType: 0
