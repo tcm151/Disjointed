@@ -4,7 +4,7 @@
 namespace Disjointed.UI
 {
 
-    public class UI_Panel : MonoBehaviour
+    abstract public class UI_Panel : MonoBehaviour
     {
         new protected CanvasRenderer renderer;
         new protected RectTransform transform;

@@ -6,9 +6,11 @@ namespace Disjointed.UI
 {
     public class PauseWindow : UI_Window
     {
-        override public void GoBack() => Hide();
-
+        public UI_Window HUD;
+        
         private static bool Paused => Time.timeScale == 0f;
+        
+        override public void GoBack() => Hide();
         
         override protected void Awake()
         {
@@ -36,10 +38,12 @@ namespace Disjointed.UI
         {
             Hide();
             Time.timeScale = 1f;
+            HUD.Show();
         }
 
         public void Pause()
         {
+            HUD.Hide();
             Time.timeScale = 0f;
             Show();
         }
