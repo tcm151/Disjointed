@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using Disjointed.Combat;
+using Disjointed.Player;
 using Disjointed.Tools.Extensions;
 using UnityEngine.Serialization;
 using Sprite = Disjointed.Sprites.Sprite;
@@ -25,6 +26,8 @@ namespace Disjointed
         private float movementSpeed;
         private float acceleration;
         private float detectionRadius;
+        private int damage;
+        private float knockback;
         private EnemyTemplate.Aggro aggro;
         private EnemyTemplate.MovementType movementType;
 
@@ -46,6 +49,8 @@ namespace Disjointed
             acceleration = template.acceleration;
             movementSpeed = template.movementSpeed;
             detectionRadius = template.detectionRadius;
+            damage = template.damage;
+            knockback = template.knockback;
 
             aggro = template.aggro;
             movementType = template.movementType;
@@ -94,7 +99,7 @@ namespace Disjointed
                 target = detect.transform;
         }
 
-        public void TakeDamage(float damage, string origin)
+        public void TakeDamage(int damage, string origin)
         {
             health -= damage;
             if (health <= 0) Destroy(this.gameObject);
@@ -103,6 +108,19 @@ namespace Disjointed
         public void TakeKnockback(Vector2 direction, float knockback)
         {
             rigidbody.AddForce(direction * knockback, ForceMode2D.Impulse);
+        }
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            var damageable = collision.gameObject.GetComponent<IDamageable>();
+            if (damageable is null) return;
+
+            var direction = collision.transform.position - transform.position;
+            
+            damageable.TakeDamage(damage, "Enemy!");
+            damageable.TakeKnockback(direction, knockback);
+            
+            rigidbody.AddForce(-direction * knockback, ForceMode2D.Impulse);
         }
 
         private void OnDrawGizmos()

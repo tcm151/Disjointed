@@ -9,7 +9,8 @@ namespace Disjointed.Player.Combat
 {
     public class Melee : MonoBehaviour
     {
-        public float damage = 1f;
+        public LayerMask enemyMask;
+        public int damage = 1;
         public float knockback = 10f;
         public float attackCooldown;
         public Vector2 attackSize;
@@ -75,7 +76,7 @@ namespace Disjointed.Player.Combat
             yield return new WaitForSeconds(0.1f);
             
             // cycle all overlap colliders
-            var colliders = Physics2D.OverlapBoxAll(transform.position + (attackDirection * attackSize.x/2f), attackSize, attackAngle);
+            var colliders = Physics2D.OverlapBoxAll(transform.position + (attackDirection * attackSize.x/2f), attackSize, attackAngle, enemyMask);
             foreach (var collider in colliders)
             {
                 var damageable = collider.GetComponent<IDamageable>();

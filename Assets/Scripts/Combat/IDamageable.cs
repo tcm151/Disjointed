@@ -5,7 +5,7 @@ namespace Disjointed.Combat
 {
     public interface IDamageable
     {
-        public void TakeDamage(float damage, string origin);
+        public void TakeDamage(int damage, string origin);
         public void TakeKnockback(Vector2 direction, float knockback);
     }
 }

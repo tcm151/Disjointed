@@ -9,7 +9,9 @@ namespace Disjointed
         public float acceleration = 10f;
         public float movementSpeed = 2f;
         public float detectionRadius = 5f;
-
+        public int damage = 1;
+        public float knockback = 5f;
+        
         public Aggro aggro;
         public MovementType movementType;
         

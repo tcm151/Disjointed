@@ -16,5 +16,7 @@ MonoBehaviour:
   acceleration: 40
   movementSpeed: 3
   detectionRadius: 5
+  damage: 1
+  knockback: 10
   aggro: 1
   movementType: 0
