@@ -5,8 +5,8 @@ namespace TCM.Audio
     [System.Serializable] public class SFX
     {
         public string name; 
-        public float pitch;
-        public float volume;
+        public float pitch = 1f;
+        public float volume = 1f;
         
         //- RAW AUDIO FILE
         public UnityEngine.AudioClip audio;

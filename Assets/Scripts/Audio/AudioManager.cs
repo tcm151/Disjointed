@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 
@@ -20,19 +21,22 @@ namespace TCM.Audio
         }
 
         //- LOCAL VARIABLES
-        [SerializeField] private int audioStreams = 4;
-        [SerializeReference] private SFX[] soundEffects;
-        [SerializeReference] private AudioSource[] source;
+        [SerializeField] private AudioSource[] sources;
+        [SerializeField] private SFX[] soundEffects;
 
         //> INITIALIZATION
         private void Awake()
         {
             instance = this;
-            if (source is { }) return;
             
-            //- Add audio sources for multiple tracks
-            for (int i = 0; i < audioStreams; i++) gameObject.AddComponent<AudioSource>();
-            source = GetComponents<AudioSource>();
+            Play("CaveBackgroundNoise", 0, true);
+            StartCoroutine(CR_Music());
+        }
+
+        private IEnumerator CR_Music()
+        {
+            yield return new WaitForSeconds(soundEffects.First(s => s.name == "CaveBackgroundNoise").audio.length);
+            Play("CaveTheme1", 1);
         }
 
         //> PLAY ONE SHOT SOUND AT POINT IN WORLD
@@ -47,21 +51,22 @@ namespace TCM.Audio
         public void PlayOneShot(string name)
         {
             SFX sfx = soundEffects.First(s => s.name == name);
-            source[0].PlayOneShot(sfx.audio, sfx.volume);
+            sources[0].PlayOneShot(sfx.audio, sfx.volume);
             // else Debug.LogWarning($"Unable to find sound: <color=yellow>{name}</color>");
         }
 
         //> REPLACE STREAM SOUND CLIP
-        public void Play(string sound, int track = 0)
+        public void Play(string sound, int track, bool loop = false)
         {
             SFX sfx = soundEffects.First(s => s.name == sound);
-            source[track].clip = sfx.audio;
-            source[track].pitch = sfx.pitch;
-            source[track].volume = sfx.volume;
-            source[track].Play();
+            sources[track].clip = sfx.audio;
+            sources[track].pitch = sfx.pitch;
+            sources[track].volume = sfx.volume;
+            sources[track].loop = loop;
+            sources[track].Play();
         }
 
         //> STOP STREAM SOUND CLIP
-        public void Stop(int stream) => source[stream].Stop();
+        public void Stop(int stream) => sources[stream].Stop();
     }
 }
