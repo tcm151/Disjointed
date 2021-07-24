@@ -246,6 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4ec71661463ab143aeba8c2a8186d05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUD: {fileID: 0}
 --- !u!1 &2930360821126513331
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,7 +999,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1753496370073197002}
   - component: {fileID: 1304756505281272835}
-  - component: {fileID: 4396225969432522384}
   m_Layer: 0
   m_Name: Button Panel
   m_TagString: Untagged
@@ -1054,15 +1054,3 @@ MonoBehaviour:
   m_ChildScaleWidth: 1
   m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
---- !u!114 &4396225969432522384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8842618229677634823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30b2e57430394450b0da44a1f5773e5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
