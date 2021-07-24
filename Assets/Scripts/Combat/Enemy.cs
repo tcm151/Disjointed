@@ -105,7 +105,7 @@ namespace Disjointed
             rigidbody.AddForce(direction * knockback, ForceMode2D.Impulse);
         }
 
-        private void OnDrawGizmosSelected()
+        private void OnDrawGizmos()
         {
             #if UNITY_EDITOR
             if (!Application.isPlaying) return;

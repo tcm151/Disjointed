@@ -130,18 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1582706522331144121, guid: bd61943b2620ab0448bc9f13b044c9a6, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582706522331144121, guid: bd61943b2620ab0448bc9f13b044c9a6, type: 3}
-      propertyPath: template
-      value: 
-      objectReference: {fileID: 11400000, guid: 133994b9587dff142a3a455b98f1bdbd, type: 2}
-    - target: {fileID: 1582706522331144121, guid: bd61943b2620ab0448bc9f13b044c9a6, type: 3}
-      propertyPath: targetMask.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
     - target: {fileID: 1582706522331144122, guid: bd61943b2620ab0448bc9f13b044c9a6, type: 3}
       propertyPath: m_RootOrder
       value: 3

@@ -167,12 +167,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0987d9ddd25051c4192a212f610b6139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: 133994b9587dff142a3a455b98f1bdbd, type: 2}
-  health: 0
-  movementSpeed: 0
-  acceleration: 0
-  knockbackMult: 0
   target: {fileID: 0}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 512
+  template: {fileID: 11400000, guid: 133994b9587dff142a3a455b98f1bdbd, type: 2}
   groundMask:
     serializedVersion: 2
     m_Bits: 192

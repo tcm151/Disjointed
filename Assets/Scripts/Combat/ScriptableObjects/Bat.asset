@@ -15,6 +15,6 @@ MonoBehaviour:
   health: 2
   acceleration: 25
   movementSpeed: 4
-  detectionRadius: 15
+  detectionRadius: 12
   aggro: 1
   movementType: 1
