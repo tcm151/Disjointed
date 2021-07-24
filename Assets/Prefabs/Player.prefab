@@ -128,10 +128,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 187b921c50db48a5800a79e8c5d17dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 1024
   damage: 1
   knockback: 20
   attackCooldown: 0.25
-  attackSize: {x: 1.8, y: 1.2}
+  attackSize: {x: 2, y: 1.25}
 --- !u!1 &6066589626288808378
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,3 +409,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lastCheckpoint: {fileID: 0}
+  invincibilityCooldown: 1

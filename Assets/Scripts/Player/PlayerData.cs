@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections;
+using UnityEngine;
 using Disjointed.Combat;
 using Disjointed.Environment;
 using Disjointed.Tools.SceneManagement;
-using UnityEngine;
 
 
 namespace Disjointed.Player
@@ -19,7 +19,7 @@ namespace Disjointed.Player
         private bool invincible;
         public float invincibilityCooldown;
 
-        public static Action<int> playerHealthChanged;
+        public static Action<int> healthChanged;
 
         private void Awake()
         {
@@ -42,22 +42,25 @@ namespace Disjointed.Player
             else SceneSwitcher.ReloadScene();
         }
 
+        //> TAKE INCOMING DAMAGE
         public void TakeDamage(int damage, string origin)
         {
             if (invincible) return;
             
             health -= damage;
-            playerHealthChanged?.Invoke(health);
+            healthChanged?.Invoke(health);
             if (health <= 0) Die();
 
             StartCoroutine(CR_Invincibility());
         }
         
+        //> TAKE KNOCKBACK
         public void TakeKnockback(Vector2 direction, float knockback)
         {
             rigidbody.AddForce(direction * knockback, ForceMode2D.Impulse);
         }
 
+        //> INVINCIBILITY PERIOD
         private IEnumerator CR_Invincibility()
         {
             invincible = true;
