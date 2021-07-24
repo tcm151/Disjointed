@@ -17,6 +17,9 @@ TextureImporter:
   - first:
       213: -6350819481585145032
     second: Bat4
+  - first:
+      213: -2687237804284087293
+    second: Bat5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -110,7 +113,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 25
+        y: 37
         width: 16
         height: 10
       alignment: 0
@@ -131,7 +134,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 25
+        y: 37
         width: 16
         height: 10
       alignment: 0
@@ -152,7 +155,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 13
+        y: 25
         width: 16
         height: 10
       alignment: 0
@@ -173,7 +176,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 13
+        y: 25
         width: 16
         height: 10
       alignment: 0
@@ -194,7 +197,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 1
+        y: 13
         width: 16
         height: 10
       alignment: 0
@@ -206,6 +209,27 @@ TextureImporter:
       bones: []
       spriteID: 83bac7f545b5dd7a0800000000000000
       internalID: -6350819481585145032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat5
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 13
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30475a0647305bad0800000000000000
+      internalID: -2687237804284087293
       vertices: []
       indices: 
       edges: []
