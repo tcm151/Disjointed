@@ -12,7 +12,7 @@ namespace Disjointed.UI
         {
             base.Awake();
 
-            PlayerData.playerHealthChanged += SetHealth;
+            PlayerData.healthChanged += SetHealth;
         }
 
         private void SetHealth(int value) => health.text = $"Health: {value}";

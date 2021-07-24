@@ -2,6 +2,7 @@
 using UnityEngine;
 using Disjointed.Combat;
 using Disjointed.Tools.Extensions;
+using TCM.Audio;
 using Sprite = Disjointed.Sprites.Sprite;
 
 
@@ -67,6 +68,8 @@ namespace Disjointed.Player.Combat
 
             sprite.transform.rotation = Quaternion.AngleAxis(attackAngle, Vector3.forward);
             sprite.TriggerAnimation("attacked");
+            
+            AudioManager.Connect.PlayOneShot("SwordSwipe");
 
             StartCoroutine(CR_Attack());
         }
