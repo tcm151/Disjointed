@@ -5,6 +5,102 @@ TextureImporter:
   - first:
       213: -7181829769907517133
     second: cavetile20
+  - first:
+      213: 919395059066795304
+    second: cavetile2_1
+  - first:
+      213: -5711356766967260694
+    second: cavetile2_2
+  - first:
+      213: 3483007553559616850
+    second: cavetile2_3
+  - first:
+      213: -1834261973271901077
+    second: cavetile2_4
+  - first:
+      213: -5606715767152328106
+    second: cavetile2_5
+  - first:
+      213: -7695375251976959972
+    second: cavetile2_6
+  - first:
+      213: 6379214181569426928
+    second: cavetile2_7
+  - first:
+      213: -1225346621285196966
+    second: cavetile2_8
+  - first:
+      213: -6851427311916335623
+    second: cavetile2_9
+  - first:
+      213: 1037664094521381700
+    second: cavetile2_10
+  - first:
+      213: -6288465887504627520
+    second: cavetile2_11
+  - first:
+      213: -466432784278491636
+    second: cavetile2_12
+  - first:
+      213: -5781389863742507645
+    second: cavetile2_13
+  - first:
+      213: 8845469818644280125
+    second: cavetile2_14
+  - first:
+      213: 2071923814624868300
+    second: cavetile2_15
+  - first:
+      213: 7026385079591413117
+    second: cavetile2_16
+  - first:
+      213: 8931484167518557616
+    second: cavetile2_17
+  - first:
+      213: -8471388360372080173
+    second: cavetile2_18
+  - first:
+      213: 2161370449275287600
+    second: cavetile2_19
+  - first:
+      213: 6969275321076776168
+    second: cavetile2_20
+  - first:
+      213: 8507232039160200745
+    second: cavetile2_21
+  - first:
+      213: 8434159278641474862
+    second: cavetile2_22
+  - first:
+      213: -4150680263284238110
+    second: cavetile2_23
+  - first:
+      213: 3722368850303795446
+    second: cavetile2_24
+  - first:
+      213: -6662646329799368028
+    second: cavetile2_25
+  - first:
+      213: -4727395868667217054
+    second: cavetile2_26
+  - first:
+      213: 1489967404810132058
+    second: cavetile2_27
+  - first:
+      213: -6981850518714844376
+    second: cavetile2_28
+  - first:
+      213: -8485782331002624664
+    second: cavetile2_29
+  - first:
+      213: 8867772361452409857
+    second: cavetile2_30
+  - first:
+      213: 6416252662620455998
+    second: cavetile2_31
+  - first:
+      213: -5230516339897874122
+    second: cavetile2_32
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,22 +190,673 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cavetile20
+      name: cavetile2_1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 128
-        height: 128
+        x: 66
+        y: 113
+        width: 14
+        height: 15
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 339465f00e3055c90800000000000000
-      internalID: -7181829769907517133
+      spriteID: 825fcef5fe852cc00800000000000000
+      internalID: 919395059066795304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 113
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9946fc74f2db0b0800000000000000
+      internalID: -5711356766967260694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 113
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d5ceb8ae0265030800000000000000
+      internalID: 3483007553559616850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_4
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 113
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c0f1224746b86e0800000000000000
+      internalID: -1834261973271901077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_5
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 103
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652cd4627b1f032b0800000000000000
+      internalID: -5606715767152328106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 97
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18c49ceaf8843590800000000000000
+      internalID: -7695375251976959972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_7
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 97
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f57496ef75878850800000000000000
+      internalID: 6379214181569426928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b12977db1befee0800000000000000
+      internalID: -1225346621285196966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd31d40927dae0a0800000000000000
+      internalID: -6851427311916335623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_10
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443df160ff5866e00800000000000000
+      internalID: 1037664094521381700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_11
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c80021d791eab8a0800000000000000
+      internalID: -6288465887504627520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_12
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0eeb7d9ad5e689f0800000000000000
+      internalID: -466432784278491636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_13
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385759fcc8064cfa0800000000000000
+      internalID: -5781389863742507645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_14
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d333bbb4feb61ca70800000000000000
+      internalID: 8845469818644280125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_15
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7336c5bb3f0cc10800000000000000
+      internalID: 2071923814624868300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_16
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75a624a00cb28160800000000000000
+      internalID: 7026385079591413117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_17
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b518f1878103fb70800000000000000
+      internalID: 8931484167518557616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_18
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1b4a96b259f6a80800000000000000
+      internalID: -8471388360372080173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0387411e8fabefd10800000000000000
+      internalID: 2161370449275287600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_20
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec7daecaf6d7b060800000000000000
+      internalID: 6969275321076776168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_21
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e37f36772cf0670800000000000000
+      internalID: 8507232039160200745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_22
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d6d768d272c0570800000000000000
+      internalID: 8434159278641474862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_23
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 26
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8d7b2ba42d566c0800000000000000
+      internalID: -4150680263284238110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_24
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 26
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f046555fb288a330800000000000000
+      internalID: 3722368850303795446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_25
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 26
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2af3896768983a0800000000000000
+      internalID: -6662646329799368028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_26
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 26
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26bf077118ae46eb0800000000000000
+      internalID: -4727395868667217054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_27
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 26
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a5e92e57d6da410800000000000000
+      internalID: 1489967404810132058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_28
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 9
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bff15d1fb7b1f90800000000000000
+      internalID: -6981850518714844376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_29
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 9
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8656d47fde17c3a80800000000000000
+      internalID: -8485782331002624664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_30
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 9
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104d561baf7a01b70800000000000000
+      internalID: 8867772361452409857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_31
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 9
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3485a84dcb1b0950800000000000000
+      internalID: 6416252662620455998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavetile2_32
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 9
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639c280f9197967b0800000000000000
+      internalID: -5230516339897874122
       vertices: []
       indices: 
       edges: []
@@ -117,7 +864,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e7652681462221e4dbc9dc1569b87566
     internalID: 0
     vertices: []
     indices: 
