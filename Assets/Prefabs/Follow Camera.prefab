@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 902693912099013093}
   - component: {fileID: 5187697319826111325}
   - component: {fileID: 902693912099013088}
+  - component: {fileID: 1680900954}
   m_Layer: 0
   m_Name: Follow Camera
   m_TagString: MainCamera
@@ -153,3 +154,27 @@ MonoBehaviour:
   target: {fileID: 0}
   followDistance: 0
   followSpeed: 2.5
+--- !u!167 &1680900954
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902693912099012635}
+  m_Enabled: 1
+  m_MinDistance: 10
+  m_MaxDistance: 50
+  m_ReverbPreset: 9
+  m_Room: -1000
+  m_RoomHF: 0
+  m_DecayTime: 2.91
+  m_DecayHFRatio: 1.3
+  m_Reflections: -602
+  m_ReflectionsDelay: 0.015
+  m_Reverb: -302
+  m_ReverbDelay: 0.022
+  m_HFReference: 5000
+  m_Diffusion: 100
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
