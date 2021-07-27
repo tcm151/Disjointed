@@ -35,7 +35,7 @@ namespace TCM.Audio
 
         private IEnumerator CR_Music()
         {
-            yield return new WaitForSeconds(soundEffects.First(s => s.name == "CaveBackgroundNoise").audio.length);
+            yield return new WaitForSeconds(soundEffects.First(s => s.name == "CaveBackgroundNoise").clip.length);
             Play("CaveTheme1", 1);
         }
 
@@ -43,7 +43,7 @@ namespace TCM.Audio
         public void PlayAtPoint(string name, Vector3 point)
         {
             SFX sfx = soundEffects.First(s => s.name == name);
-            AudioSource.PlayClipAtPoint(sfx.audio, point, sfx.volume);
+            AudioSource.PlayClipAtPoint(sfx.clip, point, sfx.volume);
             // else Debug.LogWarning($"Unable to find sound: <color=yellow>{name}</color>");
         }
 
@@ -51,7 +51,7 @@ namespace TCM.Audio
         public void PlayOneShot(string name)
         {
             SFX sfx = soundEffects.First(s => s.name == name);
-            sources[0].PlayOneShot(sfx.audio, sfx.volume);
+            sources[0].PlayOneShot(sfx.clip, sfx.volume);
             // else Debug.LogWarning($"Unable to find sound: <color=yellow>{name}</color>");
         }
 
@@ -59,7 +59,7 @@ namespace TCM.Audio
         public void Play(string sound, int track, bool loop = false)
         {
             SFX sfx = soundEffects.First(s => s.name == sound);
-            sources[track].clip = sfx.audio;
+            sources[track].clip = sfx.clip;
             sources[track].pitch = sfx.pitch;
             sources[track].volume = sfx.volume;
             sources[track].loop = loop;
