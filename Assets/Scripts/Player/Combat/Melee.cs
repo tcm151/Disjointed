@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using Disjointed.Combat;
+using Disjointed.Game_Management;
 using Disjointed.Tools.Extensions;
 using TCM.Audio;
 using Sprite = Disjointed.Sprites.Sprite;
@@ -37,6 +38,8 @@ namespace Disjointed.Player.Combat
         //> HANDLE INPUT
         private void Update()
         {
+            if (GameManager.IsPaused) return;
+        
             attacking |= (canAttack && Input.GetMouseButtonDown(0));
             
             // attackDirection.x = Input.GetAxisRaw("Horizontal");

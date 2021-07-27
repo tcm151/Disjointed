@@ -130,7 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 9216
   damage: 1
   knockback: 20
   attackCooldown: 0.25

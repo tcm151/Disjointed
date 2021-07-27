@@ -23,9 +23,15 @@ namespace Disjointed.Player
 
         private void Awake()
         {
+            rigidbody = GetComponent<Rigidbody2D>();
+            
+            Initialize();
+        }
+
+        private void Initialize()
+        {
             health = 3;
             invincible = false;
-            rigidbody = GetComponent<Rigidbody2D>();
         }
 
         //> SET NEW CHECKPOINT
@@ -37,6 +43,8 @@ namespace Disjointed.Player
             Debug.Log("You Died! :(");
             
             //@ revert to old save state and not just teleport 
+            
+            Initialize();
             
             if (lastCheckpoint is { }) transform.position = lastCheckpoint.position;
             else SceneSwitcher.ReloadScene();
