@@ -1,3 +1,4 @@
+using Disjointed.Game_Management;
 using Disjointed.Tools.SceneManagement;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ namespace Disjointed.UI
     {
         public UI_Window HUD;
         
-        private static bool Paused => Time.timeScale == 0f;
+       
         
         override public void GoBack() => Hide();
         
@@ -22,30 +23,32 @@ namespace Disjointed.UI
         {
             if (!Input.GetKeyDown(KeyCode.Escape)) return;
 
-            if (Paused) Resume();
-            else Pause();
+            if (GameManager.IsPlaying) Pause();
+            else Resume();
+        }
+
+        private void Pause()
+        {
+            GameManager.Pause();
+            HUD.Hide();
+            Show();
+        }
+
+        private void Resume()
+        {
+            Hide();
+            HUD.Show();
+            GameManager.Resume();
+        }
+
+        public void Quit()
+        {
+            GameManager.Quit();
         }
 
         public void Restart()
         {
-            Resume();
-            SceneSwitcher.ReloadScene();
-        }
-
-        public void Quit() => SceneSwitcher.QuitGame();
-
-        public void Resume()
-        {
-            Hide();
-            Time.timeScale = 1f;
-            HUD.Show();
-        }
-
-        public void Pause()
-        {
-            HUD.Hide();
-            Time.timeScale = 0f;
-            Show();
+            GameManager.Restart();
         }
     }
 }
