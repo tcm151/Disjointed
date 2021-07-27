@@ -14,7 +14,7 @@ namespace Disjointed.Player.Combat
         [Serializable] public class Data
         {
             public string origin = "null";
-            public float damage = 1f;
+            public int damage = 1;
             public float knockback = 1f;
         }
         

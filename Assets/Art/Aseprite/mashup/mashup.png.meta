@@ -1,0 +1,3303 @@
+fileFormatVersion: 2
+guid: 2c53eaed70fdade41a568ec12cac692c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8582720127223471918
+    second: mashup0
+  - first:
+      213: 1227785725616407401
+    second: mashup_0
+  - first:
+      213: -5713120958316369236
+    second: mashup_1
+  - first:
+      213: -6708063230769571712
+    second: mashup_2
+  - first:
+      213: -7818248502602951501
+    second: mashup_3
+  - first:
+      213: -2317768762300775253
+    second: mashup_4
+  - first:
+      213: -5604342070709537877
+    second: mashup_5
+  - first:
+      213: -7890119079855849227
+    second: mashup_6
+  - first:
+      213: -5572389424705431801
+    second: mashup_7
+  - first:
+      213: -859193109599843057
+    second: mashup_8
+  - first:
+      213: -3227422525611998091
+    second: mashup_9
+  - first:
+      213: 3446660729127342676
+    second: mashup_10
+  - first:
+      213: 7714210998045193079
+    second: mashup_11
+  - first:
+      213: -5427327516130728806
+    second: mashup_12
+  - first:
+      213: -1196976373353424294
+    second: mashup_13
+  - first:
+      213: 8601895245655043132
+    second: mashup_14
+  - first:
+      213: 925183763113323953
+    second: mashup_15
+  - first:
+      213: -1046308713114808054
+    second: mashup_16
+  - first:
+      213: 4346083195740409951
+    second: mashup_17
+  - first:
+      213: -4373149542751561101
+    second: mashup_18
+  - first:
+      213: 1287802559965368812
+    second: mashup_19
+  - first:
+      213: -7752974815560795015
+    second: mashup_20
+  - first:
+      213: 3838144070264820999
+    second: mashup_21
+  - first:
+      213: -5116630424550037650
+    second: mashup_22
+  - first:
+      213: 5141727235832697647
+    second: mashup_23
+  - first:
+      213: 418242290225145029
+    second: mashup_24
+  - first:
+      213: 6519766853647365869
+    second: mashup_25
+  - first:
+      213: -8141620007151332886
+    second: mashup_26
+  - first:
+      213: 1775799176201757340
+    second: mashup_27
+  - first:
+      213: -4251925571887926005
+    second: mashup_28
+  - first:
+      213: 7265370300962763649
+    second: mashup_29
+  - first:
+      213: -7453357011580654521
+    second: mashup_30
+  - first:
+      213: 5738538528792995332
+    second: mashup_31
+  - first:
+      213: -436223334120826821
+    second: mashup_32
+  - first:
+      213: 5926330383433555738
+    second: mashup_33
+  - first:
+      213: -6823201558314498152
+    second: mashup_34
+  - first:
+      213: -148757627331755668
+    second: mashup_35
+  - first:
+      213: 5747728931032505938
+    second: mashup_36
+  - first:
+      213: 1766770485348674123
+    second: mashup_37
+  - first:
+      213: 7183160888061316409
+    second: mashup_38
+  - first:
+      213: -5629464298171497047
+    second: mashup_39
+  - first:
+      213: 3336058027605237203
+    second: mashup_40
+  - first:
+      213: 4353577791746728739
+    second: mashup_41
+  - first:
+      213: 8802071525822700720
+    second: mashup_42
+  - first:
+      213: -8848127829240518420
+    second: mashup_43
+  - first:
+      213: 5522996413414796525
+    second: mashup_44
+  - first:
+      213: -2087044294815763421
+    second: mashup_45
+  - first:
+      213: -5301123623833311862
+    second: mashup_46
+  - first:
+      213: -1335188030505916933
+    second: mashup_47
+  - first:
+      213: 1888673470606152709
+    second: mashup_48
+  - first:
+      213: 4331026914174243990
+    second: mashup_49
+  - first:
+      213: 2351474148520780465
+    second: mashup_50
+  - first:
+      213: 2085002801711039533
+    second: mashup_51
+  - first:
+      213: -6046301660105167152
+    second: mashup_52
+  - first:
+      213: -5412877645045707305
+    second: mashup_53
+  - first:
+      213: 7869770079041533201
+    second: mashup_54
+  - first:
+      213: -308875933305930758
+    second: mashup_55
+  - first:
+      213: 8150750040782551169
+    second: mashup_56
+  - first:
+      213: 498725950276224408
+    second: mashup_57
+  - first:
+      213: -1529280884133715323
+    second: mashup_58
+  - first:
+      213: -2539988823732624852
+    second: mashup_59
+  - first:
+      213: -6266673194527917043
+    second: mashup_60
+  - first:
+      213: 6848470644932504950
+    second: mashup_61
+  - first:
+      213: -7424066227669857047
+    second: mashup_62
+  - first:
+      213: -7454082115846695143
+    second: mashup_63
+  - first:
+      213: 8429605803730333387
+    second: mashup_64
+  - first:
+      213: 361170702978134475
+    second: mashup_65
+  - first:
+      213: 1718660813135881931
+    second: mashup_66
+  - first:
+      213: -3914226549596393612
+    second: mashup_67
+  - first:
+      213: 5595105865935973897
+    second: mashup_68
+  - first:
+      213: 5118302016348374396
+    second: mashup_69
+  - first:
+      213: -3846136576757519069
+    second: mashup_70
+  - first:
+      213: 833457166261538542
+    second: mashup_71
+  - first:
+      213: 3313692346521154237
+    second: mashup_72
+  - first:
+      213: -6596794508643808085
+    second: mashup_73
+  - first:
+      213: -4950749646232852469
+    second: mashup_74
+  - first:
+      213: 5031633617206238832
+    second: mashup_75
+  - first:
+      213: -6265426221960952745
+    second: mashup_76
+  - first:
+      213: -9116549975123420362
+    second: mashup_77
+  - first:
+      213: -3180368440817918775
+    second: mashup_78
+  - first:
+      213: 6906980385872227619
+    second: mashup_79
+  - first:
+      213: 8042515050921539527
+    second: mashup_80
+  - first:
+      213: 3993953691204921470
+    second: mashup_81
+  - first:
+      213: -5700531181840949750
+    second: mashup_82
+  - first:
+      213: 1080671144050995451
+    second: mashup_83
+  - first:
+      213: 1372572771228463446
+    second: mashup_84
+  - first:
+      213: -8095252998130365686
+    second: mashup_85
+  - first:
+      213: 4073125805428144487
+    second: mashup_86
+  - first:
+      213: -8850260015060144385
+    second: mashup_87
+  - first:
+      213: 8316493761275786598
+    second: mashup_88
+  - first:
+      213: 3295894376129465031
+    second: mashup_89
+  - first:
+      213: 1369845649867353660
+    second: mashup_90
+  - first:
+      213: -1090946853779400117
+    second: mashup_91
+  - first:
+      213: 5782009875085285183
+    second: mashup_92
+  - first:
+      213: 3102242277910563441
+    second: mashup_93
+  - first:
+      213: -2495530996860108278
+    second: mashup_94
+  - first:
+      213: -4995306068004301905
+    second: mashup_95
+  - first:
+      213: -4630663765738812401
+    second: mashup_96
+  - first:
+      213: 2709769123595688264
+    second: mashup_97
+  - first:
+      213: -6106910796248743617
+    second: mashup_98
+  - first:
+      213: 8055251277331602468
+    second: mashup_99
+  - first:
+      213: 1899508188157284942
+    second: mashup_100
+  - first:
+      213: -2792001019505981223
+    second: mashup_101
+  - first:
+      213: 4657746555704006133
+    second: mashup_102
+  - first:
+      213: -2685335434363042154
+    second: mashup_103
+  - first:
+      213: -9046799975014195341
+    second: mashup_104
+  - first:
+      213: -6982853535291913469
+    second: mashup_105
+  - first:
+      213: 2136039671491489803
+    second: mashup_106
+  - first:
+      213: -889783596655162708
+    second: mashup_107
+  - first:
+      213: -4102617875832836956
+    second: mashup_108
+  - first:
+      213: -4911135578120417316
+    second: mashup_109
+  - first:
+      213: -2879593388802489776
+    second: mashup_110
+  - first:
+      213: -3609701933348182253
+    second: mashup_111
+  - first:
+      213: 5933209999423801452
+    second: mashup_112
+  - first:
+      213: 8539779314353819735
+    second: mashup_113
+  - first:
+      213: 6925157558214390087
+    second: mashup_114
+  - first:
+      213: 3261203144993475104
+    second: mashup_115
+  - first:
+      213: 847434107503664907
+    second: mashup_116
+  - first:
+      213: 3529286584227406600
+    second: mashup_117
+  - first:
+      213: -4529991445954037274
+    second: mashup_118
+  - first:
+      213: -1612361884805611585
+    second: mashup_119
+  - first:
+      213: -468603880252516045
+    second: mashup_120
+  - first:
+      213: 1809179691321048359
+    second: mashup_121
+  - first:
+      213: 441618110282475482
+    second: mashup_122
+  - first:
+      213: 7537104089886794068
+    second: mashup_123
+  - first:
+      213: 4178927630771854317
+    second: mashup_124
+  - first:
+      213: 7731013284208076407
+    second: mashup_125
+  - first:
+      213: 1274542180117244247
+    second: mashup_126
+  - first:
+      213: -2455961739678934395
+    second: mashup_127
+  - first:
+      213: -5598428668069240944
+    second: mashup_128
+  - first:
+      213: -3958676611414612289
+    second: mashup_129
+  - first:
+      213: -8072780766635992075
+    second: mashup_130
+  - first:
+      213: -7765671518695541513
+    second: mashup_131
+  - first:
+      213: -4291368982968887959
+    second: mashup_132
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mashup_0
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96349a3cc98f90110800000000000000
+      internalID: 1227785725616407401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caaa6b002cae6b0b0800000000000000
+      internalID: -5713120958316369236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_2
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 242
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088de1f480c28e2a0800000000000000
+      internalID: -6708063230769571712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_3
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 249
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b41f94e860008390800000000000000
+      internalID: -7818248502602951501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 248
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4c09b3791a5dfd0800000000000000
+      internalID: -2317768762300775253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_5
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 248
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3b49b64906932b0800000000000000
+      internalID: -5604342070709537877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_6
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 248
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f009a1208aa08290800000000000000
+      internalID: -7890119079855849227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_7
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 248
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7071a4e8755eaa2b0800000000000000
+      internalID: -5572389424705431801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_8
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 248
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d86d44b688314f0800000000000000
+      internalID: -859193109599843057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_9
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 241
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5748dc40054e533d0800000000000000
+      internalID: -3227422525611998091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_10
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 239
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4529ce40caff4df20800000000000000
+      internalID: 3446660729127342676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_11
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 239
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77335e4f7026e0b60800000000000000
+      internalID: 7714210998045193079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_12
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 239
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94235911624ea4b0800000000000000
+      internalID: -5427327516130728806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_13
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 239
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5adbbd845c736fe0800000000000000
+      internalID: -1196976373353424294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_14
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 239
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ce360b622106770800000000000000
+      internalID: 8601895245655043132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_15
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 222
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd24501bb9e6dc00800000000000000
+      internalID: 925183763113323953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_16
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 222
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01556dd4c3ca71f0800000000000000
+      internalID: -1046308713114808054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_17
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 222
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50d666d3a3605c30800000000000000
+      internalID: 4346083195740409951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_18
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 222
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a91aa29a37f43c0800000000000000
+      internalID: -4373149542751561101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_19
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 222
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1139fea913fd110800000000000000
+      internalID: 1287802559965368812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_20
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 222
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cf2f57b76e76490800000000000000
+      internalID: -7752974815560795015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_21
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70518e052b3d34530800000000000000
+      internalID: 3838144070264820999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_22
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e672db9ecb31ef8b0800000000000000
+      internalID: -5116630424550037650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_23
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2352cfcda51b5740800000000000000
+      internalID: 5141727235832697647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_24
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c46ae2a525edc500800000000000000
+      internalID: 418242290225145029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_25
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de67402096dda7a50800000000000000
+      internalID: 6519766853647365869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_26
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 221
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae118895db7230f80800000000000000
+      internalID: -8141620007151332886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_27
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 221
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92efe131f7e4a810800000000000000
+      internalID: 1775799176201757340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_28
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 221
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05783458302ef4c0800000000000000
+      internalID: -4251925571887926005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_29
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 221
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183fe8e8bc7c3d460800000000000000
+      internalID: 7265370300962763649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_30
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 221
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c619c994b509890800000000000000
+      internalID: -7453357011580654521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_31
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 209
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406699a436263af40800000000000000
+      internalID: 5738538528792995332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_32
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 205
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38ddf6503932f9f0800000000000000
+      internalID: -436223334120826821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_33
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 205
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f592ea51e8e3250800000000000000
+      internalID: 5926330383433555738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_34
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 212
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897c5c5655e1f41a0800000000000000
+      internalID: -6823201558314498152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_35
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 212
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61c241e9b18fedf0800000000000000
+      internalID: -148757627331755668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_36
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 212
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e9d6f820904cf40800000000000000
+      internalID: 5747728931032505938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_37
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 199
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a2ada4564d48810800000000000000
+      internalID: 1766770485348674123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_38
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 199
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93dcf5905c6bfa360800000000000000
+      internalID: 7183160888061316409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_39
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 196
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a58eb70c0020e1b0800000000000000
+      internalID: -5629464298171497047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_40
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 197
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd1085d91f0c4e20800000000000000
+      internalID: 3336058027605237203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_41
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 188
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323e7137fe30b6c30800000000000000
+      internalID: 4353577791746728739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_42
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 188
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc1e38da6d372a70800000000000000
+      internalID: 8802071525822700720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_43
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 203
+        width: 40
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8eed26e92253580800000000000000
+      internalID: -8848127829240518420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_44
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 183
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec6855d9ff95ac40800000000000000
+      internalID: 5522996413414796525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_45
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 183
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324300185445903e0800000000000000
+      internalID: -2087044294815763421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_46
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 183
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85ebf29620ae66b0800000000000000
+      internalID: -5301123623833311862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_47
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 185
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf567557f85787de0800000000000000
+      internalID: -1335188030505916933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_48
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 183
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5041f20d38ae53a10800000000000000
+      internalID: 1888673470606152709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_49
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 171
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694130c1806ea1c30800000000000000
+      internalID: 4331026914174243990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_50
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 171
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b26819874d12a020800000000000000
+      internalID: 2351474148520780465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_51
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 186
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d244ea7500b6fec10800000000000000
+      internalID: 2085002801711039533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_52
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 186
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dea390cca8371ca0800000000000000
+      internalID: -6046301660105167152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_53
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 186
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddc562e57891e4b0800000000000000
+      internalID: -5412877645045707305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_54
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 162
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115b449e03a073d60800000000000000
+      internalID: 7869770079041533201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_55
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 154
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbf1a3a9f6a6bbf0800000000000000
+      internalID: -308875933305930758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_56
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 154
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18838d14af74d1170800000000000000
+      internalID: 8150750040782551169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_57
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 154
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895cb720c94dbe600800000000000000
+      internalID: 498725950276224408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_58
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 154
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5822a6b6327e6cae0800000000000000
+      internalID: -1529280884133715323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_59
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 154
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2264fb4f9520ccd0800000000000000
+      internalID: -2539988823732624852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_60
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c73bc8eed4809a0800000000000000
+      internalID: -6266673194527917043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_61
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d64ed44c7aa0f50800000000000000
+      internalID: 6848470644932504950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_62
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec83cea91b68f890800000000000000
+      internalID: -7424066227669857047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_63
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 147
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9179d5e1fc7cd8890800000000000000
+      internalID: -7454082115846695143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_64
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 146
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bceeae701d9fbf470800000000000000
+      internalID: 8429605803730333387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_65
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 146
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc13a4e37d2230500800000000000000
+      internalID: 361170702978134475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_66
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 146
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6295857e8e9d710800000000000000
+      internalID: 1718660813135881931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_67
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 148
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f67ec01bfdda9c0800000000000000
+      internalID: -3914226549596393612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_68
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 148
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e61d3142fc5ad40800000000000000
+      internalID: 5595105865935973897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_69
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c754c91e09cd70740800000000000000
+      internalID: 5118302016348374396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_70
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d2bb04927cf9ac0800000000000000
+      internalID: -3846136576757519069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_71
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeec58a70e8019b00800000000000000
+      internalID: 833457166261538542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_72
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2f259e1a99cfd20800000000000000
+      internalID: 3313692346521154237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_73
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bacc900885a7374a0800000000000000
+      internalID: -6596794508643808085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_74
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08666c4d676b4bb0800000000000000
+      internalID: -4950749646232852469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_75
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 132
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07edd79bd14f3d540800000000000000
+      internalID: 5031633617206238832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_76
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 132
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7548999fb0cbc09a0800000000000000
+      internalID: -6265426221960952745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_77
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 132
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b1ca369128b7180800000000000000
+      internalID: -9116549975123420362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_78
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 132
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc5f2ed0cf0dd3d0800000000000000
+      internalID: -3180368440817918775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_79
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 132
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d2182f0168adf50800000000000000
+      internalID: 6906980385872227619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_80
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c739e6e3d0cc9f60800000000000000
+      internalID: 8042515050921539527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_81
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7821a5a8bf5d6730800000000000000
+      internalID: 3993953691204921470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_82
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e1553c715a3e0b0800000000000000
+      internalID: -5700531181840949750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_83
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 129
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0bc2c0ea05ffe00800000000000000
+      internalID: 1080671144050995451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_84
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 114
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6513279c9ab5c0310800000000000000
+      internalID: 1372572771228463446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_85
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 115
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b0687e942e7af80800000000000000
+      internalID: -8095252998130365686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_86
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 115
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7697506f656a68830800000000000000
+      internalID: 4073125805428144487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_87
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 115
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe2f70386f8d2580800000000000000
+      internalID: -8850260015060144385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_88
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 115
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6657891630f1a6370800000000000000
+      internalID: 8316493761275786598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_89
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 81
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca8762097e5dbd20800000000000000
+      internalID: 3295894376129465031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_90
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 81
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e257d5c5ba20310800000000000000
+      internalID: 1369845649867353660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_91
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 81
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a16a7dd9d2cd0f0800000000000000
+      internalID: -1090946853779400117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_92
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 72
+        width: 80
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f375244d853dd3050800000000000000
+      internalID: 5782009875085285183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_93
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 66
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ace065ae06d0b20800000000000000
+      internalID: 3102242277910563441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_94
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 66
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a024d2eb7c71e5dd0800000000000000
+      internalID: -2495530996860108278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_95
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 66
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa31040f89b1daab0800000000000000
+      internalID: -4995306068004301905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_96
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 66
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c8dd0e6d39cbfb0800000000000000
+      internalID: -4630663765738812401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_97
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 95
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8491e3339a80b9520800000000000000
+      internalID: 2709769123595688264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_98
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 66
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3188929cf4ef3ba0800000000000000
+      internalID: -6106910796248743617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_99
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 65
+        width: 32
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c9cd1bb500acf60800000000000000
+      internalID: 8055251277331602468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_100
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 46
+        width: 40
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e429f0312a86c5a10800000000000000
+      internalID: 1899508188157284942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_101
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 34
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d841db8dd1d049d0800000000000000
+      internalID: -2792001019505981223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_102
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 34
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5598a80d3a3a040800000000000000
+      internalID: 4657746555704006133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_103
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 34
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696850466a5cbbad0800000000000000
+      internalID: -2685335434363042154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_104
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 34
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f144fca5f437280800000000000000
+      internalID: -9046799975014195341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_105
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 34
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b4856d4bbe71f90800000000000000
+      internalID: -6982853535291913469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_106
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 45
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00746593ccb4ad10800000000000000
+      internalID: 2136039671491489803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_107
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 52
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa466a788ad6a3f0800000000000000
+      internalID: -889783596655162708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_108
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 52
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ace0dd47c29017c0800000000000000
+      internalID: -4102617875832836956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_109
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 52
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf8956463428dbb0800000000000000
+      internalID: -4911135578120417316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_110
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 52
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0524dd2d111a908d0800000000000000
+      internalID: -2879593388802489776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_111
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317adb57733c7edc0800000000000000
+      internalID: -3609701933348182253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_112
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 30
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6883791f0ff65250800000000000000
+      internalID: 5933209999423801452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_113
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 29
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750d94c6a04638670800000000000000
+      internalID: 8539779314353819735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_114
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 29
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 741fafeab1a1b1060800000000000000
+      internalID: 6925157558214390087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_115
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 34
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a09b55bfe124d20800000000000000
+      internalID: 3261203144993475104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_116
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 29
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f5e44b4d0b2cb00800000000000000
+      internalID: 847434107503664907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_117
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 29
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8032d6b037b8af030800000000000000
+      internalID: 3529286584227406600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_118
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 29
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9f954e7cc3221c0800000000000000
+      internalID: -4529991445954037274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_119
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 29
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf38ce886dbf99e0800000000000000
+      internalID: -1612361884805611585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_120
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339dd21f04f2f79f0800000000000000
+      internalID: -468603880252516045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_121
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 2
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72dba04085f7b1910800000000000000
+      internalID: 1809179691321048359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_122
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 2
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad724cdd451f02600800000000000000
+      internalID: 441618110282475482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_123
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 2
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451a8d88c3c299860800000000000000
+      internalID: 7537104089886794068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_124
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 19
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb983e0a888ef930800000000000000
+      internalID: 4178927630771854317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_125
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 19
+        width: 32
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7766c0f0f931a4b60800000000000000
+      internalID: 7731013284208076407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_126
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 20
+        width: 64
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759e3292c5510b110800000000000000
+      internalID: 1274542180117244247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_127
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 2
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a9c7c5fcbaaedd0800000000000000
+      internalID: -2455961739678934395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_128
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 2
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f9e53c9c26e42b0800000000000000
+      internalID: -5598428668069240944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_129
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 2
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb62cfb8894ff09c0800000000000000
+      internalID: -3958676611414612289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_130
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 11
+        width: 64
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb5e070aa8b7ff80800000000000000
+      internalID: -8072780766635992075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_131
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 2
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4b8c5e5eaca3490800000000000000
+      internalID: -7765671518695541513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mashup_132
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2
+        width: 64
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965920a85aef174c0800000000000000
+      internalID: -4291368982968887959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 04f65764e24bcfd43903d34251ddcc2e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
