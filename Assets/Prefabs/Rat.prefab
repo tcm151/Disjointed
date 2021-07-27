@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1582706522331144125}
   - component: {fileID: 1582706522331144121}
   m_Layer: 10
-  m_Name: Enemy Rat
+  m_Name: Rat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,6 +171,9 @@ MonoBehaviour:
   targetMask:
     serializedVersion: 2
     m_Bits: 512
+  detectionMask:
+    serializedVersion: 2
+    m_Bits: 601
   template: {fileID: 11400000, guid: 133994b9587dff142a3a455b98f1bdbd, type: 2}
   groundMask:
     serializedVersion: 2

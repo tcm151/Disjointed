@@ -19,6 +19,7 @@ namespace Disjointed
         [Header("Target")]
         public Transform target;
         public LayerMask targetMask;
+        public LayerMask detectionMask;
         
         [Header("Enemy Template")]
         public EnemyTemplate template;
@@ -93,7 +94,7 @@ namespace Disjointed
             if (detect is null) return;
             
             var targetDirection = detect.transform.position - transform.position;
-            var los = Physics2D.Raycast(transform.position, targetDirection);
+            var los = Physics2D.Raycast(transform.position, targetDirection, detectionRadius, detectionMask);
 
             if (los.collider is { } && targetMask.Contains(los.collider.gameObject.layer))
                 target = detect.transform;
