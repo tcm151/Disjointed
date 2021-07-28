@@ -20,6 +20,7 @@ namespace Disjointed.Player
         public float invincibilityCooldown;
 
         public static Action<int> healthChanged;
+        public static Action playerDeath;
 
         private void Awake()
         {
