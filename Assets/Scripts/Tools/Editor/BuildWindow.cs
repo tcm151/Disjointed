@@ -1,7 +1,6 @@
-﻿using System;
+﻿using UnityEngine;
 using UnityEditor;
 using UnityEditor.Build.Reporting;
-using UnityEngine;
 
 
 namespace Disjointed.Tools.Editor
@@ -32,8 +31,8 @@ namespace Disjointed.Tools.Editor
             GUILayout.Label("Build Settings", EditorStyles.boldLabel);
             GUILayout.Space(4);
             version = EditorGUILayout.TextField("Version", version);
-            
             GUILayout.Space(4);
+            
             if (GUILayout.Button("Build Game"))
             {
                 BuildGame();
@@ -53,13 +52,23 @@ namespace Disjointed.Tools.Editor
             if (report.summary.result == BuildResult.Succeeded)
             {
                 Debug.Log($"Build succeeded: {report.summary.totalSize/1e6} MB");
-                PlayerSettings.bundleVersion = version;
+
+                UpdateVersionNumber();
             }
 
             if (report.summary.result == BuildResult.Failed)
             {
                 Debug.Log("Build failed!");
             }
+        }
+
+        private static void UpdateVersionNumber()
+        {
+            var number = version.Split('.');
+            number[2] = (int.Parse(number[2]) + 1).ToString();
+            version = $"{number[0]}.{number[1]}.{number[2]}";
+            
+            PlayerSettings.bundleVersion = version;
         }
     }
 }
