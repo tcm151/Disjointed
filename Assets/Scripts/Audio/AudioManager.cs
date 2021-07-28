@@ -37,6 +37,12 @@ namespace TCM.Audio
         {
             yield return new WaitForSeconds(soundEffects.First(s => s.name == "CaveBackgroundNoise").clip.length);
             Play("CaveTheme1", 1);
+            yield return new WaitForSeconds(soundEffects.First(s => s.name == "CaveTheme1").clip.length);
+            yield return new WaitForSeconds(soundEffects.First(s => s.name == "CaveBackgroundNoise").clip.length);
+            Play("CaveTheme2", 1);
+            yield return new WaitForSeconds(soundEffects.First(s => s.name == "CaveTheme2").clip.length);
+
+            StartCoroutine(CR_Music());
         }
 
         //> PLAY ONE SHOT SOUND AT POINT IN WORLD
