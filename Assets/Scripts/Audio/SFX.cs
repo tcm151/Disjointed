@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 
-namespace TCM.Audio
+namespace Disjointed.Audio
 {
     //> CONTAINER FOR ALL IN GAME SOUND EFFECTS
     [System.Serializable] public class SFX

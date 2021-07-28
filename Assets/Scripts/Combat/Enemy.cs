@@ -25,8 +25,6 @@ namespace Disjointed
             Stationary,
         }
         
-        
-        [FormerlySerializedAs("template")]
         [Header("Enemy Template")]
         public EnemyData data;
         private float health;

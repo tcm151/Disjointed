@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using UnityEngine;
+using Disjointed.Audio;
 using Disjointed.Combat;
-using Disjointed.Game_Management;
 using Disjointed.Tools.Extensions;
-using TCM.Audio;
+using Disjointed.Tools.GameManagement;
 using Sprite = Disjointed.Sprites.Sprite;
 
 

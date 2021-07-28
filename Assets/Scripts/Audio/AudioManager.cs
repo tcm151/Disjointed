@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 
 
-namespace TCM.Audio
+namespace Disjointed.Audio
 {
     public class AudioManager : MonoBehaviour
     {

@@ -1,6 +1,5 @@
-using Disjointed.Game_Management;
-using Disjointed.Tools.SceneManagement;
 using UnityEngine;
+using Disjointed.Tools.GameManagement;
 
 
 namespace Disjointed.UI

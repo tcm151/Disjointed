@@ -2,7 +2,7 @@
 using UnityEngine;
 
 
-namespace TCM.Audio
+namespace Disjointed.Audio
 {
     [Serializable] public class Playlist
     {
