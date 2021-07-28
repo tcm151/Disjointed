@@ -31,6 +31,7 @@ namespace Disjointed.Player
         private void Initialize()
         {
             health = 3;
+            healthChanged?.Invoke(health);
             invincible = false;
         }
 
