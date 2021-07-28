@@ -12,25 +12,36 @@ namespace Disjointed
     [RequireComponent(typeof(Rigidbody2D))]
     public class Enemy : MonoBehaviour, IDamageable
     {
-        private Sprite sprite;
-        new private Collider2D collider;
-        new private Rigidbody2D rigidbody;
-
-        [Header("Target")]
-        public Transform target;
-        public LayerMask targetMask;
-        public LayerMask detectionMask;
+        public enum Aggro
+        {
+            Ignore,
+            Homing,      // Moves straight towards player with no regard for safety
+            Intelligent, //Backs off when low on health, stays at optimal fighting distance
+        }
+        public enum Movement
+        {
+            Walking,
+            Flying,
+            Stationary,
+        }
         
+        
+        [FormerlySerializedAs("template")]
         [Header("Enemy Template")]
-        public EnemyTemplate template;
+        public EnemyData data;
         private float health;
         private float movementSpeed;
         private float acceleration;
         private float detectionRadius;
         private int damage;
         private float knockback;
-        private EnemyTemplate.Aggro aggro;
-        private EnemyTemplate.MovementType movementType;
+        private Aggro aggro;
+        private Movement movement;
+        
+        [Header("Target")]
+        public Transform target;
+        public LayerMask targetMask;
+        public LayerMask detectionMask;
 
         [Header("Ground/Wall Checking")]
         public LayerMask groundMask;
@@ -38,7 +49,13 @@ namespace Disjointed
         public bool onGround;
         public bool onWall;
 
+        
+        new private Collider2D collider;
+        new private Rigidbody2D rigidbody;
+        private Sprite sprite;
+        
         private Vector2 desiredVelocity;
+        private Vector3 initialPosition;
 
         private void Awake()
         {
@@ -46,32 +63,39 @@ namespace Disjointed
             collider = GetComponent<Collider2D>();
             rigidbody = GetComponent<Rigidbody2D>();
             
-            health = template.health;
-            acceleration = template.acceleration;
-            movementSpeed = template.movementSpeed;
-            detectionRadius = template.detectionRadius;
-            damage = template.damage;
-            knockback = template.knockback;
+            health = data.health;
+            acceleration = data.acceleration;
+            movementSpeed = data.movementSpeed;
+            detectionRadius = data.detectionRadius;
+            damage = data.damage;
+            knockback = data.knockback;
 
-            aggro = template.aggro;
-            movementType = template.movementType;
+            aggro = data.aggro;
+            movement = data.movement;
+
+            initialPosition = transform.position;
         }
 
         private void Update()
         {
-            if (rigidbody.velocity.x > 0.15f) sprite.FaceRight();
-            if (rigidbody.velocity.x < -0.15f) sprite.FaceLeft();
+            if (rigidbody.velocity.x > 0.25f) sprite.FaceRight();
+            if (rigidbody.velocity.x < -0.25f) sprite.FaceLeft();
         }
 
         private void FixedUpdate()
         {
             DetectPlayer();
-            if (!target) return;
-            
+            if (!target && Vector3.Distance(transform.position, initialPosition) < 0.25f)
+            {
+                rigidbody.velocity = Vector2.zero;
+            }
+
             desiredVelocity = rigidbody.velocity;
 
-            if (movementType == EnemyTemplate.MovementType.Walking)
+            if (movement == Movement.Walking)
             {
+                if (!target) return;
+                
                 var hit = Physics2D.Raycast(transform.position, Vector2.down, groundedDistance, groundMask);
                 onGround = hit.collider is { };
 
@@ -79,9 +103,12 @@ namespace Disjointed
                 desiredVelocity.x.MoveTowards(targetDirection.x * movementSpeed, acceleration * Time.deltaTime);
             }
 
-            if (movementType == EnemyTemplate.MovementType.Flying)
+            if (movement == Movement.Flying)
             {
-                var targetDirection = (target.position - transform.position).normalized;
+                Vector3 targetDirection;
+                if (target) targetDirection = (target.position - transform.position).normalized;
+                else targetDirection = transform.position.DirectionTo(initialPosition);
+
                 desiredVelocity.MoveTowards(targetDirection * movementSpeed, acceleration  * Time.deltaTime);
             }
             
@@ -96,8 +123,8 @@ namespace Disjointed
             var targetDirection = detect.transform.position - transform.position;
             var los = Physics2D.Raycast(transform.position, targetDirection, detectionRadius, detectionMask);
 
-            if (los.collider is { } && targetMask.Contains(los.collider.gameObject.layer))
-                target = detect.transform;
+            if (los.collider is { } && targetMask.Contains(los.collider.gameObject.layer)) target = detect.transform;
+            else target = null;
         }
 
         public void TakeDamage(int damage, string origin)

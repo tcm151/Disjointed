@@ -28,7 +28,9 @@ namespace Disjointed.Tools.Extensions
             var angle = Mathf.Acos(direction.x) * Mathf.Rad2Deg;
             return (direction.y > 0f) ? angle : -angle;
         }
-        
+
+        public static Vector3 DirectionTo(this Vector3 origin, Vector3 target) => (target - origin).normalized;
+
         //> MATHF
         public static float Clamp(this ref float value, float min, float max)
             => value = Mathf.Clamp(value, min, max);

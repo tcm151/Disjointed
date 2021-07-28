@@ -35,7 +35,7 @@ namespace Disjointed.Player.Combat
 
         private void Update()
         {
-            firing |= (canFire && Input.GetMouseButtonDown(0));
+            firing |= (canFire && Input.GetMouseButtonDown(1));
             
             var mousePosition = camera.ScreenToWorldPoint(Input.mousePosition);
             mousePosition.z = 0f;

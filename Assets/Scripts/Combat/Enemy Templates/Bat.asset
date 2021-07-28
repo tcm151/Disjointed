@@ -19,4 +19,4 @@ MonoBehaviour:
   damage: 1
   knockback: 10
   aggro: 1
-  movementType: 1
+  movement: 1
