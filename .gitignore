@@ -13,8 +13,10 @@
 
 # IDE stuff
 .vscode/
+*/.vsconfig
 .idea/
 .vs/
+*.sln.DotSettings.user
 Assets/Plugins/Editor/JetBrains*
 
 # MemoryCaptures can get excessive in size.
