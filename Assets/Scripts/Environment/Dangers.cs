@@ -6,6 +6,8 @@ namespace Disjointed.Environment
 {
     public class Dangers : MonoBehaviour
     {
+        public float knockbackMultiplier = 1f;
+        
         private void OnCollisionEnter2D(Collision2D collision) => Damage(collision);
         private void OnCollisionStay2D(Collision2D collision) => Damage(collision);
 
@@ -15,8 +17,7 @@ namespace Disjointed.Environment
             damageable.TakeDamage(1, "Dangers!");
 
             var rigidbody = collision.collider.GetComponent<Rigidbody2D>();
-            var newVelocity = -collision.contacts[0].normal * Mathf.Sqrt(2f * Physics2D.gravity.magnitude * rigidbody.gravityScale * 2.5f);
-            Debug.Log(newVelocity);
+            var newVelocity = -collision.contacts[0].normal * Mathf.Sqrt(2f * Physics2D.gravity.magnitude * rigidbody.gravityScale * knockbackMultiplier);
             rigidbody.velocity = newVelocity;
         }
     }
