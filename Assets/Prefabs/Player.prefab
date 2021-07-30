@@ -347,9 +347,9 @@ MonoBehaviour:
     origin: Pistol
     damage: 5
     knockback: 5
-  launchSpeed: 33
-  reloadTime: 2.5
-  ammoQuantity: 6
+  launchSpeed: 30
+  reloadTime: 2
+  ammoQuantity: 5
   recoilForce: 5
 --- !u!114 &6066589626288808356
 MonoBehaviour:
