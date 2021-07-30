@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a483d3cfd2fb2944abe3e996d37c82e5
+guid: 198ed8a1451e7b14380540433e9b78f0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5113850848988359095
-    second: platform_0
+      213: 3917304700257491140
+    second: waterCaveTile0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,26 +94,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: platform_0
+      name: waterCaveTile0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 7
-        width: 16
-        height: 16
+        x: 1
+        y: 1
+        width: 96
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: 94618b74fb3f709b0800000000000000
-      internalID: -5113850848988359095
+      spriteID: 4c8d0dfbedf0d5630800000000000000
+      internalID: 3917304700257491140
       vertices: []
       indices: 
       edges: []
@@ -121,7 +117,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: df49975aebe807342a2b0ab6bdf84163
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 

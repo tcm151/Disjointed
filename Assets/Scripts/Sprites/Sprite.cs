@@ -12,7 +12,7 @@ namespace Disjointed.Sprites
         private Animator animator;
         private SpriteRenderer renderer;
 
-        private void Awake()
+        virtual protected void Awake()
         {
             animator = GetComponent<Animator>();
             renderer = GetComponent<SpriteRenderer>();
