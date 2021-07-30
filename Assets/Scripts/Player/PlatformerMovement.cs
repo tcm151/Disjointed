@@ -186,7 +186,7 @@ namespace Disjointed.Player
         private void OnTriggerExit2D(Collider2D collider)
         {
             // Debug.Log("EXIT TRIGGER!");
-            // onPlatform = false;
+            onPlatform = false;
             this.collider.isTrigger = false;
             
             if (ladderMask.Contains(collider.gameObject.layer)) onLadder = false;
