@@ -1,0 +1,432 @@
+fileFormatVersion: 2
+guid: 944fd601f9f7a97438519b0519027e48
+ScriptedImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1175099482241512327
+    second: DarkCaveRocks_0
+  - first:
+      213: -6007472980806447917
+    second: DarkCaveRocks_1
+  - first:
+      213: 6037416477943224212
+    second: DarkCaveRocks_2
+  - first:
+      213: 4943651296059258441
+    second: DarkCaveRocks_3
+  - first:
+      213: 3603214908041165838
+    second: DarkCaveRocks_4
+  - first:
+      213: 2351791483747268159
+    second: DarkCaveRocks_5
+  - first:
+      213: -2146631672206167268
+    second: DarkCaveRocks_6
+  - first:
+      213: -2505848991188480132
+    second: DarkCaveRocks_7
+  - first:
+      213: 8399623104408140043
+    second: DarkCaveRocks_8
+  - first:
+      213: -3144019773668570519
+    second: DarkCaveRocks_9
+  - first:
+      213: -8681789075952419342
+    second: DarkCaveRocks_10
+  - first:
+      213: -4308869339557918845
+    second: DarkCaveRocks_11
+  - first:
+      213: -8229755397008074540
+    second: DarkCaveRocks_12
+  - first:
+      213: 3469662242695249949
+    second: DarkCaveRocks_13
+  - first:
+      213: -2601322565291843894
+    second: DarkCaveRocks_14
+  - first:
+      213: -1556625350410128280
+    second: DarkCaveRocks_15
+  - first:
+      213: 1465846417531259735
+    second: DarkCaveRocks_16
+  - first:
+      213: 2815891658585425300
+    second: DarkCaveRocks_17
+  - first:
+      213: 8584123512185492596
+    second: DarkCaveRocks_18
+  - first:
+      213: 4112168714979439929
+    second: DarkCaveRocks_19
+  - first:
+      213: 2658707011435216924
+    second: DarkCaveRocks_20
+  - first:
+      213: -84117649996586031
+    second: DarkCaveRocks_21
+  - first:
+      213: -1878649968368326405
+    second: DarkCaveRocks_22
+  - first:
+      213: 8600275281188949527
+    second: DarkCaveRocks_23
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: d1956ce1ff810451f9738b29e9df561a, type: 3}
+  settings:
+    importType: 0
+    transparencyMode: 0
+    transparentColor: {r: 1, g: 0, b: 1, a: 1}
+    pixelsPerUnit: 16
+    spriteAlignment: 4
+    spritePivot: {x: 0, y: 0.5}
+    generateAnimations: 1
+    createAnimationAssets: 0
+    bindType: 0
+    animType: 0
+    baseAnimator: {instanceID: 0}
+    buildAtlas: 0
+    tileSize: {x: 16, y: 16}
+    tileNameType: 0
+    tileEmpty: 0
+  textureImporterSettings:
+    seamlessCubemap: 0
+    mipmapBias: 0.5
+    wrapMode: 1
+    wrapModeU: 0
+    wrapModeV: 0
+    wrapModeW: 0
+    alphaIsTransparency: 1
+    spriteMode: 2
+    spritePixelsPerUnit: 16
+    spriteTessellationDetail: 0
+    spriteExtrude: 1
+    spriteMeshType: 1
+    spriteAlignment: 0
+    spritePivot: {x: 0, y: 0}
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 1
+    aniso: 1
+    filterMode: 0
+    cubemapConvolution: 0
+    textureType: 8
+    textureShape: 1
+    mipmapFilter: 0
+    mipmapEnabled: 0
+    sRGBTexture: 1
+    fadeOut: 0
+    borderMipmap: 0
+    mipMapsPreserveCoverage: 0
+    mipmapFadeDistanceStart: 1
+    alphaTestReferenceValue: 1
+    convertToNormalMap: 0
+    heightmapScale: 0
+    normalMapFilter: 0
+    alphaSource: 1
+    singleChannelComponent: 0
+    readable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    npotScale: 0
+    generateCubemap: 0
+    mipmapFadeDistanceEnd: 3
+  animationSettings: []
+  texture: {instanceID: 0}
+  spriteImportData:
+  - name: DarkCaveRocks_0
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 48
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 78330cec0cace4010800000000000000
+  - name: DarkCaveRocks_1
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 48
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 3dc4645272b21aca0800000000000000
+  - name: DarkCaveRocks_2
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 48
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 49755e09c4639c350800000000000000
+  - name: DarkCaveRocks_3
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 48
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 946f20349a06b9440800000000000000
+  - name: DarkCaveRocks_4
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 48
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: e0c7f234ed0310230800000000000000
+  - name: DarkCaveRocks_5
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 48
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: f367b86e4ed33a020800000000000000
+  - name: DarkCaveRocks_6
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 32
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: c137c821ed1a532e0800000000000000
+  - name: DarkCaveRocks_7
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 32
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: c7f807b7e9f693dd0800000000000000
+  - name: DarkCaveRocks_8
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 32
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: b093969d5b4719470800000000000000
+  - name: DarkCaveRocks_9
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 32
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 96a4eaf6ca23e54d0800000000000000
+  - name: DarkCaveRocks_10
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 32
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 2fd3df065d6148780800000000000000
+  - name: DarkCaveRocks_11
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 32
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 38704104a22d334c0800000000000000
+  - name: DarkCaveRocks_12
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 16
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 4d8dafcc1190acd80800000000000000
+  - name: DarkCaveRocks_13
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 16
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: d108f6a3d67b62030800000000000000
+  - name: DarkCaveRocks_14
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 16
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: ace5295c8ee36ebd0800000000000000
+  - name: DarkCaveRocks_15
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 16
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 864bf6cbd71c56ae0800000000000000
+  - name: DarkCaveRocks_16
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 16
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 75bca34ec8bb75410800000000000000
+  - name: DarkCaveRocks_17
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 16
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 49548f35b8e041720800000000000000
+  - name: DarkCaveRocks_18
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 47415eb8adee02770800000000000000
+  - name: DarkCaveRocks_19
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 0
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 935f2d8b8ab511930800000000000000
+  - name: DarkCaveRocks_20
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: c10cf62c0ff95e420800000000000000
+  - name: DarkCaveRocks_21
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 0
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 1d3ec98617725def0800000000000000
+  - name: DarkCaveRocks_22
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 0
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: bf86b1aaec1bde5e0800000000000000
+  - name: DarkCaveRocks_23
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 0
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 71e07d15dc05a5770800000000000000
+  spriteRects: []
+  selectedImporter: 1
