@@ -27,5 +27,10 @@ namespace Disjointed.Sprites
         {
             animator.SetTrigger(name);
         }
+
+        public void SetAnimationState(string name, bool value)
+        {
+            animator.SetBool(name, value);
+        }
     }
 }

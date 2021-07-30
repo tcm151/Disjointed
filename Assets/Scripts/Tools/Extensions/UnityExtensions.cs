@@ -20,6 +20,9 @@ namespace Disjointed.Tools.Extensions
         public static void MoveTowards(this ref Vector2 current, Vector2 target, float maxDelta)
             => current = Vector2.MoveTowards(current, target, maxDelta);
 
+        public static void Lerp(this ref Vector2 current, Vector2 target, float maxDelta)
+            => current = Vector2.Lerp(current, target, maxDelta);
+
         //> VECTOR3
         public static float Angle(this Vector3 direction)
         {

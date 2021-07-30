@@ -31,7 +31,7 @@ namespace Disjointed.Combat.Enemies
         public enum Aggro { Ignore, Homing, Intelligent }
         public enum Movement { Walking, Flying, Stationary }
 
-        public bool IsMoving => (rigidbody.velocity.sqrMagnitude > 0);
+        public bool IsMoving => (rigidbody.velocity.magnitude > 1f);
         
         [Header("Enemy Template")]
         public EnemyData data;
@@ -111,11 +111,19 @@ namespace Disjointed.Combat.Enemies
 
             if (movement == Movement.Flying)
             {
-                Vector3 targetDirection;
-                if (target) targetDirection = (target.position - transform.position).normalized;
-                else targetDirection = transform.position.DirectionTo(initialPosition);
+                if (target)
+                {
+                    var targetDirection = (target.position - transform.position).normalized;
+                    desiredVelocity.MoveTowards(targetDirection * movementSpeed, acceleration  * Time.deltaTime);
+                }
+                else
+                {
+                    var targetDirection = transform.position.DirectionTo(initialPosition);
+                    if (Vector2.Distance(transform.position, initialPosition) < 0.1f) transform.position = initialPosition;
+                    else desiredVelocity.MoveTowards(targetDirection * movementSpeed, acceleration  * Time.deltaTime);
+                }
 
-                desiredVelocity.MoveTowards(targetDirection * movementSpeed, acceleration  * Time.deltaTime);
+                
             }
             
             rigidbody.velocity = desiredVelocity;
