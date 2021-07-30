@@ -1,12 +1,11 @@
-﻿
+﻿using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 
 namespace Disjointed.Audio
 {
     //> CONTAINER FOR ALL IN GAME SOUND EFFECTS
-    [System.Serializable] public class SFX
+    [Serializable] public class SFX
     {
         public string name; 
         public AudioClip clip;

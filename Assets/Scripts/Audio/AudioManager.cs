@@ -10,7 +10,6 @@ namespace Disjointed.Audio
     {
         //- SINGLETON
         private static AudioManager instance;
-
         public static AudioManager Connect
         {
             get

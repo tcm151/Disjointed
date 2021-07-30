@@ -1,5 +1,4 @@
 ﻿#pragma warning disable 108,114
-
 using UnityEngine;
 
 
@@ -23,14 +22,7 @@ namespace Disjointed.Sprites
         public void FaceLeft() => renderer.flipX = true;
         public void FaceRight() => renderer.flipX = false;
 
-        public void TriggerAnimation(string name)
-        {
-            animator.SetTrigger(name);
-        }
-
-        public void SetAnimationState(string name, bool value)
-        {
-            animator.SetBool(name, value);
-        }
+        public void TriggerAnimation(string name) => animator.SetTrigger(name);
+        public void SetAnimationState(string name, bool value) => animator.SetBool(name, value);
     }
 }
