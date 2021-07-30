@@ -6,10 +6,9 @@ using Sprite = Disjointed.Sprites.Sprite;
 namespace Disjointed.Player
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class PlatformerMovement : MonoBehaviour
+    public class PlatformerMovement : Sprite
     {
         //- COMPONENTS
-        private Sprite sprite;
         new private Collider2D collider;
         new private Rigidbody2D rigidbody;
 
@@ -53,9 +52,10 @@ namespace Disjointed.Player
         private float jumpSpeed => Mathf.Sqrt(2f * Physics2D.gravity.magnitude * rigidbody.gravityScale * jumpHeight);
 
         //> INITIALIZATION
-        private void Awake()
+        override protected void Awake()
         {
-            sprite = GetComponent<Sprite>();
+            base.Awake();
+            
             collider = GetComponent<Collider2D>();
             rigidbody = GetComponent<Rigidbody2D>();
         }
@@ -72,8 +72,8 @@ namespace Disjointed.Player
             if (Input.GetKeyDown(KeyCode.Space)) timeSinceJumping = 0;
 
             // update direction of sprite
-            if (rigidbody.velocity.x > 0.15f) sprite.FaceRight();
-            if (rigidbody.velocity.x < -0.15f) sprite.FaceLeft();
+            if (rigidbody.velocity.x > 0.15f) FaceRight();
+            if (rigidbody.velocity.x < -0.15f) FaceLeft();
 
             if (Input.GetKeyDown(KeyCode.S)) fallThruTimer = 0f;
             

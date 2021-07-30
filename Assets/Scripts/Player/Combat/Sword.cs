@@ -9,7 +9,7 @@ using Sprite = Disjointed.Sprites.Sprite;
 
 namespace Disjointed.Player.Combat
 {
-    public class Sword : MonoBehaviour
+    public class Sword : Sprite
     {
         public LayerMask enemyMask;
         public int damage = 1;
@@ -27,8 +27,10 @@ namespace Disjointed.Player.Combat
         private bool canAttack;
 
         //> INITIALIZATION
-        private void Awake()
+        override protected void Awake()
         {
+            base.Awake();
+            
             camera = Camera.main;
             sprite = GetComponentInChildren<Sprite>();
 

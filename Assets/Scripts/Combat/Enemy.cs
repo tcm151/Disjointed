@@ -1,7 +1,6 @@
 using System;
-using Disjointed.Audio;
 using UnityEngine;
-using Disjointed.Combat;
+using Disjointed.Audio;
 using Disjointed.Tools.Extensions;
 using Disjointed.Tools.Serialization;
 using Sprite = Disjointed.Sprites.Sprite;
@@ -12,6 +11,7 @@ namespace Disjointed.Combat.Enemies
     [RequireComponent(typeof(Rigidbody2D))]
     abstract public class Enemy : Sprite, IDamageable
     {
+        //> ENEMY DATA STRUCT
         [Serializable] public class Data : ISerializeable
         {
             public float health = 3f;
@@ -58,7 +58,6 @@ namespace Disjointed.Combat.Enemies
         
         new private Collider2D collider;
         new private Rigidbody2D rigidbody;
-        private Sprite sprite;
         
         private Vector2 desiredVelocity;
         private Vector3 initialPosition;
@@ -67,7 +66,6 @@ namespace Disjointed.Combat.Enemies
         {
             base.Awake();
             
-            sprite = GetComponent<Sprite>();
             collider = GetComponent<Collider2D>();
             rigidbody = GetComponent<Rigidbody2D>();
             
@@ -86,8 +84,8 @@ namespace Disjointed.Combat.Enemies
 
         virtual protected void Update()
         {
-            if (rigidbody.velocity.x > 0.25f) sprite.FaceRight();
-            if (rigidbody.velocity.x < -0.25f) sprite.FaceLeft();
+            if (rigidbody.velocity.x > 0.25f) FaceRight();
+            if (rigidbody.velocity.x < -0.25f) FaceLeft();
         }
 
         virtual protected void FixedUpdate()
@@ -152,9 +150,9 @@ namespace Disjointed.Combat.Enemies
             var damageable = collision.gameObject.GetComponent<IDamageable>();
             if (damageable is null) return;
 
-            var direction = collision.transform.position - transform.position;
-            
             damageable.TakeDamage(damage, "Enemy!");
+            
+            var direction = collision.transform.position - transform.position;
             damageable.TakeKnockback(direction, knockback);
             
             rigidbody.AddForce(-direction * knockback, ForceMode2D.Impulse);
