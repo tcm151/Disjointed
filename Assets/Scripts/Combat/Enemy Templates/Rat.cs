@@ -3,10 +3,8 @@
 
 namespace Disjointed.Combat.Enemies
 {
-    public class Bat : Enemy
+    public class Rat : Enemy
     {
-        
-        
         
     }
 }

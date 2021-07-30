@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 
-namespace Disjointed
+namespace Disjointed.Combat.Enemies
 {
     [CreateAssetMenu(fileName = "EnemyData", menuName = "EnemyData")]
     public class EnemyData : ScriptableObject

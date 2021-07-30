@@ -2,29 +2,36 @@ using System;
 using Disjointed.Audio;
 using UnityEngine;
 using Disjointed.Combat;
-using Disjointed.Player;
 using Disjointed.Tools.Extensions;
-using UnityEngine.Serialization;
+using Disjointed.Tools.Serialization;
 using Sprite = Disjointed.Sprites.Sprite;
 
 
-namespace Disjointed
+namespace Disjointed.Combat.Enemies
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class Enemy : Sprite, IDamageable
+    abstract public class Enemy : Sprite, IDamageable
     {
-        public enum Aggro
+        [Serializable] public class Data : ISerializeable
         {
-            Ignore,
-            Homing,      // Moves straight towards player with no regard for safety
-            Intelligent, //Backs off when low on health, stays at optimal fighting distance
+            public float health = 3f;
+            public float acceleration = 10f;
+            public float movementSpeed = 2f;
+            public float detectionRadius = 5f;
+            public int damage = 1;
+            public float knockback = 5f;
+        
+            public Aggro aggro;
+            public Movement movement;
+
+            public void Save() { }
+            public void Load() { }
         }
-        public enum Movement
-        {
-            Walking,
-            Flying,
-            Stationary,
-        }
+        
+        public enum Aggro { Ignore, Homing, Intelligent }
+        public enum Movement { Walking, Flying, Stationary }
+
+        public bool IsMoving => (rigidbody.velocity.sqrMagnitude > 0);
         
         [Header("Enemy Template")]
         public EnemyData data;
@@ -77,13 +84,13 @@ namespace Disjointed
             initialPosition = transform.position;
         }
 
-        private void Update()
+        virtual protected void Update()
         {
             if (rigidbody.velocity.x > 0.25f) sprite.FaceRight();
             if (rigidbody.velocity.x < -0.25f) sprite.FaceLeft();
         }
 
-        private void FixedUpdate()
+        virtual protected void FixedUpdate()
         {
             DetectPlayer();
             if (!target && Vector3.Distance(transform.position, initialPosition) < 0.25f)
@@ -116,7 +123,7 @@ namespace Disjointed
             rigidbody.velocity = desiredVelocity;
         }
 
-        private void DetectPlayer()
+        virtual protected void DetectPlayer()
         {
             var detect = Physics2D.OverlapCircle(transform.position, detectionRadius, targetMask);
             if (detect is null) return;
@@ -128,19 +135,19 @@ namespace Disjointed
             else target = null;
         }
 
-        public void TakeDamage(int damage, string origin)
+        virtual public void TakeDamage(int damage, string origin)
         {
             health -= damage;
             AudioManager.Connect.PlayOneShot("ZombieOof");
             if (health <= 0) Destroy(this.gameObject);
         }
 
-        public void TakeKnockback(Vector2 direction, float knockback)
+        virtual public void TakeKnockback(Vector2 direction, float knockback)
         {
             rigidbody.AddForce(direction * knockback, ForceMode2D.Impulse);
         }
 
-        private void OnCollisionEnter2D(Collision2D collision)
+        virtual protected void OnCollisionEnter2D(Collision2D collision)
         {
             var damageable = collision.gameObject.GetComponent<IDamageable>();
             if (damageable is null) return;
@@ -153,7 +160,7 @@ namespace Disjointed
             rigidbody.AddForce(-direction * knockback, ForceMode2D.Impulse);
         }
 
-        private void OnDrawGizmos()
+        virtual protected void OnDrawGizmos()
         {
             #if UNITY_EDITOR
             if (!Application.isPlaying) return;
