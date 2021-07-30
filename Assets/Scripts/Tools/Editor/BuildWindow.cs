@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+using UnityEngine;
 using UnityEditor;
 using UnityEditor.Build.Reporting;
 
@@ -72,3 +73,4 @@ namespace Disjointed.Tools.Editor
         }
     }
 }
+#endif

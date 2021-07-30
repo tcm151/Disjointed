@@ -9,7 +9,7 @@ using Sprite = Disjointed.Sprites.Sprite;
 
 namespace Disjointed.Player.Combat
 {
-    public class Melee : MonoBehaviour
+    public class Sword : MonoBehaviour
     {
         public LayerMask enemyMask;
         public int damage = 1;
@@ -70,7 +70,7 @@ namespace Disjointed.Player.Combat
             canAttack = attacking = false;
 
             sprite.transform.rotation = Quaternion.AngleAxis(attackAngle, Vector3.forward);
-            sprite.TriggerAnimation("attacked");
+            sprite.TriggerAnimation("Attack");
             
             AudioManager.Connect.PlayOneShot("SwordSwipe");
 
@@ -88,7 +88,7 @@ namespace Disjointed.Player.Combat
                 var damageable = collider.GetComponent<IDamageable>();
                 if (damageable is null) continue;
                 
-                damageable.TakeDamage(damage, "Player Melee");
+                damageable.TakeDamage(damage, "Player Sword");
 
                 var direction = (collider.transform.position - transform.position).normalized;
                 damageable.TakeKnockback(direction, knockback);

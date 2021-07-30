@@ -1,4 +1,5 @@
 using System;
+using Disjointed.Audio;
 using UnityEngine;
 using Disjointed.Combat;
 using Disjointed.Player;
@@ -10,7 +11,7 @@ using Sprite = Disjointed.Sprites.Sprite;
 namespace Disjointed
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class Enemy : MonoBehaviour, IDamageable
+    public class Enemy : Sprite, IDamageable
     {
         public enum Aggro
         {
@@ -55,8 +56,10 @@ namespace Disjointed
         private Vector2 desiredVelocity;
         private Vector3 initialPosition;
 
-        private void Awake()
+        override protected void Awake()
         {
+            base.Awake();
+            
             sprite = GetComponent<Sprite>();
             collider = GetComponent<Collider2D>();
             rigidbody = GetComponent<Rigidbody2D>();
@@ -128,6 +131,7 @@ namespace Disjointed
         public void TakeDamage(int damage, string origin)
         {
             health -= damage;
+            AudioManager.Connect.PlayOneShot("ZombieOof");
             if (health <= 0) Destroy(this.gameObject);
         }
 
