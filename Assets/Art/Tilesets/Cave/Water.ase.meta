@@ -14,6 +14,12 @@ ScriptedImporter:
   - first:
       213: -5882170695943828418
     second: Water_1
+  - first:
+      213: 6049605792901559095
+    second: Water_0
+  - first:
+      213: -5882170695943828418
+    second: Water_1
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -25,8 +31,8 @@ ScriptedImporter:
     transparencyMode: 0
     transparentColor: {r: 1, g: 0, b: 1, a: 1}
     pixelsPerUnit: 16
-    spriteAlignment: 4
-    spritePivot: {x: 0, y: 0.5}
+    spriteAlignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
     generateAnimations: 1
     createAnimationAssets: 0
     bindType: 0
@@ -131,4 +137,4 @@ ScriptedImporter:
       height: 16
     spriteID: e3c4e08cae45e5ea0800000000000000
     internalID: 0
-  selectedImporter: 1
+  selectedImporter: 0
