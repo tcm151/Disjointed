@@ -74,5 +74,10 @@ namespace Disjointed.Audio
 
         //> STOP STREAM SOUND CLIP
         public void Stop(int stream) => sources[stream].Stop();
+
+        public static void SetVolume(float volume)
+        {
+            AudioListener.volume = volume;
+        }
     }
 }

@@ -1,12 +1,13 @@
 using UnityEngine;
 using Disjointed.Tools.GameManagement;
+using JetBrains.Annotations;
 
 
 namespace Disjointed.UI
 {
     public class PauseWindow : UI_Window
     {
-        public UI_Window HUD;
+        [CanBeNull] public UI_Window HUD;
         
        
         
