@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 1582706522331144122}
   - component: {fileID: 6435063716487104114}
   - component: {fileID: 1582706522331144123}
-  - component: {fileID: 5863774133812610340}
   - component: {fileID: 1582706522331144124}
-  - component: {fileID: 1582706522331144125}
+  - component: {fileID: 8271944015109280398}
   - component: {fileID: 1582706522331144121}
   m_Layer: 10
   m_Name: Rat
@@ -95,29 +94,17 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4826027066112582536, guid: 4b5e1126141e73a449f2d4b85eebf760, type: 3}
-  m_Color: {r: 0.518, g: 0.358656, b: 0.27195, a: 1}
+  m_Sprite: {fileID: 919395059066795304, guid: b726c107a73cd9f4b93bd1d76b31afa7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.875, y: 0.9375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5863774133812610340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1582706522331144126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07d2364b0b2a4288ab03b8dcd1d66b32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1582706522331144124
 Rigidbody2D:
   serializedVersion: 4
@@ -139,8 +126,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!70 &1582706522331144125
-CapsuleCollider2D:
+--- !u!58 &8271944015109280398
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -153,8 +140,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 1}
-  m_Direction: 0
+  serializedVersion: 2
+  m_Radius: 0.4
 --- !u!114 &1582706522331144121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,6 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0987d9ddd25051c4192a212f610b6139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 133994b9587dff142a3a455b98f1bdbd, type: 2}
   target: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -174,7 +162,6 @@ MonoBehaviour:
   detectionMask:
     serializedVersion: 2
     m_Bits: 601
-  template: {fileID: 11400000, guid: 133994b9587dff142a3a455b98f1bdbd, type: 2}
   groundMask:
     serializedVersion: 2
     m_Bits: 192

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Ladders_1
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -3655142802657457832, guid: ba09dae68c116b6408ea7b759e4f49b6, type: 3}
+  m_Sprite: {fileID: -3655142802657457832, guid: 6010c504235b7ca4588b44936c647171, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

@@ -242,26 +242,30 @@ MonoBehaviour:
   - {fileID: 7048354755414277732}
   soundEffects:
   - name: CaveBackgroundNoise
+    clip: {fileID: 8300000, guid: 34bcf2368c6359b4fa2326131847c68f, type: 3}
     pitch: 1
     volume: 1
-    audio: {fileID: 8300000, guid: 34bcf2368c6359b4fa2326131847c68f, type: 3}
   - name: CaveTheme1
+    clip: {fileID: 8300000, guid: 1155a542433b658478b69185e3b3702b, type: 3}
     pitch: 1
     volume: 1
-    audio: {fileID: 8300000, guid: 1155a542433b658478b69185e3b3702b, type: 3}
   - name: CaveTheme2
+    clip: {fileID: 8300000, guid: 16c6ade1dc9588e47aafeb097fddbc6a, type: 3}
     pitch: 1
     volume: 1
-    audio: {fileID: 8300000, guid: 16c6ade1dc9588e47aafeb097fddbc6a, type: 3}
   - name: PuddleFootsteps1
+    clip: {fileID: 8300000, guid: d0de3d69541d5354b9977c1e6797c10a, type: 3}
     pitch: 1
     volume: 1
-    audio: {fileID: 8300000, guid: d0de3d69541d5354b9977c1e6797c10a, type: 3}
   - name: PuddleFootsteps2
+    clip: {fileID: 8300000, guid: b2732de712c771246a73c5a5b98ed1f8, type: 3}
     pitch: 1
     volume: 1
-    audio: {fileID: 8300000, guid: b2732de712c771246a73c5a5b98ed1f8, type: 3}
   - name: SwordSwipe
+    clip: {fileID: 8300000, guid: f1304e8dfcf3c644fa7dff522bff3d1e, type: 3}
     pitch: 1
     volume: 0.5
-    audio: {fileID: 8300000, guid: f1304e8dfcf3c644fa7dff522bff3d1e, type: 3}
+  - name: ZombieOof
+    clip: {fileID: 8300000, guid: e3ff4848b8fcc354ab43960b7aeeb9fc, type: 3}
+    pitch: 1
+    volume: 1

@@ -104,5 +104,31 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
     spriteID: e3c4e08cae45e5ea0800000000000000
-  spriteRects: []
+  spriteRects:
+  - name: Water_0
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 16
+      height: 16
+    spriteID: 733fa0d9a6484f350800000000000000
+    internalID: 0
+  - name: Water_1
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 0
+      width: 16
+      height: 16
+    spriteID: e3c4e08cae45e5ea0800000000000000
+    internalID: 0
   selectedImporter: 1

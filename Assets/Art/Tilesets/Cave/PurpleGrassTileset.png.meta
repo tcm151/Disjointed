@@ -1,0 +1,1098 @@
+fileFormatVersion: 2
+guid: c70bc6d1f09be9543837e4c1a6c9bd9e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4232747126351967951
+    second: PurpleGrassTileset_0
+  - first:
+      213: -3596942122293725650
+    second: PurpleGrassTileset_1
+  - first:
+      213: -6405607378822997692
+    second: PurpleGrassTileset_2
+  - first:
+      213: -6259974664162218474
+    second: PurpleGrassTileset_3
+  - first:
+      213: 994127883449065
+    second: PurpleGrassTileset_4
+  - first:
+      213: -7522266898882234669
+    second: PurpleGrassTileset_5
+  - first:
+      213: 6970385480540401149
+    second: PurpleGrassTileset_6
+  - first:
+      213: 4645340411547730827
+    second: PurpleGrassTileset_7
+  - first:
+      213: -3704272986334758760
+    second: PurpleGrassTileset_8
+  - first:
+      213: 3280163983043638376
+    second: PurpleGrassTileset_9
+  - first:
+      213: -3328221221015927208
+    second: PurpleGrassTileset_10
+  - first:
+      213: 3260576353088937845
+    second: PurpleGrassTileset_11
+  - first:
+      213: 6142643883405171268
+    second: PurpleGrassTileset_12
+  - first:
+      213: -451467998337231106
+    second: PurpleGrassTileset_13
+  - first:
+      213: 5180681050239350775
+    second: PurpleGrassTileset_14
+  - first:
+      213: 9076111692809794144
+    second: PurpleGrassTileset_15
+  - first:
+      213: -3578395732691562983
+    second: PurpleGrassTileset_16
+  - first:
+      213: -5461993186984761566
+    second: PurpleGrassTileset_18
+  - first:
+      213: -818720912550964795
+    second: PurpleGrassTileset_19
+  - first:
+      213: 520887022638865551
+    second: PurpleGrassTileset_20
+  - first:
+      213: 1178364976423047556
+    second: PurpleGrassTileset_21
+  - first:
+      213: -7985443163723262220
+    second: PurpleGrassTileset_22
+  - first:
+      213: -4409893851003712301
+    second: PurpleGrassTileset_23
+  - first:
+      213: 5392153314609893358
+    second: PurpleGrassTileset_24
+  - first:
+      213: -1223727481958100205
+    second: PurpleGrassTileset_25
+  - first:
+      213: -4260645221905836604
+    second: PurpleGrassTileset_26
+  - first:
+      213: -2241495649800618666
+    second: PurpleGrassTileset_27
+  - first:
+      213: -7147186761896255598
+    second: PurpleGrassTileset_28
+  - first:
+      213: 669090366328185759
+    second: PurpleGrassTileset_29
+  - first:
+      213: -6407445460936857587
+    second: PurpleGrassTileset_30
+  - first:
+      213: 3464210974440073312
+    second: PurpleGrassTileset_31
+  - first:
+      213: -9131990413343751576
+    second: PurpleGrassTileset_32
+  - first:
+      213: -5311911030168422734
+    second: PurpleGrassTileset_33
+  - first:
+      213: -2078918250123764690
+    second: PurpleGrassTileset_34
+  - first:
+      213: -1737754529656236545
+    second: PurpleGrassTileset_35
+  - first:
+      213: -2817215323449940624
+    second: PurpleGrassTileset_36
+  - first:
+      213: -5645492839927023150
+    second: PurpleGrassTileset_37
+  - first:
+      213: 1769285344109259991
+    second: PurpleGrassTileset_38
+  - first:
+      213: 1362556340942218471
+    second: PurpleGrassTileset_39
+  - first:
+      213: -971472057395609275
+    second: PurpleGrassTileset_40
+  - first:
+      213: -3452493386444463186
+    second: PurpleGrassTileset_41
+  - first:
+      213: 9195437702386612181
+    second: PurpleGrassTileset_42
+  - first:
+      213: 7646654192154086044
+    second: PurpleGrassTileset_43
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PurpleGrassTileset_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 119
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1394cb52ae24245c0800000000000000
+      internalID: -4232747126351967951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 119
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26fa0b7238151ec0800000000000000
+      internalID: -3596942122293725650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 119
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44952aef606ba17a0800000000000000
+      internalID: -6405607378822997692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_4
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 119
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e2ba5f6728830000800000000000000
+      internalID: 994127883449065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 119
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6f1723c1a8b9790800000000000000
+      internalID: -7522266898882234669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_6
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 119
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfda623f9a8cbb060800000000000000
+      internalID: 6970385480540401149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_7
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 119
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83c1130e70977040800000000000000
+      internalID: 4645340411547730827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_8
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 119
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898f0725857c79cc0800000000000000
+      internalID: -3704272986334758760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 110
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864b85673cb758d20800000000000000
+      internalID: 3280163983043638376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_10
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 110
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856cd63ee68cfc1d0800000000000000
+      internalID: -3328221221015927208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_11
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 110
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f97e8fae4ef3d20800000000000000
+      internalID: 3260576353088937845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_12
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 110
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a571c111e0f3550800000000000000
+      internalID: 6142643883405171268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_13
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 110
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef617ab5f301cb9f0800000000000000
+      internalID: -451467998337231106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_14
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 110
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f73d1e77f975e740800000000000000
+      internalID: 5180681050239350775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_15
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 110
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06272bf4f73d4fd70800000000000000
+      internalID: 9076111692809794144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_16
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 110
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e452f4a0cf65ec0800000000000000
+      internalID: -3578395732691562983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 101
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2276b24a22a1334b0800000000000000
+      internalID: -5461993186984761566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_19
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 101
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c15735faa153a4f0800000000000000
+      internalID: -818720912550964795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_20
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 101
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c1080ccff8a3700800000000000000
+      internalID: 520887022638865551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 101
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481157be3b46a5010800000000000000
+      internalID: 1178364976423047556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_22
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 101
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6143450c10e2190800000000000000
+      internalID: -7985443163723262220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_23
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 101
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc8eb938e8ecc2c0800000000000000
+      internalID: -4409893851003712301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_24
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 101
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef84cbeed6c4da40800000000000000
+      internalID: 5392153314609893358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_25
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 101
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3131108b652740fe0800000000000000
+      internalID: -1223727481958100205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_26
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 92
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5565a9eb52fd4c0800000000000000
+      internalID: -4260645221905836604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_27
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 92
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65dfc0c159b94e0e0800000000000000
+      internalID: -2241495649800618666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_28
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 92
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f9cc9e18710dc90800000000000000
+      internalID: -7147186761896255598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_29
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 92
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93a0a7a426194900800000000000000
+      internalID: 669090366328185759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_30
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 92
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d086b272d4e2417a0800000000000000
+      internalID: -6407445460936857587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_31
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 83
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068a28ee689531030800000000000000
+      internalID: 3464210974440073312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_32
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 83
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8628f583a17a44180800000000000000
+      internalID: -9131990413343751576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_33
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 83
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6f450df0d4846b0800000000000000
+      internalID: -5311911030168422734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_35
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 35
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff59309567142e7e0800000000000000
+      internalID: -1737754529656236545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_36
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 35
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075aafde69d37e8d0800000000000000
+      internalID: -2817215323449940624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_37
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 35
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d973265c2e27a1b0800000000000000
+      internalID: -5645492839927023150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_38
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 18
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dcefe975a3cd8810800000000000000
+      internalID: 1769285344109259991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_39
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 18
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e42150e5c5c8e210800000000000000
+      internalID: 1362556340942218471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_40
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 18
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54187b59f43a482f0800000000000000
+      internalID: -971472057395609275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_41
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3a79f9e874610d0800000000000000
+      internalID: -3452493386444463186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_42
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7fcfceed1cc9f70800000000000000
+      internalID: 9195437702386612181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleGrassTileset_43
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a889b597f5e1a60800000000000000
+      internalID: 7646654192154086044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8e5e7a8f3ec83eb489f57b8140d50879
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
