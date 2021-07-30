@@ -61,7 +61,7 @@ namespace Disjointed.Player
             healthChanged?.Invoke(health);
             if (health <= 0) Die();
 
-            StartCoroutine(CR_Invincibility());
+            // StartCoroutine(CR_Invincibility());
         }
         
         //> TAKE KNOCKBACK
