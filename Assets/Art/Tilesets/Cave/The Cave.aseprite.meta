@@ -1,7 +1,406 @@
 fileFormatVersion: 2
 guid: 059d4741f445be246a3681fcfd2a172f
 ScriptedImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4173117078618366391
+    second: The Cave_0
+  - first:
+      213: 7392465362455191076
+    second: The Cave_1
+  - first:
+      213: 5333266500224480565
+    second: The Cave_2
+  - first:
+      213: 8880993828514266212
+    second: The Cave_3
+  - first:
+      213: 1915637116510694849
+    second: The Cave_4
+  - first:
+      213: 7872615205966503802
+    second: The Cave_5
+  - first:
+      213: 2304948183829684870
+    second: The Cave_6
+  - first:
+      213: 4351333839446211672
+    second: The Cave_7
+  - first:
+      213: 7548295629744485435
+    second: The Cave_8
+  - first:
+      213: -6525435545175355457
+    second: The Cave_9
+  - first:
+      213: 4867798087989419350
+    second: The Cave_10
+  - first:
+      213: 1966405136502436378
+    second: The Cave_11
+  - first:
+      213: 948234857507702073
+    second: The Cave_12
+  - first:
+      213: 7158489334127144803
+    second: The Cave_13
+  - first:
+      213: -3523682599697462820
+    second: The Cave_14
+  - first:
+      213: 42005981839067045
+    second: The Cave_15
+  - first:
+      213: -7100369034376682060
+    second: The Cave_16
+  - first:
+      213: 7641783547844133543
+    second: The Cave_17
+  - first:
+      213: -8779422893178744952
+    second: The Cave_18
+  - first:
+      213: -6904935835933145180
+    second: The Cave_19
+  - first:
+      213: 4889834874434249719
+    second: The Cave_20
+  - first:
+      213: -1809220657357083557
+    second: The Cave_21
+  - first:
+      213: 6556034815008052392
+    second: The Cave_22
+  - first:
+      213: -6594754765658785091
+    second: The Cave_23
+  - first:
+      213: 7321180753256350759
+    second: The Cave_24
+  - first:
+      213: 8913900646859503465
+    second: The Cave_25
+  - first:
+      213: 2253449969986927154
+    second: The Cave_26
+  - first:
+      213: 7712171748254464891
+    second: The Cave_27
+  - first:
+      213: -6382539370380817892
+    second: The Cave_28
+  - first:
+      213: -556430732047202949
+    second: The Cave_29
+  - first:
+      213: 1243456011796852312
+    second: The Cave_30
+  - first:
+      213: -9082675321763148476
+    second: The Cave_31
+  - first:
+      213: 911594395062284501
+    second: The Cave_32
+  - first:
+      213: -6483095959584527790
+    second: The Cave_33
+  - first:
+      213: -8407589464187777054
+    second: The Cave_34
+  - first:
+      213: -1098648838848232730
+    second: The Cave_35
+  - first:
+      213: -2771751485698199570
+    second: The Cave_36
+  - first:
+      213: 2481389596301123314
+    second: The Cave_37
+  - first:
+      213: 2863326432584238911
+    second: The Cave_38
+  - first:
+      213: 4651898237373290611
+    second: The Cave_39
+  - first:
+      213: 9099161466291581379
+    second: The Cave_40
+  - first:
+      213: 9171670603275946125
+    second: The Cave_41
+  - first:
+      213: -7857891072575368893
+    second: The Cave_42
+  - first:
+      213: -7010927801445160576
+    second: The Cave_43
+  - first:
+      213: 6886820391898647103
+    second: The Cave_44
+  - first:
+      213: 2664415224077179236
+    second: The Cave_45
+  - first:
+      213: 5159524380714882094
+    second: The Cave_46
+  - first:
+      213: 3124155164315499237
+    second: The Cave_47
+  - first:
+      213: -4544020937576786032
+    second: The Cave_48
+  - first:
+      213: 7174138321679831055
+    second: The Cave_49
+  - first:
+      213: 7443714116052889126
+    second: The Cave_50
+  - first:
+      213: 6171605423781642993
+    second: The Cave_51
+  - first:
+      213: -7173166252473587035
+    second: The Cave_52
+  - first:
+      213: 4102092938873225360
+    second: The Cave_53
+  - first:
+      213: 2055035965702924813
+    second: The Cave_54
+  - first:
+      213: -1682855743771908613
+    second: The Cave_55
+  - first:
+      213: -1938224879093138663
+    second: The Cave_56
+  - first:
+      213: -7848178040345791735
+    second: The Cave_57
+  - first:
+      213: -202450531870020013
+    second: The Cave_58
+  - first:
+      213: 6783569239622153448
+    second: The Cave_59
+  - first:
+      213: -6342099579229792663
+    second: The Cave_60
+  - first:
+      213: -2861272379938475352
+    second: The Cave_61
+  - first:
+      213: 5646637901579449338
+    second: The Cave_62
+  - first:
+      213: -7153818167238366560
+    second: The Cave_63
+  - first:
+      213: 7826990183820998811
+    second: The Cave_64
+  - first:
+      213: -8778142423562412787
+    second: The Cave_65
+  - first:
+      213: 7299918337621058854
+    second: The Cave_66
+  - first:
+      213: 1432807209639783187
+    second: The Cave_67
+  - first:
+      213: -4486232414620356370
+    second: The Cave_68
+  - first:
+      213: 7351102648330004129
+    second: The Cave_69
+  - first:
+      213: -6811243557045067427
+    second: The Cave_70
+  - first:
+      213: 6680493856576557566
+    second: The Cave_71
+  - first:
+      213: -4577844311015656675
+    second: The Cave_72
+  - first:
+      213: 5088728464695582890
+    second: The Cave_73
+  - first:
+      213: 4737958871403938828
+    second: The Cave_74
+  - first:
+      213: -6908545756618660612
+    second: The Cave_75
+  - first:
+      213: 5067846746224609255
+    second: The Cave_76
+  - first:
+      213: 4691226218821629753
+    second: The Cave_77
+  - first:
+      213: -5075729812770143761
+    second: The Cave_78
+  - first:
+      213: 6182512605727058657
+    second: The Cave_79
+  - first:
+      213: -527253467886666770
+    second: The Cave_80
+  - first:
+      213: -5433895038563482565
+    second: The Cave_81
+  - first:
+      213: -5029286526421156950
+    second: The Cave_82
+  - first:
+      213: -8725453485183933936
+    second: The Cave_83
+  - first:
+      213: 227866063479277291
+    second: The Cave_84
+  - first:
+      213: 8418279138224799989
+    second: The Cave_85
+  - first:
+      213: -6963702233119475593
+    second: The Cave_86
+  - first:
+      213: 538222420856416913
+    second: The Cave_87
+  - first:
+      213: -5104868804831565480
+    second: The Cave_88
+  - first:
+      213: 221403110976352275
+    second: The Cave_89
+  - first:
+      213: 2905228609579629336
+    second: The Cave_90
+  - first:
+      213: 3173234364642820857
+    second: The Cave_91
+  - first:
+      213: -1955277860919015312
+    second: The Cave_92
+  - first:
+      213: 8962409283163133859
+    second: The Cave_93
+  - first:
+      213: 545173520449497178
+    second: The Cave_94
+  - first:
+      213: 4283010507000663294
+    second: The Cave_95
+  - first:
+      213: 8438886497620530635
+    second: The Cave_96
+  - first:
+      213: -3248834569199953584
+    second: The Cave_97
+  - first:
+      213: 2064295484177309709
+    second: The Cave_98
+  - first:
+      213: -6185256713079434281
+    second: The Cave_99
+  - first:
+      213: -7846154386153652286
+    second: The Cave_100
+  - first:
+      213: 1021173816903052155
+    second: The Cave_101
+  - first:
+      213: 12442973621017175
+    second: The Cave_102
+  - first:
+      213: 6773351722717535098
+    second: The Cave_103
+  - first:
+      213: -7471103067742816619
+    second: The Cave_104
+  - first:
+      213: -4561275463459990643
+    second: The Cave_105
+  - first:
+      213: 4608753689982155620
+    second: The Cave_106
+  - first:
+      213: -3271470431516658251
+    second: The Cave_107
+  - first:
+      213: 8473266491830845730
+    second: The Cave_108
+  - first:
+      213: -4991338934865720814
+    second: The Cave_109
+  - first:
+      213: 893951206325474631
+    second: The Cave_110
+  - first:
+      213: -3132791289739497896
+    second: The Cave_111
+  - first:
+      213: -1362325918340992659
+    second: The Cave_112
+  - first:
+      213: 94482061258203467
+    second: The Cave_113
+  - first:
+      213: 6543720966047477855
+    second: The Cave_114
+  - first:
+      213: 8980807937552414451
+    second: The Cave_115
+  - first:
+      213: 6378975471360364781
+    second: The Cave_116
+  - first:
+      213: -7614124019657964121
+    second: The Cave_117
+  - first:
+      213: 8025333746118203916
+    second: The Cave_118
+  - first:
+      213: 4784643741403073498
+    second: The Cave_119
+  - first:
+      213: -5029540113280140801
+    second: The Cave_120
+  - first:
+      213: -841502315068299924
+    second: The Cave_121
+  - first:
+      213: -1063316532463238045
+    second: The Cave_122
+  - first:
+      213: 1221965328196458195
+    second: The Cave_123
+  - first:
+      213: -6625763793309975744
+    second: The Cave_124
+  - first:
+      213: 8876848348301032471
+    second: The Cave_125
+  - first:
+      213: -644498214104866775
+    second: The Cave_126
+  - first:
+      213: -5990149499832434076
+    second: The Cave_127
+  - first:
+      213: 8715098644541087816
+    second: The Cave_128
+  - first:
+      213: -911800114552159101
+    second: The Cave_129
+  - first:
+      213: 527179292955879779
+    second: The Cave_130
+  - first:
+      213: 7807877035030497021
+    second: The Cave_131
+  - first:
+      213: -250364369583160539
+    second: The Cave_132
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -68,113 +467,1601 @@ ScriptedImporter:
   animationSettings: []
   texture: {instanceID: 0}
   spriteImportData:
-  - name: WoodenPlatforms_0
+  - name: The Cave_0
     rect:
       serializedVersion: 2
-      x: 0
-      y: 32
+      x: 108
+      y: 238
       width: 16
       height: 16
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 0ddc33a74e06c6a90800000000000000
-  - name: WoodenPlatforms_1
+    spriteID: 94e16da802c1616c0800000000000000
+  - name: The Cave_1
     rect:
       serializedVersion: 2
-      x: 16
-      y: 32
+      x: 125
+      y: 238
       width: 16
       height: 16
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 9cd0e8957355dc210800000000000000
-  - name: WoodenPlatforms_2
+    spriteID: 42e55878410579660800000000000000
+  - name: The Cave_2
     rect:
       serializedVersion: 2
-      x: 32
-      y: 32
+      x: 177
+      y: 241
+      width: 13
+      height: 9
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 535fe5600a1930a40800000000000000
+  - name: The Cave_3
+    rect:
+      serializedVersion: 2
+      x: 197
+      y: 248
+      width: 7
+      height: 5
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 46c770165d0af3b70800000000000000
+  - name: The Cave_4
+    rect:
+      serializedVersion: 2
+      x: 209
+      y: 247
+      width: 9
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 1cd6c28dec5b59a10800000000000000
+  - name: The Cave_5
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 247
+      width: 9
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: a7fd8f4a1d5214d60800000000000000
+  - name: The Cave_6
+    rect:
+      serializedVersion: 2
+      x: 229
+      y: 247
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 682a9da3922dcff10800000000000000
+  - name: The Cave_7
+    rect:
+      serializedVersion: 2
+      x: 238
+      y: 247
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 85cf357921b036c30800000000000000
+  - name: The Cave_8
+    rect:
+      serializedVersion: 2
+      x: 247
+      y: 247
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: b34bd86f1eee0c860800000000000000
+  - name: The Cave_9
+    rect:
+      serializedVersion: 2
+      x: 197
+      y: 240
+      width: 7
+      height: 5
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: fbf8d15e1fef075a0800000000000000
+  - name: The Cave_10
+    rect:
+      serializedVersion: 2
+      x: 210
+      y: 238
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 65d5fe00294ed8340800000000000000
+  - name: The Cave_11
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 238
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: a123bbd9d031a4b10800000000000000
+  - name: The Cave_12
+    rect:
+      serializedVersion: 2
+      x: 229
+      y: 238
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 935c365349ec82d00800000000000000
+  - name: The Cave_13
+    rect:
+      serializedVersion: 2
+      x: 238
+      y: 238
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 36f22114f10185360800000000000000
+  - name: The Cave_14
+    rect:
+      serializedVersion: 2
+      x: 247
+      y: 238
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: cd9cec7485d591fc0800000000000000
+  - name: The Cave_15
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 221
       width: 16
       height: 16
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 1dabac2e12ed32100800000000000000
-  - name: WoodenPlatforms_3
+    spriteID: 5a785f9c73c359000800000000000000
+  - name: The Cave_16
+    rect:
+      serializedVersion: 2
+      x: 125
+      y: 221
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 4b56bcb8bfb667d90800000000000000
+  - name: The Cave_17
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 221
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 7a28cab16a11d0a60800000000000000
+  - name: The Cave_18
+    rect:
+      serializedVersion: 2
+      x: 159
+      y: 221
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 88f062fd469392680800000000000000
+  - name: The Cave_19
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 221
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 4a7075ee07dbc20a0800000000000000
+  - name: The Cave_20
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 221
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 7f368fc29ee2cd340800000000000000
+  - name: The Cave_21
+    rect:
+      serializedVersion: 2
+      x: 210
+      y: 229
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: b5caee5d56b54e6e0800000000000000
+  - name: The Cave_22
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 229
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 8a416abcde6bbfa50800000000000000
+  - name: The Cave_23
+    rect:
+      serializedVersion: 2
+      x: 229
+      y: 229
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: dbaf71c2b79ba74a0800000000000000
+  - name: The Cave_24
+    rect:
+      serializedVersion: 2
+      x: 238
+      y: 229
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 72485461b1f0a9560800000000000000
+  - name: The Cave_25
+    rect:
+      serializedVersion: 2
+      x: 247
+      y: 229
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 9677f23196984bb70800000000000000
+  - name: The Cave_26
+    rect:
+      serializedVersion: 2
+      x: 210
+      y: 220
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 23a7f24feccd54f10800000000000000
+  - name: The Cave_27
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 220
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: b7bb28d1853270b60800000000000000
+  - name: The Cave_28
+    rect:
+      serializedVersion: 2
+      x: 229
+      y: 220
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: c1a818f324aac67a0800000000000000
+  - name: The Cave_29
+    rect:
+      serializedVersion: 2
+      x: 238
+      y: 220
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: b75473282392748f0800000000000000
+  - name: The Cave_30
+    rect:
+      serializedVersion: 2
+      x: 247
+      y: 220
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 85ea9f497a4a14110800000000000000
+  - name: The Cave_31
+    rect:
+      serializedVersion: 2
+      x: 114
+      y: 208
+      width: 13
+      height: 9
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 44dc91cbaead3f180800000000000000
+  - name: The Cave_32
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 204
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 5d0bce0c542a6ac00800000000000000
+  - name: The Cave_33
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 204
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 25aa13cd29a6706a0800000000000000
+  - name: The Cave_34
+    rect:
+      serializedVersion: 2
+      x: 229
+      y: 211
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 2ef45c97ded325b80800000000000000
+  - name: The Cave_35
+    rect:
+      serializedVersion: 2
+      x: 238
+      y: 211
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 6e24e83b3b0d0c0f0800000000000000
+  - name: The Cave_36
+    rect:
+      serializedVersion: 2
+      x: 247
+      y: 211
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: eef2c4985b2c889d0800000000000000
+  - name: The Cave_37
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 198
+      width: 5
+      height: 5
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 2fed0ecd0baaf6220800000000000000
+  - name: The Cave_38
+    rect:
+      serializedVersion: 2
+      x: 7
+      y: 198
+      width: 5
+      height: 5
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: f378b2a48349cb720800000000000000
+  - name: The Cave_39
+    rect:
+      serializedVersion: 2
+      x: 17
+      y: 195
+      width: 7
+      height: 10
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 37896e1dcccde8040800000000000000
+  - name: The Cave_40
+    rect:
+      serializedVersion: 2
+      x: 25
+      y: 196
+      width: 7
+      height: 9
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 3c17b38e427b64e70800000000000000
+  - name: The Cave_41
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 187
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: d88c721f1d1584f70800000000000000
+  - name: The Cave_42
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 187
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 3419e6fc3b923f290800000000000000
+  - name: The Cave_43
+    rect:
+      serializedVersion: 2
+      x: 215
+      y: 202
+      width: 40
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 08963f06f4e24be90800000000000000
+  - name: The Cave_44
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 182
+      width: 13
+      height: 7
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: f3a090398a6e29f50800000000000000
+  - name: The Cave_45
+    rect:
+      serializedVersion: 2
+      x: 17
+      y: 182
+      width: 13
+      height: 9
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 46953459787e9f420800000000000000
+  - name: The Cave_46
+    rect:
+      serializedVersion: 2
+      x: 33
+      y: 182
+      width: 13
+      height: 9
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: e245a7286105a9740800000000000000
+  - name: The Cave_47
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 184
+      width: 5
+      height: 5
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 5ea3a38c19a3b5b20800000000000000
+  - name: The Cave_48
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 182
+      width: 29
+      height: 19
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 0975cc3580560f0c0800000000000000
+  - name: The Cave_49
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 170
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: f005e391bc8af8360800000000000000
+  - name: The Cave_50
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 170
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 62ea4e0dc826d4760800000000000000
+  - name: The Cave_51
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 185
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 1f201623f62f5a550800000000000000
+  - name: The Cave_52
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 185
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 5aaed766c4bc37c90800000000000000
+  - name: The Cave_53
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 185
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 0904d294bcf8de830800000000000000
+  - name: The Cave_54
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 161
+      width: 14
+      height: 15
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: d0aef50a254f48c10800000000000000
+  - name: The Cave_55
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 153
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: bf5ef300e9b45a8e0800000000000000
+  - name: The Cave_56
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 153
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 91b34daddba0a15e0800000000000000
+  - name: The Cave_57
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 153
+      width: 16
+      height: 19
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 903fa2b57aba51390800000000000000
+  - name: The Cave_58
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 153
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 35e6c4b5050c03df0800000000000000
+  - name: The Cave_59
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 153
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 8e4f1f45844142e50800000000000000
+  - name: The Cave_60
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 168
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 9669ad9d8065cf7a0800000000000000
+  - name: The Cave_61
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 168
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 8a2712c1ee7ba48d0800000000000000
+  - name: The Cave_62
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 168
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: af376ea1143ec5e40800000000000000
+  - name: The Cave_63
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 146
+      width: 10
+      height: 12
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 0aa650a874888bc90800000000000000
+  - name: The Cave_64
+    rect:
+      serializedVersion: 2
+      x: 17
+      y: 145
+      width: 11
+      height: 13
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: b98be1f5a1e0f9c60800000000000000
+  - name: The Cave_65
+    rect:
+      serializedVersion: 2
+      x: 33
+      y: 145
+      width: 12
+      height: 13
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: d0d96cf69f5cd2680800000000000000
+  - name: The Cave_66
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 145
+      width: 10
+      height: 13
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 625634b2d058e4560800000000000000
+  - name: The Cave_67
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 147
+      width: 11
+      height: 9
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 31ba23ad09a52e310800000000000000
+  - name: The Cave_68
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 147
+      width: 11
+      height: 9
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: ee0f5b25363bdb1c0800000000000000
+  - name: The Cave_69
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 136
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 1a6a42d29ec540660800000000000000
+  - name: The Cave_70
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 136
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: d5129a7821a9971a0800000000000000
+  - name: The Cave_71
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 136
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: ef1dc6d84c1e5bc50800000000000000
+  - name: The Cave_72
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 151
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: d137ed48ada3870c0800000000000000
+  - name: The Cave_73
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 151
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: aa06990d39bce9640800000000000000
+  - name: The Cave_74
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 151
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: c044172ad7c90c140800000000000000
+  - name: The Cave_75
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 131
+      width: 12
+      height: 12
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: cf46636cc3aef10a0800000000000000
+  - name: The Cave_76
+    rect:
+      serializedVersion: 2
+      x: 17
+      y: 131
+      width: 11
+      height: 12
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 7e746dcd3cb945640800000000000000
+  - name: The Cave_77
+    rect:
+      serializedVersion: 2
+      x: 33
+      y: 131
+      width: 12
+      height: 12
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 937bcdd04659a1140800000000000000
+  - name: The Cave_78
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 131
+      width: 12
+      height: 12
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: fe1c9fda0a26f89b0800000000000000
+  - name: The Cave_79
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 131
+      width: 11
+      height: 12
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 1ea6cb36572bcc550800000000000000
+  - name: The Cave_80
+    rect:
+      serializedVersion: 2
+      x: 187
+      y: 128
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: eebb504b3c1dea8f0800000000000000
+  - name: The Cave_81
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 128
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: b348aaf904de694b0800000000000000
+  - name: The Cave_82
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 128
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: aab320fec82643ab0800000000000000
+  - name: The Cave_83
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 128
+      width: 16
+      height: 13
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 012ea6fd846f8e680800000000000000
+  - name: The Cave_84
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 113
+      width: 14
+      height: 12
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: be68c0a3afa892300800000000000000
+  - name: The Cave_85
+    rect:
+      serializedVersion: 2
+      x: 17
+      y: 114
+      width: 14
+      height: 12
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 5f088f5364cb3d470800000000000000
+  - name: The Cave_86
+    rect:
+      serializedVersion: 2
+      x: 33
+      y: 114
+      width: 12
+      height: 12
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 778b159d6b5fb5f90800000000000000
+  - name: The Cave_87
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 114
+      width: 11
+      height: 12
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 19a2c4da076287700800000000000000
+  - name: The Cave_88
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 114
+      width: 14
+      height: 12
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 859aa076edcd729b0800000000000000
+  - name: The Cave_89
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 80
+      width: 8
+      height: 48
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 31079e5d4f4921300800000000000000
+  - name: The Cave_90
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 80
+      width: 8
+      height: 48
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 81bbb412702715820800000000000000
+  - name: The Cave_91
+    rect:
+      serializedVersion: 2
+      x: 166
+      y: 80
+      width: 8
+      height: 48
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 9f2099597d7990c20800000000000000
+  - name: The Cave_92
+    rect:
+      serializedVersion: 2
+      x: 175
+      y: 71
+      width: 80
+      height: 45
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 0788cbe15257dd4e0800000000000000
+  - name: The Cave_93
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 65
+      width: 22
+      height: 31
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 3a71a9612cfd06c70800000000000000
+  - name: The Cave_94
+    rect:
+      serializedVersion: 2
+      x: 25
+      y: 65
+      width: 22
+      height: 30
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: a58675bad68d09700800000000000000
+  - name: The Cave_95
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 65
+      width: 22
+      height: 30
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: efc4a0f1d5f407b30800000000000000
+  - name: The Cave_96
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 65
+      width: 22
+      height: 31
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: bc51386fe82fc1570800000000000000
+  - name: The Cave_97
+    rect:
+      serializedVersion: 2
+      x: 98
+      y: 94
+      width: 11
+      height: 12
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 059d3d02c22d9e2d0800000000000000
+  - name: The Cave_98
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 65
+      width: 22
+      height: 25
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: d00e4d54ec9d5ac10800000000000000
+  - name: The Cave_99
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 64
+      width: 32
+      height: 4
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 7d3dc445acd892aa0800000000000000
+  - name: The Cave_100
+    rect:
+      serializedVersion: 2
+      x: 215
+      y: 45
+      width: 40
+      height: 25
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 2cf3070182cdc1390800000000000000
+  - name: The Cave_101
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 33
+      width: 22
+      height: 31
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: b7baf621d20fb2e00800000000000000
+  - name: The Cave_102
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 33
+      width: 22
+      height: 31
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 75a51ae81d43c2000800000000000000
+  - name: The Cave_103
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 33
+      width: 32
+      height: 30
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: a7bdb5b4187cffd50800000000000000
+  - name: The Cave_104
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 33
+      width: 32
+      height: 30
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 596bbdee75f415890800000000000000
+  - name: The Cave_105
+    rect:
+      serializedVersion: 2
+      x: 113
+      y: 33
+      width: 32
+      height: 31
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: d8313c5f12813b0c0800000000000000
+  - name: The Cave_106
+    rect:
+      serializedVersion: 2
+      x: 159
+      y: 44
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 46b38a4101595ff30800000000000000
+  - name: The Cave_107
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 51
+      width: 6
+      height: 12
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 5b5714cb9f66992d0800000000000000
+  - name: The Cave_108
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 51
+      width: 6
+      height: 12
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 2214cc42bf6179570800000000000000
+  - name: The Cave_109
+    rect:
+      serializedVersion: 2
+      x: 195
+      y: 51
+      width: 6
+      height: 12
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 21a80c91fa33bbab0800000000000000
+  - name: The Cave_110
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 51
+      width: 6
+      height: 12
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 745df83c2e3f76c00800000000000000
+  - name: The Cave_111
+    rect:
+      serializedVersion: 2
+      x: 159
+      y: 27
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 85ea3a39be61684d0800000000000000
+  - name: The Cave_112
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 29
+      width: 32
+      height: 19
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: d613af09bcb081de0800000000000000
+  - name: The Cave_113
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 28
+      width: 7
+      height: 13
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: b4121f22feaaf4100800000000000000
+  - name: The Cave_114
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 28
+      width: 6
+      height: 13
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: f50398a6c87ffca50800000000000000
+  - name: The Cave_115
+    rect:
+      serializedVersion: 2
+      x: 198
+      y: 33
+      width: 16
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 3f6f1d1ac3d32ac70800000000000000
+  - name: The Cave_116
+    rect:
+      serializedVersion: 2
+      x: 217
+      y: 28
+      width: 10
+      height: 13
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: de05d59d46ca68850800000000000000
+  - name: The Cave_117
+    rect:
+      serializedVersion: 2
+      x: 228
+      y: 28
+      width: 10
+      height: 11
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 7a58484ab82355690800000000000000
+  - name: The Cave_118
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 28
+      width: 5
+      height: 7
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: c0a9455a586bf5f60800000000000000
+  - name: The Cave_119
+    rect:
+      serializedVersion: 2
+      x: 245
+      y: 28
+      width: 10
+      height: 13
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: adb4027f128766240800000000000000
+  - name: The Cave_120
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 1
+      width: 22
+      height: 31
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: ff9fb542aeb733ab0800000000000000
+  - name: The Cave_121
+    rect:
+      serializedVersion: 2
+      x: 25
+      y: 1
+      width: 22
+      height: 30
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: c656fa85a126254f0800000000000000
+  - name: The Cave_122
     rect:
       serializedVersion: 2
       x: 48
-      y: 32
-      width: 16
-      height: 16
+      y: 1
+      width: 22
+      height: 30
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 3fc82e52da0c46040800000000000000
-  - name: WoodenPlatforms_4
+    spriteID: 3648ab65f375e31f0800000000000000
+  - name: The Cave_123
     rect:
       serializedVersion: 2
-      x: 0
-      y: 16
-      width: 16
-      height: 16
+      x: 71
+      y: 1
+      width: 22
+      height: 31
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 2dd6e22c659106d20800000000000000
-  - name: WoodenPlatforms_5
+    spriteID: 3d65ef2edfa45f010800000000000000
+  - name: The Cave_124
     rect:
       serializedVersion: 2
-      x: 16
-      y: 16
-      width: 16
-      height: 16
+      x: 149
+      y: 18
+      width: 8
+      height: 8
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 209d6c0abff9599b0800000000000000
-  - name: WoodenPlatforms_6
+    spriteID: 04b3d1e4fee8c04a0800000000000000
+  - name: The Cave_125
     rect:
       serializedVersion: 2
-      x: 32
-      y: 16
-      width: 16
-      height: 16
+      x: 158
+      y: 18
+      width: 32
+      height: 8
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: b896b40129a6b3ec0800000000000000
-  - name: WoodenPlatforms_7
+    spriteID: 71cfe7d8a86e03b70800000000000000
+  - name: The Cave_126
     rect:
       serializedVersion: 2
-      x: 48
-      y: 16
-      width: 16
-      height: 16
+      x: 191
+      y: 19
+      width: 64
+      height: 8
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 6dc9fd6782ae78390800000000000000
-  - name: WoodenPlatforms_8
+    spriteID: 920e7e9f9484e07f0800000000000000
+  - name: The Cave_127
     rect:
       serializedVersion: 2
-      x: 32
-      y: 0
+      x: 131
+      y: 1
       width: 16
       height: 16
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: d7fcb81215a70be70800000000000000
+    spriteID: 462010f54c6bedca0800000000000000
+  - name: The Cave_128
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 1
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 8402c5aea0042f870800000000000000
+  - name: The Cave_129
+    rect:
+      serializedVersion: 2
+      x: 165
+      y: 1
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 38445f170a2a853f0800000000000000
+  - name: The Cave_130
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 10
+      width: 64
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 369a39916cae05700800000000000000
+  - name: The Cave_131
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 1
+      width: 8
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: df64ce2abc62b5c60800000000000000
+  - name: The Cave_132
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 1
+      width: 64
+      height: 8
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 523c49eaee6868cf0800000000000000
   spriteRects: []
   selectedImporter: 1

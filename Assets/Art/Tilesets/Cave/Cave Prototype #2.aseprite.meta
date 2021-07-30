@@ -1,7 +1,106 @@
 fileFormatVersion: 2
 guid: 906292c2537ec0941891f771350f0732
 ScriptedImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1791687867834727869
+    second: Cave Prototype #2_0
+  - first:
+      213: 5434302379051866608
+    second: Cave Prototype #2_1
+  - first:
+      213: 7681364163158749593
+    second: Cave Prototype #2_2
+  - first:
+      213: 4855132713523373727
+    second: Cave Prototype #2_3
+  - first:
+      213: 6137486852057498108
+    second: Cave Prototype #2_4
+  - first:
+      213: 2144841033934658479
+    second: Cave Prototype #2_5
+  - first:
+      213: -662925479743727104
+    second: Cave Prototype #2_6
+  - first:
+      213: 7666497770354318106
+    second: Cave Prototype #2_7
+  - first:
+      213: 8054671217084391483
+    second: Cave Prototype #2_8
+  - first:
+      213: -8558770053534408540
+    second: Cave Prototype #2_9
+  - first:
+      213: -975217919634965541
+    second: Cave Prototype #2_10
+  - first:
+      213: 6579142063097286948
+    second: Cave Prototype #2_11
+  - first:
+      213: -3715255371149902112
+    second: Cave Prototype #2_12
+  - first:
+      213: 4295327820869744403
+    second: Cave Prototype #2_13
+  - first:
+      213: 1938492237796711880
+    second: Cave Prototype #2_14
+  - first:
+      213: 4971145411070705310
+    second: Cave Prototype #2_15
+  - first:
+      213: 6851918476594064729
+    second: Cave Prototype #2_16
+  - first:
+      213: -7143382446514373071
+    second: Cave Prototype #2_17
+  - first:
+      213: 8878038798144302470
+    second: Cave Prototype #2_18
+  - first:
+      213: -366306623857428
+    second: Cave Prototype #2_19
+  - first:
+      213: -6255298956490128445
+    second: Cave Prototype #2_20
+  - first:
+      213: -8825138967714915857
+    second: Cave Prototype #2_21
+  - first:
+      213: -7073202464763835525
+    second: Cave Prototype #2_22
+  - first:
+      213: 8809674054127636326
+    second: Cave Prototype #2_23
+  - first:
+      213: -8228919215189966029
+    second: Cave Prototype #2_24
+  - first:
+      213: 6946107757100069458
+    second: Cave Prototype #2_25
+  - first:
+      213: -6756036565509687852
+    second: Cave Prototype #2_26
+  - first:
+      213: 6466040765921977580
+    second: Cave Prototype #2_27
+  - first:
+      213: 2201791482725913952
+    second: Cave Prototype #2_28
+  - first:
+      213: 152651071471668915
+    second: Cave Prototype #2_29
+  - first:
+      213: -6564095353063692944
+    second: Cave Prototype #2_30
+  - first:
+      213: -4044321859058519690
+    second: Cave Prototype #2_31
+  - first:
+      213: -1841069957931740725
+    second: Cave Prototype #2_32
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -68,113 +167,401 @@ ScriptedImporter:
   animationSettings: []
   texture: {instanceID: 0}
   spriteImportData:
-  - name: WoodenPlatforms_0
+  - name: Cave Prototype #2_0
     rect:
       serializedVersion: 2
-      x: 0
-      y: 32
-      width: 16
-      height: 16
+      x: 17
+      y: 96
+      width: 23
+      height: 31
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 0ddc33a74e06c6a90800000000000000
-  - name: WoodenPlatforms_1
+    spriteID: dbd7aae7f9a5dd810800000000000000
+  - name: Cave Prototype #2_1
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 112
+      width: 14
+      height: 15
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 0f95279b8358a6b40800000000000000
+  - name: Cave Prototype #2_2
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 112
+      width: 13
+      height: 9
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 9913e7f3200b99a60800000000000000
+  - name: Cave Prototype #2_3
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 112
+      width: 13
+      height: 9
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: f9660f6ba75e06340800000000000000
+  - name: Cave Prototype #2_4
+    rect:
+      serializedVersion: 2
+      x: 114
+      y: 112
+      width: 13
+      height: 9
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: cf1848e26cbbc2550800000000000000
+  - name: Cave Prototype #2_5
+    rect:
+      serializedVersion: 2
+      x: 114
+      y: 102
+      width: 13
+      height: 7
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: fab5b577e8104cd10800000000000000
+  - name: Cave Prototype #2_6
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 96
+      width: 7
+      height: 5
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 00ad15bd9c0dcc6f0800000000000000
+  - name: Cave Prototype #2_7
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 96
+      width: 7
+      height: 5
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: a1b1b417a1fd46a60800000000000000
+  - name: Cave Prototype #2_8
     rect:
       serializedVersion: 2
       x: 16
-      y: 32
+      y: 76
       width: 16
       height: 16
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 9cd0e8957355dc210800000000000000
-  - name: WoodenPlatforms_2
+    spriteID: b30e0e4ebc0f7cf60800000000000000
+  - name: Cave Prototype #2_9
     rect:
       serializedVersion: 2
-      x: 32
-      y: 32
+      x: 33
+      y: 76
       width: 16
       height: 16
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 1dabac2e12ed32100800000000000000
-  - name: WoodenPlatforms_3
+    spriteID: 4a0a4dc8bf3293980800000000000000
+  - name: Cave Prototype #2_10
     rect:
       serializedVersion: 2
-      x: 48
-      y: 32
+      x: 50
+      y: 76
       width: 16
       height: 16
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 3fc82e52da0c46040800000000000000
-  - name: WoodenPlatforms_4
+    spriteID: bdbff8118745772f0800000000000000
+  - name: Cave Prototype #2_11
     rect:
       serializedVersion: 2
-      x: 0
-      y: 16
+      x: 67
+      y: 76
       width: 16
       height: 16
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 2dd6e22c659106d20800000000000000
-  - name: WoodenPlatforms_5
+    spriteID: 4219ebd39decd4b50800000000000000
+  - name: Cave Prototype #2_12
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 76
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 0ee7fb89ce2c07cc0800000000000000
+  - name: Cave Prototype #2_13
     rect:
       serializedVersion: 2
       x: 16
-      y: 16
+      y: 59
       width: 16
       height: 16
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 209d6c0abff9599b0800000000000000
-  - name: WoodenPlatforms_6
+    spriteID: 3173bcc35e11c9b30800000000000000
+  - name: Cave Prototype #2_14
     rect:
       serializedVersion: 2
-      x: 32
-      y: 16
+      x: 33
+      y: 59
       width: 16
       height: 16
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: b896b40129a6b3ec0800000000000000
-  - name: WoodenPlatforms_7
+    spriteID: 8cd99b17b68e6ea10800000000000000
+  - name: Cave Prototype #2_15
     rect:
       serializedVersion: 2
-      x: 48
-      y: 16
+      x: 50
+      y: 59
       width: 16
       height: 16
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 6dc9fd6782ae78390800000000000000
-  - name: WoodenPlatforms_8
+    spriteID: e9ebea1c96e0df440800000000000000
+  - name: Cave Prototype #2_16
     rect:
       serializedVersion: 2
-      x: 32
-      y: 0
+      x: 67
+      y: 59
       width: 16
       height: 16
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: d7fcb81215a70be70800000000000000
+    spriteID: 95d235b2d87e61f50800000000000000
+  - name: Cave Prototype #2_17
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 59
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 13effbc138b9ddc90800000000000000
+  - name: Cave Prototype #2_18
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 42
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 68de681cf31253b70800000000000000
+  - name: Cave Prototype #2_19
+    rect:
+      serializedVersion: 2
+      x: 33
+      y: 42
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: cec5ec798d2befff0800000000000000
+  - name: Cave Prototype #2_20
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 42
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 3c3c886bdb6b039a0800000000000000
+  - name: Cave Prototype #2_21
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 42
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: fe915efcddec68580800000000000000
+  - name: Cave Prototype #2_22
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 42
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: b7b855f65dfe6dd90800000000000000
+  - name: Cave Prototype #2_23
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 25
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 66fc04760ef324a70800000000000000
+  - name: Cave Prototype #2_24
+    rect:
+      serializedVersion: 2
+      x: 33
+      y: 25
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 333473d82910dcd80800000000000000
+  - name: Cave Prototype #2_25
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 25
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 252f889f338856060800000000000000
+  - name: Cave Prototype #2_26
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 25
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 4d5be37e98cbd32a0800000000000000
+  - name: Cave Prototype #2_27
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 25
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: ce469fb61ddfbb950800000000000000
+  - name: Cave Prototype #2_28
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 8
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 065db5d10b55e8e10800000000000000
+  - name: Cave Prototype #2_29
+    rect:
+      serializedVersion: 2
+      x: 33
+      y: 8
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 3bec6a937535e1200800000000000000
+  - name: Cave Prototype #2_30
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 8
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 075a8d0fd06a7e4a0800000000000000
+  - name: Cave Prototype #2_31
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 8
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 671387962beafd7c0800000000000000
+  - name: Cave Prototype #2_32
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 8
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: bc1d5dea0a43376e0800000000000000
   spriteRects: []
   selectedImporter: 1

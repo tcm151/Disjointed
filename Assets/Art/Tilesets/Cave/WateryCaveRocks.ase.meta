@@ -74,6 +74,78 @@ ScriptedImporter:
   - first:
       213: -7460367917243700734
     second: waterCaveTile_23
+  - first:
+      213: -1600056223489281223
+    second: WateryCaveRocks_0
+  - first:
+      213: 4184370784652710183
+    second: WateryCaveRocks_1
+  - first:
+      213: 2443651127487730855
+    second: WateryCaveRocks_2
+  - first:
+      213: -470848107211260215
+    second: WateryCaveRocks_3
+  - first:
+      213: 5542716512223003307
+    second: WateryCaveRocks_4
+  - first:
+      213: -8656326980725854536
+    second: WateryCaveRocks_5
+  - first:
+      213: -5441910926724607810
+    second: WateryCaveRocks_6
+  - first:
+      213: 2819116663281331638
+    second: WateryCaveRocks_7
+  - first:
+      213: -6347815110099351348
+    second: WateryCaveRocks_8
+  - first:
+      213: -5302308649842040725
+    second: WateryCaveRocks_9
+  - first:
+      213: 2536461499916623697
+    second: WateryCaveRocks_10
+  - first:
+      213: -5179351643877411703
+    second: WateryCaveRocks_11
+  - first:
+      213: 5238626977159471338
+    second: WateryCaveRocks_12
+  - first:
+      213: -5741442922882730141
+    second: WateryCaveRocks_13
+  - first:
+      213: -3855754215977982704
+    second: WateryCaveRocks_14
+  - first:
+      213: 1663856873334915758
+    second: WateryCaveRocks_15
+  - first:
+      213: -148201007151440029
+    second: WateryCaveRocks_16
+  - first:
+      213: 8715978850339529813
+    second: WateryCaveRocks_17
+  - first:
+      213: -5639131810368617821
+    second: WateryCaveRocks_18
+  - first:
+      213: 3302475537635302406
+    second: WateryCaveRocks_19
+  - first:
+      213: 4429473770803069595
+    second: WateryCaveRocks_20
+  - first:
+      213: 5403441615502692129
+    second: WateryCaveRocks_21
+  - first:
+      213: 2989662958189239980
+    second: WateryCaveRocks_22
+  - first:
+      213: -6348938929923838150
+    second: WateryCaveRocks_23
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -140,7 +212,7 @@ ScriptedImporter:
   animationSettings: []
   texture: {instanceID: 0}
   spriteImportData:
-  - name: waterCaveTile_0
+  - name: WateryCaveRocks_0
     rect:
       serializedVersion: 2
       x: 0
@@ -151,8 +223,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 09684cdbc87bb4af0800000000000000
-  - name: waterCaveTile_1
+    spriteID: 933b44a97557bc9e0800000000000000
+  - name: WateryCaveRocks_1
     rect:
       serializedVersion: 2
       x: 16
@@ -163,8 +235,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: c8da42e4bff80e920800000000000000
-  - name: waterCaveTile_2
+    spriteID: 7215fb31f0fd11a30800000000000000
+  - name: WateryCaveRocks_2
     rect:
       serializedVersion: 2
       x: 32
@@ -175,8 +247,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 8afb770dd54cf1090800000000000000
-  - name: waterCaveTile_3
+    spriteID: 7a493e0e0c799e120800000000000000
+  - name: WateryCaveRocks_3
     rect:
       serializedVersion: 2
       x: 48
@@ -187,8 +259,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 9834a286719139f00800000000000000
-  - name: waterCaveTile_4
+    spriteID: 9cef18224263779f0800000000000000
+  - name: WateryCaveRocks_4
     rect:
       serializedVersion: 2
       x: 64
@@ -199,8 +271,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: ff6fc257d9ea44640800000000000000
-  - name: waterCaveTile_5
+    spriteID: ba28eb12d4fabec40800000000000000
+  - name: WateryCaveRocks_5
     rect:
       serializedVersion: 2
       x: 80
@@ -211,8 +283,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 56151bd8d8b0fdb10800000000000000
-  - name: waterCaveTile_6
+    spriteID: 8bea436697c8ed780800000000000000
+  - name: WateryCaveRocks_6
     rect:
       serializedVersion: 2
       x: 0
@@ -223,8 +295,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: c80f4e0f09be7cd60800000000000000
-  - name: waterCaveTile_7
+    spriteID: eb0534938d27a74b0800000000000000
+  - name: WateryCaveRocks_7
     rect:
       serializedVersion: 2
       x: 16
@@ -235,8 +307,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 45d110269bdbb5140800000000000000
-  - name: waterCaveTile_8
+    spriteID: 6bda44f3ba38f1720800000000000000
+  - name: WateryCaveRocks_8
     rect:
       serializedVersion: 2
       x: 32
@@ -247,8 +319,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 50e8eeecb176df300800000000000000
-  - name: waterCaveTile_9
+    spriteID: cc8cbae1ac708e7a0800000000000000
+  - name: WateryCaveRocks_9
     rect:
       serializedVersion: 2
       x: 48
@@ -259,8 +331,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: f81b3cd5fb00c5490800000000000000
-  - name: waterCaveTile_10
+    spriteID: b602fa4306a6a66b0800000000000000
+  - name: WateryCaveRocks_10
     rect:
       serializedVersion: 2
       x: 64
@@ -271,8 +343,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: be10a966abcf75d30800000000000000
-  - name: waterCaveTile_11
+    spriteID: 15f1cf0ab42533320800000000000000
+  - name: WateryCaveRocks_11
     rect:
       serializedVersion: 2
       x: 80
@@ -283,8 +355,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: bd3c08019c73e2050800000000000000
-  - name: waterCaveTile_12
+    spriteID: 984f9db0f1f3f18b0800000000000000
+  - name: WateryCaveRocks_12
     rect:
       serializedVersion: 2
       x: 0
@@ -295,8 +367,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: f253d31a8ebafba90800000000000000
-  - name: waterCaveTile_13
+    spriteID: ae06e54fa7753b840800000000000000
+  - name: WateryCaveRocks_13
     rect:
       serializedVersion: 2
       x: 16
@@ -307,8 +379,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: c01c3393165ee3a50800000000000000
-  - name: waterCaveTile_14
+    spriteID: 367f463c41c4250b0800000000000000
+  - name: WateryCaveRocks_14
     rect:
       serializedVersion: 2
       x: 32
@@ -319,8 +391,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 9478129176e7efd20800000000000000
-  - name: waterCaveTile_15
+    spriteID: 015ea6f18fb9d7ac0800000000000000
+  - name: WateryCaveRocks_15
     rect:
       serializedVersion: 2
       x: 48
@@ -331,8 +403,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 2c4383dcd30c89e10800000000000000
-  - name: waterCaveTile_16
+    spriteID: ea24834c205371710800000000000000
+  - name: WateryCaveRocks_16
     rect:
       serializedVersion: 2
       x: 64
@@ -343,8 +415,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 5a329e5c50619a720800000000000000
-  - name: waterCaveTile_17
+    spriteID: 36f126d18fb71fdf0800000000000000
+  - name: WateryCaveRocks_17
     rect:
       serializedVersion: 2
       x: 80
@@ -355,8 +427,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 2585477e74cd108d0800000000000000
-  - name: waterCaveTile_18
+    spriteID: 5542e4cc59065f870800000000000000
+  - name: WateryCaveRocks_18
     rect:
       serializedVersion: 2
       x: 0
@@ -367,8 +439,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 1ac6f2c557aa077c0800000000000000
-  - name: waterCaveTile_19
+    spriteID: 3a28f51fe77cdb1b0800000000000000
+  - name: WateryCaveRocks_19
     rect:
       serializedVersion: 2
       x: 16
@@ -379,8 +451,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: cec0970c2de6ee6c0800000000000000
-  - name: waterCaveTile_20
+    spriteID: 60c5b241100c4dd20800000000000000
+  - name: WateryCaveRocks_20
     rect:
       serializedVersion: 2
       x: 32
@@ -391,8 +463,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 21b79b38c07d8a050800000000000000
-  - name: waterCaveTile_21
+    spriteID: b9280aa1de6a87d30800000000000000
+  - name: WateryCaveRocks_21
     rect:
       serializedVersion: 2
       x: 48
@@ -403,8 +475,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 797e637dd55b79240800000000000000
-  - name: waterCaveTile_22
+    spriteID: 12fc9984581ecfa40800000000000000
+  - name: WateryCaveRocks_22
     rect:
       serializedVersion: 2
       x: 64
@@ -415,8 +487,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: d89474563ec188af0800000000000000
-  - name: waterCaveTile_23
+    spriteID: cae530dde9a6d7920800000000000000
+  - name: WateryCaveRocks_23
     rect:
       serializedVersion: 2
       x: 80
@@ -427,318 +499,6 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 20ae7fee7e2777890800000000000000
-  spriteRects:
-  - name: waterCaveTile_0
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 0
-      y: 48
-      width: 16
-      height: 16
-    spriteID: 09684cdbc87bb4af0800000000000000
-    internalID: 0
-  - name: waterCaveTile_1
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 16
-      y: 48
-      width: 16
-      height: 16
-    spriteID: c8da42e4bff80e920800000000000000
-    internalID: 0
-  - name: waterCaveTile_2
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 32
-      y: 48
-      width: 16
-      height: 16
-    spriteID: 8afb770dd54cf1090800000000000000
-    internalID: 0
-  - name: waterCaveTile_3
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 48
-      y: 48
-      width: 16
-      height: 16
-    spriteID: 9834a286719139f00800000000000000
-    internalID: 0
-  - name: waterCaveTile_4
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 64
-      y: 48
-      width: 16
-      height: 16
-    spriteID: ff6fc257d9ea44640800000000000000
-    internalID: 0
-  - name: waterCaveTile_5
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 80
-      y: 48
-      width: 16
-      height: 16
-    spriteID: 56151bd8d8b0fdb10800000000000000
-    internalID: 0
-  - name: waterCaveTile_6
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 0
-      y: 32
-      width: 16
-      height: 16
-    spriteID: c80f4e0f09be7cd60800000000000000
-    internalID: 0
-  - name: waterCaveTile_7
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 16
-      y: 32
-      width: 16
-      height: 16
-    spriteID: 45d110269bdbb5140800000000000000
-    internalID: 0
-  - name: waterCaveTile_8
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 32
-      y: 32
-      width: 16
-      height: 16
-    spriteID: 50e8eeecb176df300800000000000000
-    internalID: 0
-  - name: waterCaveTile_9
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 48
-      y: 32
-      width: 16
-      height: 16
-    spriteID: f81b3cd5fb00c5490800000000000000
-    internalID: 0
-  - name: waterCaveTile_10
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 64
-      y: 32
-      width: 16
-      height: 16
-    spriteID: be10a966abcf75d30800000000000000
-    internalID: 0
-  - name: waterCaveTile_11
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 80
-      y: 32
-      width: 16
-      height: 16
-    spriteID: bd3c08019c73e2050800000000000000
-    internalID: 0
-  - name: waterCaveTile_12
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 0
-      y: 16
-      width: 16
-      height: 16
-    spriteID: f253d31a8ebafba90800000000000000
-    internalID: 0
-  - name: waterCaveTile_13
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 16
-      y: 16
-      width: 16
-      height: 16
-    spriteID: c01c3393165ee3a50800000000000000
-    internalID: 0
-  - name: waterCaveTile_14
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 32
-      y: 16
-      width: 16
-      height: 16
-    spriteID: 9478129176e7efd20800000000000000
-    internalID: 0
-  - name: waterCaveTile_15
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 48
-      y: 16
-      width: 16
-      height: 16
-    spriteID: 2c4383dcd30c89e10800000000000000
-    internalID: 0
-  - name: waterCaveTile_16
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 64
-      y: 16
-      width: 16
-      height: 16
-    spriteID: 5a329e5c50619a720800000000000000
-    internalID: 0
-  - name: waterCaveTile_17
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 80
-      y: 16
-      width: 16
-      height: 16
-    spriteID: 2585477e74cd108d0800000000000000
-    internalID: 0
-  - name: waterCaveTile_18
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 16
-      height: 16
-    spriteID: 1ac6f2c557aa077c0800000000000000
-    internalID: 0
-  - name: waterCaveTile_19
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 16
-      y: 0
-      width: 16
-      height: 16
-    spriteID: cec0970c2de6ee6c0800000000000000
-    internalID: 0
-  - name: waterCaveTile_20
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 32
-      y: 0
-      width: 16
-      height: 16
-    spriteID: 21b79b38c07d8a050800000000000000
-    internalID: 0
-  - name: waterCaveTile_21
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 48
-      y: 0
-      width: 16
-      height: 16
-    spriteID: 797e637dd55b79240800000000000000
-    internalID: 0
-  - name: waterCaveTile_22
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 64
-      y: 0
-      width: 16
-      height: 16
-    spriteID: d89474563ec188af0800000000000000
-    internalID: 0
-  - name: waterCaveTile_23
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 80
-      y: 0
-      width: 16
-      height: 16
-    spriteID: 20ae7fee7e2777890800000000000000
-    internalID: 0
+    spriteID: a3fad3d6ea904e7a0800000000000000
+  spriteRects: []
   selectedImporter: 1

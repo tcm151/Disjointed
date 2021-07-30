@@ -146,6 +146,78 @@ ScriptedImporter:
   - first:
       213: 4433172869304605316
     second: caveTile_23
+  - first:
+      213: -7132099105409540934
+    second: CaveRocks_0
+  - first:
+      213: -3040589478379144999
+    second: CaveRocks_1
+  - first:
+      213: 4776508478273159263
+    second: CaveRocks_2
+  - first:
+      213: -1678645546163374245
+    second: CaveRocks_3
+  - first:
+      213: -4240873817211247051
+    second: CaveRocks_4
+  - first:
+      213: -7236309235541627938
+    second: CaveRocks_5
+  - first:
+      213: -4210521005169704608
+    second: CaveRocks_6
+  - first:
+      213: -2154402355143350996
+    second: CaveRocks_7
+  - first:
+      213: 8035335510395466425
+    second: CaveRocks_8
+  - first:
+      213: -5688469426854883835
+    second: CaveRocks_9
+  - first:
+      213: 115005189776657228
+    second: CaveRocks_10
+  - first:
+      213: 1132244748699701280
+    second: CaveRocks_11
+  - first:
+      213: -4963285773217625624
+    second: CaveRocks_12
+  - first:
+      213: -1989287340479160483
+    second: CaveRocks_13
+  - first:
+      213: 3897329810218200289
+    second: CaveRocks_14
+  - first:
+      213: -3948948248790518526
+    second: CaveRocks_15
+  - first:
+      213: 5424139784561288087
+    second: CaveRocks_16
+  - first:
+      213: 5866218690372977941
+    second: CaveRocks_17
+  - first:
+      213: -4040344199005655341
+    second: CaveRocks_18
+  - first:
+      213: 692908784472230166
+    second: CaveRocks_19
+  - first:
+      213: 1371199022246483774
+    second: CaveRocks_20
+  - first:
+      213: -8494775475239013573
+    second: CaveRocks_21
+  - first:
+      213: 5924344896224283942
+    second: CaveRocks_22
+  - first:
+      213: -5193928609668062787
+    second: CaveRocks_23
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -212,7 +284,7 @@ ScriptedImporter:
   animationSettings: []
   texture: {instanceID: 0}
   spriteImportData:
-  - name: caveTile_0
+  - name: CaveRocks_0
     rect:
       serializedVersion: 2
       x: 0
@@ -223,8 +295,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 233414000f9b51370800000000000000
-  - name: caveTile_1
+    spriteID: abcde2fa6a1b50d90800000000000000
+  - name: CaveRocks_1
     rect:
       serializedVersion: 2
       x: 16
@@ -235,8 +307,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: b7758812d9cfab6d0800000000000000
-  - name: caveTile_2
+    spriteID: 9d8bb69aaf7adc5d0800000000000000
+  - name: CaveRocks_2
     rect:
       serializedVersion: 2
       x: 32
@@ -247,8 +319,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: e06feb121a8fab490800000000000000
-  - name: caveTile_3
+    spriteID: f500d1a6721994240800000000000000
+  - name: CaveRocks_3
     rect:
       serializedVersion: 2
       x: 48
@@ -259,8 +331,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: fdcb308dbc48cced0800000000000000
-  - name: caveTile_4
+    spriteID: b57f32505c044b8e0800000000000000
+  - name: CaveRocks_4
     rect:
       serializedVersion: 2
       x: 64
@@ -271,8 +343,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: ef50b1cb740639bd0800000000000000
-  - name: caveTile_5
+    spriteID: 5366edb7bb36525c0800000000000000
+  - name: CaveRocks_5
     rect:
       serializedVersion: 2
       x: 80
@@ -283,8 +355,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 2291a3c36785d08a0800000000000000
-  - name: caveTile_6
+    spriteID: edba9a20717739b90800000000000000
+  - name: CaveRocks_6
     rect:
       serializedVersion: 2
       x: 0
@@ -295,8 +367,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: a72a6b4dbdc2b4400800000000000000
-  - name: caveTile_7
+    spriteID: 0610a8f34793195c0800000000000000
+  - name: CaveRocks_7
     rect:
       serializedVersion: 2
       x: 16
@@ -307,8 +379,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 57c9476358cdd7130800000000000000
-  - name: caveTile_8
+    spriteID: c256a66f8760a12e0800000000000000
+  - name: CaveRocks_8
     rect:
       serializedVersion: 2
       x: 32
@@ -319,8 +391,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 0007e8ce85c8f6a30800000000000000
-  - name: caveTile_9
+    spriteID: 9b2343cd21f338f60800000000000000
+  - name: CaveRocks_9
     rect:
       serializedVersion: 2
       x: 48
@@ -331,8 +403,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: f80072e84c8ca01a0800000000000000
-  - name: caveTile_10
+    spriteID: 50e05a0f13f7e01b0800000000000000
+  - name: CaveRocks_10
     rect:
       serializedVersion: 2
       x: 64
@@ -343,8 +415,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 34b1407abe58df220800000000000000
-  - name: caveTile_11
+    spriteID: c4bc6fb5c94989100800000000000000
+  - name: CaveRocks_11
     rect:
       serializedVersion: 2
       x: 80
@@ -355,8 +427,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 8bca74a0c8d7f7620800000000000000
-  - name: caveTile_12
+    spriteID: 0201c0d999a86bf00800000000000000
+  - name: CaveRocks_12
     rect:
       serializedVersion: 2
       x: 0
@@ -367,8 +439,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 20edb81b8e5422740800000000000000
-  - name: caveTile_13
+    spriteID: 8e90d98c2edde1bb0800000000000000
+  - name: CaveRocks_13
     rect:
       serializedVersion: 2
       x: 16
@@ -379,8 +451,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: fff672eba816b6bc0800000000000000
-  - name: caveTile_14
+    spriteID: d5fde8a14b1a464e0800000000000000
+  - name: CaveRocks_14
     rect:
       serializedVersion: 2
       x: 32
@@ -391,8 +463,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 567007c322c8ad970800000000000000
-  - name: caveTile_15
+    spriteID: 1eca89e30d8161630800000000000000
+  - name: CaveRocks_15
     rect:
       serializedVersion: 2
       x: 48
@@ -403,8 +475,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 54097d380fbdbac00800000000000000
-  - name: caveTile_16
+    spriteID: 205b07a7d748239c0800000000000000
+  - name: CaveRocks_16
     rect:
       serializedVersion: 2
       x: 64
@@ -415,8 +487,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 2e114194cc32d7640800000000000000
-  - name: caveTile_17
+    spriteID: 793e6de456a664b40800000000000000
+  - name: CaveRocks_17
     rect:
       serializedVersion: 2
       x: 80
@@ -427,8 +499,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 5318f49e4e01b7de0800000000000000
-  - name: caveTile_18
+    spriteID: 515407e71def86150800000000000000
+  - name: CaveRocks_18
     rect:
       serializedVersion: 2
       x: 0
@@ -439,8 +511,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 1bf5f87ee43c7bc30800000000000000
-  - name: caveTile_19
+    spriteID: 3de25ff8b50dde7c0800000000000000
+  - name: CaveRocks_19
     rect:
       serializedVersion: 2
       x: 16
@@ -451,8 +523,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 91c80d1788ee974f0800000000000000
-  - name: caveTile_20
+    spriteID: 61907384ed4bd9900800000000000000
+  - name: CaveRocks_20
     rect:
       serializedVersion: 2
       x: 32
@@ -463,8 +535,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 73d7ff21df7dddd40800000000000000
-  - name: caveTile_21
+    spriteID: e375d5dee3a770310800000000000000
+  - name: CaveRocks_21
     rect:
       serializedVersion: 2
       x: 48
@@ -475,8 +547,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: e101fa5262eeb4730800000000000000
-  - name: caveTile_22
+    spriteID: b33bda766be7c1a80800000000000000
+  - name: CaveRocks_22
     rect:
       serializedVersion: 2
       x: 64
@@ -487,8 +559,8 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 282cafc76cd42b700800000000000000
-  - name: caveTile_23
+    spriteID: 62dc85a6b40873250800000000000000
+  - name: CaveRocks_23
     rect:
       serializedVersion: 2
       x: 80
@@ -499,6 +571,6 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 48adcc69c3bc58d30800000000000000
+    spriteID: db12ff7b2757be7b0800000000000000
   spriteRects: []
   selectedImporter: 1

@@ -56,6 +56,33 @@ ScriptedImporter:
   - first:
       213: 9128930933553745789
     second: WoodenPlatforms_8
+  - first:
+      213: -7319368759964873264
+    second: WoodenPlatforms_0
+  - first:
+      213: 1354832759122431433
+    second: WoodenPlatforms_1
+  - first:
+      213: 82153455343024849
+    second: WoodenPlatforms_2
+  - first:
+      213: 4640045365995932915
+    second: WoodenPlatforms_3
+  - first:
+      213: 3269641189886684626
+    second: WoodenPlatforms_4
+  - first:
+      213: -5073973502080001790
+    second: WoodenPlatforms_5
+  - first:
+      213: -3586155502699320949
+    second: WoodenPlatforms_6
+  - first:
+      213: -7816021168764248874
+    second: WoodenPlatforms_7
+  - first:
+      213: 9128930933553745789
+    second: WoodenPlatforms_8
   externalObjects: {}
   serializedVersion: 2
   userData: 
