@@ -1,0 +1,936 @@
+fileFormatVersion: 2
+guid: 8c93c420216751d46aec69688ce190ed
+ScriptedImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3777470858653912049
+    second: ImprovedCaveRocks_0
+  - first:
+      213: 8263839673459229051
+    second: ImprovedCaveRocks_1
+  - first:
+      213: 3626570382444249570
+    second: ImprovedCaveRocks_2
+  - first:
+      213: 8046971230934177392
+    second: ImprovedCaveRocks_3
+  - first:
+      213: -1468437845996731877
+    second: ImprovedCaveRocks_4
+  - first:
+      213: 211413417570258764
+    second: ImprovedCaveRocks_5
+  - first:
+      213: 5957845690234805270
+    second: ImprovedCaveRocks_6
+  - first:
+      213: -3875259230465498706
+    second: ImprovedCaveRocks_7
+  - first:
+      213: 5649216962249300466
+    second: ImprovedCaveRocks_8
+  - first:
+      213: -1293123148598038279
+    second: ImprovedCaveRocks_9
+  - first:
+      213: 6620668190013400006
+    second: ImprovedCaveRocks_10
+  - first:
+      213: 3154783066491503256
+    second: ImprovedCaveRocks_11
+  - first:
+      213: 7268037940694900202
+    second: ImprovedCaveRocks_12
+  - first:
+      213: 4930042947156399811
+    second: ImprovedCaveRocks_13
+  - first:
+      213: -5972494129333584191
+    second: ImprovedCaveRocks_14
+  - first:
+      213: 4127654629640706281
+    second: ImprovedCaveRocks_15
+  - first:
+      213: 1091874019000445685
+    second: ImprovedCaveRocks_16
+  - first:
+      213: -8427783148312993944
+    second: ImprovedCaveRocks_17
+  - first:
+      213: 7243538357591305499
+    second: ImprovedCaveRocks_18
+  - first:
+      213: 6876984065717853852
+    second: ImprovedCaveRocks_19
+  - first:
+      213: 1141976085550982836
+    second: ImprovedCaveRocks_20
+  - first:
+      213: 8290676940274492464
+    second: ImprovedCaveRocks_21
+  - first:
+      213: 1919038519549441121
+    second: ImprovedCaveRocks_22
+  - first:
+      213: 8670035732012892970
+    second: ImprovedCaveRocks_23
+  - first:
+      213: -6337287393619712102
+    second: ImprovedCaveRocks_24
+  - first:
+      213: 4041106777388469344
+    second: ImprovedCaveRocks_25
+  - first:
+      213: 4644669399631798721
+    second: ImprovedCaveRocks_26
+  - first:
+      213: 7439670458928881915
+    second: ImprovedCaveRocks_27
+  - first:
+      213: -8769367977776571096
+    second: ImprovedCaveRocks_28
+  - first:
+      213: -6945813024102637659
+    second: ImprovedCaveRocks_29
+  - first:
+      213: 1169355865111871254
+    second: ImprovedCaveRocks_30
+  - first:
+      213: 8722949908279086341
+    second: ImprovedCaveRocks_31
+  - first:
+      213: -3839756036967695519
+    second: ImprovedCaveRocks_32
+  - first:
+      213: 6204507108668467317
+    second: ImprovedCaveRocks_33
+  - first:
+      213: 5226515940354174623
+    second: ImprovedCaveRocks_34
+  - first:
+      213: -6438358450502061686
+    second: ImprovedCaveRocks_35
+  - first:
+      213: 1443471715044353116
+    second: ImprovedCaveRocks_36
+  - first:
+      213: -5061501980727835121
+    second: ImprovedCaveRocks_37
+  - first:
+      213: 8768403184551597170
+    second: ImprovedCaveRocks_38
+  - first:
+      213: -5002217862852203915
+    second: ImprovedCaveRocks_39
+  - first:
+      213: -6295744744470767151
+    second: ImprovedCaveRocks_40
+  - first:
+      213: -3580395158475846412
+    second: ImprovedCaveRocks_41
+  - first:
+      213: 4465731925869526333
+    second: ImprovedCaveRocks_42
+  - first:
+      213: -779143639112063443
+    second: ImprovedCaveRocks_43
+  - first:
+      213: 3295879930012657082
+    second: ImprovedCaveRocks_44
+  - first:
+      213: -7416288085593337834
+    second: ImprovedCaveRocks_45
+  - first:
+      213: -2864071568029670461
+    second: ImprovedCaveRocks_46
+  - first:
+      213: -3355764528173284066
+    second: ImprovedCaveRocks_47
+  - first:
+      213: -3777470858653912049
+    second: ImprovedCaveRocks_0
+  - first:
+      213: 8263839673459229051
+    second: ImprovedCaveRocks_1
+  - first:
+      213: 3626570382444249570
+    second: ImprovedCaveRocks_2
+  - first:
+      213: 8046971230934177392
+    second: ImprovedCaveRocks_3
+  - first:
+      213: -1468437845996731877
+    second: ImprovedCaveRocks_4
+  - first:
+      213: 211413417570258764
+    second: ImprovedCaveRocks_5
+  - first:
+      213: 5957845690234805270
+    second: ImprovedCaveRocks_6
+  - first:
+      213: -3875259230465498706
+    second: ImprovedCaveRocks_7
+  - first:
+      213: 5649216962249300466
+    second: ImprovedCaveRocks_8
+  - first:
+      213: -1293123148598038279
+    second: ImprovedCaveRocks_9
+  - first:
+      213: 6620668190013400006
+    second: ImprovedCaveRocks_10
+  - first:
+      213: 3154783066491503256
+    second: ImprovedCaveRocks_11
+  - first:
+      213: 7268037940694900202
+    second: ImprovedCaveRocks_12
+  - first:
+      213: 4930042947156399811
+    second: ImprovedCaveRocks_13
+  - first:
+      213: -5972494129333584191
+    second: ImprovedCaveRocks_14
+  - first:
+      213: 4127654629640706281
+    second: ImprovedCaveRocks_15
+  - first:
+      213: 1091874019000445685
+    second: ImprovedCaveRocks_16
+  - first:
+      213: -8427783148312993944
+    second: ImprovedCaveRocks_17
+  - first:
+      213: 7243538357591305499
+    second: ImprovedCaveRocks_18
+  - first:
+      213: 6876984065717853852
+    second: ImprovedCaveRocks_19
+  - first:
+      213: 1141976085550982836
+    second: ImprovedCaveRocks_20
+  - first:
+      213: 8290676940274492464
+    second: ImprovedCaveRocks_21
+  - first:
+      213: 1919038519549441121
+    second: ImprovedCaveRocks_22
+  - first:
+      213: 8670035732012892970
+    second: ImprovedCaveRocks_23
+  - first:
+      213: -6337287393619712102
+    second: ImprovedCaveRocks_24
+  - first:
+      213: 4041106777388469344
+    second: ImprovedCaveRocks_25
+  - first:
+      213: 4644669399631798721
+    second: ImprovedCaveRocks_26
+  - first:
+      213: 7439670458928881915
+    second: ImprovedCaveRocks_27
+  - first:
+      213: -8769367977776571096
+    second: ImprovedCaveRocks_28
+  - first:
+      213: -6945813024102637659
+    second: ImprovedCaveRocks_29
+  - first:
+      213: 1169355865111871254
+    second: ImprovedCaveRocks_30
+  - first:
+      213: 8722949908279086341
+    second: ImprovedCaveRocks_31
+  - first:
+      213: -3839756036967695519
+    second: ImprovedCaveRocks_32
+  - first:
+      213: 6204507108668467317
+    second: ImprovedCaveRocks_33
+  - first:
+      213: 5226515940354174623
+    second: ImprovedCaveRocks_34
+  - first:
+      213: -6438358450502061686
+    second: ImprovedCaveRocks_35
+  - first:
+      213: 1443471715044353116
+    second: ImprovedCaveRocks_36
+  - first:
+      213: -5061501980727835121
+    second: ImprovedCaveRocks_37
+  - first:
+      213: 8768403184551597170
+    second: ImprovedCaveRocks_38
+  - first:
+      213: -5002217862852203915
+    second: ImprovedCaveRocks_39
+  - first:
+      213: -6295744744470767151
+    second: ImprovedCaveRocks_40
+  - first:
+      213: -3580395158475846412
+    second: ImprovedCaveRocks_41
+  - first:
+      213: 4465731925869526333
+    second: ImprovedCaveRocks_42
+  - first:
+      213: -779143639112063443
+    second: ImprovedCaveRocks_43
+  - first:
+      213: 3295879930012657082
+    second: ImprovedCaveRocks_44
+  - first:
+      213: -7416288085593337834
+    second: ImprovedCaveRocks_45
+  - first:
+      213: -2864071568029670461
+    second: ImprovedCaveRocks_46
+  - first:
+      213: -3355764528173284066
+    second: ImprovedCaveRocks_47
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: d1956ce1ff810451f9738b29e9df561a, type: 3}
+  settings:
+    importType: 0
+    transparencyMode: 0
+    transparentColor: {r: 1, g: 0, b: 1, a: 1}
+    pixelsPerUnit: 16
+    spriteAlignment: 4
+    spritePivot: {x: 0, y: 0.5}
+    generateAnimations: 1
+    createAnimationAssets: 0
+    bindType: 0
+    animType: 0
+    baseAnimator: {instanceID: 0}
+    buildAtlas: 0
+    tileSize: {x: 16, y: 16}
+    tileNameType: 0
+    tileEmpty: 0
+  textureImporterSettings:
+    seamlessCubemap: 0
+    mipmapBias: 0.5
+    wrapMode: 1
+    wrapModeU: 0
+    wrapModeV: 0
+    wrapModeW: 0
+    alphaIsTransparency: 1
+    spriteMode: 2
+    spritePixelsPerUnit: 16
+    spriteTessellationDetail: 0
+    spriteExtrude: 1
+    spriteMeshType: 1
+    spriteAlignment: 0
+    spritePivot: {x: 0, y: 0}
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 1
+    aniso: 1
+    filterMode: 0
+    cubemapConvolution: 0
+    textureType: 8
+    textureShape: 1
+    mipmapFilter: 0
+    mipmapEnabled: 0
+    sRGBTexture: 1
+    fadeOut: 0
+    borderMipmap: 0
+    mipMapsPreserveCoverage: 0
+    mipmapFadeDistanceStart: 1
+    alphaTestReferenceValue: 1
+    convertToNormalMap: 0
+    heightmapScale: 0
+    normalMapFilter: 0
+    alphaSource: 1
+    singleChannelComponent: 0
+    readable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    npotScale: 0
+    generateCubemap: 0
+    mipmapFadeDistanceEnd: 3
+  animationSettings: []
+  texture: {instanceID: 0}
+  spriteImportData:
+  - name: ImprovedCaveRocks_0
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 80
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: f043b88944ab39bc0800000000000000
+  - name: ImprovedCaveRocks_1
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 80
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: b714159366e0fa270800000000000000
+  - name: ImprovedCaveRocks_2
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 80
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 2e1ca866c8a245230800000000000000
+  - name: ImprovedCaveRocks_3
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 80
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 0769e9923b59caf60800000000000000
+  - name: ImprovedCaveRocks_4
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 80
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: b1200a62f8f0f9be0800000000000000
+  - name: ImprovedCaveRocks_5
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 80
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: c4fc60712671fe200800000000000000
+  - name: ImprovedCaveRocks_6
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 80
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 61c9909d6158ea250800000000000000
+  - name: ImprovedCaveRocks_7
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 80
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: ea1ec8b0340583ac0800000000000000
+  - name: ImprovedCaveRocks_8
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 64
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 2f91bf575ec066e40800000000000000
+  - name: ImprovedCaveRocks_9
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 64
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 9f0bafcf857ed0ee0800000000000000
+  - name: ImprovedCaveRocks_10
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 64
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 6c32a7914a651eb50800000000000000
+  - name: ImprovedCaveRocks_11
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 64
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 892c4a5fb7a08cb20800000000000000
+  - name: ImprovedCaveRocks_12
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 64
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: aed5e25dff14dd460800000000000000
+  - name: ImprovedCaveRocks_13
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 64
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 3c65da0a0f70b6440800000000000000
+  - name: ImprovedCaveRocks_14
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 64
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 1ce37f5ab307d1da0800000000000000
+  - name: ImprovedCaveRocks_15
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 64
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 9e81b333400684930800000000000000
+  - name: ImprovedCaveRocks_16
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 48
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 5faeff1a2ad172f00800000000000000
+  - name: ImprovedCaveRocks_17
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 48
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 86fd7c001ef7a0b80800000000000000
+  - name: ImprovedCaveRocks_18
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 48
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: b1d652122c7368460800000000000000
+  - name: ImprovedCaveRocks_19
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 48
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: c9e522b6294ff6f50800000000000000
+  - name: ImprovedCaveRocks_20
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 48
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 4b6e149033d19df00800000000000000
+  - name: ImprovedCaveRocks_21
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 48
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 034659450c66e0370800000000000000
+  - name: ImprovedCaveRocks_22
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 48
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 1643904bd5bc1aa10800000000000000
+  - name: ImprovedCaveRocks_23
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 48
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: a23829cff87225870800000000000000
+  - name: ImprovedCaveRocks_24
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 32
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: a976cbf11be6d08a0800000000000000
+  - name: ImprovedCaveRocks_25
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 32
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 06cc9ad0435e41830800000000000000
+  - name: ImprovedCaveRocks_26
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 32
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 1c12e20e53e257040800000000000000
+  - name: ImprovedCaveRocks_27
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 32
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: bf06c668dd40f3760800000000000000
+  - name: ImprovedCaveRocks_28
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 32
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 82d11fb4942fc4680800000000000000
+  - name: ImprovedCaveRocks_29
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 32
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 5af9416ead38b9f90800000000000000
+  - name: ImprovedCaveRocks_30
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 32
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 61f330cb6f26a3010800000000000000
+  - name: ImprovedCaveRocks_31
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 32
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 50d4084b9b42e0970800000000000000
+  - name: ImprovedCaveRocks_32
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 16
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 16bf0607a3276bac0800000000000000
+  - name: ImprovedCaveRocks_33
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 16
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 578e19aa756da1650800000000000000
+  - name: ImprovedCaveRocks_34
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 16
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: f9e2ab57e80588840800000000000000
+  - name: ImprovedCaveRocks_35
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 16
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: a81b035e91b56a6a0800000000000000
+  - name: ImprovedCaveRocks_36
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 16
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: c54ea8280ed380410800000000000000
+  - name: ImprovedCaveRocks_37
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 16
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: f0608c8f3cee1c9b0800000000000000
+  - name: ImprovedCaveRocks_38
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 16
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 2741a964d30afa970800000000000000
+  - name: ImprovedCaveRocks_39
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 16
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 57aa49b4b5d849ab0800000000000000
+  - name: ImprovedCaveRocks_40
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 1d9994dd28501a8a0800000000000000
+  - name: ImprovedCaveRocks_41
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 0
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 4fcc487b291ef4ec0800000000000000
+  - name: ImprovedCaveRocks_42
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: d3df29fa68779fd30800000000000000
+  - name: ImprovedCaveRocks_43
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 0
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: d2668b10dfcef25f0800000000000000
+  - name: ImprovedCaveRocks_44
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 0
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: ab56eb285515dbd20800000000000000
+  - name: ImprovedCaveRocks_45
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 0
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 6105f32874d041990800000000000000
+  - name: ImprovedCaveRocks_46
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 0
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: 3c3ab485516c048d0800000000000000
+  - name: ImprovedCaveRocks_47
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 0
+      width: 16
+      height: 16
+    alignment: 0
+    pivot: {x: 0, y: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    tessellationDetail: 0
+    spriteID: e150064f0fded61d0800000000000000
+  spriteRects: []
+  selectedImporter: 1
