@@ -75,20 +75,21 @@ ScriptedImporter:
     generateCubemap: 0
     mipmapFadeDistanceEnd: 3
   animationSettings:
-  - animationName: Fly
-    loopTime: 1
-    about: "Animation Type:\tForward\r\nAnimation:\tFrom: 0; To: 2"
-    sprites:
-    - {instanceID: 0}
-    - {instanceID: 0}
-    - {instanceID: 0}
-    frameNumbers: 000000000100000002000000
   - animationName: Idle
     loopTime: 1
     about: "Animation Type:\tForward\r\nAnimation:\tFrom: 3; To: 3"
     sprites:
     - {instanceID: 0}
     frameNumbers: 03000000
+  - animationName: Flying
+    loopTime: 1
+    about: "Animation Type:\tForward\r\nAnimation:\tFrom: 1; To: 4"
+    sprites:
+    - {instanceID: 0}
+    - {instanceID: 0}
+    - {instanceID: 0}
+    - {instanceID: 0}
+    frameNumbers: 01000000020000000300000004000000
   texture: {instanceID: 0}
   spriteImportData:
   - name: bat2_0
