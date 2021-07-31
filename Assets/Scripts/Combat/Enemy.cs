@@ -14,36 +14,30 @@ namespace Disjointed.Combat.Enemies
         //> ENEMY DATA STRUCT
         [Serializable] public class Data : ISerializeable
         {
-            public float health = 3f;
-            public float acceleration = 10f;
-            public float movementSpeed = 2f;
-            public float detectionRadius = 5f;
-            public int damage = 1;
-            public float knockback = 5f;
-        
-            public Aggro aggro;
+            [Header("Movement")]
             public Movement movement;
+            public float acceleration = 20f;
+            public float movementSpeed = 2.5f;
+            
+            [Header("Combat")]
+            public Aggro aggro;
+            public float health = 5f;
+            public float damage = 1f;
+            public float knockback = 5f;
+            public float detectionRadius = 8f;
 
             public void Save() { }
             public void Load() { }
         }
         
-        public enum Aggro { Ignore, Homing, Intelligent }
+        public enum Aggro { Ignore, Charge, Intelligent }
         public enum Movement { Walking, Flying, Stationary }
 
         public bool IsMoving => (rigidbody.velocity.magnitude > 1f);
         
-        [Header("Enemy Template")]
-        public EnemyData data;
-        private float health;
-        private float movementSpeed;
-        private float acceleration;
-        private float detectionRadius;
-        private int damage;
-        private float knockback;
-        private Aggro aggro;
-        private Movement movement;
-        
+        [Header("Enemy Properties")]
+        public Data data;
+
         [Header("Target")]
         public Transform target;
         public LayerMask targetMask;
@@ -68,16 +62,6 @@ namespace Disjointed.Combat.Enemies
             
             collider = GetComponent<Collider2D>();
             rigidbody = GetComponent<Rigidbody2D>();
-            
-            health = data.health;
-            acceleration = data.acceleration;
-            movementSpeed = data.movementSpeed;
-            detectionRadius = data.detectionRadius;
-            damage = data.damage;
-            knockback = data.knockback;
-
-            aggro = data.aggro;
-            movement = data.movement;
 
             initialPosition = transform.position;
         }
@@ -98,7 +82,7 @@ namespace Disjointed.Combat.Enemies
 
             desiredVelocity = rigidbody.velocity;
 
-            if (movement == Movement.Walking)
+            if (data.movement == Movement.Walking)
             {
                 if (!target) return;
                 
@@ -106,21 +90,21 @@ namespace Disjointed.Combat.Enemies
                 onGround = hit.collider is { };
 
                 var targetDirection = (target.position - transform.position).normalized;
-                desiredVelocity.x.MoveTowards(targetDirection.x * movementSpeed, acceleration * Time.deltaTime);
+                desiredVelocity.x.MoveTowards(targetDirection.x * data.movementSpeed, data.acceleration * Time.deltaTime);
             }
 
-            if (movement == Movement.Flying)
+            if (data.movement == Movement.Flying)
             {
                 if (target)
                 {
                     var targetDirection = (target.position - transform.position).normalized;
-                    desiredVelocity.MoveTowards(targetDirection * movementSpeed, acceleration  * Time.deltaTime);
+                    desiredVelocity.MoveTowards(targetDirection * data.movementSpeed, data.acceleration  * Time.deltaTime);
                 }
                 else
                 {
                     var targetDirection = transform.position.DirectionTo(initialPosition);
                     if (Vector2.Distance(transform.position, initialPosition) < 0.1f) transform.position = initialPosition;
-                    else desiredVelocity.MoveTowards(targetDirection * movementSpeed, acceleration  * Time.deltaTime);
+                    else desiredVelocity.MoveTowards(targetDirection * data.movementSpeed, data.acceleration  * Time.deltaTime);
                 }
 
                 
@@ -131,21 +115,21 @@ namespace Disjointed.Combat.Enemies
 
         virtual protected void DetectPlayer()
         {
-            var detect = Physics2D.OverlapCircle(transform.position, detectionRadius, targetMask);
+            var detect = Physics2D.OverlapCircle(transform.position, data.detectionRadius, targetMask);
             if (detect is null) return;
             
             var targetDirection = detect.transform.position - transform.position;
-            var los = Physics2D.Raycast(transform.position, targetDirection, detectionRadius, detectionMask);
+            var los = Physics2D.Raycast(transform.position, targetDirection, data.detectionRadius, detectionMask);
 
             if (los.collider is { } && targetMask.Contains(los.collider.gameObject.layer)) target = detect.transform;
             else target = null;
         }
 
-        virtual public void TakeDamage(int damage, string origin)
+        virtual public void TakeDamage(float damage, string origin)
         {
-            health -= damage;
+            data.health -= damage;
             AudioManager.Connect.PlayOneShot("ZombieOof");
-            if (health <= 0) Destroy(this.gameObject);
+            if (data.health <= 0) Destroy(this.gameObject);
         }
 
         virtual public void TakeKnockback(Vector2 direction, float knockback)
@@ -158,12 +142,12 @@ namespace Disjointed.Combat.Enemies
             var damageable = collision.gameObject.GetComponent<IDamageable>();
             if (damageable is null) return;
 
-            damageable.TakeDamage(damage, "Enemy!");
+            damageable.TakeDamage(data.damage, "Enemy!");
             
             var direction = collision.transform.position - transform.position;
-            damageable.TakeKnockback(direction, knockback);
+            damageable.TakeKnockback(direction, data.knockback);
             
-            rigidbody.AddForce(-direction * knockback, ForceMode2D.Impulse);
+            rigidbody.AddForce(-direction * data.knockback, ForceMode2D.Impulse);
         }
 
         virtual protected void OnDrawGizmos()
@@ -175,7 +159,7 @@ namespace Disjointed.Combat.Enemies
             var position = transform.position;
             
             Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(position, detectionRadius);
+            Gizmos.DrawWireSphere(position, data.detectionRadius);
             
             if (!target) return;
             

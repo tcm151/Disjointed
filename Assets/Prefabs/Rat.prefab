@@ -154,7 +154,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c4706e8e114a9daa5f72065a502c69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: 133994b9587dff142a3a455b98f1bdbd, type: 2}
+  data:
+    health: 4
+    acceleration: 15
+    movementSpeed: 2.5
+    detectionRadius: 8
+    damage: 1
+    knockback: 5
+    aggro: 1
+    movement: 0
   target: {fileID: 0}
   targetMask:
     serializedVersion: 2

@@ -14,7 +14,7 @@ namespace Disjointed.Player
 
         new private Rigidbody2D rigidbody;
 
-        private int health;
+        private float health;
 
         private bool invincible;
         public float invincibilityCooldown;
@@ -32,7 +32,7 @@ namespace Disjointed.Player
         private void Initialize()
         {
             health = 3;
-            healthChanged?.Invoke(health);
+            healthChanged?.Invoke((int)health);
             invincible = false;
         }
 
@@ -53,12 +53,12 @@ namespace Disjointed.Player
         }
 
         //> TAKE INCOMING DAMAGE
-        public void TakeDamage(int damage, string origin)
+        public void TakeDamage(float damage, string origin)
         {
             if (invincible) return;
             
             health -= damage;
-            healthChanged?.Invoke(health);
+            healthChanged?.Invoke((int)health);
             if (health <= 0) Die();
 
             // StartCoroutine(CR_Invincibility());
