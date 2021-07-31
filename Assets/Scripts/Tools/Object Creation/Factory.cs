@@ -1,10 +1,14 @@
-﻿using UnityEngine;
+﻿using Disjointed.Combat.Enemies;
+using UnityEngine;
 
 
 namespace Disjointed.Tools.ObjectCreation
 {
+    [CreateAssetMenu(fileName = "Factory", menuName = "Factory")]
     public class Factory : ScriptableObject
     {
+        public Enemy[] enemyPrefabs;
+        
         public static T Spawn<T>(T prefab, Vector3 position, Quaternion rotation) where T : MonoBehaviour
             => Instantiate(prefab, position, rotation);
 

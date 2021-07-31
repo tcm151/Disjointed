@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
+    type: 1
     movement: 0
     acceleration: 15
     movementSpeed: 2.5
@@ -173,6 +174,7 @@ MonoBehaviour:
     damage: 1
     knockback: 5
     detectionRadius: 8
+    position: {x: 0, y: 0, z: 0}
   target: {fileID: 0}
   targetMask:
     serializedVersion: 2

@@ -15,23 +15,30 @@ namespace Disjointed.Combat.Enemies
         [Serializable]
         public class Data : ISerializeable
         {
-            [Header("Movement")] public Movement movement;
+            public Type type;
+            
+            [Header("Movement")]
+            public Movement movement;
             public float acceleration = 20f;
             public float movementSpeed = 2.5f;
 
-            [Header("Combat")] public Aggro aggro;
+            [Header("Combat")]
+            public Aggro aggro;
             public float health = 5f;
             public float damage = 1f;
             public float knockback = 5f;
             public float detectionRadius = 8f;
 
+            [HideInInspector] public Vector3 position;
+
             public void Save() { }
             public void Load() { }
         }
 
+        public enum Type {Bat, Rat, Ghost }
         public enum Aggro { Ignore, Charge, Intelligent }
         public enum Movement { Walking, Flying, Stationary }
-
+        
         public bool IsMoving => (rigidbody.velocity.magnitude > 1f);
 
         [Header("Enemy Properties")] public Data data;
@@ -80,7 +87,7 @@ namespace Disjointed.Combat.Enemies
         {
 
             desiredVelocity = rigidbody.velocity;
-            var currentPosition = transform.position;
+            data.position = transform.position;
 
             DetectPlayer();
             // if (!target && Vector3.Distance(currentPosition, initialPosition) < 0.25f) rigidbody.velocity = Vector2.zero;
@@ -89,10 +96,10 @@ namespace Disjointed.Combat.Enemies
             {
                 if (!target) return;
 
-                var hit = Physics2D.Raycast(currentPosition, Vector2.down, groundedDistance, groundMask);
+                var hit = Physics2D.Raycast(data.position, Vector2.down, groundedDistance, groundMask);
                 onGround = hit.collider is { };
 
-                var targetDirection = (target.position - currentPosition).normalized;
+                var targetDirection = (target.position - data.position).normalized;
                 desiredVelocity.x.MoveTowards(targetDirection.x * data.movementSpeed, data.acceleration * Time.deltaTime);
             }
 
@@ -100,13 +107,13 @@ namespace Disjointed.Combat.Enemies
             {
                 if (target)
                 {
-                    var targetDirection = (target.position - currentPosition).normalized;
+                    var targetDirection = (target.position - data.position).normalized;
                     desiredVelocity.MoveTowards(targetDirection * data.movementSpeed, data.acceleration * Time.deltaTime);
                 }
                 else
                 {
-                    var targetDirection = currentPosition.DirectionTo(initialPosition);
-                    if (Vector2.Distance(currentPosition, initialPosition) < 0.1f) transform.position = initialPosition;
+                    var targetDirection = data.position.DirectionTo(initialPosition);
+                    if (Vector2.Distance(data.position, initialPosition) < 0.1f) transform.position = initialPosition;
                     else desiredVelocity.MoveTowards(targetDirection * data.movementSpeed, data.acceleration * Time.deltaTime);
                 }
             }
