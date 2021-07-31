@@ -27,6 +27,7 @@ namespace Disjointed.Audio
         private void Awake()
         {
             instance = this;
+            AudioListener.volume = PlayerPrefs.GetFloat("GlobalVolume", 1f);
             
             Play("CaveBackgroundNoise", 0, true);
             StartCoroutine(CR_Music());
@@ -77,6 +78,7 @@ namespace Disjointed.Audio
         public static void SetVolume(float volume)
         {
             AudioListener.volume = volume;
+            PlayerPrefs.SetFloat("GlobalVolume", volume);
         }
     }
 }
