@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: WoodenPlatforms_8
+  m_Name: Signs_1
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 9128930933553745789, guid: 957671975d7019e4b8446a8da9f4b254, type: 3}
+  m_Sprite: {fileID: 8051134168378353487, guid: 58c5ddc9183e17349a7b8fb9c2fd930c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
@@ -33,4 +33,4 @@ MonoBehaviour:
     e33: 1
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
-  m_ColliderType: 0
+  m_ColliderType: 1

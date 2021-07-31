@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: WoodenPlatforms_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -7319368759964873264, guid: a9ce56734f5dd564e9a61699de4e2e96, type: 3}
+  m_Sprite: {fileID: -7319368759964873264, guid: 957671975d7019e4b8446a8da9f4b254, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

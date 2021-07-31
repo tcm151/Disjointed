@@ -257,5 +257,122 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
     spriteID: d7fcb81215a70be70800000000000000
-  spriteRects: []
+  spriteRects:
+  - name: WoodenPlatforms_0
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 32
+      width: 16
+      height: 16
+    spriteID: 0ddc33a74e06c6a90800000000000000
+    internalID: 0
+  - name: WoodenPlatforms_1
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 32
+      width: 16
+      height: 16
+    spriteID: 9cd0e8957355dc210800000000000000
+    internalID: 0
+  - name: WoodenPlatforms_2
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 32
+      width: 16
+      height: 16
+    spriteID: 1dabac2e12ed32100800000000000000
+    internalID: 0
+  - name: WoodenPlatforms_3
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 32
+      width: 16
+      height: 16
+    spriteID: 3fc82e52da0c46040800000000000000
+    internalID: 0
+  - name: WoodenPlatforms_4
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 16
+      width: 16
+      height: 16
+    spriteID: 2dd6e22c659106d20800000000000000
+    internalID: 0
+  - name: WoodenPlatforms_5
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 16
+      width: 16
+      height: 16
+    spriteID: 209d6c0abff9599b0800000000000000
+    internalID: 0
+  - name: WoodenPlatforms_6
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 16
+      width: 16
+      height: 16
+    spriteID: b896b40129a6b3ec0800000000000000
+    internalID: 0
+  - name: WoodenPlatforms_7
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 16
+      width: 16
+      height: 16
+    spriteID: 6dc9fd6782ae78390800000000000000
+    internalID: 0
+  - name: WoodenPlatforms_8
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 16
+      height: 16
+    spriteID: d7fcb81215a70be70800000000000000
+    internalID: 0
   selectedImporter: 1
