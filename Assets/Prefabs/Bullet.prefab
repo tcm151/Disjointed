@@ -119,4 +119,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionMask:
     serializedVersion: 2
-    m_Bits: 5201
+    m_Bits: 13393
