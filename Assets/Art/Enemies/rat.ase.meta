@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: b799da840ea43c845b394a0af3439c21
 ScriptedImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5237074582503671387
+    second: rat_0
+  - first:
+      213: -1962871195434815468
+    second: rat_1
+  - first:
+      213: 6665371358829242843
+    second: rat_2
+  - first:
+      213: -513956825706076816
+    second: rat_3
+  - first:
+      213: -8905257789077479170
+    second: rat_4
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -83,113 +98,65 @@ ScriptedImporter:
     frameNumbers: 04000000
   texture: {instanceID: 0}
   spriteImportData:
-  - name: WoodenPlatforms_0
+  - name: rat_0
     rect:
       serializedVersion: 2
       x: 0
-      y: 32
-      width: 16
-      height: 16
+      y: 36
+      width: 17
+      height: 9
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 0ddc33a74e06c6a90800000000000000
-  - name: WoodenPlatforms_1
+    spriteID: 5a934a71a6c2257b0800000000000000
+  - name: rat_1
     rect:
       serializedVersion: 2
-      x: 16
-      y: 32
-      width: 16
-      height: 16
+      x: 17
+      y: 36
+      width: 17
+      height: 9
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 9cd0e8957355dc210800000000000000
-  - name: WoodenPlatforms_2
-    rect:
-      serializedVersion: 2
-      x: 32
-      y: 32
-      width: 16
-      height: 16
-    alignment: 0
-    pivot: {x: 0, y: 0}
-    border: {x: 0, y: 0, z: 0, w: 0}
-    tessellationDetail: 0
-    spriteID: 1dabac2e12ed32100800000000000000
-  - name: WoodenPlatforms_3
-    rect:
-      serializedVersion: 2
-      x: 48
-      y: 32
-      width: 16
-      height: 16
-    alignment: 0
-    pivot: {x: 0, y: 0}
-    border: {x: 0, y: 0, z: 0, w: 0}
-    tessellationDetail: 0
-    spriteID: 3fc82e52da0c46040800000000000000
-  - name: WoodenPlatforms_4
+    spriteID: 410f2482c0b72c4e0800000000000000
+  - name: rat_2
     rect:
       serializedVersion: 2
       x: 0
-      y: 16
-      width: 16
-      height: 16
+      y: 27
+      width: 17
+      height: 9
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 2dd6e22c659106d20800000000000000
-  - name: WoodenPlatforms_5
+    spriteID: bd9641bafe7208c50800000000000000
+  - name: rat_3
     rect:
       serializedVersion: 2
-      x: 16
-      y: 16
-      width: 16
-      height: 16
+      x: 17
+      y: 27
+      width: 17
+      height: 9
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 209d6c0abff9599b0800000000000000
-  - name: WoodenPlatforms_6
+    spriteID: 075e6e57dfe0ed8f0800000000000000
+  - name: rat_4
     rect:
       serializedVersion: 2
-      x: 32
-      y: 16
-      width: 16
-      height: 16
+      x: 0
+      y: 18
+      width: 17
+      height: 9
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: b896b40129a6b3ec0800000000000000
-  - name: WoodenPlatforms_7
-    rect:
-      serializedVersion: 2
-      x: 48
-      y: 16
-      width: 16
-      height: 16
-    alignment: 0
-    pivot: {x: 0, y: 0}
-    border: {x: 0, y: 0, z: 0, w: 0}
-    tessellationDetail: 0
-    spriteID: 6dc9fd6782ae78390800000000000000
-  - name: WoodenPlatforms_8
-    rect:
-      serializedVersion: 2
-      x: 32
-      y: 0
-      width: 16
-      height: 16
-    alignment: 0
-    pivot: {x: 0, y: 0}
-    border: {x: 0, y: 0, z: 0, w: 0}
-    tessellationDetail: 0
-    spriteID: d7fcb81215a70be70800000000000000
+    spriteID: ef0a1c0193b2a6480800000000000000
   spriteRects: []
   selectedImporter: 1

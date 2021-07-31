@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: 744b4daa25974de47b054b1a8c058e33
 ScriptedImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7502526618470603963
+    second: ratSunglasses_0
+  - first:
+      213: 8881600001725493068
+    second: ratSunglasses_1
+  - first:
+      213: -50196761826710393
+    second: ratSunglasses_2
+  - first:
+      213: 3050381943407549077
+    second: ratSunglasses_3
+  - first:
+      213: 6067805148626530442
+    second: ratSunglasses_4
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -83,113 +98,65 @@ ScriptedImporter:
     frameNumbers: 04000000
   texture: {instanceID: 0}
   spriteImportData:
-  - name: WoodenPlatforms_0
+  - name: ratSunglasses_0
     rect:
       serializedVersion: 2
       x: 0
-      y: 32
-      width: 16
-      height: 16
+      y: 36
+      width: 17
+      height: 9
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 0ddc33a74e06c6a90800000000000000
-  - name: WoodenPlatforms_1
+    spriteID: bbc5adb95345e1860800000000000000
+  - name: ratSunglasses_1
     rect:
       serializedVersion: 2
-      x: 16
-      y: 32
-      width: 16
-      height: 16
+      x: 17
+      y: 36
+      width: 17
+      height: 9
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 9cd0e8957355dc210800000000000000
-  - name: WoodenPlatforms_2
-    rect:
-      serializedVersion: 2
-      x: 32
-      y: 32
-      width: 16
-      height: 16
-    alignment: 0
-    pivot: {x: 0, y: 0}
-    border: {x: 0, y: 0, z: 0, w: 0}
-    tessellationDetail: 0
-    spriteID: 1dabac2e12ed32100800000000000000
-  - name: WoodenPlatforms_3
-    rect:
-      serializedVersion: 2
-      x: 48
-      y: 32
-      width: 16
-      height: 16
-    alignment: 0
-    pivot: {x: 0, y: 0}
-    border: {x: 0, y: 0, z: 0, w: 0}
-    tessellationDetail: 0
-    spriteID: 3fc82e52da0c46040800000000000000
-  - name: WoodenPlatforms_4
+    spriteID: c4fe4f31528c14b70800000000000000
+  - name: ratSunglasses_2
     rect:
       serializedVersion: 2
       x: 0
-      y: 16
-      width: 16
-      height: 16
+      y: 27
+      width: 17
+      height: 9
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 2dd6e22c659106d20800000000000000
-  - name: WoodenPlatforms_5
+    spriteID: 78ca172af4aad4ff0800000000000000
+  - name: ratSunglasses_3
     rect:
       serializedVersion: 2
-      x: 16
-      y: 16
-      width: 16
-      height: 16
+      x: 17
+      y: 27
+      width: 17
+      height: 9
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: 209d6c0abff9599b0800000000000000
-  - name: WoodenPlatforms_6
+    spriteID: 59a92164732255a20800000000000000
+  - name: ratSunglasses_4
     rect:
       serializedVersion: 2
-      x: 32
-      y: 16
-      width: 16
-      height: 16
+      x: 0
+      y: 18
+      width: 17
+      height: 9
     alignment: 0
     pivot: {x: 0, y: 0}
     border: {x: 0, y: 0, z: 0, w: 0}
     tessellationDetail: 0
-    spriteID: b896b40129a6b3ec0800000000000000
-  - name: WoodenPlatforms_7
-    rect:
-      serializedVersion: 2
-      x: 48
-      y: 16
-      width: 16
-      height: 16
-    alignment: 0
-    pivot: {x: 0, y: 0}
-    border: {x: 0, y: 0, z: 0, w: 0}
-    tessellationDetail: 0
-    spriteID: 6dc9fd6782ae78390800000000000000
-  - name: WoodenPlatforms_8
-    rect:
-      serializedVersion: 2
-      x: 32
-      y: 0
-      width: 16
-      height: 16
-    alignment: 0
-    pivot: {x: 0, y: 0}
-    border: {x: 0, y: 0, z: 0, w: 0}
-    tessellationDetail: 0
-    spriteID: d7fcb81215a70be70800000000000000
+    spriteID: a80bb2252ac253450800000000000000
   spriteRects: []
   selectedImporter: 1

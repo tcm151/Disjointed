@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1582706522331144122}
   - component: {fileID: 6435063716487104114}
   - component: {fileID: 1582706522331144123}
-  - component: {fileID: 8271944015109280398}
+  - component: {fileID: 2238363652802278963}
   - component: {fileID: 1582706522331144124}
   - component: {fileID: 1027833838}
   m_Layer: 10
@@ -45,7 +45,7 @@ Animator:
   m_GameObject: {fileID: 1582706522331144126}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b51723ff6cb53a04fbe74b67414bce49, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -94,7 +94,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4317434540365866330, guid: 16b123c576f50ee4390b9399e2f37d79, type: 3}
+  m_Sprite: {fileID: -8905257789077479170, guid: b799da840ea43c845b394a0af3439c21, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -105,8 +105,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &8271944015109280398
-CircleCollider2D:
+--- !u!61 &2238363652802278963
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -119,8 +119,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0625, y: 0.5625}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.4
+  m_Size: {x: 1, y: 0.55}
+  m_EdgeRadius: 0
 --- !u!50 &1582706522331144124
 Rigidbody2D:
   serializedVersion: 4
@@ -155,21 +165,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    health: 4
+    movement: 0
     acceleration: 15
     movementSpeed: 2.5
-    detectionRadius: 8
+    aggro: 1
+    health: 4
     damage: 1
     knockback: 5
-    aggro: 1
-    movement: 0
+    detectionRadius: 8
   target: {fileID: 0}
   targetMask:
     serializedVersion: 2
     m_Bits: 512
   detectionMask:
     serializedVersion: 2
-    m_Bits: 601
+    m_Bits: 729
   groundMask:
     serializedVersion: 2
     m_Bits: 192
