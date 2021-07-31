@@ -1,4 +1,4 @@
-﻿using Disjointed.Player;
+﻿using Disjointed.ThePlayer;
 using TMPro;
 
 
@@ -12,7 +12,7 @@ namespace Disjointed.UI
         {
             base.Awake();
 
-            PlayerData.healthChanged += SetHealth;
+            Player.healthChanged += SetHealth;
         }
 
         private void SetHealth(int value) => health.text = $"Health: {value}";

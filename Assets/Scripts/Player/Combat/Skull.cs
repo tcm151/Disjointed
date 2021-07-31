@@ -4,7 +4,7 @@ using Disjointed.Combat;
 using Disjointed.Tools.Extensions;
 
 
-namespace Disjointed.Player.Combat
+namespace Disjointed.ThePlayer.Combat
 {
     [RequireComponent(typeof(Collider2D))]
     [RequireComponent(typeof(Rigidbody2D))]

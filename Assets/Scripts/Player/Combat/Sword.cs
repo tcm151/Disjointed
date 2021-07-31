@@ -7,7 +7,7 @@ using Disjointed.Tools.GameManagement;
 using Sprite = Disjointed.Sprites.Sprite;
 
 
-namespace Disjointed.Player.Combat
+namespace Disjointed.ThePlayer.Combat
 {
     public class Sword : Sprite
     {

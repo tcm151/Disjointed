@@ -6,10 +6,11 @@ using Disjointed.Environment;
 using Disjointed.Tools.SceneManagement;
 
 
-namespace Disjointed.Player
+namespace Disjointed.ThePlayer
 {
-    public class PlayerData : MonoBehaviour, IDamageable
+    public class Player : MonoBehaviour, IDamageable
     {
+        
         [SerializeField] private Checkpoint lastCheckpoint;
 
         new private Rigidbody2D rigidbody;

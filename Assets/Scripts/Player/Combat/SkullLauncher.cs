@@ -2,7 +2,7 @@ using UnityEngine;
 using Disjointed.Tools.ObjectCreation;
 
 
-namespace Disjointed.Player.Combat
+namespace Disjointed.ThePlayer.Combat
 {
     public class SkullLauncher : MonoBehaviour
     {

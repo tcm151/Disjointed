@@ -9,7 +9,7 @@ namespace Disjointed.Tools.Serialization
         public static void SavePlayer(GameObject player)
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            string path = Application.persistentDataPath + "/PlayerData";
+            string path = Application.persistentDataPath + "/Player";
             FileStream stream = new FileStream(path, FileMode.Create);
 
             PlayerData playerData = new PlayerData(player);
@@ -20,7 +20,7 @@ namespace Disjointed.Tools.Serialization
 
         public static PlayerData LoadPlayer()
         {
-            string path = Application.persistentDataPath + "/PlayerData";
+            string path = Application.persistentDataPath + "/Player";
             if (File.Exists(path))
             {
                 BinaryFormatter formatter = new BinaryFormatter();

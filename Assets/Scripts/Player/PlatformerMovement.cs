@@ -3,7 +3,7 @@ using Disjointed.Tools.Extensions;
 using Sprite = Disjointed.Sprites.Sprite;
 
 
-namespace Disjointed.Player
+namespace Disjointed.ThePlayer
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public class PlatformerMovement : Sprite
