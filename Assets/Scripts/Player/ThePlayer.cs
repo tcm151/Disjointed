@@ -4,23 +4,31 @@ using UnityEngine;
 using Disjointed.Combat;
 using Disjointed.Environment;
 using Disjointed.Tools.SceneManagement;
+using Disjointed.Tools.Serialization;
 
 
-namespace Disjointed.ThePlayer
+namespace Disjointed.Player
 {
-    public class Player : MonoBehaviour, IDamageable
+    public class ThePlayer : MonoBehaviour, IDamageable
     {
-        
-        [SerializeField] private Checkpoint lastCheckpoint;
+        [Serializable] public class Data
+        {
+            public float health;
+            public Vector3 position;
 
+        }
+
+        public Serializer serializer;
+
+        public Data data;
+
+        private Checkpoint lastCheckpoint;
         new private Rigidbody2D rigidbody;
-
-        private float health;
-
+        
         private bool invincible;
         public float invincibilityCooldown;
 
-        public static Action<int> healthChanged;
+        public static Action<float> healthChanged;
         public static Action playerDeath;
 
         private void Awake()
@@ -32,9 +40,14 @@ namespace Disjointed.ThePlayer
 
         private void Initialize()
         {
-            health = 3;
-            healthChanged?.Invoke((int)health);
+            data.health = 3;
+            healthChanged?.Invoke(data.health);
             invincible = false;
+        }
+
+        private void FixedUpdate()
+        {
+            data.position = transform.position;
         }
 
         //> SET NEW CHECKPOINT
@@ -44,13 +57,8 @@ namespace Disjointed.ThePlayer
         public void Die()
         {
             Debug.Log("You Died! :(");
-            
-            //@ revert to old save state and not just teleport 
-            
-            Initialize();
-            
-            if (lastCheckpoint is { }) transform.position = lastCheckpoint.position;
-            else SceneSwitcher.ReloadScene();
+
+            serializer.LoadGame();
         }
 
         //> TAKE INCOMING DAMAGE
@@ -58,9 +66,9 @@ namespace Disjointed.ThePlayer
         {
             if (invincible) return;
             
-            health -= damage;
-            healthChanged?.Invoke((int)health);
-            if (health <= 0) Die();
+            data.health -= damage;
+            healthChanged?.Invoke(data.health);
+            if (data.health <= 0) Die();
 
             // StartCoroutine(CR_Invincibility());
         }

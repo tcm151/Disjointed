@@ -3,7 +3,7 @@ using Disjointed.Tools.Extensions;
 using Sprite = Disjointed.Sprites.Sprite;
 
 
-namespace Disjointed.ThePlayer
+namespace Disjointed.Player
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public class PlatformerMovement : Sprite
@@ -216,7 +216,7 @@ namespace Disjointed.ThePlayer
 
                  onGround = (dot > 0.55f);
 
-                 // player is on the wall if conditions met
+                 // thePlayer is on the wall if conditions met
                  onWall = (dot < 0.55f && dot > -0.55f);
              }
              else onWall = onPlatform = false;

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Disjointed.ThePlayer
+namespace Disjointed.Player
 {
     public class MouseFollow : MonoBehaviour
     {

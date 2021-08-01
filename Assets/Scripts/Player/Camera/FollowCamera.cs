@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Disjointed.ThePlayer
+namespace Disjointed.Player
 {
     public class FollowCamera : MonoBehaviour
     {
@@ -24,6 +24,8 @@ namespace Disjointed.ThePlayer
         //> UPDATE CAMERA POSITION
         private void LateUpdate()
         {
+            if (!target) return;
+            
             var targetPosition = target.position;
             targetScreenPosition = camera.WorldToScreenPoint(targetPosition);
             distanceFromScreenCenter = screenCenter - targetScreenPosition;
@@ -35,5 +37,7 @@ namespace Disjointed.ThePlayer
                 transform.position = smoothedPosition;
             }
         }
+
+        public void SetTarget(Transform newTarget) => target = newTarget;
     }
 }

@@ -7,7 +7,7 @@ using Disjointed.Tools.GameManagement;
 using Sprite = Disjointed.Sprites.Sprite;
 
 
-namespace Disjointed.ThePlayer.Combat
+namespace Disjointed.Player.Combat
 {
     public class Sword : Sprite
     {
@@ -90,7 +90,7 @@ namespace Disjointed.ThePlayer.Combat
                 var damageable = collider.GetComponent<IDamageable>();
                 if (damageable is null) continue;
                 
-                damageable.TakeDamage(damage, "Player Sword");
+                damageable.TakeDamage(damage, "ThePlayer Sword");
 
                 var direction = (collider.transform.position - transform.position).normalized;
                 damageable.TakeKnockback(direction, knockback);

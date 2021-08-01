@@ -3,7 +3,7 @@ using UnityEngine;
 using Disjointed.Combat;
 using Disjointed.Tools.ObjectCreation;
 
-namespace Disjointed.ThePlayer.Combat
+namespace Disjointed.Player.Combat
 {
     public class Pistol : MonoBehaviour
     {
