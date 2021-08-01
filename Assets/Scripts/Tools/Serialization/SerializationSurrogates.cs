@@ -38,3 +38,19 @@ public class Vector2SerializationSurrogate : ISerializationSurrogate
         return v2;
     }
 }
+
+// public class LayerMaskSerializationSurrogate : ISerializationSurrogate
+// {
+//     public void GetObjectData(object obj, SerializationInfo info, StreamingContext context)
+//     {
+//         LayerMask mask = (LayerMask)obj;
+//         info.AddValue("mask", mask);
+//     }
+//
+//     public object SetObjectData(object obj, SerializationInfo info, StreamingContext context, ISurrogateSelector selector)
+//     {
+//         LayerMask mask = (LayerMask)obj;
+//         mask = (int)info.GetValue("mask", typeof(int));
+//         return mask;
+//     }
+// }

@@ -22,6 +22,7 @@ namespace Disjointed.Tools.Serialization
         [Serializable] public class SaveData
         {
             public ThePlayer.Data playerData;
+            public List<Door.Data> doorData;
             public List<Enemy.Data> enemyData;
         }
 
@@ -46,12 +47,16 @@ namespace Disjointed.Tools.Serialization
             var player = FindObjectOfType<ThePlayer>();
             var playerData = player.data;
 
+            var doors = FindObjectsOfType<Door>();
+            var doorData = doors.Select(d => d.data).ToList();
+
             var enemies = FindObjectsOfType<Enemy>();
             var enemyData = enemies.Select(e => e.data).ToList();
 
             var save = new SaveData
             {
                 playerData = playerData,
+                doorData = doorData,
                 enemyData = enemyData,
             };
             
@@ -62,8 +67,8 @@ namespace Disjointed.Tools.Serialization
         public void LoadGame(string saveName = "test")
         {
             var oldPlayer = FindObjectOfType<ThePlayer>();
-            var oldEnemies = FindObjectsOfType<Enemy>();
             Destroy(oldPlayer.gameObject);
+            var oldEnemies = FindObjectsOfType<Enemy>();
             foreach (var enemy in oldEnemies) Destroy(enemy.gameObject);
             
             var formatter = GetFormatter();
@@ -85,6 +90,12 @@ namespace Disjointed.Tools.Serialization
             
             var camera = FindObjectOfType<FollowCamera>();
             camera.SetTarget(player.transform);
+
+            var doors = FindObjectsOfType<Door>();
+            for (int i = 0; i < doors.Length; i++)
+            {
+                doors[i].data = load.doorData[i];
+            }
         }
     }
 }
