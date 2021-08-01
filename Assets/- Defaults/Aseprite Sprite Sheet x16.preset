@@ -58,11 +58,11 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: settings.spriteAlignment
-    value: 4
+    value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: settings.spritePivot.x
-    value: 0
+    value: 0.5
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: settings.spritePivot.y
@@ -291,7 +291,7 @@ Preset:
   - target: {fileID: 0}
     propertyPath: texture
     value: 
-    objectReference: {fileID: -8328923581568760697, guid: a9ce56734f5dd564e9a61699de4e2e96, type: 3}
+    objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: spriteImportData.Array.size
     value: 9
@@ -806,6 +806,6 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: selectedImporter
-    value: 1
+    value: 0
     objectReference: {fileID: 0}
   m_ExcludedProperties: []
