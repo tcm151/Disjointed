@@ -119,7 +119,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 9216
   damage: 1
-  knockback: 20
+  knockback: 12
   attackCooldown: 0.25
   attackSize: {x: 2, y: 1.25}
 --- !u!1 &6066589626288808378
@@ -382,5 +382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9716b8b84dd84fb0b59d244933ca03d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastCheckpoint: {fileID: 0}
+  serializer: {fileID: 11400000, guid: e0c3182469a70d744b8163d9ddfd6be3, type: 2}
+  data:
+    health: 0
+    position: {x: 0, y: 0, z: 0}
   invincibilityCooldown: 1

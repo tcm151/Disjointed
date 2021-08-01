@@ -12,8 +12,7 @@ namespace Disjointed.Combat.Enemies
     abstract public class Enemy : Sprite, IDamageable
     {
         //> ENEMY DATA STRUCT
-        [Serializable]
-        public class Data : ISerializeable
+        [Serializable] public class Data
         {
             public Type type;
             
@@ -30,9 +29,6 @@ namespace Disjointed.Combat.Enemies
             public float detectionRadius = 8f;
 
             [HideInInspector] public Vector3 position;
-
-            public void Save() { }
-            public void Load() { }
         }
 
         public enum Type {Bat, Rat, Ghost }
@@ -41,7 +37,8 @@ namespace Disjointed.Combat.Enemies
         
         public bool IsMoving => (rigidbody.velocity.magnitude > 1f);
 
-        [Header("Enemy Properties")] public Data data;
+        [Header("Enemy Properties")]
+        public Data data;
 
         [Header("Target")] public Transform target;
         public LayerMask targetMask;

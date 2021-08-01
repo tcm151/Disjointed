@@ -1,5 +1,5 @@
 ﻿using System;
-using Disjointed.ThePlayer;
+using Disjointed.Player;
 using UnityEngine;
 using Disjointed.Tools.SceneManagement;
 
@@ -16,7 +16,7 @@ namespace Disjointed.Tools.GameManagement
 
         private void Awake()
         {
-            Player.playerDeath += Restart;
+            ThePlayer.playerDeath += Restart;
         }
 
         public static void Restart()

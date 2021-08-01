@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4326e2835706649a61ed8ac54298f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  serializer: {fileID: 11400000, guid: e0c3182469a70d744b8163d9ddfd6be3, type: 2}
   playerMask:
     serializedVersion: 2
     m_Bits: 512
