@@ -1,25 +1,7 @@
 fileFormatVersion: 2
-guid: 44c89c1704377944dbd9c822dc8b0850
+guid: 19824f18b63a70d43842fc41285c8ac1
 ScriptedImporter:
-  internalIDToNameTable:
-  - first:
-      213: 8647823593821616703
-    second: Bat_0
-  - first:
-      213: 5681806813702538305
-    second: Bat_1
-  - first:
-      213: 697682191857345388
-    second: Bat_2
-  - first:
-      213: 6993031405965254486
-    second: Bat_3
-  - first:
-      213: -8835117555573905559
-    second: Bat_4
-  - first:
-      213: -1477298914128971197
-    second: Bat_5
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 2
   userData: 
