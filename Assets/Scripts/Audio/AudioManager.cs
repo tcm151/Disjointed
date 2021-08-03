@@ -37,9 +37,14 @@ namespace Disjointed.Audio
         {
             yield return new WaitForSeconds(soundEffects.First(s => s.name == "CaveBackgroundNoise").clip.length);
             Play("CaveTheme1", 1);
+            yield return new WaitForSeconds(1f);
+            sources[0].volume = 0.25f;
             yield return new WaitForSeconds(soundEffects.First(s => s.name == "CaveTheme1").clip.length);
+            sources[0].volume = 1f;
             yield return new WaitForSeconds(soundEffects.First(s => s.name == "CaveBackgroundNoise").clip.length);
             Play("CaveTheme2", 1);
+            yield return new WaitForSeconds(1f);
+            sources[0].volume = 0.25f;
             yield return new WaitForSeconds(soundEffects.First(s => s.name == "CaveTheme2").clip.length);
 
             StartCoroutine(CR_Music());
