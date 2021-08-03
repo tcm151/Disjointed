@@ -14,11 +14,14 @@ namespace Disjointed.Environment
         private IUnlockable unlockable;
         
         private bool ePressed;
+        private bool activated;
         
         override protected void Awake()
         {
             base.Awake();
 
+            SetAnimationState("Activated", activated);
+            
             unlockable = linkedObject.GetComponent<IUnlockable>();
             if (unlockable is null) Debug.LogError("Assigned Unlockable was not correct!");
         }
@@ -49,6 +52,9 @@ namespace Disjointed.Environment
                 {
                     Debug.Log("Toggled Door!");
                     unlockable.ToggleLock();
+
+                    activated = !activated;
+                    SetAnimationState("Activated", activated);
                 }
             }
             ePressed = false;
