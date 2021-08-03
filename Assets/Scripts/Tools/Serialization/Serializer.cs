@@ -63,6 +63,8 @@ namespace Disjointed.Tools.Serialization
             
             formatter.Serialize(file, save);
             file.Close();
+
+            Debug.Log("Saved Game!");
         }
 
         public void LoadGame(string saveName = "test")
