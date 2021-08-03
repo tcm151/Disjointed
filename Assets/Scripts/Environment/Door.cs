@@ -47,6 +47,14 @@ namespace Disjointed.Environment
             SetAnimationState("Open", data.open);
         }
 
+        public void ToggleOpen()
+        {
+            data.open = !data.open;
+            collider.isTrigger = !collider.isTrigger;
+            SetAnimationState("Open", data.open);
+        }
+    
+
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (!playerMask.Contains(other.gameObject.layer)) return;
