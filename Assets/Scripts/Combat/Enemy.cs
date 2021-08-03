@@ -156,7 +156,7 @@ namespace Disjointed.Combat.Enemies
             var direction = collision.transform.position - transform.position;
             damageable.TakeKnockback(direction, data.knockback);
 
-            rigidbody.AddForce(-direction * data.knockback, ForceMode2D.Impulse);
+            // rigidbody.AddForce(-direction * data.knockback, ForceMode2D.Impulse);
         }
 
         //> DRAW HELPFUL GIZMOS
