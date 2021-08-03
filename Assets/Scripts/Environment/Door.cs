@@ -1,12 +1,12 @@
 using System;
-using Disjointed.Tools.Extensions;
 using UnityEngine;
+using Disjointed.Tools.Extensions;
 using Sprite = Disjointed.Sprites.Sprite;
 
 
-namespace Disjointed
+namespace Disjointed.Environment
 {
-    public class Door : Sprite
+    public class Door : Sprite, IUnlockable
     {
         [Serializable] public class Data
         {
@@ -23,12 +23,14 @@ namespace Disjointed
         {
             base.Awake();
 
+            SetAnimationState("Open", data.open);
             collider = GetComponent<Collider2D>();
         }
 
         public void Lock() => data.locked = true;
         public void Unlock() => data.locked = false;
-        
+        public void ToggleLock() => data.locked = !data.locked;
+
         public void Open()
         {
             if (data.locked) return;
