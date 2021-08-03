@@ -1,6 +1,9 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using Disjointed.Tools.Editor;
 using Disjointed.Tools.Extensions;
+using UnityEngine.Serialization;
 using Sprite = Disjointed.Sprites.Sprite;
 
 
@@ -8,11 +11,12 @@ namespace Disjointed.Environment
 {
     public class Lever : Sprite
     {
-        public MonoBehaviour linkedObject;
+        [RequireInterface(typeof(IUnlockable))]
+        public List<GameObject> linkedUnlockables;
+
         public LayerMask playerMask;
 
-        private IUnlockable unlockable;
-        
+        private List<IUnlockable> unlockables;
         private bool ePressed;
         private bool activated;
         
@@ -22,8 +26,8 @@ namespace Disjointed.Environment
 
             SetAnimationState("Activated", activated);
             
-            unlockable = linkedObject.GetComponent<IUnlockable>();
-            if (unlockable is null) Debug.LogError("Assigned Unlockable was not correct!");
+            unlockables = linkedUnlockables.Select(u => u.GetComponent<IUnlockable>()).ToList();
+            if (unlockables.Count == 0) Debug.LogError("Assigned Unlockable was not correct!");
         }
 
         
@@ -51,7 +55,12 @@ namespace Disjointed.Environment
                 if (ePressed)
                 {
                     Debug.Log("Toggled Door!");
-                    unlockable.ToggleLock();
+                    unlockables.ForEach(u =>
+                        {
+                            u.ToggleLock();
+                            u.ToggleOpen();
+                        }
+                    );
 
                     activated = !activated;
                     SetAnimationState("Activated", activated);
