@@ -190,7 +190,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bomb00
+      name: bomb00
       rect:
         serializedVersion: 2
         x: 1
@@ -204,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 938144b47f01adc40800000000000000
-      internalID: 5537757346111166521
+      spriteID: ccf89b4c88e653400800000000000000
+      internalID: 303270083612479436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomb01
+      name: bomb01
       rect:
         serializedVersion: 2
         x: 23
@@ -225,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 282c8f9dfafbd1bf0800000000000000
-      internalID: -351914433867890046
+      spriteID: eecc1a78cd9b76490800000000000000
+      internalID: -7753023876675547922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomb02
+      name: bomb02
       rect:
         serializedVersion: 2
         x: 45
@@ -246,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8bbe0cb7d3ca2760800000000000000
-      internalID: 7433969466268892043
+      spriteID: 1f69ce142f05b8cd0800000000000000
+      internalID: -2554859362184292623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomb03
+      name: bomb03
       rect:
         serializedVersion: 2
         x: 67
@@ -267,14 +267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d50e08dbdcc31d70800000000000000
-      internalID: 9012772523893196245
+      spriteID: ae900537ce7171520800000000000000
+      internalID: 2672631208182024682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomb04
+      name: bomb04
       rect:
         serializedVersion: 2
         x: 89
@@ -288,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c57294e0670d0fd0800000000000000
-      internalID: -2374233315821324860
+      spriteID: adaf582f216687bb0800000000000000
+      internalID: -4938084759847437606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomb05
+      name: bomb05
       rect:
         serializedVersion: 2
         x: 1
@@ -309,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 85cc05ad9493f8ca0800000000000000
-      internalID: -6012523988158198696
+      spriteID: 70cd0dd31964617c0800000000000000
+      internalID: -4101012821052957689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomb06
+      name: bomb06
       rect:
         serializedVersion: 2
         x: 23
@@ -330,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24678bfc1f8b75520800000000000000
-      internalID: 2690822651088762434
+      spriteID: 7946d0489c6a4dfb0800000000000000
+      internalID: -4623887532968549225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomb07
+      name: bomb07
       rect:
         serializedVersion: 2
         x: 45
@@ -351,14 +351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e74105fd2dc5f52e0800000000000000
-      internalID: -2134885637590870914
+      spriteID: 6d25da7b837fed0b0800000000000000
+      internalID: -5701848255232650538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomb08
+      name: bomb08
       rect:
         serializedVersion: 2
         x: 67
@@ -372,14 +372,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cac86003f39aed10800000000000000
-      internalID: 2155698043543407305
+      spriteID: 9dc70f664bc49e140800000000000000
+      internalID: 4749411619743759577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomb09
+      name: bomb09
       rect:
         serializedVersion: 2
         x: 89
@@ -393,14 +393,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0cb72a797d3a65150800000000000000
-      internalID: 5861052111426583488
+      spriteID: 72eff1966f9350d40800000000000000
+      internalID: 5549905846292446759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomb10
+      name: bomb10
       rect:
         serializedVersion: 2
         x: 1
@@ -414,14 +414,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b1b643e725cf73740800000000000000
-      internalID: 5131847731646851867
+      spriteID: a0fed2ff23aaa8540800000000000000
+      internalID: 5011004671409385226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomb11
+      name: bomb11
       rect:
         serializedVersion: 2
         x: 23
@@ -435,14 +435,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c60522c5609327610800000000000000
-      internalID: 1617417915657769068
+      spriteID: be144bb32d7966650800000000000000
+      internalID: 6225830464086884843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomb12
+      name: bomb12
       rect:
         serializedVersion: 2
         x: 45
@@ -456,14 +456,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f8bf14c45874a1320800000000000000
-      internalID: 2529412778557569935
+      spriteID: c8683f8f7d5b80170800000000000000
+      internalID: 8144959865298847372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomb13
+      name: bomb13
       rect:
         serializedVersion: 2
         x: 67
@@ -477,14 +477,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b1fa5e87bfe37fe30800000000000000
-      internalID: 4537164399385095963
+      spriteID: d3bae404c07e77360800000000000000
+      internalID: 7167451371787955005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomb14
+      name: bomb14
       rect:
         serializedVersion: 2
         x: 89
@@ -498,14 +498,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0bd31df0c8a282910800000000000000
-      internalID: 1812745631065783728
+      spriteID: 02a1ec8acc1b1c430800000000000000
+      internalID: 3801515053040933408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomb15
+      name: bomb15
       rect:
         serializedVersion: 2
         x: 1
@@ -519,8 +519,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7b5c0c9cce77a7f0800000000000000
-      internalID: -601372607974188162
+      spriteID: 828da66e27a15cc50800000000000000
+      internalID: 6684778302695725096
       vertices: []
       indices: 
       edges: []

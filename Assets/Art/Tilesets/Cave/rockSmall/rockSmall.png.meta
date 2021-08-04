@@ -97,22 +97,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rockSmall_0
+      name: rockSmall0
       rect:
         serializedVersion: 2
         x: 1
         y: 1
-        width: 15
-        height: 13
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 61440c9898a94d1c0800000000000000
-      internalID: -4479785813814524906
+      spriteID: 6f08256e38fd74df0800000000000000
+      internalID: -195942301169450762
       vertices: []
       indices: 
       edges: []
