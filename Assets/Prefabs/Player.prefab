@@ -305,7 +305,7 @@ MonoBehaviour:
   maxWallFallSpeed: -12
   groundMask:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 32960
   ladderMask:
     serializedVersion: 2
     m_Bits: 256
