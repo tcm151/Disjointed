@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Disjointed.Tools.Editor;
@@ -11,29 +13,34 @@ namespace Disjointed.Environment
 {
     public class Lever : Sprite
     {
-        [RequireInterface(typeof(IUnlockable))]
-        public List<GameObject> linkedUnlockables;
+        [RequireInterface(typeof(IUnlockable))] public List<GameObject> linkedUnlockables;
 
         public LayerMask playerMask;
 
         private List<IUnlockable> unlockables;
         private bool ePressed;
         private bool activated;
-        
+
         override protected void Awake()
         {
             base.Awake();
 
             SetAnimationState("Activated", activated);
-            
+
             unlockables = linkedUnlockables.Select(u => u.GetComponent<IUnlockable>()).ToList();
             if (unlockables.Count == 0) Debug.LogError("Assigned Unlockable was not correct!");
         }
 
-        
         private void Update()
         {
             ePressed |= Input.GetKeyDown(KeyCode.E);
+            if (ePressed) StartCoroutine(CR_ResetState());
+        }
+
+        private IEnumerator CR_ResetState()
+        {
+            yield return new WaitForSeconds(0.1f);
+            ePressed = false;
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -55,7 +62,9 @@ namespace Disjointed.Environment
                 if (ePressed)
                 {
                     Debug.Log("Toggled Door!");
-                    unlockables.ForEach(u =>
+                    unlockables.ForEach
+                    (
+                        u =>
                         {
                             u.ToggleLock();
                             u.ToggleOpen();
@@ -66,6 +75,7 @@ namespace Disjointed.Environment
                     SetAnimationState("Activated", activated);
                 }
             }
+
             ePressed = false;
         }
     }

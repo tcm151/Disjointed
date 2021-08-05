@@ -6,7 +6,7 @@ namespace Disjointed.Sprites
 {
     [RequireComponent(typeof(Animator))]
     [RequireComponent(typeof(SpriteRenderer))]
-    abstract public class Sprite : MonoBehaviour
+    public class Sprite : MonoBehaviour
     {
         private Animator animator;
         private SpriteRenderer renderer;

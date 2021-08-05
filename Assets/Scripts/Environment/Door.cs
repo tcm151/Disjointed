@@ -59,7 +59,6 @@ namespace Disjointed.Environment
         {
             if (!playerMask.Contains(other.gameObject.layer)) return;
 
-            Debug.Log("Player Touched Door!");
             if (!data.locked && !data.open) Open();
         }
     }
