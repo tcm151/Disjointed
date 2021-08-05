@@ -45,7 +45,7 @@ Animator:
   m_GameObject: {fileID: 3719935635296033916}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e1da5cabf80505c4bb89bf49a5fb7aeb, type: 2}
+  m_Controller: {fileID: 9100000, guid: 94b5bb2c71d408949bd1ad879081cd4c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -94,12 +94,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8647823593821616703, guid: 44c89c1704377944dbd9c822dc8b0850, type: 3}
+  m_Sprite: {fileID: 5310753903792884571, guid: 9dd8e16d83d6ec647aac0d938f1bcbd6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 0.625}
+  m_Size: {x: 2, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -155,14 +155,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    health: 2
+    type: 0
+    movement: 1
     acceleration: 25
     movementSpeed: 4
-    detectionRadius: 12
+    aggro: 1
+    health: 2
     damage: 1
     knockback: 5
-    aggro: 1
-    movement: 1
+    detectionRadius: 12
+    position: {x: 0, y: 0, z: 0}
   target: {fileID: 0}
   targetMask:
     serializedVersion: 2
