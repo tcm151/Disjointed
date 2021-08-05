@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Disjointed.Audio;
 using UnityEngine;
 using Disjointed.Combat;
 using Disjointed.Environment;
@@ -68,6 +69,7 @@ namespace Disjointed.Player
             
             data.health -= damage;
             healthChanged?.Invoke(data.health);
+            AudioManager.Connect.PlayOneShot("DamageTaken");
             if (data.health <= 0) Die();
 
             // StartCoroutine(CR_Invincibility());

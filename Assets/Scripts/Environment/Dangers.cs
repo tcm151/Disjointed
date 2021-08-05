@@ -13,9 +13,11 @@ namespace Disjointed.Environment
 
         private void Damage(Collision2D collision)
         {
+            if (collision.contactCount <= 0) return;
+            
             var damageable = collision.collider.GetComponent<IDamageable>();
             damageable.TakeDamage(1, "Dangers!");
-
+            
             var rigidbody = collision.collider.GetComponent<Rigidbody2D>();
             var newVelocity = -collision.contacts[0].normal * Mathf.Sqrt(2f * Physics2D.gravity.magnitude * rigidbody.gravityScale * knockbackMultiplier);
             rigidbody.velocity = newVelocity;

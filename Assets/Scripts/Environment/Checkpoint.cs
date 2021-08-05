@@ -1,3 +1,4 @@
+using Disjointed.Audio;
 using UnityEngine;
 using Disjointed.Tools.Extensions;
 using Disjointed.Tools.Serialization;
@@ -16,6 +17,8 @@ namespace Disjointed.Environment
             if (!playerMask.Contains(collider.gameObject.layer)) return;
 
             serializer.SaveGame();
+            
+            AudioManager.Connect.PlayOneShot("Checkpoint");
         }
     }
 }

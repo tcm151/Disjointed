@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Disjointed.Audio;
 using UnityEngine;
 using Disjointed.Tools.Editor;
 using Disjointed.Tools.Extensions;
@@ -61,7 +62,8 @@ namespace Disjointed.Environment
             {
                 if (ePressed)
                 {
-                    Debug.Log("Toggled Door!");
+                    Debug.Log("Toggled Lever!");
+                    AudioManager.Connect.PlayOneShot("LeverFlick");
                     unlockables.ForEach
                     (
                         u =>

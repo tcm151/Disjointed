@@ -253,6 +253,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 16c6ade1dc9588e47aafeb097fddbc6a, type: 3}
     pitch: 1
     volume: 1
+  - name: CaveThemeFull
+    clip: {fileID: 8300000, guid: ffcdcca2852fde8499ad4af4777a73a9, type: 3}
+    pitch: 1
+    volume: 1
   - name: PuddleFootsteps1
     clip: {fileID: 8300000, guid: d0de3d69541d5354b9977c1e6797c10a, type: 3}
     pitch: 1
@@ -267,5 +271,53 @@ MonoBehaviour:
     volume: 0.5
   - name: ZombieOof
     clip: {fileID: 8300000, guid: e3ff4848b8fcc354ab43960b7aeeb9fc, type: 3}
+    pitch: 1
+    volume: 1
+  - name: Checkpoint
+    clip: {fileID: 8300000, guid: 1b2fc336487fc384a9567ece5297a75c, type: 3}
+    pitch: 1
+    volume: 1
+  - name: Collectible
+    clip: {fileID: 8300000, guid: c10f91bc21ab0f743a72d14da4d1f2a5, type: 3}
+    pitch: 1
+    volume: 1
+  - name: CrateBreak
+    clip: {fileID: 8300000, guid: 2e66de518f3564d4b8dc56d3f19c0b7e, type: 3}
+    pitch: 1
+    volume: 1
+  - name: DamageTaken
+    clip: {fileID: 8300000, guid: 09c384446ecf9de4d8ab4675cb1ac79e, type: 3}
+    pitch: 1
+    volume: 1
+  - name: Jump
+    clip: {fileID: 8300000, guid: ea4353e978a7b2b4db95e1bd1e93a596, type: 3}
+    pitch: 1
+    volume: 0.5
+  - name: LeverFlick
+    clip: {fileID: 8300000, guid: 5f8a2231e4fc35a4288dfdb5c49fe820, type: 3}
+    pitch: 1
+    volume: 1
+  - name: PistolFired
+    clip: {fileID: 8300000, guid: 4dedadbed5f708941bc3fdcbb3815aca, type: 3}
+    pitch: 1
+    volume: 1
+  - name: SwordHitEnemy
+    clip: {fileID: 8300000, guid: e48e4e7a75b4eb0408f0a09c9b03b5f7, type: 3}
+    pitch: 1
+    volume: 1
+  - name: Unlock
+    clip: {fileID: 8300000, guid: 599931bf3c458d149b1f7c62b8b6d2d4, type: 3}
+    pitch: 1
+    volume: 1
+  - name: Lock
+    clip: {fileID: 8300000, guid: 599931bf3c458d149b1f7c62b8b6d2d4, type: 3}
+    pitch: 1
+    volume: 1
+  - name: WoodenDoorOpen
+    clip: {fileID: 8300000, guid: 5f1996bb6a8e85040a622030575cbd80, type: 3}
+    pitch: 1
+    volume: 1
+  - name: WoodenDoorClose
+    clip: {fileID: 8300000, guid: 80fe7c73ed4a1eb459288ef56fc09b5c, type: 3}
     pitch: 1
     volume: 1

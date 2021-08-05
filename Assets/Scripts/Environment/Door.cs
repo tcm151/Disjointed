@@ -1,4 +1,5 @@
 using System;
+using Disjointed.Audio;
 using UnityEngine;
 using Disjointed.Tools.Extensions;
 using Sprite = Disjointed.Sprites.Sprite;
@@ -27,9 +28,23 @@ namespace Disjointed.Environment
             collider = GetComponent<Collider2D>();
         }
 
-        public void Lock() => data.locked = true;
-        public void Unlock() => data.locked = false;
-        public void ToggleLock() => data.locked = !data.locked;
+        public void Lock()
+        {
+            data.locked = true;
+            AudioManager.Connect.PlayOneShot("Lock");
+        }
+
+        public void Unlock()
+        {
+            data.locked = false;
+            AudioManager.Connect.PlayOneShot("Unlock");
+        }
+
+        public void ToggleLock()
+        {
+            data.locked = !data.locked;
+            AudioManager.Connect.PlayOneShot("Lock");
+        }
 
         public void Open()
         {
@@ -37,6 +52,7 @@ namespace Disjointed.Environment
             
             data.open = true;
             collider.isTrigger = true;
+            AudioManager.Connect.PlayOneShot("WoodenDoorOpen");
             SetAnimationState("Open", data.open);
         }
 
@@ -44,6 +60,7 @@ namespace Disjointed.Environment
         {
             data.open = false;
             collider.isTrigger = false;
+            AudioManager.Connect.PlayOneShot("WoodenDoorClose");
             SetAnimationState("Open", data.open);
         }
 
@@ -51,6 +68,7 @@ namespace Disjointed.Environment
         {
             data.open = !data.open;
             collider.isTrigger = !collider.isTrigger;
+            AudioManager.Connect.PlayOneShot("WoodenDoorOpen");
             SetAnimationState("Open", data.open);
         }
     

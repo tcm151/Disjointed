@@ -1,4 +1,5 @@
 ﻿using System;
+using Disjointed.Audio;
 using UnityEngine;
 using Disjointed.Combat;
 
@@ -32,7 +33,11 @@ namespace Disjointed.Environment
         public void TakeDamage(float damage, string origin)
         {
             data.health -= damage;
-            if (data.health <= 0) Destroy(gameObject);
+            if (data.health <= 0)
+            {
+                Destroy(gameObject);
+                AudioManager.Connect.PlayOneShot("CrateBreak");
+            }
         }
 
         public void TakeKnockback(Vector2 direction, float knockback)

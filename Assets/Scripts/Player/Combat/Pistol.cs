@@ -1,4 +1,5 @@
 using System.Collections;
+using Disjointed.Audio;
 using UnityEngine;
 using Disjointed.Combat;
 using Disjointed.Tools.ObjectCreation;
@@ -47,6 +48,8 @@ namespace Disjointed.Player.Combat
             if (!firing || ammoQuantity < 1) return;
             
             canFire = firing = false;
+            
+            AudioManager.Connect.PlayOneShot("PistolFired");
             
             var origin = transform.position;
             var bullet = Factory.Spawn(bulletPrefab, origin); // create a new game object

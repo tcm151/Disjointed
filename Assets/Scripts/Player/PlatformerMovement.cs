@@ -1,3 +1,4 @@
+using Disjointed.Audio;
 using UnityEngine;
 using Disjointed.Tools.Extensions;
 using Sprite = Disjointed.Sprites.Sprite;
@@ -140,6 +141,7 @@ namespace Disjointed.Player
             if ((onGround || timeSinceGrounded < 5) && jumping)
             {
                 // Debug.Log("REGULAR JUMP!");
+                AudioManager.Connect.PlayOneShot("Jump");
                 jumping = false;
                 rigidbody.gravityScale = regularGravity;
                 desiredVelocity.y = jumpSpeed;
@@ -149,6 +151,7 @@ namespace Disjointed.Player
             if (onWall && jumping)
             {
                 // Debug.Log("WALL JUMP!");
+                AudioManager.Connect.PlayOneShot("Jump");
                 jumping = false;
                 wallJumping = true;
                 rigidbody.gravityScale = regularGravity;
@@ -160,6 +163,7 @@ namespace Disjointed.Player
             if (onLadder && jumping)
             {
                 // Debug.Log("LADDER JUMP!");
+                AudioManager.Connect.PlayOneShot("Jump");
                 jumping = false;
                 onLadder = false;
                 rigidbody.gravityScale = regularGravity;
