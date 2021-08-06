@@ -72,7 +72,7 @@ namespace Disjointed.Player
             AudioManager.Connect.PlayOneShot("DamageTaken");
             if (data.health <= 0) Die();
 
-            // StartCoroutine(CR_Invincibility());
+            StartCoroutine(CR_Invincibility());
         }
         
         //> TAKE KNOCKBACK

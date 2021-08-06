@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using UnityEditor;
-using System.Linq;
-
 
 namespace Disjointed.Tools.Editor
 {
+    #if UNITY_EDITOR
+    
     [CustomPropertyDrawer(typeof(RequireInterfaceAttribute))]
     public class RequireInterfaceDrawer : PropertyDrawer
     {
@@ -35,5 +35,7 @@ namespace Disjointed.Tools.Editor
             }
         }
     }
+    
+    #endif
 }
 

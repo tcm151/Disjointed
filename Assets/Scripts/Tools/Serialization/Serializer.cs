@@ -9,6 +9,7 @@ using Disjointed.Player;
 using Disjointed.Environment;
 using Disjointed.Combat.Enemies;
 using Disjointed.Tools.ObjectCreation;
+using UnityEditor;
 
 
 namespace Disjointed.Tools.Serialization
@@ -42,8 +43,14 @@ namespace Disjointed.Tools.Serialization
         public void SaveGame(string saveName = "test")
         {
             var formatter = GetFormatter();
-            var path = Path.Combine(Application.dataPath, $"Saves/{saveName}.{saveExtension}");
-            var file = File.Create(path);
+            var savePath = Path.Combine(Application.persistentDataPath, $"Saves/{saveName}.{saveExtension}");
+
+            var saveFolder = Path.Combine(Application.persistentDataPath, "Saves");
+            if (!Directory.Exists(saveFolder)) Directory.CreateDirectory(saveFolder);
+
+            Debug.Log(savePath);
+            
+            var file = File.Create(savePath);
 
             var player = FindObjectOfType<ThePlayer>();
             var playerData = player.data;
@@ -76,7 +83,7 @@ namespace Disjointed.Tools.Serialization
             
             var formatter = GetFormatter();
 
-            var path = Path.Combine(Application.dataPath, $"Saves/{saveName}.{saveExtension}");
+            var path = Path.Combine(Application.persistentDataPath, $"Saves/{saveName}.{saveExtension}");
             var file = File.Open(path, FileMode.Open);
             
             var load = (SaveData)formatter.Deserialize(file);
