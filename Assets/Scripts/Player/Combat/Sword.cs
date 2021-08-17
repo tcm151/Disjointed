@@ -74,7 +74,7 @@ namespace Disjointed.Player.Combat
             sprite.transform.rotation = Quaternion.AngleAxis(attackAngle, Vector3.forward);
             sprite.TriggerAnimation("Attack");
             
-            AudioManager.Connect.PlayOneShot("SwordSwipe");
+            AudioManager.onPlaySFX?.Invoke("SwordSwipe");
 
             StartCoroutine(CR_Attack());
         }

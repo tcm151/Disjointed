@@ -36,7 +36,7 @@ namespace Disjointed.Environment
             if (data.health <= 0)
             {
                 Destroy(gameObject);
-                AudioManager.Connect.PlayOneShot("CrateBreak");
+                AudioManager.onPlaySFX?.Invoke("CrateBreak");
             }
         }
 

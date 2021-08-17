@@ -31,19 +31,19 @@ namespace Disjointed.Environment
         public void Lock()
         {
             data.locked = true;
-            AudioManager.Connect.PlayOneShot("Lock");
+            AudioManager.onPlaySFX?.Invoke("Lock");
         }
 
         public void Unlock()
         {
             data.locked = false;
-            AudioManager.Connect.PlayOneShot("Unlock");
+            AudioManager.onPlaySFX?.Invoke("Unlock");
         }
 
         public void ToggleLock()
         {
             data.locked = !data.locked;
-            AudioManager.Connect.PlayOneShot("Lock");
+            AudioManager.onPlaySFX?.Invoke("Lock");
         }
 
         public void Open()
@@ -52,7 +52,7 @@ namespace Disjointed.Environment
             
             data.open = true;
             collider.isTrigger = true;
-            AudioManager.Connect.PlayOneShot("WoodenDoorOpen");
+            AudioManager.onPlaySFX?.Invoke("WoodenDoorOpen");
             SetAnimationState("Open", data.open);
         }
 
@@ -60,7 +60,7 @@ namespace Disjointed.Environment
         {
             data.open = false;
             collider.isTrigger = false;
-            AudioManager.Connect.PlayOneShot("WoodenDoorClose");
+            AudioManager.onPlaySFX?.Invoke("WoodenDoorClose");
             SetAnimationState("Open", data.open);
         }
 
@@ -68,7 +68,7 @@ namespace Disjointed.Environment
         {
             data.open = !data.open;
             collider.isTrigger = !collider.isTrigger;
-            AudioManager.Connect.PlayOneShot("WoodenDoorOpen");
+            AudioManager.onPlaySFX?.Invoke("WoodenDoorOpen");
             SetAnimationState("Open", data.open);
         }
     

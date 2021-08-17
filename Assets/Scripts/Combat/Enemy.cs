@@ -137,7 +137,7 @@ namespace Disjointed.Combat.Enemies
         virtual public void TakeDamage(float damage, string origin)
         {
             data.health -= damage;
-            audioManager.PlayOneShot("SwordHitEnemy");
+            AudioManager.onPlaySFX?.Invoke("SwordHitEnemy");
             if (data.health <= 0) Destroy(this.gameObject);
         }
 

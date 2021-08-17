@@ -20,29 +20,35 @@ namespace Disjointed.Audio
         }
 
         //- LOCAL VARIABLES
-        [SerializeField] private AudioSource[] sources;
         [SerializeField] private SFX[] soundEffects;
+        [SerializeField] private AudioSource[] sources;
+
+        public static Action<string> onPlaySFX;
+        public static Action<string, int, bool> onPlayMusic;
 
         //> INITIALIZATION
         private void Awake()
         {
             instance = this;
             AudioListener.volume = PlayerPrefs.GetFloat("GlobalVolume", 1f);
+
+            onPlaySFX += PlaySFX;
+            onPlayMusic += PlayMusic;
             
-            Play("CaveBackgroundNoise", 0, true);
             StartCoroutine(CR_Music());
         }
 
         private IEnumerator CR_Music()
         {
+            PlayMusic("CaveBackgroundNoise", 0, true);
             yield return new WaitForSeconds(soundEffects.First(s => s.name == "CaveBackgroundNoise").clip.length);
-            Play("CaveTheme1", 1);
+            PlayMusic("CaveTheme1", 1);
             yield return new WaitForSeconds(1f);
             sources[0].volume = 0.25f;
             yield return new WaitForSeconds(soundEffects.First(s => s.name == "CaveTheme1").clip.length);
             sources[0].volume = 1f;
             yield return new WaitForSeconds(soundEffects.First(s => s.name == "CaveBackgroundNoise").clip.length);
-            Play("CaveTheme2", 1);
+            PlayMusic("CaveTheme2", 1);
             yield return new WaitForSeconds(1f);
             sources[0].volume = 0.25f;
             yield return new WaitForSeconds(soundEffects.First(s => s.name == "CaveTheme2").clip.length);
@@ -50,16 +56,8 @@ namespace Disjointed.Audio
             StartCoroutine(CR_Music());
         }
 
-        //> PLAY ONE SHOT SOUND AT POINT IN WORLD
-        public void PlayAtPoint(string name, Vector3 point)
-        {
-            SFX sfx = soundEffects.FirstOrDefault(s => s.name == name);
-            if (sfx is { }) AudioSource.PlayClipAtPoint(sfx.clip, point, sfx.volume);
-            else Debug.LogWarning($"Unable to find sound: <color=yellow>{name}</color>");
-        }
-
         //> PLAY ONE SHOT SOUND CLIP
-        public void PlayOneShot(string name)
+        private void PlaySFX(string name)
         {
             SFX sfx = soundEffects.FirstOrDefault(s => s.name == name);
             if (sfx is { }) sources[1].PlayOneShot(sfx.clip, sfx.volume);
@@ -67,7 +65,7 @@ namespace Disjointed.Audio
         }
 
         //> REPLACE STREAM SOUND CLIP
-        public void Play(string sound, int track, bool loop = false)
+        private void PlayMusic(string sound, int track, bool loop = false)
         {
             SFX sfx = soundEffects.FirstOrDefault(s => s.name == sound);
             if (sfx is { })
@@ -82,9 +80,9 @@ namespace Disjointed.Audio
         }
 
         //> STOP STREAM SOUND CLIP
-        public void Stop(int stream) => sources[stream].Stop();
+        private void Stop(int stream) => sources[stream].Stop();
 
-        public static void SetVolume(float volume)
+        private static void SetVolume(float volume)
         {
             AudioListener.volume = volume;
             PlayerPrefs.SetFloat("GlobalVolume", volume);

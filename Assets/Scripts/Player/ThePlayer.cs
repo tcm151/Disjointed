@@ -69,7 +69,7 @@ namespace Disjointed.Player
             
             data.health -= damage;
             healthChanged?.Invoke(data.health);
-            AudioManager.Connect.PlayOneShot("DamageTaken");
+            AudioManager.onPlaySFX?.Invoke("DamageTaken");
             if (data.health <= 0) Die();
 
             StartCoroutine(CR_Invincibility());
