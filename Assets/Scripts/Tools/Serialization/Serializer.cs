@@ -26,6 +26,7 @@ namespace Disjointed.Tools.Serialization
             public ThePlayer.Data playerData;
             public List<Door.Data> doorData;
             public List<Enemy.Data> enemyData;
+            public List<Crate.Data> crateData;
         }
 
         private static BinaryFormatter GetFormatter()
@@ -47,9 +48,6 @@ namespace Disjointed.Tools.Serialization
 
             var saveFolder = Path.Combine(Application.persistentDataPath, "Saves");
             if (!Directory.Exists(saveFolder)) Directory.CreateDirectory(saveFolder);
-
-            Debug.Log(savePath);
-            
             var file = File.Create(savePath);
 
             var player = FindObjectOfType<ThePlayer>();
@@ -61,11 +59,15 @@ namespace Disjointed.Tools.Serialization
             var enemies = FindObjectsOfType<Enemy>();
             var enemyData = enemies.Select(e => e.data).ToList();
 
+            var crates = FindObjectsOfType<Crate>();
+            var crateData = crates.Select(c => c.data).ToList();
+
             var save = new SaveData
             {
                 playerData = playerData,
                 doorData = doorData,
                 enemyData = enemyData,
+                crateData = crateData,
             };
             
             formatter.Serialize(file, save);
@@ -80,7 +82,7 @@ namespace Disjointed.Tools.Serialization
             Destroy(oldPlayer.gameObject);
             var oldEnemies = FindObjectsOfType<Enemy>();
             foreach (var enemy in oldEnemies) Destroy(enemy.gameObject);
-            
+
             var formatter = GetFormatter();
 
             var path = Path.Combine(Application.persistentDataPath, $"Saves/{saveName}.{saveExtension}");
@@ -105,6 +107,12 @@ namespace Disjointed.Tools.Serialization
             for (int i = 0; i < doors.Length; i++)
             {
                 doors[i].data = load.doorData[i];
+            }
+
+            var crates = FindObjectsOfType<Crate>();
+            for (int i = 0; i < crates.Length; i++)
+            {
+                crates[i].data = load.crateData[i];
             }
         }
     }

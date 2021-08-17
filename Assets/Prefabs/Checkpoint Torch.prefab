@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1098936895865083185}
   - component: {fileID: 8281387562785382244}
   - component: {fileID: 1859303559673016041}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Checkpoint Torch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
