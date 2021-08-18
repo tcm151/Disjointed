@@ -63,7 +63,7 @@ namespace Disjointed.Environment
                 if (ePressed)
                 {
                     Debug.Log("Toggled Lever!");
-                    AudioManager.onPlaySFX?.Invoke("LeverFlick");
+                    AudioManager.PlaySFX?.Invoke("LeverFlick");
                     unlockables.ForEach
                     (
                         u =>

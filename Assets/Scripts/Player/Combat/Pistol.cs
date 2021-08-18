@@ -49,7 +49,7 @@ namespace Disjointed.Player.Combat
             
             canFire = firing = false;
             
-            AudioManager.onPlaySFX?.Invoke("PistolFired");
+            AudioManager.PlaySFX?.Invoke("PistolFired");
             
             var origin = transform.position;
             var bullet = Factory.Spawn(bulletPrefab, origin); // create a new game object

@@ -18,7 +18,7 @@ namespace Disjointed.Environment
 
             serializer.SaveGame();
             
-            AudioManager.onPlaySFX?.Invoke("Checkpoint");
+            AudioManager.PlaySFX?.Invoke("Checkpoint");
         }
     }
 }

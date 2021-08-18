@@ -19,12 +19,9 @@ namespace Disjointed.Environment
         public Data data;
         new private Rigidbody2D rigidbody;
 
-        private void Awake()
-        {
-            rigidbody = GetComponent<Rigidbody2D>();
-        }
+        private void Awake() => rigidbody = GetComponent<Rigidbody2D>();
 
-        private void OnCollisionStay(Collision other)
+        private void OnCollisionStay()
         {
             data.position = transform.position;
             data.rotation = transform.rotation.eulerAngles;
@@ -35,14 +32,12 @@ namespace Disjointed.Environment
             data.health -= damage;
             if (data.health <= 0)
             {
+                AudioManager.PlaySFX?.Invoke("CrateBreak");
                 Destroy(gameObject);
-                AudioManager.onPlaySFX?.Invoke("CrateBreak");
             }
         }
 
         public void TakeKnockback(Vector2 direction, float knockback)
-        {
-            rigidbody.AddForce(direction * knockback, ForceMode2D.Impulse);
-        }
+            => rigidbody.AddForce(direction * knockback, ForceMode2D.Impulse);
     }
 }

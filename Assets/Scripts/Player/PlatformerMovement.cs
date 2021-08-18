@@ -141,7 +141,7 @@ namespace Disjointed.Player
             if ((onGround || timeSinceGrounded < 5) && jumping)
             {
                 // Debug.Log("REGULAR JUMP!");
-                AudioManager.onPlaySFX?.Invoke("Jump");
+                AudioManager.PlaySFX?.Invoke("Jump");
                 jumping = false;
                 rigidbody.gravityScale = regularGravity;
                 desiredVelocity.y = jumpSpeed;
@@ -151,7 +151,7 @@ namespace Disjointed.Player
             if (onWall && jumping)
             {
                 // Debug.Log("WALL JUMP!");
-                AudioManager.onPlaySFX?.Invoke("Jump");
+                AudioManager.PlaySFX?.Invoke("Jump");
                 jumping = false;
                 wallJumping = true;
                 rigidbody.gravityScale = regularGravity;
@@ -163,7 +163,7 @@ namespace Disjointed.Player
             if (onLadder && jumping)
             {
                 // Debug.Log("LADDER JUMP!");
-                AudioManager.onPlaySFX?.Invoke("Jump");
+                AudioManager.PlaySFX?.Invoke("Jump");
                 jumping = false;
                 onLadder = false;
                 rigidbody.gravityScale = regularGravity;
