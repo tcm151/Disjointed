@@ -3,7 +3,7 @@
 
 namespace Disjointed.Combat.Enemies
 {
-    public class Rat : Enemy
+    public class Rat : WalkingEnemy
     {
         override protected void Update()
         {

@@ -3,7 +3,7 @@
 
 namespace Disjointed.Combat.Enemies
 {
-    public class Bat : Enemy
+    public class Bat : FlyingEnemy
     {
         override protected void Update()
         {

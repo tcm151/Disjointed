@@ -2,7 +2,6 @@ using System;
 using UnityEngine;
 using Disjointed.Audio;
 using Disjointed.Tools.Extensions;
-using Disjointed.Tools.Serialization;
 using Sprite = Disjointed.Sprites.Sprite;
 
 
@@ -11,13 +10,16 @@ namespace Disjointed.Combat.Enemies
     [RequireComponent(typeof(Rigidbody2D))]
     abstract public class Enemy : Sprite, IDamageable
     {
+        //> ENEMY ENUMS
+        public enum Type {Bat, Rat, Ghost }
+        public enum Aggro { Ignore, Charge, Intelligent }
+        
         //> ENEMY DATA STRUCT
         [Serializable] public class Data
         {
             public Type type;
             
             [Header("Movement")]
-            public Movement movement;
             public float acceleration = 20f;
             public float movementSpeed = 2.5f;
 
@@ -31,11 +33,7 @@ namespace Disjointed.Combat.Enemies
             [HideInInspector] public Vector3 position;
         }
 
-        public enum Type {Bat, Rat, Ghost }
-        public enum Aggro { Ignore, Charge, Intelligent }
-        public enum Movement { Walking, Flying, Stationary }
         
-        public bool IsMoving => (rigidbody.velocity.magnitude > 1f);
 
         [Header("Enemy Properties")]
         public Data data;
@@ -49,27 +47,21 @@ namespace Disjointed.Combat.Enemies
         public bool onGround;
         public bool onWall;
 
-        new private Collider2D collider;
-        new private Rigidbody2D rigidbody;
-        private AudioManager audioManager;
+        new protected Rigidbody2D rigidbody;
 
-        private Vector2 desiredVelocity;
-        private Vector3 initialPosition;
+        protected Vector2 desiredVelocity;
+        protected Vector3 initialPosition;
+        
+        public bool IsMoving => (rigidbody.velocity.magnitude > 1f);
 
+        abstract protected void Move();
+        
         //> INITIALIZATION
         override protected void Awake()
         {
             base.Awake();
-
-            collider = GetComponent<Collider2D>();
             rigidbody = GetComponent<Rigidbody2D>();
-
             initialPosition = transform.position;
-        }
-
-        private void Start()
-        {
-            audioManager = AudioManager.Connect;
         }
 
         //> UPDATE SPRITE DIRECTION
@@ -79,44 +71,6 @@ namespace Disjointed.Combat.Enemies
             if (rigidbody.velocity.x < -0.25f) FaceLeft();
         }
 
-        //> CALCULATE PHYSICS
-        virtual protected void FixedUpdate()
-        {
-
-            desiredVelocity = rigidbody.velocity;
-            data.position = transform.position;
-
-            DetectPlayer();
-            // if (!target && Vector3.Distance(currentPosition, initialPosition) < 0.25f) rigidbody.velocity = Vector2.zero;
-
-            if (data.movement == Movement.Walking)
-            {
-                if (!target) return;
-
-                var hit = Physics2D.Raycast(data.position, Vector2.down, groundedDistance, groundMask);
-                onGround = hit.collider is { };
-
-                var targetDirection = (target.position - data.position).normalized;
-                desiredVelocity.x.MoveTowards(targetDirection.x * data.movementSpeed, data.acceleration * Time.deltaTime);
-            }
-
-            if (data.movement == Movement.Flying)
-            {
-                if (target)
-                {
-                    var targetDirection = (target.position - data.position).normalized;
-                    desiredVelocity.MoveTowards(targetDirection * data.movementSpeed, data.acceleration * Time.deltaTime);
-                }
-                else
-                {
-                    var targetDirection = data.position.DirectionTo(initialPosition);
-                    if (Vector2.Distance(data.position, initialPosition) < 0.1f) transform.position = initialPosition;
-                    else desiredVelocity.MoveTowards(targetDirection * data.movementSpeed, data.acceleration * Time.deltaTime);
-                }
-            }
-
-            rigidbody.velocity = desiredVelocity;
-        }
 
         //> DETECT IF PLAYER WITHIN RANGE & LINE OF SIGHT
         virtual protected void DetectPlayer()
@@ -137,7 +91,7 @@ namespace Disjointed.Combat.Enemies
         virtual public void TakeDamage(float damage, string origin)
         {
             data.health -= damage;
-            AudioManager.onPlaySFX?.Invoke("SwordHitEnemy");
+            AudioManager.PlaySFX?.Invoke("SwordHitEnemy");
             if (data.health <= 0) Destroy(this.gameObject);
         }
 
@@ -155,16 +109,12 @@ namespace Disjointed.Combat.Enemies
 
             var direction = collision.transform.position - transform.position;
             damageable.TakeKnockback(direction, data.knockback);
-
-            // rigidbody.AddForce(-direction * data.knockback, ForceMode2D.Impulse);
         }
 
         //> DRAW HELPFUL GIZMOS
         virtual protected void OnDrawGizmos()
         {
-            #if UNITY_EDITOR
             if (!Application.isPlaying) return;
-            #endif
 
             var position = transform.position;
 
