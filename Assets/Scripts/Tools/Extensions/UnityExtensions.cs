@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 
 namespace Disjointed.Tools.Extensions
@@ -8,6 +12,16 @@ namespace Disjointed.Tools.Extensions
         //> LAYER MAKS
         public static bool Contains(this LayerMask layerMask, int layer) => (layerMask == (layerMask | (1 << layer)));
         
+        //> COROUTINES
+        public static void Delay(this MonoBehaviour monoBehaviour, float delay, Action callback)
+            => monoBehaviour.StartCoroutine(DelayedCoroutine(delay, callback));
+
+        private static IEnumerator DelayedCoroutine(float delay, Action callback)
+        {
+            yield return new WaitForSeconds(delay);
+            callback?.Invoke();
+        }
+
         //> VECTOR2
         public static float Angle(this Vector2 direction)
         {
@@ -16,7 +30,23 @@ namespace Disjointed.Tools.Extensions
             var angle = Mathf.Acos(direction.x) * Mathf.Rad2Deg;
             return (direction.y > 0f) ? angle : -angle;
         }
+        
+        //> IENUMERABLES
+        public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> e)
+        {
+            var rng = new System.Random();
+            var array = e.ToArray();
+            var n = array.Length;
+            
+            while (n > 1)
+            {
+                int k = rng.Next(n--);
+                (array[n], array[k]) = (array[k], array[n]);
+            }
 
+            return array;
+        }
+        
         public static void MoveTowards(this ref Vector2 current, Vector2 target, float maxDelta)
             => current = Vector2.MoveTowards(current, target, maxDelta);
 
