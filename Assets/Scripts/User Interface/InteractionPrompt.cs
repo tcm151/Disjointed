@@ -8,26 +8,15 @@ namespace Disjointed
 {
     public class InteractionPrompt : UI_Panel
     {
-        
-        public static Action onShowPrompt;
-        public static Action onHidePrompt;
+        public static Action ShowPrompt;
+        public static Action HidePrompt;
 
         override protected void Awake()
         {
             base.Awake();
 
-            onShowPrompt += ShowPrompt;
-            onHidePrompt += HidePrompt;
-        }
-
-        private void ShowPrompt()
-        {
-            Show();
-        }
-
-        private void HidePrompt()
-        {
-            Hide();
+            ShowPrompt += Show;
+            HidePrompt += Hide;
         }
     }
 }

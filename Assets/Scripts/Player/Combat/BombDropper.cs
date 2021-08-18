@@ -27,8 +27,7 @@ namespace Disjointed.Player.Combat
             if (canBomb && Input.GetMouseButtonDown(2))
             {
                 var bomb = Factory.Spawn(bombPrefab, transform.position);
-                var rb = bomb.GetComponent<Rigidbody2D>();
-                rb.velocity = rigidbody.velocity;
+                bomb.rigidbody.velocity = rigidbody.velocity;
                 bombAmmo -= 1;
                 canBomb = false;
 

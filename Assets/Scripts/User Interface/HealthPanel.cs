@@ -1,7 +1,6 @@
 ﻿using Disjointed.Player;
 using TMPro;
 
-
 namespace Disjointed.UI
 {
     public class HealthPanel : UI_Panel

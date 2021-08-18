@@ -1,12 +1,10 @@
-﻿using System;
+﻿using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using Disjointed.Audio;
 using UnityEngine;
+using Disjointed.Audio;
 using Disjointed.Tools.Editor;
 using Disjointed.Tools.Extensions;
-using UnityEngine.Serialization;
 using Sprite = Disjointed.Sprites.Sprite;
 
 
@@ -14,7 +12,8 @@ namespace Disjointed.Environment
 {
     public class Lever : Sprite
     {
-        [RequireInterface(typeof(IUnlockable))] public List<GameObject> linkedUnlockables;
+        [RequireInterface(typeof(IUnlockable))]
+        public List<GameObject> linkedUnlockables;
 
         public LayerMask playerMask;
 
@@ -29,7 +28,7 @@ namespace Disjointed.Environment
             SetAnimationState("Activated", activated);
 
             unlockables = linkedUnlockables.Select(u => u.GetComponent<IUnlockable>()).ToList();
-            if (unlockables.Count == 0) Debug.LogError("Assigned Unlockable was not correct!");
+            if (unlockables.Count == 0 && linkedUnlockables.Count != 0) Debug.LogError("Assigned Unlockable was not correct!");
         }
 
         private void Update()
@@ -47,13 +46,13 @@ namespace Disjointed.Environment
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (!playerMask.Contains(other.gameObject.layer)) return;
-            InteractionPrompt.onShowPrompt?.Invoke();
+            InteractionPrompt.ShowPrompt?.Invoke();
         }
 
         private void OnTriggerExit2D(Collider2D other)
         {
             if (!playerMask.Contains(other.gameObject.layer)) return;
-            InteractionPrompt.onHidePrompt?.Invoke();
+            InteractionPrompt.HidePrompt?.Invoke();
         }
 
         private void OnTriggerStay2D(Collider2D other)
@@ -64,14 +63,12 @@ namespace Disjointed.Environment
                 {
                     Debug.Log("Toggled Lever!");
                     AudioManager.PlaySFX?.Invoke("LeverFlick");
-                    unlockables.ForEach
-                    (
-                        u =>
-                        {
-                            u.ToggleLock();
-                            u.ToggleOpen();
-                        }
-                    );
+                    unlockables.ForEach(u =>
+                    {
+                        u.ToggleLock();
+                        u.ToggleOpen();
+                            
+                    });
 
                     activated = !activated;
                     SetAnimationState("Activated", activated);
