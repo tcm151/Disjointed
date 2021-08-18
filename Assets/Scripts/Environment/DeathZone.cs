@@ -1,6 +1,5 @@
-using Disjointed.Player;
 using UnityEngine;
-using Disjointed.Tools.Extensions;
+using Disjointed.Combat;
 
 
 namespace Disjointed.Environment
@@ -11,13 +10,10 @@ namespace Disjointed.Environment
         
         private void OnTriggerEnter2D(Collider2D collider)
         {
-            // ignore anything except the thePlayer
-            if (!playerMask.Contains(collider.gameObject.layer)) return;
-
-            var player = collider.GetComponent<ThePlayer>();
-            if (player is null) return;
+            var damageable = collider.GetComponent<IDamageable>();
+            if (damageable is null) return;
             
-            player.Die();
+            damageable.TakeDamage(9001f, "Death Zone!");
         }
         
     }
